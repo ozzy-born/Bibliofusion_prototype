@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_ajouter_LivreJouet.cs">
+    <Compile Include="Form_ajouter_Adherant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ajouter_LivreJouet.Designer.cs">
-      <DependentUpon>Form_ajouter_LivreJouet.cs</DependentUpon>
+    <Compile Include="Form_ajouter_Adherant.Designer.cs">
+      <DependentUpon>Form_ajouter_Adherant.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_Form.cs">
       <SubType>Form</SubType>
@@ -58,11 +58,11 @@
     <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_ajouter_Livre.cs">
+    <Compile Include="Form_ajouter_LivreJouet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ajouter_Livre.Designer.cs">
-      <DependentUpon>Form_ajouter_Livre.cs</DependentUpon>
+    <Compile Include="Form_ajouter_LivreJouet.Designer.cs">
+      <DependentUpon>Form_ajouter_LivreJouet.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_connexion.cs">
       <SubType>Form</SubType>
@@ -72,14 +72,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_ajouter_LivreJouet.resx">
-      <DependentUpon>Form_ajouter_LivreJouet.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ajouter_Adherant.resx">
+      <DependentUpon>Form_ajouter_Adherant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_ajouter_Livre.resx">
-      <DependentUpon>Form_ajouter_Livre.cs</DependentUpon>
+    <EmbeddedResource Include="Form_ajouter_LivreJouet.resx">
+      <DependentUpon>Form_ajouter_LivreJouet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_connexion.resx">
       <DependentUpon>Form_connexion.cs</DependentUpon>

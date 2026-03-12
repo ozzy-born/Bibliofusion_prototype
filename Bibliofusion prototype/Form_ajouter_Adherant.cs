@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form_ajouter_Livre : Form
+    public partial class Form_ajouter : Form
     {
-        public Form_ajouter_Livre()
+        public Form_ajouter()
         {
             InitializeComponent();
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
