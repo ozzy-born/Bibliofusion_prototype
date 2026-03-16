@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp1
+namespace Bibliofusion_prototype
 {
-    public partial class Form_Connexion : Form
+    public partial class Form_Categories : Form
     {
-        public Form_Connexion()
+        public Form_Categories()
         {
             InitializeComponent();
+        }
+
+        private void Form_Categories_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

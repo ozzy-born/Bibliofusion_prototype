@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form_connexion
+    partial class Form_Connexion
     {
         /// <summary>
         /// Variable nécessaire au concepteur.

@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_ajouter_Adherant.cs">
+    <Compile Include="Form_Adherant.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ajouter_Adherant.Designer.cs">
-      <DependentUpon>Form_ajouter_Adherant.cs</DependentUpon>
+    <Compile Include="Form_Adherant.Designer.cs">
+      <DependentUpon>Form_Adherant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Administrateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Administrateur.Designer.cs">
+      <DependentUpon>Form_Administrateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Categories.Designer.cs">
+      <DependentUpon>Form_Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Classe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Classe.Designer.cs">
+      <DependentUpon>Form_Classe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Jouet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Jouet.Designer.cs">
+      <DependentUpon>Form_Jouet.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_Form.cs">
       <SubType>Form</SubType>
@@ -58,31 +82,43 @@
     <Compile Include="Main_Form.Designer.cs">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_ajouter_LivreJouet.cs">
+    <Compile Include="Form_Livre.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_ajouter_LivreJouet.Designer.cs">
-      <DependentUpon>Form_ajouter_LivreJouet.cs</DependentUpon>
+    <Compile Include="Form_Livre.Designer.cs">
+      <DependentUpon>Form_Livre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_connexion.cs">
+    <Compile Include="Form_Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_connexion.Designer.cs">
-      <DependentUpon>Form_connexion.cs</DependentUpon>
+    <Compile Include="Form_Connexion.Designer.cs">
+      <DependentUpon>Form_Connexion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_ajouter_Adherant.resx">
-      <DependentUpon>Form_ajouter_Adherant.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Adherant.resx">
+      <DependentUpon>Form_Adherant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Administrateur.resx">
+      <DependentUpon>Form_Administrateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Categories.resx">
+      <DependentUpon>Form_Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Classe.resx">
+      <DependentUpon>Form_Classe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Jouet.resx">
+      <DependentUpon>Form_Jouet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Form.resx">
       <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_ajouter_LivreJouet.resx">
-      <DependentUpon>Form_ajouter_LivreJouet.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Livre.resx">
+      <DependentUpon>Form_Livre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_connexion.resx">
-      <DependentUpon>Form_connexion.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Connexion.resx">
+      <DependentUpon>Form_Connexion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form_ajouter_LivreJouet : Form
+    public partial class Form_Livre : Form
     {
-        public Form_ajouter_LivreJouet()
+        public Form_Livre()
         {
             InitializeComponent();
         }
