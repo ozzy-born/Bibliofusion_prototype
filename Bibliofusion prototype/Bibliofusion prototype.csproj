@@ -70,6 +70,12 @@
     <Compile Include="Form_Classe.Designer.cs">
       <DependentUpon>Form_Classe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Emprunts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Emprunts.Designer.cs">
+      <DependentUpon>Form_Emprunts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Jouet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Classe.resx">
       <DependentUpon>Form_Classe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Emprunts.resx">
+      <DependentUpon>Form_Emprunts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Jouet.resx">
       <DependentUpon>Form_Jouet.cs</DependentUpon>

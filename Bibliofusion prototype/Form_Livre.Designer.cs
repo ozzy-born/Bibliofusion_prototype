@@ -31,6 +31,7 @@
             this.Connexion = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -39,14 +40,13 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.Liste_des_Livres = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -92,6 +92,19 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Ajouter un livre";
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Impact", 25F);
+            this.label1.Location = new System.Drawing.Point(387, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(191, 42);
+            this.label1.TabIndex = 52;
+            this.label1.Text = "BiblioFusion";
+            // 
             // textBox8
             // 
             this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -101,7 +114,7 @@
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(905, 30);
             this.textBox8.TabIndex = 37;
-            this.textBox8.Text = "Nom";
+            this.textBox8.Text = "Titre";
             // 
             // textBox9
             // 
@@ -188,17 +201,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editer les livres";
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.button1.Location = new System.Drawing.Point(854, 635);
-            this.button1.Margin = new System.Windows.Forms.Padding(8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Valider";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // vScrollBar2
             // 
             this.vScrollBar2.Location = new System.Drawing.Point(332, 187);
@@ -256,18 +258,16 @@
             this.Title.TabIndex = 45;
             this.Title.Text = "BiblioFusion";
             // 
-            // label1
+            // button1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 25F);
-            this.label1.Location = new System.Drawing.Point(387, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 42);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "BiblioFusion";
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.button1.Location = new System.Drawing.Point(854, 635);
+            this.button1.Margin = new System.Windows.Forms.Padding(8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(101, 32);
+            this.button1.TabIndex = 38;
+            this.button1.Text = "Valider";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // Form_Livre
             // 

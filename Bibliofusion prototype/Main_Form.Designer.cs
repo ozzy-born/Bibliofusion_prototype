@@ -31,35 +31,41 @@
             this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.livreJouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.catégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.adhérantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.classesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.adhérantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livreJouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listView3 = new System.Windows.Forms.ListView();
             this.listView2 = new System.Windows.Forms.ListView();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.jouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.Liste_des_Livres_Jouets_Adherants = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.classesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.descriptf = new System.Windows.Forms.ListBox();
+            this.chaine_de_caracter = new System.Windows.Forms.ListBox();
+            this.empruntsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nouvelEmpruntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.enregisterUnRetourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reserverUnArticleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -71,6 +77,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.empruntsToolStripMenuItem,
             this.optionsToolStripMenuItem,
             this.déconnexionToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -91,6 +98,42 @@
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // livreJouetToolStripMenuItem
+            // 
+            this.livreJouetToolStripMenuItem.Name = "livreJouetToolStripMenuItem";
+            this.livreJouetToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.livreJouetToolStripMenuItem.Text = "Livres";
+            // 
+            // jouetToolStripMenuItem
+            // 
+            this.jouetToolStripMenuItem.Name = "jouetToolStripMenuItem";
+            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.jouetToolStripMenuItem.Text = "Jouets";
+            // 
+            // catégoriesToolStripMenuItem
+            // 
+            this.catégoriesToolStripMenuItem.Name = "catégoriesToolStripMenuItem";
+            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.catégoriesToolStripMenuItem.Text = "Catégories";
+            // 
+            // adhérantToolStripMenuItem
+            // 
+            this.adhérantToolStripMenuItem.Name = "adhérantToolStripMenuItem";
+            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.adhérantToolStripMenuItem.Text = "Adhérants";
+            // 
+            // classesToolStripMenuItem
+            // 
+            this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
+            this.classesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.classesToolStripMenuItem.Text = "Classes";
+            // 
+            // administateursToolStripMenuItem
+            // 
+            this.administateursToolStripMenuItem.Name = "administateursToolStripMenuItem";
+            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.administateursToolStripMenuItem.Text = "Administateurs";
             // 
             // déconnexionToolStripMenuItem
             // 
@@ -129,69 +172,6 @@
             this.tabPage1.Size = new System.Drawing.Size(999, 677);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Tableau de Bord";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.vScrollBar2);
-            this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
-            this.tabPage2.Controls.Add(this.vScrollBar1);
-            this.tabPage2.Controls.Add(this.Liste_des_Livres_Jouets_Adherants);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(999, 677);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Rechercher";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage3.Controls.Add(this.listBox1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(999, 677);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Scanner";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(999, 677);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Statistiques";
-            // 
-            // adhérantToolStripMenuItem
-            // 
-            this.adhérantToolStripMenuItem.Name = "adhérantToolStripMenuItem";
-            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.adhérantToolStripMenuItem.Text = "Adhérants";
-            // 
-            // livreJouetToolStripMenuItem
-            // 
-            this.livreJouetToolStripMenuItem.Name = "livreJouetToolStripMenuItem";
-            this.livreJouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.livreJouetToolStripMenuItem.Text = "Livres";
-            // 
-            // catégoriesToolStripMenuItem
-            // 
-            this.catégoriesToolStripMenuItem.Name = "catégoriesToolStripMenuItem";
-            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.catégoriesToolStripMenuItem.Text = "Catégories";
-            // 
-            // administateursToolStripMenuItem
-            // 
-            this.administateursToolStripMenuItem.Name = "administateursToolStripMenuItem";
-            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.administateursToolStripMenuItem.Text = "Administateurs";
             // 
             // label3
             // 
@@ -250,11 +230,20 @@
             this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // jouetToolStripMenuItem
+            // tabPage2
             // 
-            this.jouetToolStripMenuItem.Name = "jouetToolStripMenuItem";
-            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.jouetToolStripMenuItem.Text = "Jouets";
+            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage2.Controls.Add(this.vScrollBar2);
+            this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
+            this.tabPage2.Controls.Add(this.vScrollBar1);
+            this.tabPage2.Controls.Add(this.Liste_des_Livres_Jouets_Adherants);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(999, 677);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Rechercher";
             // 
             // vScrollBar2
             // 
@@ -300,11 +289,60 @@
             this.textBox1.TabIndex = 52;
             this.textBox1.Text = "Rechercher un livre, un jouet ou un adherant";
             // 
-            // classesToolStripMenuItem
+            // tabPage3
             // 
-            this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
-            this.classesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.classesToolStripMenuItem.Text = "Classes";
+            this.tabPage3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage3.Controls.Add(this.descriptf);
+            this.tabPage3.Controls.Add(this.chaine_de_caracter);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(999, 677);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Scanner";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage4.Controls.Add(this.label6);
+            this.tabPage4.Controls.Add(this.label5);
+            this.tabPage4.Controls.Add(this.label4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(999, 677);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Statistiques";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(99, 278);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(192, 31);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "Statistiques 3";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(99, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(192, 31);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Statistiques 2";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(99, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(192, 31);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Statistiques 1";
             // 
             // imageList1
             // 
@@ -318,45 +356,53 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // listBox1
+            // descriptf
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(201, 479);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(589, 104);
-            this.listBox1.TabIndex = 54;
+            this.descriptf.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.descriptf.FormattingEnabled = true;
+            this.descriptf.ItemHeight = 25;
+            this.descriptf.Location = new System.Drawing.Point(210, 241);
+            this.descriptf.Name = "descriptf";
+            this.descriptf.Size = new System.Drawing.Size(589, 204);
+            this.descriptf.TabIndex = 55;
             // 
-            // label4
+            // chaine_de_caracter
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(99, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(192, 31);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Statistiques 1";
+            this.chaine_de_caracter.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.chaine_de_caracter.FormattingEnabled = true;
+            this.chaine_de_caracter.ItemHeight = 25;
+            this.chaine_de_caracter.Location = new System.Drawing.Point(201, 39);
+            this.chaine_de_caracter.Name = "chaine_de_caracter";
+            this.chaine_de_caracter.Size = new System.Drawing.Size(589, 104);
+            this.chaine_de_caracter.TabIndex = 54;
             // 
-            // label5
+            // empruntsToolStripMenuItem
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(99, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 31);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Statistiques 2";
+            this.empruntsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nouvelEmpruntToolStripMenuItem,
+            this.enregisterUnRetourToolStripMenuItem,
+            this.reserverUnArticleToolStripMenuItem});
+            this.empruntsToolStripMenuItem.Name = "empruntsToolStripMenuItem";
+            this.empruntsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.empruntsToolStripMenuItem.Text = "Emprunts";
             // 
-            // label6
+            // nouvelEmpruntToolStripMenuItem
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(99, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(192, 31);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Statistiques 3";
+            this.nouvelEmpruntToolStripMenuItem.Name = "nouvelEmpruntToolStripMenuItem";
+            this.nouvelEmpruntToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nouvelEmpruntToolStripMenuItem.Text = "Nouvel emprunt";
+            // 
+            // enregisterUnRetourToolStripMenuItem
+            // 
+            this.enregisterUnRetourToolStripMenuItem.Name = "enregisterUnRetourToolStripMenuItem";
+            this.enregisterUnRetourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.enregisterUnRetourToolStripMenuItem.Text = "Enregister un retour";
+            // 
+            // reserverUnArticleToolStripMenuItem
+            // 
+            this.reserverUnArticleToolStripMenuItem.Name = "reserverUnArticleToolStripMenuItem";
+            this.reserverUnArticleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reserverUnArticleToolStripMenuItem.Text = "Reserver un article";
             // 
             // MainForm
             // 
@@ -414,12 +460,18 @@
         private System.Windows.Forms.ListBox Liste_des_Livres_Jouets_Adherants;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStripMenuItem classesToolStripMenuItem;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ListBox descriptf;
+        private System.Windows.Forms.ToolStripMenuItem empruntsToolStripMenuItem;
+        private System.Windows.Forms.ListBox chaine_de_caracter;
+        private System.Windows.Forms.ToolStripMenuItem nouvelEmpruntToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem enregisterUnRetourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reserverUnArticleToolStripMenuItem;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
