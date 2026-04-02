@@ -46,17 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_Adherant.cs">
+    <Compile Include="Form_Adherent.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Adherant.Designer.cs">
-      <DependentUpon>Form_Adherant.cs</DependentUpon>
+    <Compile Include="Form_Adherent.Designer.cs">
+      <DependentUpon>Form_Adherent.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Administrateur.cs">
+    <Compile Include="Form_Administrateurs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Administrateur.Designer.cs">
-      <DependentUpon>Form_Administrateur.cs</DependentUpon>
+    <Compile Include="Form_Administrateurs.Designer.cs">
+      <DependentUpon>Form_Administrateurs.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Categories.cs">
       <SubType>Form</SubType>
@@ -64,11 +64,11 @@
     <Compile Include="Form_Categories.Designer.cs">
       <DependentUpon>Form_Categories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Classe.cs">
+    <Compile Include="Form_Classes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Classe.Designer.cs">
-      <DependentUpon>Form_Classe.cs</DependentUpon>
+    <Compile Include="Form_Classes.Designer.cs">
+      <DependentUpon>Form_Classes.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Emprunts.cs">
       <SubType>Form</SubType>
@@ -102,17 +102,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_Adherant.resx">
-      <DependentUpon>Form_Adherant.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Adherent.resx">
+      <DependentUpon>Form_Adherent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Administrateur.resx">
-      <DependentUpon>Form_Administrateur.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Administrateurs.resx">
+      <DependentUpon>Form_Administrateurs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Categories.resx">
       <DependentUpon>Form_Categories.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Classe.resx">
-      <DependentUpon>Form_Classe.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Classes.resx">
+      <DependentUpon>Form_Classes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Emprunts.resx">
       <DependentUpon>Form_Emprunts.cs</DependentUpon>

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bibliofusion_prototype
+namespace WindowsFormsApp1
 {
-    public partial class Form_Administrateur : Form
+    public partial class Form_Adherent : Form
     {
-        public Form_Administrateur()
+        public Form_Adherent()
         {
             InitializeComponent();
         }

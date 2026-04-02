@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1;
 
 namespace Bibliofusion_prototype
 {
@@ -16,6 +17,8 @@ namespace Bibliofusion_prototype
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Form_Connexion formConnexion = new Form_Connexion();
+            formConnexion.ShowDialog();
             Application.Run(new MainForm());
         }
     }

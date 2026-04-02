@@ -1,6 +1,6 @@
 ﻿namespace Bibliofusion_prototype
 {
-    partial class Form_Administrateur
+    partial class Form_Administrateurs
     {
         /// <summary>
         /// Required designer variable.

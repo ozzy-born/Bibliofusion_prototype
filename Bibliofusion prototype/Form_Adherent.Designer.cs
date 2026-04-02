@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form_ajouter
+    partial class Form_Adherent
     {
         /// <summary>
         /// Required designer variable.

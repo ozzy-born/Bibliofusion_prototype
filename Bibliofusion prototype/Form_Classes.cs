@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Bibliofusion_prototype
 {
-    public partial class Form_Classe : Form
+    public partial class Form_Classes : Form
     {
-        public Form_Classe()
+        public Form_Classes()
         {
             InitializeComponent();
         }
