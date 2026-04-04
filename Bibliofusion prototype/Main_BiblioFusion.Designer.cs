@@ -51,10 +51,8 @@
             this.listView2 = new System.Windows.Forms.ListView();
             this.listView1 = new System.Windows.Forms.ListView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
+            this.listView4 = new System.Windows.Forms.ListView();
             this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.Liste_des_Livres_Jouets_Adherants = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.descriptf = new System.Windows.Forms.ListBox();
@@ -131,42 +129,42 @@
             // livreToolStripMenuItem
             // 
             this.livreToolStripMenuItem.Name = "livreToolStripMenuItem";
-            this.livreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.livreToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.livreToolStripMenuItem.Text = "Livres";
             this.livreToolStripMenuItem.Click += new System.EventHandler(this.livreToolStripMenuItem_Click);
             // 
             // jouetToolStripMenuItem
             // 
             this.jouetToolStripMenuItem.Name = "jouetToolStripMenuItem";
-            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.jouetToolStripMenuItem.Text = "Jouets";
             this.jouetToolStripMenuItem.Click += new System.EventHandler(this.jouetToolStripMenuItem_Click);
             // 
             // catégoriesToolStripMenuItem
             // 
             this.catégoriesToolStripMenuItem.Name = "catégoriesToolStripMenuItem";
-            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.catégoriesToolStripMenuItem.Text = "Catégories";
             this.catégoriesToolStripMenuItem.Click += new System.EventHandler(this.catégoriesToolStripMenuItem_Click);
             // 
             // adhérantToolStripMenuItem
             // 
             this.adhérantToolStripMenuItem.Name = "adhérantToolStripMenuItem";
-            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.adhérantToolStripMenuItem.Text = "Adhérants";
             this.adhérantToolStripMenuItem.Click += new System.EventHandler(this.adhérantToolStripMenuItem_Click);
             // 
             // classesToolStripMenuItem
             // 
             this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
-            this.classesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.classesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.classesToolStripMenuItem.Text = "Classes";
             this.classesToolStripMenuItem.Click += new System.EventHandler(this.classesToolStripMenuItem_Click);
             // 
             // administateursToolStripMenuItem
             // 
             this.administateursToolStripMenuItem.Name = "administateursToolStripMenuItem";
-            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.administateursToolStripMenuItem.Text = "Administateurs";
             this.administateursToolStripMenuItem.Click += new System.EventHandler(this.administateursToolStripMenuItem_Click);
             // 
@@ -174,7 +172,7 @@
             // 
             this.déconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
-            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.déconnexionToolStripMenuItem.Text = "Déconnexion";
             this.déconnexionToolStripMenuItem.Click += new System.EventHandler(this.déconnexionToolStripMenuItem_Click);
             // 
@@ -213,7 +211,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(649, 36);
+            this.label3.Location = new System.Drawing.Point(678, 58);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 29);
             this.label3.TabIndex = 11;
@@ -223,7 +221,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(393, 36);
+            this.label2.Location = new System.Drawing.Point(358, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 29);
             this.label2.TabIndex = 10;
@@ -233,7 +231,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(93, 36);
+            this.label1.Location = new System.Drawing.Point(38, 58);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 29);
             this.label1.TabIndex = 9;
@@ -242,37 +240,35 @@
             // listView3
             // 
             this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(594, 98);
+            this.listView3.Location = new System.Drawing.Point(670, 100);
             this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(265, 510);
+            this.listView3.Size = new System.Drawing.Size(300, 550);
             this.listView3.TabIndex = 8;
             this.listView3.UseCompatibleStateImageBehavior = false;
             // 
             // listView2
             // 
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(310, 98);
+            this.listView2.Location = new System.Drawing.Point(350, 100);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(265, 510);
+            this.listView2.Size = new System.Drawing.Size(300, 550);
             this.listView2.TabIndex = 7;
             this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(20, 98);
+            this.listView1.Location = new System.Drawing.Point(30, 100);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(265, 510);
+            this.listView1.Size = new System.Drawing.Size(300, 550);
             this.listView1.TabIndex = 6;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.vScrollBar2);
+            this.tabPage2.Controls.Add(this.listView4);
             this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
-            this.tabPage2.Controls.Add(this.vScrollBar1);
-            this.tabPage2.Controls.Add(this.Liste_des_Livres_Jouets_Adherants);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -281,47 +277,32 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Rechercher";
             // 
-            // vScrollBar2
+            // listView4
             // 
-            this.vScrollBar2.Location = new System.Drawing.Point(333, 176);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(17, 430);
-            this.vScrollBar2.TabIndex = 56;
+            this.listView4.HideSelection = false;
+            this.listView4.Location = new System.Drawing.Point(350, 100);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(620, 550);
+            this.listView4.TabIndex = 56;
+            this.listView4.UseCompatibleStateImageBehavior = false;
             // 
             // Filtres_de_Recherche
             // 
             this.Filtres_de_Recherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.Filtres_de_Recherche.FormattingEnabled = true;
-            this.Filtres_de_Recherche.Location = new System.Drawing.Point(28, 176);
+            this.Filtres_de_Recherche.Location = new System.Drawing.Point(30, 100);
             this.Filtres_de_Recherche.Name = "Filtres_de_Recherche";
-            this.Filtres_de_Recherche.Size = new System.Drawing.Size(322, 424);
+            this.Filtres_de_Recherche.Size = new System.Drawing.Size(300, 550);
             this.Filtres_de_Recherche.TabIndex = 55;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(952, 176);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 430);
-            this.vScrollBar1.TabIndex = 54;
-            // 
-            // Liste_des_Livres_Jouets_Adherants
-            // 
-            this.Liste_des_Livres_Jouets_Adherants.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.Liste_des_Livres_Jouets_Adherants.FormattingEnabled = true;
-            this.Liste_des_Livres_Jouets_Adherants.ItemHeight = 25;
-            this.Liste_des_Livres_Jouets_Adherants.Location = new System.Drawing.Point(381, 176);
-            this.Liste_des_Livres_Jouets_Adherants.Name = "Liste_des_Livres_Jouets_Adherants";
-            this.Liste_des_Livres_Jouets_Adherants.Size = new System.Drawing.Size(589, 429);
-            this.Liste_des_Livres_Jouets_Adherants.TabIndex = 53;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox1.Location = new System.Drawing.Point(121, 131);
+            this.textBox1.Location = new System.Drawing.Point(125, 35);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(754, 30);
+            this.textBox1.Size = new System.Drawing.Size(750, 30);
             this.textBox1.TabIndex = 52;
             this.textBox1.Text = "Rechercher un livre, un jouet ou un adherant";
             // 
@@ -462,10 +443,7 @@
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ToolStripMenuItem jouetToolStripMenuItem;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.CheckedListBox Filtres_de_Recherche;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.ListBox Liste_des_Livres_Jouets_Adherants;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ToolStripMenuItem classesToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
@@ -480,6 +458,7 @@
         private System.Windows.Forms.ToolStripMenuItem enregisterUnRetourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reserverUnArticleToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ListView listView4;
     }
 }
 

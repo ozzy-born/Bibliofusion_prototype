@@ -40,13 +40,11 @@
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.Liste_des_Livres = new System.Windows.Forms.ListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.listView4 = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -55,7 +53,7 @@
             // Connexion
             // 
             this.Connexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.Connexion.Location = new System.Drawing.Point(832, 620);
+            this.Connexion.Location = new System.Drawing.Point(850, 465);
             this.Connexion.Margin = new System.Windows.Forms.Padding(8);
             this.Connexion.Name = "Connexion";
             this.Connexion.Size = new System.Drawing.Size(101, 32);
@@ -67,7 +65,7 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 2);
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1005, 725);
@@ -98,7 +96,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Impact", 25F);
-            this.label1.Location = new System.Drawing.Point(387, 48);
+            this.label1.Location = new System.Drawing.Point(400, 35);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 42);
@@ -110,9 +108,9 @@
             this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox8.Location = new System.Drawing.Point(28, 111);
+            this.textBox8.Location = new System.Drawing.Point(30, 115);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(905, 30);
+            this.textBox8.Size = new System.Drawing.Size(940, 30);
             this.textBox8.TabIndex = 37;
             this.textBox8.Text = "Titre";
             // 
@@ -121,9 +119,9 @@
             this.textBox9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox9.Location = new System.Drawing.Point(28, 332);
+            this.textBox9.Location = new System.Drawing.Point(30, 315);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(905, 30);
+            this.textBox9.Size = new System.Drawing.Size(940, 30);
             this.textBox9.TabIndex = 36;
             this.textBox9.Text = "Année de parution";
             // 
@@ -132,9 +130,9 @@
             this.textBox10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox10.Location = new System.Drawing.Point(28, 274);
+            this.textBox10.Location = new System.Drawing.Point(30, 265);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(905, 30);
+            this.textBox10.Size = new System.Drawing.Size(940, 30);
             this.textBox10.TabIndex = 35;
             this.textBox10.Text = "Catégorie";
             this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
@@ -144,9 +142,9 @@
             this.textBox11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox11.Location = new System.Drawing.Point(28, 445);
+            this.textBox11.Location = new System.Drawing.Point(30, 415);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(905, 30);
+            this.textBox11.Size = new System.Drawing.Size(940, 30);
             this.textBox11.TabIndex = 34;
             this.textBox11.Text = "ISBN ou code unique";
             // 
@@ -155,9 +153,9 @@
             this.textBox12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox12.Location = new System.Drawing.Point(28, 165);
+            this.textBox12.Location = new System.Drawing.Point(30, 165);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(905, 30);
+            this.textBox12.Size = new System.Drawing.Size(940, 30);
             this.textBox12.TabIndex = 33;
             this.textBox12.Text = "Auteur";
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
@@ -167,9 +165,9 @@
             this.textBox13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox13.Location = new System.Drawing.Point(28, 390);
+            this.textBox13.Location = new System.Drawing.Point(30, 365);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(905, 30);
+            this.textBox13.Size = new System.Drawing.Size(940, 30);
             this.textBox13.TabIndex = 32;
             this.textBox13.Text = "Emplacement";
             // 
@@ -178,19 +176,17 @@
             this.textBox14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox14.Location = new System.Drawing.Point(28, 219);
+            this.textBox14.Location = new System.Drawing.Point(30, 215);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(905, 30);
+            this.textBox14.Size = new System.Drawing.Size(940, 30);
             this.textBox14.TabIndex = 31;
             this.textBox14.Text = "Editeur";
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.vScrollBar2);
+            this.tabPage2.Controls.Add(this.listView4);
             this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
-            this.tabPage2.Controls.Add(this.vScrollBar1);
-            this.tabPage2.Controls.Add(this.Liste_des_Livres);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.Title);
             this.tabPage2.Controls.Add(this.button1);
@@ -201,47 +197,23 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editer les livres";
             // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(332, 187);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(17, 430);
-            this.vScrollBar2.TabIndex = 50;
-            // 
             // Filtres_de_Recherche
             // 
             this.Filtres_de_Recherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
             this.Filtres_de_Recherche.FormattingEnabled = true;
-            this.Filtres_de_Recherche.Location = new System.Drawing.Point(27, 187);
+            this.Filtres_de_Recherche.Location = new System.Drawing.Point(30, 180);
             this.Filtres_de_Recherche.Name = "Filtres_de_Recherche";
-            this.Filtres_de_Recherche.Size = new System.Drawing.Size(322, 424);
+            this.Filtres_de_Recherche.Size = new System.Drawing.Size(300, 445);
             this.Filtres_de_Recherche.TabIndex = 49;
-            // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(951, 187);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 430);
-            this.vScrollBar1.TabIndex = 48;
-            // 
-            // Liste_des_Livres
-            // 
-            this.Liste_des_Livres.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.Liste_des_Livres.FormattingEnabled = true;
-            this.Liste_des_Livres.ItemHeight = 25;
-            this.Liste_des_Livres.Location = new System.Drawing.Point(380, 187);
-            this.Liste_des_Livres.Name = "Liste_des_Livres";
-            this.Liste_des_Livres.Size = new System.Drawing.Size(589, 429);
-            this.Liste_des_Livres.TabIndex = 47;
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox1.Location = new System.Drawing.Point(120, 142);
+            this.textBox1.Location = new System.Drawing.Point(125, 115);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(754, 30);
+            this.textBox1.Size = new System.Drawing.Size(750, 30);
             this.textBox1.TabIndex = 46;
             this.textBox1.Text = "Rechercher un livre";
             // 
@@ -251,8 +223,8 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Impact", 25F);
-            this.Title.Location = new System.Drawing.Point(395, 81);
-            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.Title.Location = new System.Drawing.Point(400, 35);
+            this.Title.Margin = new System.Windows.Forms.Padding(0);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(191, 42);
             this.Title.TabIndex = 45;
@@ -261,13 +233,22 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.button1.Location = new System.Drawing.Point(854, 635);
+            this.button1.Location = new System.Drawing.Point(850, 640);
             this.button1.Margin = new System.Windows.Forms.Padding(8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 32);
             this.button1.TabIndex = 38;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // listView4
+            // 
+            this.listView4.HideSelection = false;
+            this.listView4.Location = new System.Drawing.Point(350, 180);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(620, 444);
+            this.listView4.TabIndex = 57;
+            this.listView4.UseCompatibleStateImageBehavior = false;
             // 
             // Form_Livre
             // 
@@ -279,7 +260,7 @@
             this.MaximumSize = new System.Drawing.Size(1023, 766);
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "Form_Livre";
-            this.Text = "BiblioFusion - Livre";
+            this.Text = "BiblioFusion - livres";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -302,12 +283,10 @@
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.CheckedListBox Filtres_de_Recherche;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.ListBox Liste_des_Livres;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView listView4;
     }
 }

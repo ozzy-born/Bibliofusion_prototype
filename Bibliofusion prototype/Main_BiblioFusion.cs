@@ -20,8 +20,8 @@ namespace Bibliofusion_prototype
 
         private void nouvelEmpruntToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_Adherent formAdherant = new Form_Adherent();
-            formAdherant.ShowDialog();
+            Form_Emprunts form_Emprents = new Form_Emprunts();
+            form_Emprents.ShowDialog();
         }
 
         private void livreToolStripMenuItem_Click(object sender, EventArgs e)
