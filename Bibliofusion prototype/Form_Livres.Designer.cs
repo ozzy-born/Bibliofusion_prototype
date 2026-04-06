@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form_Livre
+    partial class Form_Livres
     {
         /// <summary>
         /// Required designer variable.
@@ -44,10 +44,11 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.listView4 = new System.Windows.Forms.ListView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Connexion
@@ -185,7 +186,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.listView4);
+            this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.Title);
@@ -241,16 +242,19 @@
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // listView4
+            // dataGridView1
             // 
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(350, 180);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(620, 444);
-            this.listView4.TabIndex = 57;
-            this.listView4.UseCompatibleStateImageBehavior = false;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView1.TabIndex = 60;
             // 
-            // Form_Livre
+            // Form_Livres
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -259,13 +263,14 @@
             this.Controls.Add(this.tabControl1);
             this.MaximumSize = new System.Drawing.Size(1023, 766);
             this.MinimumSize = new System.Drawing.Size(1023, 766);
-            this.Name = "Form_Livre";
+            this.Name = "Form_Livres";
             this.Text = "BiblioFusion - livres";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,6 +292,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

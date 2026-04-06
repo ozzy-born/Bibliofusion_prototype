@@ -18,53 +18,53 @@ namespace Bibliofusion_prototype
             InitializeComponent();
         }
 
-        private void nouvelEmpruntToolStripMenuItem_Click(object sender, EventArgs e)
+        private void NouvelEmpruntToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_Emprunts form_Emprents = new Form_Emprunts();
             form_Emprents.ShowDialog();
         }
 
-        private void livreToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LivreToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_Livre formLivre = new Form_Livre();
+            Form_Livres formLivre = new Form_Livres();
             formLivre.ShowDialog();
         }
 
-        private void jouetToolStripMenuItem_Click(object sender, EventArgs e)
+        private void JouetToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_Jouet formjouet = new Form_Jouet();
+            Form_Jouets formjouet = new Form_Jouets();
             formjouet.ShowDialog();
         }
 
-        private void catégoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CategoriesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_Categories formCategorie = new Form_Categories();
             formCategorie.ShowDialog();
         }
 
-        private void adhérantToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AdherantToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_Adherent formAdherent = new Form_Adherent();
+            Form_Adherents formAdherent = new Form_Adherents();
             formAdherent.ShowDialog();
         }
 
-        private void classesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ClassesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_Classes formClasses = new Form_Classes();
             formClasses.ShowDialog();
         }
 
-        private void administateursToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AdministateursToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form_Administrateurs formAdmin = new Form_Administrateurs();
             formAdmin.ShowDialog();
         }
 
-        private void déconnexionToolStripMenuItem_Click(object sender, EventArgs e)
+        private void DeconnexionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            MainForm.ActiveForm.Hide();
             Form_Connexion formConnexion = new Form_Connexion();
             formConnexion.ShowDialog();
-            MainForm.ActiveForm.Close();
         }
     }
 }

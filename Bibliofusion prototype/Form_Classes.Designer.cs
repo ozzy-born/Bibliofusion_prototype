@@ -40,10 +40,10 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.listView4 = new System.Windows.Forms.ListView();
             this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.listView4 = new System.Windows.Forms.ListView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -103,9 +103,9 @@
             // Liste_des_eleves
             // 
             this.Liste_des_eleves.FormattingEnabled = true;
-            this.Liste_des_eleves.Location = new System.Drawing.Point(30, 341);
+            this.Liste_des_eleves.Location = new System.Drawing.Point(30, 321);
             this.Liste_des_eleves.Name = "Liste_des_eleves";
-            this.Liste_des_eleves.Size = new System.Drawing.Size(460, 319);
+            this.Liste_des_eleves.Size = new System.Drawing.Size(460, 304);
             this.Liste_des_eleves.TabIndex = 41;
             // 
             // Connexion
@@ -190,6 +190,15 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editer les classes";
             // 
+            // listView4
+            // 
+            this.listView4.HideSelection = false;
+            this.listView4.Location = new System.Drawing.Point(350, 180);
+            this.listView4.Name = "listView4";
+            this.listView4.Size = new System.Drawing.Size(620, 444);
+            this.listView4.TabIndex = 58;
+            this.listView4.UseCompatibleStateImageBehavior = false;
+            // 
             // Filtres_de_Recherche
             // 
             this.Filtres_de_Recherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
@@ -222,15 +231,6 @@
             this.label3.Size = new System.Drawing.Size(191, 42);
             this.label3.TabIndex = 51;
             this.label3.Text = "BiblioFusion";
-            // 
-            // listView4
-            // 
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(350, 180);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(620, 444);
-            this.listView4.TabIndex = 58;
-            this.listView4.UseCompatibleStateImageBehavior = false;
             // 
             // Form_Classes
             // 

@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_Adherent.cs">
+    <Compile Include="Form_Adherents.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Adherent.Designer.cs">
-      <DependentUpon>Form_Adherent.cs</DependentUpon>
+    <Compile Include="Form_Adherents.Designer.cs">
+      <DependentUpon>Form_Adherents.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Administrateurs.cs">
       <SubType>Form</SubType>
@@ -76,11 +76,11 @@
     <Compile Include="Form_Emprunts.Designer.cs">
       <DependentUpon>Form_Emprunts.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Jouet.cs">
+    <Compile Include="Form_Jouets.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Jouet.Designer.cs">
-      <DependentUpon>Form_Jouet.cs</DependentUpon>
+    <Compile Include="Form_Jouets.Designer.cs">
+      <DependentUpon>Form_Jouets.cs</DependentUpon>
     </Compile>
     <Compile Include="Main_BiblioFusion.cs">
       <SubType>Form</SubType>
@@ -88,11 +88,11 @@
     <Compile Include="Main_BiblioFusion.Designer.cs">
       <DependentUpon>Main_BiblioFusion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Livre.cs">
+    <Compile Include="Form_Livres.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Livre.Designer.cs">
-      <DependentUpon>Form_Livre.cs</DependentUpon>
+    <Compile Include="Form_Livres.Designer.cs">
+      <DependentUpon>Form_Livres.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Connexion.cs">
       <SubType>Form</SubType>
@@ -102,8 +102,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_Adherent.resx">
-      <DependentUpon>Form_Adherent.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Adherents.resx">
+      <DependentUpon>Form_Adherents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Administrateurs.resx">
       <DependentUpon>Form_Administrateurs.cs</DependentUpon>
@@ -117,14 +117,14 @@
     <EmbeddedResource Include="Form_Emprunts.resx">
       <DependentUpon>Form_Emprunts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Jouet.resx">
-      <DependentUpon>Form_Jouet.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Jouets.resx">
+      <DependentUpon>Form_Jouets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_BiblioFusion.resx">
       <DependentUpon>Main_BiblioFusion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Livre.resx">
-      <DependentUpon>Form_Livre.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Livres.resx">
+      <DependentUpon>Form_Livres.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Connexion.resx">
       <DependentUpon>Form_Connexion.cs</DependentUpon>

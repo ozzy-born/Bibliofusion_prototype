@@ -99,7 +99,7 @@
             this.nouvelEmpruntToolStripMenuItem.Name = "nouvelEmpruntToolStripMenuItem";
             this.nouvelEmpruntToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.nouvelEmpruntToolStripMenuItem.Text = "Nouvel emprunt";
-            this.nouvelEmpruntToolStripMenuItem.Click += new System.EventHandler(this.nouvelEmpruntToolStripMenuItem_Click);
+            this.nouvelEmpruntToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
             // 
             // enregisterUnRetourToolStripMenuItem
             // 
@@ -129,44 +129,44 @@
             // livreToolStripMenuItem
             // 
             this.livreToolStripMenuItem.Name = "livreToolStripMenuItem";
-            this.livreToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.livreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.livreToolStripMenuItem.Text = "Livres";
-            this.livreToolStripMenuItem.Click += new System.EventHandler(this.livreToolStripMenuItem_Click);
+            this.livreToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
             // 
             // jouetToolStripMenuItem
             // 
             this.jouetToolStripMenuItem.Name = "jouetToolStripMenuItem";
-            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jouetToolStripMenuItem.Text = "Jouets";
-            this.jouetToolStripMenuItem.Click += new System.EventHandler(this.jouetToolStripMenuItem_Click);
+            this.jouetToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
             // 
             // catégoriesToolStripMenuItem
             // 
             this.catégoriesToolStripMenuItem.Name = "catégoriesToolStripMenuItem";
-            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.catégoriesToolStripMenuItem.Text = "Catégories";
-            this.catégoriesToolStripMenuItem.Click += new System.EventHandler(this.catégoriesToolStripMenuItem_Click);
+            this.catégoriesToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
             // 
             // adhérantToolStripMenuItem
             // 
             this.adhérantToolStripMenuItem.Name = "adhérantToolStripMenuItem";
-            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.adhérantToolStripMenuItem.Text = "Adhérants";
-            this.adhérantToolStripMenuItem.Click += new System.EventHandler(this.adhérantToolStripMenuItem_Click);
+            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adhérantToolStripMenuItem.Text = "Adhérents";
+            this.adhérantToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
             // 
             // classesToolStripMenuItem
             // 
             this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
-            this.classesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.classesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.classesToolStripMenuItem.Text = "Classes";
-            this.classesToolStripMenuItem.Click += new System.EventHandler(this.classesToolStripMenuItem_Click);
+            this.classesToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
             // 
             // administateursToolStripMenuItem
             // 
             this.administateursToolStripMenuItem.Name = "administateursToolStripMenuItem";
-            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.administateursToolStripMenuItem.Text = "Administateurs";
-            this.administateursToolStripMenuItem.Click += new System.EventHandler(this.administateursToolStripMenuItem_Click);
+            this.administateursToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
             // 
             // déconnexionToolStripMenuItem
             // 
@@ -174,7 +174,7 @@
             this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
             this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
             this.déconnexionToolStripMenuItem.Text = "Déconnexion";
-            this.déconnexionToolStripMenuItem.Click += new System.EventHandler(this.déconnexionToolStripMenuItem_Click);
+            this.déconnexionToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
@@ -211,7 +211,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(678, 58);
+            this.label3.Location = new System.Drawing.Point(730, 50);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(165, 29);
             this.label3.TabIndex = 11;
@@ -221,7 +221,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(358, 58);
+            this.label2.Location = new System.Drawing.Point(446, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 29);
             this.label2.TabIndex = 10;
@@ -231,7 +231,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 58);
+            this.label1.Location = new System.Drawing.Point(126, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 29);
             this.label1.TabIndex = 9;

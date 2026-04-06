@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Bibliofusion_prototype
+namespace WindowsFormsApp1
 {
-    public partial class Form_Jouet : Form
+    public partial class Form_Livres : Form
     {
-        public Form_Jouet()
+        public Form_Livres()
         {
             InitializeComponent();
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

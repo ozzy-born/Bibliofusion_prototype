@@ -30,30 +30,33 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.selection_emprunts = new System.Windows.Forms.CheckedListBox();
             this.filtre_recherche = new System.Windows.Forms.CheckedListBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.Connexion = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.checkedListBox3 = new System.Windows.Forms.CheckedListBox();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -71,7 +74,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.selection_emprunts);
+            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.Controls.Add(this.filtre_recherche);
             this.tabPage1.Controls.Add(this.textBox2);
             this.tabPage1.Controls.Add(this.label1);
@@ -83,15 +86,6 @@
             this.tabPage1.Size = new System.Drawing.Size(997, 699);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nouvel emprunt";
-            // 
-            // selection_emprunts
-            // 
-            this.selection_emprunts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.selection_emprunts.FormattingEnabled = true;
-            this.selection_emprunts.Location = new System.Drawing.Point(350, 180);
-            this.selection_emprunts.Name = "selection_emprunts";
-            this.selection_emprunts.Size = new System.Drawing.Size(620, 445);
-            this.selection_emprunts.TabIndex = 68;
             // 
             // filtre_recherche
             // 
@@ -151,7 +145,7 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.checkedListBox1);
+            this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Controls.Add(this.checkedListBox2);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Controls.Add(this.label2);
@@ -163,15 +157,6 @@
             this.tabPage2.Size = new System.Drawing.Size(997, 699);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Enregister un retour";
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(350, 180);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(620, 445);
-            this.checkedListBox1.TabIndex = 68;
             // 
             // checkedListBox2
             // 
@@ -231,7 +216,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage3.Controls.Add(this.checkedListBox3);
+            this.tabPage3.Controls.Add(this.dataGridView3);
             this.tabPage3.Controls.Add(this.checkedListBox4);
             this.tabPage3.Controls.Add(this.textBox4);
             this.tabPage3.Controls.Add(this.label3);
@@ -243,15 +228,6 @@
             this.tabPage3.Size = new System.Drawing.Size(997, 699);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Reserver un article";
-            // 
-            // checkedListBox3
-            // 
-            this.checkedListBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.checkedListBox3.FormattingEnabled = true;
-            this.checkedListBox3.Location = new System.Drawing.Point(350, 180);
-            this.checkedListBox3.Name = "checkedListBox3";
-            this.checkedListBox3.Size = new System.Drawing.Size(620, 445);
-            this.checkedListBox3.TabIndex = 68;
             // 
             // checkedListBox4
             // 
@@ -308,6 +284,42 @@
             this.button2.Text = "Valider";
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView1.TabIndex = 67;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(350, 181);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView2.TabIndex = 67;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToOrderColumns = true;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(350, 180);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView3.TabIndex = 67;
+            // 
             // Form_Emprunts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,6 +337,9 @@
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -335,23 +350,23 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckedListBox checkedListBox3;
         private System.Windows.Forms.CheckedListBox checkedListBox4;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckedListBox selection_emprunts;
         private System.Windows.Forms.CheckedListBox filtre_recherche;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button Connexion;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }

@@ -35,7 +35,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Connexion = new System.Windows.Forms.Button();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -43,16 +42,18 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Title = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.listView4 = new System.Windows.Forms.ListView();
+            this.NaissanceAdherent_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabPage2.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.listView4);
+            this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
             this.tabPage2.Controls.Add(this.textBox22);
             this.tabPage2.Controls.Add(this.label3);
@@ -99,9 +100,9 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage1.Controls.Add(this.NaissanceAdherent_dateTimePicker);
             this.tabPage1.Controls.Add(this.Connexion);
             this.tabPage1.Controls.Add(this.textBox7);
-            this.tabPage1.Controls.Add(this.textBox6);
             this.tabPage1.Controls.Add(this.textBox5);
             this.tabPage1.Controls.Add(this.textBox4);
             this.tabPage1.Controls.Add(this.textBox3);
@@ -136,17 +137,6 @@
             this.textBox7.Size = new System.Drawing.Size(940, 30);
             this.textBox7.TabIndex = 38;
             this.textBox7.Text = "Nom";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox6.Location = new System.Drawing.Point(30, 215);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(940, 30);
-            this.textBox6.TabIndex = 37;
-            this.textBox6.Text = "Date de naissance JJ/MM/AAAA";
             // 
             // textBox5
             // 
@@ -226,14 +216,29 @@
             this.tabControl1.Size = new System.Drawing.Size(1004, 725);
             this.tabControl1.TabIndex = 1;
             // 
-            // listView4
+            // NaissanceAdherent_dateTimePicker
             // 
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(350, 180);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(620, 444);
-            this.listView4.TabIndex = 58;
-            this.listView4.UseCompatibleStateImageBehavior = false;
+            this.NaissanceAdherent_dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NaissanceAdherent_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NaissanceAdherent_dateTimePicker.Location = new System.Drawing.Point(30, 215);
+            this.NaissanceAdherent_dateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.NaissanceAdherent_dateTimePicker.Name = "NaissanceAdherent_dateTimePicker";
+            this.NaissanceAdherent_dateTimePicker.Size = new System.Drawing.Size(940, 30);
+            this.NaissanceAdherent_dateTimePicker.TabIndex = 43;
+            this.NaissanceAdherent_dateTimePicker.Tag = "";
+            this.NaissanceAdherent_dateTimePicker.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView1.TabIndex = 60;
             // 
             // Form_Administrateurs
             // 
@@ -250,6 +255,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -263,7 +269,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button Connexion;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
@@ -271,6 +276,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
