@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
                 Prenom = PrenomResponsable_textBox.Text;
                 Responsable2NonAdherent_label.Text = "Responsable 2 : " + Nom + " " + Prenom;
                 Responsable2Adherent_label.Text = "Responsable 2 : " + Nom + " " + Prenom;
-
+            }
             if (Responsable1Adherent_label.Text == "Responsable 1")
             {
                 Nom = NomResponsable_textBox.Text;
@@ -38,6 +38,27 @@ namespace WindowsFormsApp1
                 Responsable1NonAdherent_label.Text = "Responsable 1 : " + Nom + " " + Prenom;
                 Responsable1Adherent_label.Text = "Responsable 1 : " + Nom + " " + Prenom;
             }
+        }
+
+        private void CheckBox_Change()
+        {
+            if (Eleve_checkBox.Checked == true)
+            {
+                ResponsableAdherent_tabPage.Enabled = true;
+                ResponsableNonAdherent_tabPage.Enabled = true;
+                Classe_tabPage.Enabled = true;
+            }
+            if (Eleve_checkBox.Checked == false && Mineur_checkBox.Checked == true)
+            {
+                ResponsableAdherent_tabPage.Enabled = true;
+                ResponsableNonAdherent_tabPage.Enabled = true;
+                Classe_tabPage.Enabled = false;
+            }
+            if (Eleve_checkBox.Checked == false && Mineur_checkBox.Checked == false)
+            {
+                ResponsableAdherent_tabPage.Enabled = false;
+                ResponsableNonAdherent_tabPage.Enabled = false;
+                Classe_tabPage.Enabled = false;
             }
         }
         private void AjoutResponsableNonAdherent_button_Click(object sender, EventArgs e)
@@ -53,34 +74,11 @@ namespace WindowsFormsApp1
 
         private void Eleve_checkBox_CheckedChanged(object sender, EventArgs e)
         {
-            if (Eleve_checkBox.Checked == true)
-            {
-                ResponsableAdherent_tabPage.Enabled = true;
-                ResponsableNonAdherent_tabPage.Enabled = true;
-                Classe_tabPage.Enabled = true;
-            }
-            else
-            {
-                ResponsableAdherent_tabPage.Enabled = false;
-                ResponsableNonAdherent_tabPage.Enabled = false;
-                Classe_tabPage.Enabled = false;
-            }
+            CheckBox_Change();
         }
         private void Mineur_checkBox_CheckedChanged(object sender, EventArgs e)
         {
-
-            if (Mineur_checkBox.Checked == true)
-            {
-                ResponsableAdherent_tabPage.Enabled = true;
-                ResponsableNonAdherent_tabPage.Enabled = true;
-                Classe_tabPage.Enabled = false;
-            }
-            else
-            {
-                ResponsableAdherent_tabPage.Enabled = false;
-                ResponsableNonAdherent_tabPage.Enabled = false;
-                Classe_tabPage.Enabled = false;
-            }
+            CheckBox_Change();
         }
 
         private void AdherentValider_button_Click(object sender, EventArgs e)
