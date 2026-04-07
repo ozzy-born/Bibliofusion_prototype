@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.EditAdherent_tabPage = new System.Windows.Forms.TabPage();
             this.ResultatAdherent_dataGridView = new System.Windows.Forms.DataGridView();
             this.FiltresRechercheAdherent_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BiblioFusion_label2 = new System.Windows.Forms.Label();
+            this.AjoutAdherent_tabPage = new System.Windows.Forms.TabPage();
             this.Eleve_checkBox = new System.Windows.Forms.CheckBox();
             this.CodePostalAdherant_textBox = new System.Windows.Forms.TextBox();
             this.NaissanceAdherent_dateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -66,7 +66,7 @@
             this.Classe_label = new System.Windows.Forms.Label();
             this.ResultatClasse_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherClasse_textBox = new System.Windows.Forms.TextBox();
-            this.AdherentValider_button = new System.Windows.Forms.Button();
+            this.AdherentAjoutValider_button = new System.Windows.Forms.Button();
             this.Mineur_checkBox = new System.Windows.Forms.CheckBox();
             this.NomAdherant_textBox = new System.Windows.Forms.TextBox();
             this.MobileAdherant_textBox = new System.Windows.Forms.TextBox();
@@ -74,11 +74,11 @@
             this.PrenomAdherant_textBox = new System.Windows.Forms.TextBox();
             this.MailAdherant_textBox = new System.Windows.Forms.TextBox();
             this.FixeAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.Title = new System.Windows.Forms.Label();
+            this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.Adherent_tabControl = new System.Windows.Forms.TabControl();
-            this.tabPage2.SuspendLayout();
+            this.EditAdherent_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).BeginInit();
-            this.tabPage1.SuspendLayout();
+            this.AjoutAdherent_tabPage.SuspendLayout();
             this.Responsable_tabControl.SuspendLayout();
             this.ResponsableAdherent_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RechercherResponsableAdherent_dataGridView)).BeginInit();
@@ -88,19 +88,19 @@
             this.Adherent_tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage2
+            // EditAdherent_tabPage
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.ResultatAdherent_dataGridView);
-            this.tabPage2.Controls.Add(this.FiltresRechercheAdherent_checkedListBox);
-            this.tabPage2.Controls.Add(this.RechercherAdherant_textBox);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(996, 699);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Editer les adhérents";
+            this.EditAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditAdherent_tabPage.Controls.Add(this.ResultatAdherent_dataGridView);
+            this.EditAdherent_tabPage.Controls.Add(this.FiltresRechercheAdherent_checkedListBox);
+            this.EditAdherent_tabPage.Controls.Add(this.RechercherAdherant_textBox);
+            this.EditAdherent_tabPage.Controls.Add(this.BiblioFusion_label2);
+            this.EditAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditAdherent_tabPage.Name = "EditAdherent_tabPage";
+            this.EditAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.EditAdherent_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.EditAdherent_tabPage.TabIndex = 1;
+            this.EditAdherent_tabPage.Text = "Editer les adhérents";
             // 
             // ResultatAdherent_dataGridView
             // 
@@ -135,41 +135,41 @@
             this.RechercherAdherant_textBox.TabIndex = 52;
             this.RechercherAdherant_textBox.Text = "Rechercher un adhérent";
             // 
-            // label3
+            // BiblioFusion_label2
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 25F);
-            this.label3.Location = new System.Drawing.Point(400, 35);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 42);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "BiblioFusion";
+            this.BiblioFusion_label2.AutoSize = true;
+            this.BiblioFusion_label2.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label2.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label2.Name = "BiblioFusion_label2";
+            this.BiblioFusion_label2.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label2.TabIndex = 51;
+            this.BiblioFusion_label2.Text = "BiblioFusion";
             // 
-            // tabPage1
+            // AjoutAdherent_tabPage
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.Eleve_checkBox);
-            this.tabPage1.Controls.Add(this.CodePostalAdherant_textBox);
-            this.tabPage1.Controls.Add(this.NaissanceAdherent_dateTimePicker);
-            this.tabPage1.Controls.Add(this.Responsable_tabControl);
-            this.tabPage1.Controls.Add(this.AdherentValider_button);
-            this.tabPage1.Controls.Add(this.Mineur_checkBox);
-            this.tabPage1.Controls.Add(this.NomAdherant_textBox);
-            this.tabPage1.Controls.Add(this.MobileAdherant_textBox);
-            this.tabPage1.Controls.Add(this.AdresseAdherant_textBox);
-            this.tabPage1.Controls.Add(this.PrenomAdherant_textBox);
-            this.tabPage1.Controls.Add(this.MailAdherant_textBox);
-            this.tabPage1.Controls.Add(this.FixeAdherant_textBox);
-            this.tabPage1.Controls.Add(this.Title);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(996, 699);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Ajouter un adhérent";
+            this.AjoutAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutAdherent_tabPage.Controls.Add(this.Eleve_checkBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.CodePostalAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.NaissanceAdherent_dateTimePicker);
+            this.AjoutAdherent_tabPage.Controls.Add(this.Responsable_tabControl);
+            this.AjoutAdherent_tabPage.Controls.Add(this.AdherentAjoutValider_button);
+            this.AjoutAdherent_tabPage.Controls.Add(this.Mineur_checkBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.NomAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.MobileAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.AdresseAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.PrenomAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.MailAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.FixeAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.BiblioFusion_label1);
+            this.AjoutAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutAdherent_tabPage.Name = "AjoutAdherent_tabPage";
+            this.AjoutAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.AjoutAdherent_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.AjoutAdherent_tabPage.TabIndex = 0;
+            this.AjoutAdherent_tabPage.Text = "Ajouter un adhérent";
             // 
             // Eleve_checkBox
             // 
@@ -550,17 +550,17 @@
             this.RechercherClasse_textBox.TabIndex = 35;
             this.RechercherClasse_textBox.Text = "Rechercher une classe";
             // 
-            // AdherentValider_button
+            // AdherentAjoutValider_button
             // 
-            this.AdherentValider_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.AdherentValider_button.Location = new System.Drawing.Point(850, 655);
-            this.AdherentValider_button.Margin = new System.Windows.Forms.Padding(8);
-            this.AdherentValider_button.Name = "AdherentValider_button";
-            this.AdherentValider_button.Size = new System.Drawing.Size(101, 32);
-            this.AdherentValider_button.TabIndex = 40;
-            this.AdherentValider_button.Text = "Valider";
-            this.AdherentValider_button.UseVisualStyleBackColor = true;
-            this.AdherentValider_button.Click += new System.EventHandler(this.AdherentValider_button_Click);
+            this.AdherentAjoutValider_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.AdherentAjoutValider_button.Location = new System.Drawing.Point(850, 655);
+            this.AdherentAjoutValider_button.Margin = new System.Windows.Forms.Padding(8);
+            this.AdherentAjoutValider_button.Name = "AdherentAjoutValider_button";
+            this.AdherentAjoutValider_button.Size = new System.Drawing.Size(101, 32);
+            this.AdherentAjoutValider_button.TabIndex = 40;
+            this.AdherentAjoutValider_button.Text = "Valider";
+            this.AdherentAjoutValider_button.UseVisualStyleBackColor = true;
+            this.AdherentAjoutValider_button.Click += new System.EventHandler(this.AdherentValider_button_Click);
             // 
             // Mineur_checkBox
             // 
@@ -641,23 +641,23 @@
             this.FixeAdherant_textBox.TabIndex = 32;
             this.FixeAdherant_textBox.Text = "N° de fixe";
             // 
-            // Title
+            // BiblioFusion_label1
             // 
-            this.Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Impact", 25F);
-            this.Title.Location = new System.Drawing.Point(400, 35);
-            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(191, 42);
-            this.Title.TabIndex = 31;
-            this.Title.Text = "BiblioFusion";
+            this.BiblioFusion_label1.AutoSize = true;
+            this.BiblioFusion_label1.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label1.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label1.Name = "BiblioFusion_label1";
+            this.BiblioFusion_label1.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label1.TabIndex = 31;
+            this.BiblioFusion_label1.Text = "BiblioFusion";
             // 
             // Adherent_tabControl
             // 
-            this.Adherent_tabControl.Controls.Add(this.tabPage1);
-            this.Adherent_tabControl.Controls.Add(this.tabPage2);
+            this.Adherent_tabControl.Controls.Add(this.AjoutAdherent_tabPage);
+            this.Adherent_tabControl.Controls.Add(this.EditAdherent_tabPage);
             this.Adherent_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Adherent_tabControl.Name = "Adherent_tabControl";
             this.Adherent_tabControl.SelectedIndex = 0;
@@ -675,11 +675,11 @@
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "Form_Adherents";
             this.Text = "BiblioFusion - adhérents";
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
+            this.EditAdherent_tabPage.ResumeLayout(false);
+            this.EditAdherent_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.AjoutAdherent_tabPage.ResumeLayout(false);
+            this.AjoutAdherent_tabPage.PerformLayout();
             this.Responsable_tabControl.ResumeLayout(false);
             this.ResponsableAdherent_tabPage.ResumeLayout(false);
             this.ResponsableAdherent_tabPage.PerformLayout();
@@ -696,8 +696,8 @@
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage EditAdherent_tabPage;
+        private System.Windows.Forms.TabPage AjoutAdherent_tabPage;
         private System.Windows.Forms.TabControl Responsable_tabControl;
         private System.Windows.Forms.TabPage ResponsableAdherent_tabPage;
         private System.Windows.Forms.TextBox RechercherResponsableAdherent_textBox;
@@ -708,7 +708,7 @@
         private System.Windows.Forms.TextBox PrenomResponsable_textBox;
         private System.Windows.Forms.TextBox MailResponsable_textBox;
         private System.Windows.Forms.TextBox FixeResponsable_textBox;
-        private System.Windows.Forms.Button AdherentValider_button;
+        private System.Windows.Forms.Button AdherentAjoutValider_button;
         private System.Windows.Forms.CheckBox Mineur_checkBox;
         private System.Windows.Forms.TextBox NomAdherant_textBox;
         private System.Windows.Forms.TextBox MobileAdherant_textBox;
@@ -716,10 +716,10 @@
         private System.Windows.Forms.TextBox PrenomAdherant_textBox;
         private System.Windows.Forms.TextBox MailAdherant_textBox;
         private System.Windows.Forms.TextBox FixeAdherant_textBox;
-        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label BiblioFusion_label1;
         private System.Windows.Forms.TabControl Adherent_tabControl;
         private System.Windows.Forms.TextBox RechercherAdherant_textBox;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.CheckedListBox FiltresRechercheAdherent_checkedListBox;
         private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
         private System.Windows.Forms.DateTimePicker NaissanceResponsable_dateTimePicker;

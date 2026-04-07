@@ -30,33 +30,33 @@
         {
             this.Emprunts_tabControl = new System.Windows.Forms.TabControl();
             this.NouvelEmprunt_tabPage = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.filtre_recherche = new System.Windows.Forms.CheckedListBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.Connexion = new System.Windows.Forms.Button();
+            this.ResultatEmprunt_dataGridView = new System.Windows.Forms.DataGridView();
+            this.FiltreDeRechercheEmprunt_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.RechercherEmprunt_textBox = new System.Windows.Forms.TextBox();
+            this.BiblioFusion_label1 = new System.Windows.Forms.Label();
+            this.ValiderEmprunt_button = new System.Windows.Forms.Button();
             this.EnregistrerUnRetour_tabPage = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ResultatRetour_dataGridView = new System.Windows.Forms.DataGridView();
+            this.FiltreDeRechercheRetour_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.RechercherRetour_textBox = new System.Windows.Forms.TextBox();
+            this.BiblioFusion_label2 = new System.Windows.Forms.Label();
+            this.ValiderRetour_button = new System.Windows.Forms.Button();
             this.ReserverUnArticle_tabPage = new System.Windows.Forms.TabPage();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ResultatResever_dataGridView = new System.Windows.Forms.DataGridView();
+            this.FiltreDeRechercheReserver_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.RechercherReserver_textBox = new System.Windows.Forms.TextBox();
+            this.BiblioFusion_label3 = new System.Windows.Forms.Label();
+            this.ValiderReserver_button = new System.Windows.Forms.Button();
+            this.NomAdherentEmprunt_label = new System.Windows.Forms.Label();
+            this.NomAdherentRetour_label = new System.Windows.Forms.Label();
+            this.NomAdherentReserver_label = new System.Windows.Forms.Label();
             this.Emprunts_tabControl.SuspendLayout();
             this.NouvelEmprunt_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatEmprunt_dataGridView)).BeginInit();
             this.EnregistrerUnRetour_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatRetour_dataGridView)).BeginInit();
             this.ReserverUnArticle_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatResever_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // Emprunts_tabControl
@@ -74,12 +74,12 @@
             // NouvelEmprunt_tabPage
             // 
             this.NouvelEmprunt_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.NouvelEmprunt_tabPage.Controls.Add(this.dataGridView1);
-            this.NouvelEmprunt_tabPage.Controls.Add(this.filtre_recherche);
-            this.NouvelEmprunt_tabPage.Controls.Add(this.textBox2);
-            this.NouvelEmprunt_tabPage.Controls.Add(this.label1);
-            this.NouvelEmprunt_tabPage.Controls.Add(this.textBox8);
-            this.NouvelEmprunt_tabPage.Controls.Add(this.Connexion);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.NomAdherentEmprunt_label);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.ResultatEmprunt_dataGridView);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.FiltreDeRechercheEmprunt_checkedListBox);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.RechercherEmprunt_textBox);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.BiblioFusion_label1);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.ValiderEmprunt_button);
             this.NouvelEmprunt_tabPage.Location = new System.Drawing.Point(4, 22);
             this.NouvelEmprunt_tabPage.Name = "NouvelEmprunt_tabPage";
             this.NouvelEmprunt_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -87,82 +87,71 @@
             this.NouvelEmprunt_tabPage.TabIndex = 0;
             this.NouvelEmprunt_tabPage.Text = "Nouvel emprunt";
             // 
-            // dataGridView1
+            // ResultatEmprunt_dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView1.TabIndex = 67;
+            this.ResultatEmprunt_dataGridView.AllowUserToAddRows = false;
+            this.ResultatEmprunt_dataGridView.AllowUserToDeleteRows = false;
+            this.ResultatEmprunt_dataGridView.AllowUserToOrderColumns = true;
+            this.ResultatEmprunt_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatEmprunt_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatEmprunt_dataGridView.Name = "ResultatEmprunt_dataGridView";
+            this.ResultatEmprunt_dataGridView.ReadOnly = true;
+            this.ResultatEmprunt_dataGridView.Size = new System.Drawing.Size(620, 445);
+            this.ResultatEmprunt_dataGridView.TabIndex = 67;
             // 
-            // filtre_recherche
+            // FiltreDeRechercheEmprunt_checkedListBox
             // 
-            this.filtre_recherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.filtre_recherche.FormattingEnabled = true;
-            this.filtre_recherche.Location = new System.Drawing.Point(30, 180);
-            this.filtre_recherche.Name = "filtre_recherche";
-            this.filtre_recherche.Size = new System.Drawing.Size(300, 445);
-            this.filtre_recherche.TabIndex = 66;
+            this.FiltreDeRechercheEmprunt_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.FiltreDeRechercheEmprunt_checkedListBox.FormattingEnabled = true;
+            this.FiltreDeRechercheEmprunt_checkedListBox.Location = new System.Drawing.Point(30, 180);
+            this.FiltreDeRechercheEmprunt_checkedListBox.Name = "FiltreDeRechercheEmprunt_checkedListBox";
+            this.FiltreDeRechercheEmprunt_checkedListBox.Size = new System.Drawing.Size(300, 445);
+            this.FiltreDeRechercheEmprunt_checkedListBox.TabIndex = 66;
             // 
-            // textBox2
+            // RechercherEmprunt_textBox
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RechercherEmprunt_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox2.Location = new System.Drawing.Point(125, 115);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(750, 30);
-            this.textBox2.TabIndex = 65;
-            this.textBox2.Text = "Rechercher un livre ou un jouet";
+            this.RechercherEmprunt_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherEmprunt_textBox.Location = new System.Drawing.Point(125, 115);
+            this.RechercherEmprunt_textBox.Name = "RechercherEmprunt_textBox";
+            this.RechercherEmprunt_textBox.Size = new System.Drawing.Size(750, 30);
+            this.RechercherEmprunt_textBox.TabIndex = 65;
+            this.RechercherEmprunt_textBox.Text = "Rechercher un livre ou un jouet";
             // 
-            // label1
+            // BiblioFusion_label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 25F);
-            this.label1.Location = new System.Drawing.Point(400, 35);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(191, 42);
-            this.label1.TabIndex = 64;
-            this.label1.Text = "BiblioFusion";
+            this.BiblioFusion_label1.AutoSize = true;
+            this.BiblioFusion_label1.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label1.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label1.Name = "BiblioFusion_label1";
+            this.BiblioFusion_label1.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label1.TabIndex = 64;
+            this.BiblioFusion_label1.Text = "BiblioFusion";
             // 
-            // textBox8
+            // ValiderEmprunt_button
             // 
-            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox8.Location = new System.Drawing.Point(650, 65);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(320, 30);
-            this.textBox8.TabIndex = 63;
-            this.textBox8.Text = "Adhérant";
-            // 
-            // Connexion
-            // 
-            this.Connexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.Connexion.Location = new System.Drawing.Point(850, 640);
-            this.Connexion.Margin = new System.Windows.Forms.Padding(8);
-            this.Connexion.Name = "Connexion";
-            this.Connexion.Size = new System.Drawing.Size(101, 32);
-            this.Connexion.TabIndex = 62;
-            this.Connexion.Text = "Valider";
-            this.Connexion.UseVisualStyleBackColor = true;
+            this.ValiderEmprunt_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ValiderEmprunt_button.Location = new System.Drawing.Point(850, 640);
+            this.ValiderEmprunt_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ValiderEmprunt_button.Name = "ValiderEmprunt_button";
+            this.ValiderEmprunt_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderEmprunt_button.TabIndex = 62;
+            this.ValiderEmprunt_button.Text = "Valider";
+            this.ValiderEmprunt_button.UseVisualStyleBackColor = true;
             // 
             // EnregistrerUnRetour_tabPage
             // 
             this.EnregistrerUnRetour_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.dataGridView2);
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.checkedListBox2);
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.textBox1);
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.label2);
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.textBox3);
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.button1);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.NomAdherentRetour_label);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.ResultatRetour_dataGridView);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.FiltreDeRechercheRetour_checkedListBox);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.RechercherRetour_textBox);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.BiblioFusion_label2);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.ValiderRetour_button);
             this.EnregistrerUnRetour_tabPage.Location = new System.Drawing.Point(4, 22);
             this.EnregistrerUnRetour_tabPage.Name = "EnregistrerUnRetour_tabPage";
             this.EnregistrerUnRetour_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -170,82 +159,71 @@
             this.EnregistrerUnRetour_tabPage.TabIndex = 1;
             this.EnregistrerUnRetour_tabPage.Text = "Enregister un retour";
             // 
-            // dataGridView2
+            // ResultatRetour_dataGridView
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(350, 181);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView2.TabIndex = 67;
+            this.ResultatRetour_dataGridView.AllowUserToAddRows = false;
+            this.ResultatRetour_dataGridView.AllowUserToDeleteRows = false;
+            this.ResultatRetour_dataGridView.AllowUserToOrderColumns = true;
+            this.ResultatRetour_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatRetour_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatRetour_dataGridView.Name = "ResultatRetour_dataGridView";
+            this.ResultatRetour_dataGridView.ReadOnly = true;
+            this.ResultatRetour_dataGridView.Size = new System.Drawing.Size(620, 445);
+            this.ResultatRetour_dataGridView.TabIndex = 67;
             // 
-            // checkedListBox2
+            // FiltreDeRechercheRetour_checkedListBox
             // 
-            this.checkedListBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.checkedListBox2.FormattingEnabled = true;
-            this.checkedListBox2.Location = new System.Drawing.Point(30, 180);
-            this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(300, 445);
-            this.checkedListBox2.TabIndex = 66;
+            this.FiltreDeRechercheRetour_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.FiltreDeRechercheRetour_checkedListBox.FormattingEnabled = true;
+            this.FiltreDeRechercheRetour_checkedListBox.Location = new System.Drawing.Point(30, 180);
+            this.FiltreDeRechercheRetour_checkedListBox.Name = "FiltreDeRechercheRetour_checkedListBox";
+            this.FiltreDeRechercheRetour_checkedListBox.Size = new System.Drawing.Size(300, 445);
+            this.FiltreDeRechercheRetour_checkedListBox.TabIndex = 66;
             // 
-            // textBox1
+            // RechercherRetour_textBox
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RechercherRetour_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox1.Location = new System.Drawing.Point(125, 115);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(750, 30);
-            this.textBox1.TabIndex = 65;
-            this.textBox1.Text = "Rechercher un livre ou un jouet";
+            this.RechercherRetour_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherRetour_textBox.Location = new System.Drawing.Point(125, 115);
+            this.RechercherRetour_textBox.Name = "RechercherRetour_textBox";
+            this.RechercherRetour_textBox.Size = new System.Drawing.Size(750, 30);
+            this.RechercherRetour_textBox.TabIndex = 65;
+            this.RechercherRetour_textBox.Text = "Rechercher un livre ou un jouet";
             // 
-            // label2
+            // BiblioFusion_label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 25F);
-            this.label2.Location = new System.Drawing.Point(400, 35);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 42);
-            this.label2.TabIndex = 64;
-            this.label2.Text = "BiblioFusion";
+            this.BiblioFusion_label2.AutoSize = true;
+            this.BiblioFusion_label2.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label2.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label2.Name = "BiblioFusion_label2";
+            this.BiblioFusion_label2.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label2.TabIndex = 64;
+            this.BiblioFusion_label2.Text = "BiblioFusion";
             // 
-            // textBox3
+            // ValiderRetour_button
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox3.Location = new System.Drawing.Point(650, 65);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(320, 30);
-            this.textBox3.TabIndex = 63;
-            this.textBox3.Text = "Adhérant";
-            // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.button1.Location = new System.Drawing.Point(850, 640);
-            this.button1.Margin = new System.Windows.Forms.Padding(8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 32);
-            this.button1.TabIndex = 62;
-            this.button1.Text = "Valider";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ValiderRetour_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ValiderRetour_button.Location = new System.Drawing.Point(850, 640);
+            this.ValiderRetour_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ValiderRetour_button.Name = "ValiderRetour_button";
+            this.ValiderRetour_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderRetour_button.TabIndex = 62;
+            this.ValiderRetour_button.Text = "Valider";
+            this.ValiderRetour_button.UseVisualStyleBackColor = true;
             // 
             // ReserverUnArticle_tabPage
             // 
             this.ReserverUnArticle_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ReserverUnArticle_tabPage.Controls.Add(this.dataGridView3);
-            this.ReserverUnArticle_tabPage.Controls.Add(this.checkedListBox4);
-            this.ReserverUnArticle_tabPage.Controls.Add(this.textBox4);
-            this.ReserverUnArticle_tabPage.Controls.Add(this.label3);
-            this.ReserverUnArticle_tabPage.Controls.Add(this.textBox5);
-            this.ReserverUnArticle_tabPage.Controls.Add(this.button2);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.NomAdherentReserver_label);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.ResultatResever_dataGridView);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.FiltreDeRechercheReserver_checkedListBox);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.RechercherReserver_textBox);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.BiblioFusion_label3);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.ValiderReserver_button);
             this.ReserverUnArticle_tabPage.Location = new System.Drawing.Point(4, 22);
             this.ReserverUnArticle_tabPage.Name = "ReserverUnArticle_tabPage";
             this.ReserverUnArticle_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -253,72 +231,91 @@
             this.ReserverUnArticle_tabPage.TabIndex = 2;
             this.ReserverUnArticle_tabPage.Text = "Reserver un article";
             // 
-            // dataGridView3
+            // ResultatResever_dataGridView
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToOrderColumns = true;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(350, 180);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView3.TabIndex = 67;
+            this.ResultatResever_dataGridView.AllowUserToAddRows = false;
+            this.ResultatResever_dataGridView.AllowUserToDeleteRows = false;
+            this.ResultatResever_dataGridView.AllowUserToOrderColumns = true;
+            this.ResultatResever_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatResever_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatResever_dataGridView.Name = "ResultatResever_dataGridView";
+            this.ResultatResever_dataGridView.ReadOnly = true;
+            this.ResultatResever_dataGridView.Size = new System.Drawing.Size(620, 445);
+            this.ResultatResever_dataGridView.TabIndex = 67;
             // 
-            // checkedListBox4
+            // FiltreDeRechercheReserver_checkedListBox
             // 
-            this.checkedListBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.checkedListBox4.FormattingEnabled = true;
-            this.checkedListBox4.Location = new System.Drawing.Point(30, 180);
-            this.checkedListBox4.Name = "checkedListBox4";
-            this.checkedListBox4.Size = new System.Drawing.Size(300, 445);
-            this.checkedListBox4.TabIndex = 66;
+            this.FiltreDeRechercheReserver_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.FiltreDeRechercheReserver_checkedListBox.FormattingEnabled = true;
+            this.FiltreDeRechercheReserver_checkedListBox.Location = new System.Drawing.Point(30, 180);
+            this.FiltreDeRechercheReserver_checkedListBox.Name = "FiltreDeRechercheReserver_checkedListBox";
+            this.FiltreDeRechercheReserver_checkedListBox.Size = new System.Drawing.Size(300, 445);
+            this.FiltreDeRechercheReserver_checkedListBox.TabIndex = 66;
             // 
-            // textBox4
+            // RechercherReserver_textBox
             // 
-            this.textBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RechercherReserver_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox4.Location = new System.Drawing.Point(125, 115);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(750, 30);
-            this.textBox4.TabIndex = 65;
-            this.textBox4.Text = "Rechercher un livre ou un jouet";
+            this.RechercherReserver_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherReserver_textBox.Location = new System.Drawing.Point(125, 115);
+            this.RechercherReserver_textBox.Name = "RechercherReserver_textBox";
+            this.RechercherReserver_textBox.Size = new System.Drawing.Size(750, 30);
+            this.RechercherReserver_textBox.TabIndex = 65;
+            this.RechercherReserver_textBox.Text = "Rechercher un livre ou un jouet";
             // 
-            // label3
+            // BiblioFusion_label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 25F);
-            this.label3.Location = new System.Drawing.Point(400, 35);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 42);
-            this.label3.TabIndex = 64;
-            this.label3.Text = "BiblioFusion";
+            this.BiblioFusion_label3.AutoSize = true;
+            this.BiblioFusion_label3.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label3.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label3.Name = "BiblioFusion_label3";
+            this.BiblioFusion_label3.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label3.TabIndex = 64;
+            this.BiblioFusion_label3.Text = "BiblioFusion";
             // 
-            // textBox5
+            // ValiderReserver_button
             // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox5.Location = new System.Drawing.Point(650, 65);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(320, 30);
-            this.textBox5.TabIndex = 63;
-            this.textBox5.Text = "Adhérant";
+            this.ValiderReserver_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ValiderReserver_button.Location = new System.Drawing.Point(850, 640);
+            this.ValiderReserver_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ValiderReserver_button.Name = "ValiderReserver_button";
+            this.ValiderReserver_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderReserver_button.TabIndex = 62;
+            this.ValiderReserver_button.Text = "Valider";
+            this.ValiderReserver_button.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // NomAdherentEmprunt_label
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.button2.Location = new System.Drawing.Point(850, 640);
-            this.button2.Margin = new System.Windows.Forms.Padding(8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(101, 32);
-            this.button2.TabIndex = 62;
-            this.button2.Text = "Valider";
-            this.button2.UseVisualStyleBackColor = true;
+            this.NomAdherentEmprunt_label.AutoSize = true;
+            this.NomAdherentEmprunt_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomAdherentEmprunt_label.Location = new System.Drawing.Point(650, 65);
+            this.NomAdherentEmprunt_label.Name = "NomAdherentEmprunt_label";
+            this.NomAdherentEmprunt_label.Size = new System.Drawing.Size(149, 25);
+            this.NomAdherentEmprunt_label.TabIndex = 68;
+            this.NomAdherentEmprunt_label.Text = "Nom Adherent";
+            // 
+            // NomAdherentRetour_label
+            // 
+            this.NomAdherentRetour_label.AutoSize = true;
+            this.NomAdherentRetour_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomAdherentRetour_label.Location = new System.Drawing.Point(650, 65);
+            this.NomAdherentRetour_label.Name = "NomAdherentRetour_label";
+            this.NomAdherentRetour_label.Size = new System.Drawing.Size(149, 25);
+            this.NomAdherentRetour_label.TabIndex = 69;
+            this.NomAdherentRetour_label.Text = "Nom Adherent";
+            // 
+            // NomAdherentReserver_label
+            // 
+            this.NomAdherentReserver_label.AutoSize = true;
+            this.NomAdherentReserver_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomAdherentReserver_label.Location = new System.Drawing.Point(650, 65);
+            this.NomAdherentReserver_label.Name = "NomAdherentReserver_label";
+            this.NomAdherentReserver_label.Size = new System.Drawing.Size(149, 25);
+            this.NomAdherentReserver_label.TabIndex = 69;
+            this.NomAdherentReserver_label.Text = "Nom Adherent";
             // 
             // Form_Emprunts
             // 
@@ -333,13 +330,13 @@
             this.Emprunts_tabControl.ResumeLayout(false);
             this.NouvelEmprunt_tabPage.ResumeLayout(false);
             this.NouvelEmprunt_tabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatEmprunt_dataGridView)).EndInit();
             this.EnregistrerUnRetour_tabPage.ResumeLayout(false);
             this.EnregistrerUnRetour_tabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatRetour_dataGridView)).EndInit();
             this.ReserverUnArticle_tabPage.ResumeLayout(false);
             this.ReserverUnArticle_tabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatResever_dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,23 +347,23 @@
         private System.Windows.Forms.TabPage NouvelEmprunt_tabPage;
         private System.Windows.Forms.TabPage EnregistrerUnRetour_tabPage;
         private System.Windows.Forms.TabPage ReserverUnArticle_tabPage;
-        private System.Windows.Forms.CheckedListBox checkedListBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckedListBox checkedListBox4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.CheckedListBox filtre_recherche;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button Connexion;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.CheckedListBox FiltreDeRechercheRetour_checkedListBox;
+        private System.Windows.Forms.TextBox RechercherRetour_textBox;
+        private System.Windows.Forms.Label BiblioFusion_label2;
+        private System.Windows.Forms.Button ValiderRetour_button;
+        private System.Windows.Forms.CheckedListBox FiltreDeRechercheReserver_checkedListBox;
+        private System.Windows.Forms.TextBox RechercherReserver_textBox;
+        private System.Windows.Forms.Label BiblioFusion_label3;
+        private System.Windows.Forms.Button ValiderReserver_button;
+        private System.Windows.Forms.CheckedListBox FiltreDeRechercheEmprunt_checkedListBox;
+        private System.Windows.Forms.TextBox RechercherEmprunt_textBox;
+        private System.Windows.Forms.Label BiblioFusion_label1;
+        private System.Windows.Forms.Button ValiderEmprunt_button;
+        private System.Windows.Forms.DataGridView ResultatEmprunt_dataGridView;
+        private System.Windows.Forms.DataGridView ResultatRetour_dataGridView;
+        private System.Windows.Forms.DataGridView ResultatResever_dataGridView;
+        private System.Windows.Forms.Label NomAdherentEmprunt_label;
+        private System.Windows.Forms.Label NomAdherentRetour_label;
+        private System.Windows.Forms.Label NomAdherentReserver_label;
     }
 }

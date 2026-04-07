@@ -33,7 +33,7 @@
             this.Mdp_textBox = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.Label();
             this.MDP = new System.Windows.Forms.Label();
-            this.Title = new System.Windows.Forms.Label();
+            this.BiblioFusion_label = new System.Windows.Forms.Label();
             this.MdpOublie_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -96,18 +96,18 @@
             this.MDP.TabIndex = 4;
             this.MDP.Text = "Mot de Passe :";
             // 
-            // Title
+            // BiblioFusion_label
             // 
-            this.Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Impact", 25F);
-            this.Title.Location = new System.Drawing.Point(92, 30);
-            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(191, 42);
-            this.Title.TabIndex = 5;
-            this.Title.Text = "BiblioFusion";
+            this.BiblioFusion_label.AutoSize = true;
+            this.BiblioFusion_label.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label.Location = new System.Drawing.Point(92, 30);
+            this.BiblioFusion_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label.Name = "BiblioFusion_label";
+            this.BiblioFusion_label.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label.TabIndex = 5;
+            this.BiblioFusion_label.Text = "BiblioFusion";
             // 
             // MdpOublie_button
             // 
@@ -127,7 +127,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(363, 334);
             this.Controls.Add(this.MdpOublie_button);
-            this.Controls.Add(this.Title);
+            this.Controls.Add(this.BiblioFusion_label);
             this.Controls.Add(this.MDP);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.Mdp_textBox);
@@ -150,7 +150,7 @@
         private System.Windows.Forms.TextBox Mdp_textBox;
         private System.Windows.Forms.Label ID;
         private System.Windows.Forms.Label MDP;
-        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Label BiblioFusion_label;
         private System.Windows.Forms.Button MdpOublie_button;
     }
 }

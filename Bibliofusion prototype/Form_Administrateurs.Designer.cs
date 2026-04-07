@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
+            this.EditAdmin_tabPage = new System.Windows.Forms.TabPage();
+            this.ResultatAdmin_dataGridView = new System.Windows.Forms.DataGridView();
+            this.FiltresDeRechercheAdmin_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherAdmin_textBox = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BiblioFusion_label2 = new System.Windows.Forms.Label();
+            this.AjoutAdmin_tabPage = new System.Windows.Forms.TabPage();
+            this.CodePostalAdmin_textBox = new System.Windows.Forms.TextBox();
             this.NaissanceAdmin_dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.Connexion = new System.Windows.Forms.Button();
+            this.ValiderAjoutAdmin_button = new System.Windows.Forms.Button();
             this.NomAdmin_textBox = new System.Windows.Forms.TextBox();
             this.MobileAdmin_textBox = new System.Windows.Forms.TextBox();
             this.AdresseAdmin_textBox = new System.Windows.Forms.TextBox();
             this.PrenomAdmin_textBox = new System.Windows.Forms.TextBox();
             this.EmailAdmin_textBox = new System.Windows.Forms.TextBox();
             this.FixeAdmin_textBox = new System.Windows.Forms.TextBox();
-            this.Title = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.CodePostalAdmin_textBox = new System.Windows.Forms.TextBox();
-            this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
-            this.tabPage1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.BiblioFusion_label1 = new System.Windows.Forms.Label();
+            this.Admin_tabControl = new System.Windows.Forms.TabControl();
+            this.EditAdmin_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatAdmin_dataGridView)).BeginInit();
+            this.AjoutAdmin_tabPage.SuspendLayout();
+            this.Admin_tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabPage2
+            // EditAdmin_tabPage
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.dataGridView);
-            this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
-            this.tabPage2.Controls.Add(this.RechercherAdmin_textBox);
-            this.tabPage2.Controls.Add(this.label3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(996, 699);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Editer les administrateurs";
+            this.EditAdmin_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditAdmin_tabPage.Controls.Add(this.ResultatAdmin_dataGridView);
+            this.EditAdmin_tabPage.Controls.Add(this.FiltresDeRechercheAdmin_checkedListBox);
+            this.EditAdmin_tabPage.Controls.Add(this.RechercherAdmin_textBox);
+            this.EditAdmin_tabPage.Controls.Add(this.BiblioFusion_label2);
+            this.EditAdmin_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditAdmin_tabPage.Name = "EditAdmin_tabPage";
+            this.EditAdmin_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.EditAdmin_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.EditAdmin_tabPage.TabIndex = 1;
+            this.EditAdmin_tabPage.Text = "Editer les administrateurs";
             // 
-            // dataGridView
+            // ResultatAdmin_dataGridView
             // 
-            this.dataGridView.AllowUserToAddRows = false;
-            this.dataGridView.AllowUserToDeleteRows = false;
-            this.dataGridView.AllowUserToOrderColumns = true;
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(350, 180);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.ReadOnly = true;
-            this.dataGridView.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView.TabIndex = 60;
+            this.ResultatAdmin_dataGridView.AllowUserToAddRows = false;
+            this.ResultatAdmin_dataGridView.AllowUserToDeleteRows = false;
+            this.ResultatAdmin_dataGridView.AllowUserToOrderColumns = true;
+            this.ResultatAdmin_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatAdmin_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatAdmin_dataGridView.Name = "ResultatAdmin_dataGridView";
+            this.ResultatAdmin_dataGridView.ReadOnly = true;
+            this.ResultatAdmin_dataGridView.Size = new System.Drawing.Size(620, 444);
+            this.ResultatAdmin_dataGridView.TabIndex = 60;
             // 
-            // Filtres_de_Recherche
+            // FiltresDeRechercheAdmin_checkedListBox
             // 
-            this.Filtres_de_Recherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.Filtres_de_Recherche.FormattingEnabled = true;
-            this.Filtres_de_Recherche.Location = new System.Drawing.Point(30, 180);
-            this.Filtres_de_Recherche.Name = "Filtres_de_Recherche";
-            this.Filtres_de_Recherche.Size = new System.Drawing.Size(300, 445);
-            this.Filtres_de_Recherche.TabIndex = 55;
+            this.FiltresDeRechercheAdmin_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.FiltresDeRechercheAdmin_checkedListBox.FormattingEnabled = true;
+            this.FiltresDeRechercheAdmin_checkedListBox.Location = new System.Drawing.Point(30, 180);
+            this.FiltresDeRechercheAdmin_checkedListBox.Name = "FiltresDeRechercheAdmin_checkedListBox";
+            this.FiltresDeRechercheAdmin_checkedListBox.Size = new System.Drawing.Size(300, 445);
+            this.FiltresDeRechercheAdmin_checkedListBox.TabIndex = 55;
             // 
             // RechercherAdmin_textBox
             // 
@@ -97,38 +97,49 @@
             this.RechercherAdmin_textBox.TabIndex = 52;
             this.RechercherAdmin_textBox.Text = "Rechercher un Administrateur";
             // 
-            // label3
+            // BiblioFusion_label2
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Impact", 25F);
-            this.label3.Location = new System.Drawing.Point(400, 35);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(191, 42);
-            this.label3.TabIndex = 51;
-            this.label3.Text = "BiblioFusion";
+            this.BiblioFusion_label2.AutoSize = true;
+            this.BiblioFusion_label2.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label2.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label2.Name = "BiblioFusion_label2";
+            this.BiblioFusion_label2.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label2.TabIndex = 51;
+            this.BiblioFusion_label2.Text = "BiblioFusion";
             // 
-            // tabPage1
+            // AjoutAdmin_tabPage
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.CodePostalAdmin_textBox);
-            this.tabPage1.Controls.Add(this.NaissanceAdmin_dateTimePicker);
-            this.tabPage1.Controls.Add(this.Connexion);
-            this.tabPage1.Controls.Add(this.NomAdmin_textBox);
-            this.tabPage1.Controls.Add(this.MobileAdmin_textBox);
-            this.tabPage1.Controls.Add(this.AdresseAdmin_textBox);
-            this.tabPage1.Controls.Add(this.PrenomAdmin_textBox);
-            this.tabPage1.Controls.Add(this.EmailAdmin_textBox);
-            this.tabPage1.Controls.Add(this.FixeAdmin_textBox);
-            this.tabPage1.Controls.Add(this.Title);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(996, 699);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Ajouter un administrateur";
+            this.AjoutAdmin_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutAdmin_tabPage.Controls.Add(this.CodePostalAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.NaissanceAdmin_dateTimePicker);
+            this.AjoutAdmin_tabPage.Controls.Add(this.ValiderAjoutAdmin_button);
+            this.AjoutAdmin_tabPage.Controls.Add(this.NomAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.MobileAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.AdresseAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.PrenomAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.EmailAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.FixeAdmin_textBox);
+            this.AjoutAdmin_tabPage.Controls.Add(this.BiblioFusion_label1);
+            this.AjoutAdmin_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutAdmin_tabPage.Name = "AjoutAdmin_tabPage";
+            this.AjoutAdmin_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.AjoutAdmin_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.AjoutAdmin_tabPage.TabIndex = 0;
+            this.AjoutAdmin_tabPage.Text = "Ajouter un administrateur";
+            // 
+            // CodePostalAdmin_textBox
+            // 
+            this.CodePostalAdmin_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.CodePostalAdmin_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.CodePostalAdmin_textBox.Location = new System.Drawing.Point(30, 465);
+            this.CodePostalAdmin_textBox.Name = "CodePostalAdmin_textBox";
+            this.CodePostalAdmin_textBox.Size = new System.Drawing.Size(940, 30);
+            this.CodePostalAdmin_textBox.TabIndex = 44;
+            this.CodePostalAdmin_textBox.Text = "Code Postal";
             // 
             // NaissanceAdmin_dateTimePicker
             // 
@@ -142,16 +153,17 @@
             this.NaissanceAdmin_dateTimePicker.Tag = "";
             this.NaissanceAdmin_dateTimePicker.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             // 
-            // Connexion
+            // ValiderAjoutAdmin_button
             // 
-            this.Connexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.Connexion.Location = new System.Drawing.Point(850, 515);
-            this.Connexion.Margin = new System.Windows.Forms.Padding(8);
-            this.Connexion.Name = "Connexion";
-            this.Connexion.Size = new System.Drawing.Size(101, 32);
-            this.Connexion.TabIndex = 40;
-            this.Connexion.Text = "Valider";
-            this.Connexion.UseVisualStyleBackColor = true;
+            this.ValiderAjoutAdmin_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ValiderAjoutAdmin_button.Location = new System.Drawing.Point(850, 515);
+            this.ValiderAjoutAdmin_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ValiderAjoutAdmin_button.Name = "ValiderAjoutAdmin_button";
+            this.ValiderAjoutAdmin_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderAjoutAdmin_button.TabIndex = 40;
+            this.ValiderAjoutAdmin_button.Text = "Valider";
+            this.ValiderAjoutAdmin_button.UseVisualStyleBackColor = true;
+            this.ValiderAjoutAdmin_button.Click += new System.EventHandler(this.ValiderAjoutAdmin_button_Click);
             // 
             // NomAdmin_textBox
             // 
@@ -219,78 +231,67 @@
             this.FixeAdmin_textBox.TabIndex = 32;
             this.FixeAdmin_textBox.Text = "N° de fixe";
             // 
-            // Title
+            // BiblioFusion_label1
             // 
-            this.Title.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.BiblioFusion_label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Title.AutoSize = true;
-            this.Title.Font = new System.Drawing.Font("Impact", 25F);
-            this.Title.Location = new System.Drawing.Point(400, 35);
-            this.Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Title.Name = "Title";
-            this.Title.Size = new System.Drawing.Size(191, 42);
-            this.Title.TabIndex = 31;
-            this.Title.Text = "BiblioFusion";
+            this.BiblioFusion_label1.AutoSize = true;
+            this.BiblioFusion_label1.Font = new System.Drawing.Font("Impact", 25F);
+            this.BiblioFusion_label1.Location = new System.Drawing.Point(400, 35);
+            this.BiblioFusion_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BiblioFusion_label1.Name = "BiblioFusion_label1";
+            this.BiblioFusion_label1.Size = new System.Drawing.Size(191, 42);
+            this.BiblioFusion_label1.TabIndex = 31;
+            this.BiblioFusion_label1.Text = "BiblioFusion";
             // 
-            // tabControl1
+            // Admin_tabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1004, 725);
-            this.tabControl1.TabIndex = 1;
-            // 
-            // CodePostalAdmin_textBox
-            // 
-            this.CodePostalAdmin_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CodePostalAdmin_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CodePostalAdmin_textBox.Location = new System.Drawing.Point(30, 465);
-            this.CodePostalAdmin_textBox.Name = "CodePostalAdmin_textBox";
-            this.CodePostalAdmin_textBox.Size = new System.Drawing.Size(940, 30);
-            this.CodePostalAdmin_textBox.TabIndex = 44;
-            this.CodePostalAdmin_textBox.Text = "Code Postal";
+            this.Admin_tabControl.Controls.Add(this.AjoutAdmin_tabPage);
+            this.Admin_tabControl.Controls.Add(this.EditAdmin_tabPage);
+            this.Admin_tabControl.Location = new System.Drawing.Point(0, 0);
+            this.Admin_tabControl.Name = "Admin_tabControl";
+            this.Admin_tabControl.SelectedIndex = 0;
+            this.Admin_tabControl.Size = new System.Drawing.Size(1004, 725);
+            this.Admin_tabControl.TabIndex = 1;
             // 
             // Form_Administrateurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 727);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Admin_tabControl);
             this.MaximumSize = new System.Drawing.Size(1023, 766);
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "Form_Administrateurs";
             this.Text = "BiblioFusion - administrateurs";
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.EditAdmin_tabPage.ResumeLayout(false);
+            this.EditAdmin_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatAdmin_dataGridView)).EndInit();
+            this.AjoutAdmin_tabPage.ResumeLayout(false);
+            this.AjoutAdmin_tabPage.PerformLayout();
+            this.Admin_tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.CheckedListBox Filtres_de_Recherche;
+        private System.Windows.Forms.TabPage EditAdmin_tabPage;
+        private System.Windows.Forms.CheckedListBox FiltresDeRechercheAdmin_checkedListBox;
         private System.Windows.Forms.TextBox RechercherAdmin_textBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Button Connexion;
+        private System.Windows.Forms.Label BiblioFusion_label2;
+        private System.Windows.Forms.TabPage AjoutAdmin_tabPage;
+        private System.Windows.Forms.Button ValiderAjoutAdmin_button;
         private System.Windows.Forms.TextBox NomAdmin_textBox;
         private System.Windows.Forms.TextBox MobileAdmin_textBox;
         private System.Windows.Forms.TextBox AdresseAdmin_textBox;
         private System.Windows.Forms.TextBox PrenomAdmin_textBox;
         private System.Windows.Forms.TextBox EmailAdmin_textBox;
         private System.Windows.Forms.TextBox FixeAdmin_textBox;
-        private System.Windows.Forms.Label Title;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Label BiblioFusion_label1;
+        private System.Windows.Forms.TabControl Admin_tabControl;
         private System.Windows.Forms.DateTimePicker NaissanceAdmin_dateTimePicker;
-        private System.Windows.Forms.DataGridView dataGridView;
+        private System.Windows.Forms.DataGridView ResultatAdmin_dataGridView;
         private System.Windows.Forms.TextBox CodePostalAdmin_textBox;
     }
 }

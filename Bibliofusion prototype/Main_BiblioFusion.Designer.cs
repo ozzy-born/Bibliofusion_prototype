@@ -29,264 +29,312 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.empruntsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nouvelEmpruntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.enregisterUnRetourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reserverUnArticleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.livreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catégoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adhérantToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.classesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.déconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Main_menuStrip = new System.Windows.Forms.MenuStrip();
+            this.EmpruntsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NouvelEmpruntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnregisterUnRetourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ReserverUnArticleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.OptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LivreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.JouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AdherentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClassesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AdministateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DeconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Main_tabControl = new System.Windows.Forms.TabControl();
+            this.TabDeBord_tabPage = new System.Windows.Forms.TabPage();
+            this.Reservations_dataGridView = new System.Windows.Forms.DataGridView();
+            this.Retours_dataGridView = new System.Windows.Forms.DataGridView();
+            this.Retards_dataGridView = new System.Windows.Forms.DataGridView();
+            this.Reservations_label = new System.Windows.Forms.Label();
+            this.Retours_label = new System.Windows.Forms.Label();
+            this.Retards_label = new System.Windows.Forms.Label();
+            this.MainRechercher_tabPage = new System.Windows.Forms.TabPage();
+            this.ResultatMain_dataGridView = new System.Windows.Forms.DataGridView();
+            this.FiltresDeRechercheMain_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.RechercherMain_textBox = new System.Windows.Forms.TextBox();
+            this.MainScanner_tabPage = new System.Windows.Forms.TabPage();
             this.descriptf = new System.Windows.Forms.ListBox();
             this.chaine_de_caracter = new System.Windows.Forms.ListBox();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.MainStat_tabPage = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.menuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.Main_menuStrip.SuspendLayout();
+            this.Main_tabControl.SuspendLayout();
+            this.TabDeBord_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Reservations_dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Retours_dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Retards_dataGridView)).BeginInit();
+            this.MainRechercher_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatMain_dataGridView)).BeginInit();
+            this.MainScanner_tabPage.SuspendLayout();
+            this.MainStat_tabPage.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // Main_menuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.empruntsToolStripMenuItem,
-            this.optionsToolStripMenuItem,
-            this.déconnexionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1007, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.Main_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.EmpruntsToolStripMenuItem,
+            this.OptionsToolStripMenuItem,
+            this.DeconnexionToolStripMenuItem});
+            this.Main_menuStrip.Location = new System.Drawing.Point(0, 0);
+            this.Main_menuStrip.Name = "Main_menuStrip";
+            this.Main_menuStrip.Size = new System.Drawing.Size(1007, 24);
+            this.Main_menuStrip.TabIndex = 0;
+            this.Main_menuStrip.Text = "menuStrip1";
             // 
-            // empruntsToolStripMenuItem
+            // EmpruntsToolStripMenuItem
             // 
-            this.empruntsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nouvelEmpruntToolStripMenuItem,
-            this.enregisterUnRetourToolStripMenuItem,
-            this.reserverUnArticleToolStripMenuItem});
-            this.empruntsToolStripMenuItem.Name = "empruntsToolStripMenuItem";
-            this.empruntsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.empruntsToolStripMenuItem.Text = "Emprunts";
+            this.EmpruntsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NouvelEmpruntToolStripMenuItem,
+            this.EnregisterUnRetourToolStripMenuItem,
+            this.ReserverUnArticleToolStripMenuItem});
+            this.EmpruntsToolStripMenuItem.Name = "EmpruntsToolStripMenuItem";
+            this.EmpruntsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.EmpruntsToolStripMenuItem.Text = "Emprunts";
             // 
-            // nouvelEmpruntToolStripMenuItem
+            // NouvelEmpruntToolStripMenuItem
             // 
-            this.nouvelEmpruntToolStripMenuItem.Name = "nouvelEmpruntToolStripMenuItem";
-            this.nouvelEmpruntToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
-            this.nouvelEmpruntToolStripMenuItem.Text = "Nouvel emprunt";
-            this.nouvelEmpruntToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
+            this.NouvelEmpruntToolStripMenuItem.Name = "NouvelEmpruntToolStripMenuItem";
+            this.NouvelEmpruntToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.NouvelEmpruntToolStripMenuItem.Text = "Nouvel emprunt";
+            this.NouvelEmpruntToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
             // 
-            // enregisterUnRetourToolStripMenuItem
+            // EnregisterUnRetourToolStripMenuItem
             // 
-            this.enregisterUnRetourToolStripMenuItem.Name = "enregisterUnRetourToolStripMenuItem";
-            this.enregisterUnRetourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.enregisterUnRetourToolStripMenuItem.Text = "Enregister un retour";
-            this.enregisterUnRetourToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
+            this.EnregisterUnRetourToolStripMenuItem.Name = "EnregisterUnRetourToolStripMenuItem";
+            this.EnregisterUnRetourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EnregisterUnRetourToolStripMenuItem.Text = "Enregister un retour";
+            this.EnregisterUnRetourToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
             // 
-            // reserverUnArticleToolStripMenuItem
+            // ReserverUnArticleToolStripMenuItem
             // 
-            this.reserverUnArticleToolStripMenuItem.Name = "reserverUnArticleToolStripMenuItem";
-            this.reserverUnArticleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.reserverUnArticleToolStripMenuItem.Text = "Reserver un article";
-            this.reserverUnArticleToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
+            this.ReserverUnArticleToolStripMenuItem.Name = "ReserverUnArticleToolStripMenuItem";
+            this.ReserverUnArticleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReserverUnArticleToolStripMenuItem.Text = "Reserver un article";
+            this.ReserverUnArticleToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
             // 
-            // optionsToolStripMenuItem
+            // OptionsToolStripMenuItem
             // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.livreToolStripMenuItem,
-            this.jouetToolStripMenuItem,
-            this.catégoriesToolStripMenuItem,
-            this.adhérantToolStripMenuItem,
-            this.classesToolStripMenuItem,
-            this.administateursToolStripMenuItem});
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.optionsToolStripMenuItem.Text = "Options";
+            this.OptionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LivreToolStripMenuItem,
+            this.JouetToolStripMenuItem,
+            this.CategoriesToolStripMenuItem,
+            this.AdherentToolStripMenuItem,
+            this.ClassesToolStripMenuItem,
+            this.AdministateursToolStripMenuItem});
+            this.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem";
+            this.OptionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.OptionsToolStripMenuItem.Text = "Options";
             // 
-            // livreToolStripMenuItem
+            // LivreToolStripMenuItem
             // 
-            this.livreToolStripMenuItem.Name = "livreToolStripMenuItem";
-            this.livreToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.livreToolStripMenuItem.Text = "Livres";
-            this.livreToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
+            this.LivreToolStripMenuItem.Name = "LivreToolStripMenuItem";
+            this.LivreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LivreToolStripMenuItem.Text = "Livres";
+            this.LivreToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
             // 
-            // jouetToolStripMenuItem
+            // JouetToolStripMenuItem
             // 
-            this.jouetToolStripMenuItem.Name = "jouetToolStripMenuItem";
-            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.jouetToolStripMenuItem.Text = "Jouets";
-            this.jouetToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
+            this.JouetToolStripMenuItem.Name = "JouetToolStripMenuItem";
+            this.JouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.JouetToolStripMenuItem.Text = "Jouets";
+            this.JouetToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
             // 
-            // catégoriesToolStripMenuItem
+            // CategoriesToolStripMenuItem
             // 
-            this.catégoriesToolStripMenuItem.Name = "catégoriesToolStripMenuItem";
-            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.catégoriesToolStripMenuItem.Text = "Catégories";
-            this.catégoriesToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
+            this.CategoriesToolStripMenuItem.Name = "CategoriesToolStripMenuItem";
+            this.CategoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CategoriesToolStripMenuItem.Text = "Catégories";
+            this.CategoriesToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
             // 
-            // adhérantToolStripMenuItem
+            // AdherentToolStripMenuItem
             // 
-            this.adhérantToolStripMenuItem.Name = "adhérantToolStripMenuItem";
-            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.adhérantToolStripMenuItem.Text = "Adhérents";
-            this.adhérantToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
+            this.AdherentToolStripMenuItem.Name = "AdherentToolStripMenuItem";
+            this.AdherentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AdherentToolStripMenuItem.Text = "Adhérents";
+            this.AdherentToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
             // 
-            // classesToolStripMenuItem
+            // ClassesToolStripMenuItem
             // 
-            this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
-            this.classesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.classesToolStripMenuItem.Text = "Classes";
-            this.classesToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
+            this.ClassesToolStripMenuItem.Name = "ClassesToolStripMenuItem";
+            this.ClassesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ClassesToolStripMenuItem.Text = "Classes";
+            this.ClassesToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
             // 
-            // administateursToolStripMenuItem
+            // AdministateursToolStripMenuItem
             // 
-            this.administateursToolStripMenuItem.Name = "administateursToolStripMenuItem";
-            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.administateursToolStripMenuItem.Text = "Administateurs";
-            this.administateursToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
+            this.AdministateursToolStripMenuItem.Name = "AdministateursToolStripMenuItem";
+            this.AdministateursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AdministateursToolStripMenuItem.Text = "Administateurs";
+            this.AdministateursToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
             // 
-            // déconnexionToolStripMenuItem
+            // DeconnexionToolStripMenuItem
             // 
-            this.déconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
-            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.déconnexionToolStripMenuItem.Text = "Déconnexion";
-            this.déconnexionToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
+            this.DeconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DeconnexionToolStripMenuItem.Name = "DeconnexionToolStripMenuItem";
+            this.DeconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.DeconnexionToolStripMenuItem.Text = "Déconnexion";
+            this.DeconnexionToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
             // 
-            // tabControl1
+            // Main_tabControl
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Main_tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(0, 27);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1007, 703);
-            this.tabControl1.TabIndex = 1;
+            this.Main_tabControl.Controls.Add(this.TabDeBord_tabPage);
+            this.Main_tabControl.Controls.Add(this.MainRechercher_tabPage);
+            this.Main_tabControl.Controls.Add(this.MainScanner_tabPage);
+            this.Main_tabControl.Controls.Add(this.MainStat_tabPage);
+            this.Main_tabControl.Location = new System.Drawing.Point(0, 27);
+            this.Main_tabControl.Name = "Main_tabControl";
+            this.Main_tabControl.SelectedIndex = 0;
+            this.Main_tabControl.Size = new System.Drawing.Size(1007, 703);
+            this.Main_tabControl.TabIndex = 1;
             // 
-            // tabPage1
+            // TabDeBord_tabPage
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.dataGridView4);
-            this.tabPage1.Controls.Add(this.dataGridView3);
-            this.tabPage1.Controls.Add(this.dataGridView2);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(999, 677);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Tableau de Bord";
+            this.TabDeBord_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.TabDeBord_tabPage.Controls.Add(this.Reservations_dataGridView);
+            this.TabDeBord_tabPage.Controls.Add(this.Retours_dataGridView);
+            this.TabDeBord_tabPage.Controls.Add(this.Retards_dataGridView);
+            this.TabDeBord_tabPage.Controls.Add(this.Reservations_label);
+            this.TabDeBord_tabPage.Controls.Add(this.Retours_label);
+            this.TabDeBord_tabPage.Controls.Add(this.Retards_label);
+            this.TabDeBord_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.TabDeBord_tabPage.Name = "TabDeBord_tabPage";
+            this.TabDeBord_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.TabDeBord_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.TabDeBord_tabPage.TabIndex = 0;
+            this.TabDeBord_tabPage.Text = "Tableau de Bord";
             // 
-            // label3
+            // Reservations_dataGridView
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(730, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 29);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Reservations";
+            this.Reservations_dataGridView.AllowUserToAddRows = false;
+            this.Reservations_dataGridView.AllowUserToDeleteRows = false;
+            this.Reservations_dataGridView.AllowUserToOrderColumns = true;
+            this.Reservations_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Reservations_dataGridView.Location = new System.Drawing.Point(670, 100);
+            this.Reservations_dataGridView.Name = "Reservations_dataGridView";
+            this.Reservations_dataGridView.ReadOnly = true;
+            this.Reservations_dataGridView.Size = new System.Drawing.Size(300, 550);
+            this.Reservations_dataGridView.TabIndex = 71;
             // 
-            // label2
+            // Retours_dataGridView
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(446, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 29);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Retours";
+            this.Retours_dataGridView.AllowUserToAddRows = false;
+            this.Retours_dataGridView.AllowUserToDeleteRows = false;
+            this.Retours_dataGridView.AllowUserToOrderColumns = true;
+            this.Retours_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Retours_dataGridView.Location = new System.Drawing.Point(350, 100);
+            this.Retours_dataGridView.Name = "Retours_dataGridView";
+            this.Retours_dataGridView.ReadOnly = true;
+            this.Retours_dataGridView.Size = new System.Drawing.Size(300, 550);
+            this.Retours_dataGridView.TabIndex = 70;
             // 
-            // label1
+            // Retards_dataGridView
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(126, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 29);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Retards";
+            this.Retards_dataGridView.AllowUserToAddRows = false;
+            this.Retards_dataGridView.AllowUserToDeleteRows = false;
+            this.Retards_dataGridView.AllowUserToOrderColumns = true;
+            this.Retards_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Retards_dataGridView.Location = new System.Drawing.Point(30, 100);
+            this.Retards_dataGridView.Name = "Retards_dataGridView";
+            this.Retards_dataGridView.ReadOnly = true;
+            this.Retards_dataGridView.Size = new System.Drawing.Size(300, 550);
+            this.Retards_dataGridView.TabIndex = 69;
             // 
-            // tabPage2
+            // Reservations_label
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.dataGridView1);
-            this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(999, 677);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Rechercher";
+            this.Reservations_label.AutoSize = true;
+            this.Reservations_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reservations_label.Location = new System.Drawing.Point(730, 50);
+            this.Reservations_label.Name = "Reservations_label";
+            this.Reservations_label.Size = new System.Drawing.Size(165, 29);
+            this.Reservations_label.TabIndex = 11;
+            this.Reservations_label.Text = "Reservations";
             // 
-            // Filtres_de_Recherche
+            // Retours_label
             // 
-            this.Filtres_de_Recherche.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.Filtres_de_Recherche.FormattingEnabled = true;
-            this.Filtres_de_Recherche.Location = new System.Drawing.Point(30, 100);
-            this.Filtres_de_Recherche.Name = "Filtres_de_Recherche";
-            this.Filtres_de_Recherche.Size = new System.Drawing.Size(300, 550);
-            this.Filtres_de_Recherche.TabIndex = 55;
+            this.Retours_label.AutoSize = true;
+            this.Retours_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Retours_label.Location = new System.Drawing.Point(446, 50);
+            this.Retours_label.Name = "Retours_label";
+            this.Retours_label.Size = new System.Drawing.Size(104, 29);
+            this.Retours_label.TabIndex = 10;
+            this.Retours_label.Text = "Retours";
             // 
-            // textBox1
+            // Retards_label
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Retards_label.AutoSize = true;
+            this.Retards_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Retards_label.Location = new System.Drawing.Point(126, 50);
+            this.Retards_label.Name = "Retards_label";
+            this.Retards_label.Size = new System.Drawing.Size(104, 29);
+            this.Retards_label.TabIndex = 9;
+            this.Retards_label.Text = "Retards";
+            // 
+            // MainRechercher_tabPage
+            // 
+            this.MainRechercher_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MainRechercher_tabPage.Controls.Add(this.ResultatMain_dataGridView);
+            this.MainRechercher_tabPage.Controls.Add(this.FiltresDeRechercheMain_checkedListBox);
+            this.MainRechercher_tabPage.Controls.Add(this.RechercherMain_textBox);
+            this.MainRechercher_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.MainRechercher_tabPage.Name = "MainRechercher_tabPage";
+            this.MainRechercher_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.MainRechercher_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.MainRechercher_tabPage.TabIndex = 1;
+            this.MainRechercher_tabPage.Text = "Rechercher";
+            // 
+            // ResultatMain_dataGridView
+            // 
+            this.ResultatMain_dataGridView.AllowUserToAddRows = false;
+            this.ResultatMain_dataGridView.AllowUserToDeleteRows = false;
+            this.ResultatMain_dataGridView.AllowUserToOrderColumns = true;
+            this.ResultatMain_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatMain_dataGridView.Location = new System.Drawing.Point(350, 100);
+            this.ResultatMain_dataGridView.Name = "ResultatMain_dataGridView";
+            this.ResultatMain_dataGridView.ReadOnly = true;
+            this.ResultatMain_dataGridView.Size = new System.Drawing.Size(620, 550);
+            this.ResultatMain_dataGridView.TabIndex = 68;
+            // 
+            // FiltresDeRechercheMain_checkedListBox
+            // 
+            this.FiltresDeRechercheMain_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.FiltresDeRechercheMain_checkedListBox.FormattingEnabled = true;
+            this.FiltresDeRechercheMain_checkedListBox.Location = new System.Drawing.Point(30, 100);
+            this.FiltresDeRechercheMain_checkedListBox.Name = "FiltresDeRechercheMain_checkedListBox";
+            this.FiltresDeRechercheMain_checkedListBox.Size = new System.Drawing.Size(300, 550);
+            this.FiltresDeRechercheMain_checkedListBox.TabIndex = 55;
+            // 
+            // RechercherMain_textBox
+            // 
+            this.RechercherMain_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox1.Location = new System.Drawing.Point(125, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(750, 30);
-            this.textBox1.TabIndex = 52;
-            this.textBox1.Text = "Rechercher un livre, un jouet ou un adherant";
+            this.RechercherMain_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherMain_textBox.Location = new System.Drawing.Point(125, 35);
+            this.RechercherMain_textBox.Name = "RechercherMain_textBox";
+            this.RechercherMain_textBox.Size = new System.Drawing.Size(750, 30);
+            this.RechercherMain_textBox.TabIndex = 52;
+            this.RechercherMain_textBox.Text = "Rechercher un livre, un jouet ou un adherant";
             // 
-            // tabPage3
+            // MainScanner_tabPage
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage3.Controls.Add(this.descriptf);
-            this.tabPage3.Controls.Add(this.chaine_de_caracter);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(999, 677);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Scanner";
+            this.MainScanner_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MainScanner_tabPage.Controls.Add(this.descriptf);
+            this.MainScanner_tabPage.Controls.Add(this.chaine_de_caracter);
+            this.MainScanner_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.MainScanner_tabPage.Name = "MainScanner_tabPage";
+            this.MainScanner_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.MainScanner_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.MainScanner_tabPage.TabIndex = 2;
+            this.MainScanner_tabPage.Text = "Scanner";
             // 
             // descriptf
             // 
@@ -308,18 +356,18 @@
             this.chaine_de_caracter.Size = new System.Drawing.Size(589, 104);
             this.chaine_de_caracter.TabIndex = 54;
             // 
-            // tabPage4
+            // MainStat_tabPage
             // 
-            this.tabPage4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage4.Controls.Add(this.label6);
-            this.tabPage4.Controls.Add(this.label5);
-            this.tabPage4.Controls.Add(this.label4);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(999, 677);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Statistiques";
+            this.MainStat_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MainStat_tabPage.Controls.Add(this.label6);
+            this.MainStat_tabPage.Controls.Add(this.label5);
+            this.MainStat_tabPage.Controls.Add(this.label4);
+            this.MainStat_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.MainStat_tabPage.Name = "MainStat_tabPage";
+            this.MainStat_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.MainStat_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.MainStat_tabPage.TabIndex = 3;
+            this.MainStat_tabPage.Text = "Statistiques";
             // 
             // label6
             // 
@@ -363,82 +411,34 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(350, 100);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 550);
-            this.dataGridView1.TabIndex = 68;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(30, 100);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(300, 550);
-            this.dataGridView2.TabIndex = 69;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToOrderColumns = true;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(350, 100);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(300, 550);
-            this.dataGridView3.TabIndex = 70;
-            // 
-            // dataGridView4
-            // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.AllowUserToOrderColumns = true;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(670, 100);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.Size = new System.Drawing.Size(300, 550);
-            this.dataGridView4.TabIndex = 71;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1007, 727);
-            this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.Main_tabControl);
+            this.Controls.Add(this.Main_menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.Main_menuStrip;
             this.MaximumSize = new System.Drawing.Size(1023, 766);
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "MainForm";
             this.Text = "BiblioFusion";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.Main_menuStrip.ResumeLayout(false);
+            this.Main_menuStrip.PerformLayout();
+            this.Main_tabControl.ResumeLayout(false);
+            this.TabDeBord_tabPage.ResumeLayout(false);
+            this.TabDeBord_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Reservations_dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Retours_dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Retards_dataGridView)).EndInit();
+            this.MainRechercher_tabPage.ResumeLayout(false);
+            this.MainRechercher_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatMain_dataGridView)).EndInit();
+            this.MainScanner_tabPage.ResumeLayout(false);
+            this.MainStat_tabPage.ResumeLayout(false);
+            this.MainStat_tabPage.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -446,41 +446,41 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem déconnexionToolStripMenuItem;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.ToolStripMenuItem adhérantToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem livreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem catégoriesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem administateursToolStripMenuItem;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ToolStripMenuItem jouetToolStripMenuItem;
-        private System.Windows.Forms.CheckedListBox Filtres_de_Recherche;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ToolStripMenuItem classesToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip Main_menuStrip;
+        private System.Windows.Forms.ToolStripMenuItem OptionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DeconnexionToolStripMenuItem;
+        private System.Windows.Forms.TabControl Main_tabControl;
+        private System.Windows.Forms.TabPage TabDeBord_tabPage;
+        private System.Windows.Forms.TabPage MainRechercher_tabPage;
+        private System.Windows.Forms.TabPage MainScanner_tabPage;
+        private System.Windows.Forms.TabPage MainStat_tabPage;
+        private System.Windows.Forms.ToolStripMenuItem AdherentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LivreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem CategoriesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem AdministateursToolStripMenuItem;
+        private System.Windows.Forms.Label Reservations_label;
+        private System.Windows.Forms.Label Retours_label;
+        private System.Windows.Forms.Label Retards_label;
+        private System.Windows.Forms.ToolStripMenuItem JouetToolStripMenuItem;
+        private System.Windows.Forms.CheckedListBox FiltresDeRechercheMain_checkedListBox;
+        private System.Windows.Forms.TextBox RechercherMain_textBox;
+        private System.Windows.Forms.ToolStripMenuItem ClassesToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox descriptf;
-        private System.Windows.Forms.ToolStripMenuItem empruntsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EmpruntsToolStripMenuItem;
         private System.Windows.Forms.ListBox chaine_de_caracter;
-        private System.Windows.Forms.ToolStripMenuItem nouvelEmpruntToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem enregisterUnRetourToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem reserverUnArticleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NouvelEmpruntToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnregisterUnRetourToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ReserverUnArticleToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView Retards_dataGridView;
+        private System.Windows.Forms.DataGridView ResultatMain_dataGridView;
+        private System.Windows.Forms.DataGridView Reservations_dataGridView;
+        private System.Windows.Forms.DataGridView Retours_dataGridView;
     }
 }
 
