@@ -47,11 +47,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView4 = new System.Windows.Forms.ListView();
             this.Filtres_de_Recherche = new System.Windows.Forms.CheckedListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -64,12 +60,20 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -104,14 +108,16 @@
             // enregisterUnRetourToolStripMenuItem
             // 
             this.enregisterUnRetourToolStripMenuItem.Name = "enregisterUnRetourToolStripMenuItem";
-            this.enregisterUnRetourToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.enregisterUnRetourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.enregisterUnRetourToolStripMenuItem.Text = "Enregister un retour";
+            this.enregisterUnRetourToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
             // 
             // reserverUnArticleToolStripMenuItem
             // 
             this.reserverUnArticleToolStripMenuItem.Name = "reserverUnArticleToolStripMenuItem";
-            this.reserverUnArticleToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.reserverUnArticleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reserverUnArticleToolStripMenuItem.Text = "Reserver un article";
+            this.reserverUnArticleToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
             // 
@@ -129,42 +135,42 @@
             // livreToolStripMenuItem
             // 
             this.livreToolStripMenuItem.Name = "livreToolStripMenuItem";
-            this.livreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.livreToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.livreToolStripMenuItem.Text = "Livres";
             this.livreToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
             // 
             // jouetToolStripMenuItem
             // 
             this.jouetToolStripMenuItem.Name = "jouetToolStripMenuItem";
-            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jouetToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.jouetToolStripMenuItem.Text = "Jouets";
             this.jouetToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
             // 
             // catégoriesToolStripMenuItem
             // 
             this.catégoriesToolStripMenuItem.Name = "catégoriesToolStripMenuItem";
-            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.catégoriesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.catégoriesToolStripMenuItem.Text = "Catégories";
             this.catégoriesToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
             // 
             // adhérantToolStripMenuItem
             // 
             this.adhérantToolStripMenuItem.Name = "adhérantToolStripMenuItem";
-            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.adhérantToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.adhérantToolStripMenuItem.Text = "Adhérents";
             this.adhérantToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
             // 
             // classesToolStripMenuItem
             // 
             this.classesToolStripMenuItem.Name = "classesToolStripMenuItem";
-            this.classesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.classesToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.classesToolStripMenuItem.Text = "Classes";
             this.classesToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
             // 
             // administateursToolStripMenuItem
             // 
             this.administateursToolStripMenuItem.Name = "administateursToolStripMenuItem";
-            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.administateursToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.administateursToolStripMenuItem.Text = "Administateurs";
             this.administateursToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
             // 
@@ -172,7 +178,7 @@
             // 
             this.déconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.déconnexionToolStripMenuItem.Name = "déconnexionToolStripMenuItem";
-            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
+            this.déconnexionToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.déconnexionToolStripMenuItem.Text = "Déconnexion";
             this.déconnexionToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
             // 
@@ -194,12 +200,12 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tabPage1.Controls.Add(this.dataGridView4);
+            this.tabPage1.Controls.Add(this.dataGridView3);
+            this.tabPage1.Controls.Add(this.dataGridView2);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.listView3);
-            this.tabPage1.Controls.Add(this.listView2);
-            this.tabPage1.Controls.Add(this.listView1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -237,37 +243,10 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Retards";
             // 
-            // listView3
-            // 
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(670, 100);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(300, 550);
-            this.listView3.TabIndex = 8;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView2
-            // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(350, 100);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(300, 550);
-            this.listView2.TabIndex = 7;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(30, 100);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(300, 550);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.listView4);
+            this.tabPage2.Controls.Add(this.dataGridView1);
             this.tabPage2.Controls.Add(this.Filtres_de_Recherche);
             this.tabPage2.Controls.Add(this.textBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
@@ -276,15 +255,6 @@
             this.tabPage2.Size = new System.Drawing.Size(999, 677);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Rechercher";
-            // 
-            // listView4
-            // 
-            this.listView4.HideSelection = false;
-            this.listView4.Location = new System.Drawing.Point(350, 100);
-            this.listView4.Name = "listView4";
-            this.listView4.Size = new System.Drawing.Size(620, 550);
-            this.listView4.TabIndex = 56;
-            this.listView4.UseCompatibleStateImageBehavior = false;
             // 
             // Filtres_de_Recherche
             // 
@@ -393,6 +363,54 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(350, 100);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 550);
+            this.dataGridView1.TabIndex = 68;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(30, 100);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(300, 550);
+            this.dataGridView2.TabIndex = 69;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToOrderColumns = true;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(350, 100);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(300, 550);
+            this.dataGridView3.TabIndex = 70;
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.AllowUserToOrderColumns = true;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(670, 100);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.Size = new System.Drawing.Size(300, 550);
+            this.dataGridView4.TabIndex = 71;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,6 +435,10 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -439,9 +461,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.ToolStripMenuItem jouetToolStripMenuItem;
         private System.Windows.Forms.CheckedListBox Filtres_de_Recherche;
         private System.Windows.Forms.TextBox textBox1;
@@ -458,7 +477,10 @@
         private System.Windows.Forms.ToolStripMenuItem enregisterUnRetourToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reserverUnArticleToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.ListView listView4;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }
 

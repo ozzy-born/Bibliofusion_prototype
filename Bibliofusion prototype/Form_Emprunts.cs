@@ -15,6 +15,18 @@ namespace Bibliofusion_prototype
         public Form_Emprunts()
         {
             InitializeComponent();
+            if (MainForm.nPage == 1)
+            {
+                Emprunts_tabControl.SelectTab(NouvelEmprunt_tabPage);
+            }
+            else if (MainForm.nPage == 2)
+            {
+                Emprunts_tabControl.SelectTab(EnregistrerUnRetour_tabPage);
+            }
+            else if (MainForm.nPage == 3)
+            {
+                Emprunts_tabControl.SelectTab(ReserverUnArticle_tabPage);
+            }
         }
     }
 }

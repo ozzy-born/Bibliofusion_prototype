@@ -28,64 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Emprunts_tabControl = new System.Windows.Forms.TabControl();
+            this.NouvelEmprunt_tabPage = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.filtre_recherche = new System.Windows.Forms.CheckedListBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.Connexion = new System.Windows.Forms.Button();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.EnregistrerUnRetour_tabPage = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.ReserverUnArticle_tabPage = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.checkedListBox4 = new System.Windows.Forms.CheckedListBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.Emprunts_tabControl.SuspendLayout();
+            this.NouvelEmprunt_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.EnregistrerUnRetour_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.ReserverUnArticle_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // Emprunts_tabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.ItemSize = new System.Drawing.Size(86, 18);
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1005, 725);
-            this.tabControl1.TabIndex = 32;
+            this.Emprunts_tabControl.Controls.Add(this.NouvelEmprunt_tabPage);
+            this.Emprunts_tabControl.Controls.Add(this.EnregistrerUnRetour_tabPage);
+            this.Emprunts_tabControl.Controls.Add(this.ReserverUnArticle_tabPage);
+            this.Emprunts_tabControl.ItemSize = new System.Drawing.Size(86, 18);
+            this.Emprunts_tabControl.Location = new System.Drawing.Point(0, 0);
+            this.Emprunts_tabControl.Name = "Emprunts_tabControl";
+            this.Emprunts_tabControl.SelectedIndex = 0;
+            this.Emprunts_tabControl.Size = new System.Drawing.Size(1005, 725);
+            this.Emprunts_tabControl.TabIndex = 32;
             // 
-            // tabPage1
+            // NouvelEmprunt_tabPage
             // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage1.Controls.Add(this.dataGridView1);
-            this.tabPage1.Controls.Add(this.filtre_recherche);
-            this.tabPage1.Controls.Add(this.textBox2);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.textBox8);
-            this.tabPage1.Controls.Add(this.Connexion);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(997, 699);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Nouvel emprunt";
+            this.NouvelEmprunt_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.NouvelEmprunt_tabPage.Controls.Add(this.dataGridView1);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.filtre_recherche);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.textBox2);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.label1);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.textBox8);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.Connexion);
+            this.NouvelEmprunt_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.NouvelEmprunt_tabPage.Name = "NouvelEmprunt_tabPage";
+            this.NouvelEmprunt_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.NouvelEmprunt_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.NouvelEmprunt_tabPage.TabIndex = 0;
+            this.NouvelEmprunt_tabPage.Text = "Nouvel emprunt";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView1.TabIndex = 67;
             // 
             // filtre_recherche
             // 
@@ -142,21 +154,33 @@
             this.Connexion.Text = "Valider";
             this.Connexion.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // EnregistrerUnRetour_tabPage
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.dataGridView2);
-            this.tabPage2.Controls.Add(this.checkedListBox2);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.button1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(997, 699);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Enregister un retour";
+            this.EnregistrerUnRetour_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.dataGridView2);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.checkedListBox2);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.textBox1);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.label2);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.textBox3);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.button1);
+            this.EnregistrerUnRetour_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EnregistrerUnRetour_tabPage.Name = "EnregistrerUnRetour_tabPage";
+            this.EnregistrerUnRetour_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.EnregistrerUnRetour_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.EnregistrerUnRetour_tabPage.TabIndex = 1;
+            this.EnregistrerUnRetour_tabPage.Text = "Enregister un retour";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.AllowUserToOrderColumns = true;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(350, 181);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView2.TabIndex = 67;
             // 
             // checkedListBox2
             // 
@@ -213,21 +237,33 @@
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // tabPage3
+            // ReserverUnArticle_tabPage
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage3.Controls.Add(this.dataGridView3);
-            this.tabPage3.Controls.Add(this.checkedListBox4);
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.label3);
-            this.tabPage3.Controls.Add(this.textBox5);
-            this.tabPage3.Controls.Add(this.button2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(997, 699);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Reserver un article";
+            this.ReserverUnArticle_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ReserverUnArticle_tabPage.Controls.Add(this.dataGridView3);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.checkedListBox4);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.textBox4);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.label3);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.textBox5);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.button2);
+            this.ReserverUnArticle_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.ReserverUnArticle_tabPage.Name = "ReserverUnArticle_tabPage";
+            this.ReserverUnArticle_tabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.ReserverUnArticle_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.ReserverUnArticle_tabPage.TabIndex = 2;
+            this.ReserverUnArticle_tabPage.Text = "Reserver un article";
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.AllowUserToOrderColumns = true;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(350, 180);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(620, 444);
+            this.dataGridView3.TabIndex = 67;
             // 
             // checkedListBox4
             // 
@@ -284,61 +320,25 @@
             this.button2.Text = "Valider";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView1.TabIndex = 67;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.AllowUserToOrderColumns = true;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(350, 181);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView2.TabIndex = 67;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.AllowUserToOrderColumns = true;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(350, 180);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView3.TabIndex = 67;
-            // 
             // Form_Emprunts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1007, 727);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Emprunts_tabControl);
             this.MaximumSize = new System.Drawing.Size(1023, 766);
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "Form_Emprunts";
             this.Text = "BiblioFusion - emprunts";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
+            this.Emprunts_tabControl.ResumeLayout(false);
+            this.NouvelEmprunt_tabPage.ResumeLayout(false);
+            this.NouvelEmprunt_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.EnregistrerUnRetour_tabPage.ResumeLayout(false);
+            this.EnregistrerUnRetour_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.ReserverUnArticle_tabPage.ResumeLayout(false);
+            this.ReserverUnArticle_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
@@ -346,10 +346,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabControl Emprunts_tabControl;
+        private System.Windows.Forms.TabPage NouvelEmprunt_tabPage;
+        private System.Windows.Forms.TabPage EnregistrerUnRetour_tabPage;
+        private System.Windows.Forms.TabPage ReserverUnArticle_tabPage;
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;

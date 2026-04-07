@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ResultatAdherent_dataGridView = new System.Windows.Forms.DataGridView();
             this.FiltresRechercheAdherent_checkedListBox = new System.Windows.Forms.CheckedListBox();
-            this.ChercherAdherant_textBox = new System.Windows.Forms.TextBox();
+            this.RechercherAdherant_textBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.Eleve_checkBox = new System.Windows.Forms.CheckBox();
@@ -40,12 +40,12 @@
             this.Responsable_tabControl = new System.Windows.Forms.TabControl();
             this.ResponsableAdherent_tabPage = new System.Windows.Forms.TabPage();
             this.AjoutResponsableAdherent_button = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.RechercherResponsableAdherent_dataGridView = new System.Windows.Forms.DataGridView();
             this.SupprResponsable2Adherent_label = new System.Windows.Forms.Label();
             this.SupprResponsable1Adherent_label = new System.Windows.Forms.Label();
             this.Responsable2Adherent_label = new System.Windows.Forms.Label();
             this.Responsable1Adherent_label = new System.Windows.Forms.Label();
-            this.RechercherResponsable_textBox = new System.Windows.Forms.TextBox();
+            this.RechercherResponsableAdherent_textBox = new System.Windows.Forms.TextBox();
             this.ResponsableNonAdherent_tabPage = new System.Windows.Forms.TabPage();
             this.AjoutResponsableNonAdherent_button = new System.Windows.Forms.Button();
             this.CodePostalResponsable_textBox = new System.Windows.Forms.TextBox();
@@ -61,11 +61,11 @@
             this.MailResponsable_textBox = new System.Windows.Forms.TextBox();
             this.FixeResponsable_textBox = new System.Windows.Forms.TextBox();
             this.Classe_tabPage = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
+            this.AjouterALaClasse_button = new System.Windows.Forms.Button();
             this.SupprClasse_label = new System.Windows.Forms.Label();
             this.Classe_label = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ResultatClasse_dataGridView = new System.Windows.Forms.DataGridView();
+            this.RechercherClasse_textBox = new System.Windows.Forms.TextBox();
             this.AdherentValider_button = new System.Windows.Forms.Button();
             this.Mineur_checkBox = new System.Windows.Forms.CheckBox();
             this.NomAdherant_textBox = new System.Windows.Forms.TextBox();
@@ -77,23 +77,23 @@
             this.Title = new System.Windows.Forms.Label();
             this.Adherent_tabControl = new System.Windows.Forms.TabControl();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.Responsable_tabControl.SuspendLayout();
             this.ResponsableAdherent_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RechercherResponsableAdherent_dataGridView)).BeginInit();
             this.ResponsableNonAdherent_tabPage.SuspendLayout();
             this.Classe_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).BeginInit();
             this.Adherent_tabControl.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tabPage2.Controls.Add(this.dataGridView1);
+            this.tabPage2.Controls.Add(this.ResultatAdherent_dataGridView);
             this.tabPage2.Controls.Add(this.FiltresRechercheAdherent_checkedListBox);
-            this.tabPage2.Controls.Add(this.ChercherAdherant_textBox);
+            this.tabPage2.Controls.Add(this.RechercherAdherant_textBox);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -102,18 +102,18 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Editer les adhérents";
             // 
-            // dataGridView1
+            // ResultatAdherent_dataGridView
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(350, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(620, 444);
-            this.dataGridView1.TabIndex = 59;
+            this.ResultatAdherent_dataGridView.AllowUserToAddRows = false;
+            this.ResultatAdherent_dataGridView.AllowUserToDeleteRows = false;
+            this.ResultatAdherent_dataGridView.AllowUserToOrderColumns = true;
+            this.ResultatAdherent_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatAdherent_dataGridView.GridColor = System.Drawing.Color.White;
+            this.ResultatAdherent_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatAdherent_dataGridView.Name = "ResultatAdherent_dataGridView";
+            this.ResultatAdherent_dataGridView.ReadOnly = true;
+            this.ResultatAdherent_dataGridView.Size = new System.Drawing.Size(620, 444);
+            this.ResultatAdherent_dataGridView.TabIndex = 59;
             // 
             // FiltresRechercheAdherent_checkedListBox
             // 
@@ -124,16 +124,16 @@
             this.FiltresRechercheAdherent_checkedListBox.Size = new System.Drawing.Size(300, 445);
             this.FiltresRechercheAdherent_checkedListBox.TabIndex = 55;
             // 
-            // ChercherAdherant_textBox
+            // RechercherAdherant_textBox
             // 
-            this.ChercherAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RechercherAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ChercherAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.ChercherAdherant_textBox.Location = new System.Drawing.Point(125, 115);
-            this.ChercherAdherant_textBox.Name = "ChercherAdherant_textBox";
-            this.ChercherAdherant_textBox.Size = new System.Drawing.Size(647, 30);
-            this.ChercherAdherant_textBox.TabIndex = 52;
-            this.ChercherAdherant_textBox.Text = "Rechercher un adhérent";
+            this.RechercherAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherAdherant_textBox.Location = new System.Drawing.Point(125, 115);
+            this.RechercherAdherant_textBox.Name = "RechercherAdherant_textBox";
+            this.RechercherAdherant_textBox.Size = new System.Drawing.Size(647, 30);
+            this.RechercherAdherant_textBox.TabIndex = 52;
+            this.RechercherAdherant_textBox.Text = "Rechercher un adhérent";
             // 
             // label3
             // 
@@ -222,12 +222,12 @@
             // 
             this.ResponsableAdherent_tabPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ResponsableAdherent_tabPage.Controls.Add(this.AjoutResponsableAdherent_button);
-            this.ResponsableAdherent_tabPage.Controls.Add(this.dataGridView2);
+            this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherResponsableAdherent_dataGridView);
             this.ResponsableAdherent_tabPage.Controls.Add(this.SupprResponsable2Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.SupprResponsable1Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable2Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable1Adherent_label);
-            this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherResponsable_textBox);
+            this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherResponsableAdherent_textBox);
             this.ResponsableAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
             this.ResponsableAdherent_tabPage.Name = "ResponsableAdherent_tabPage";
             this.ResponsableAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -247,13 +247,13 @@
             this.AjoutResponsableAdherent_button.UseVisualStyleBackColor = true;
             this.AjoutResponsableAdherent_button.Click += new System.EventHandler(this.AjoutResponsableAdherent_button_Click);
             // 
-            // dataGridView2
+            // RechercherResponsableAdherent_dataGridView
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(16, 65);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(710, 145);
-            this.dataGridView2.TabIndex = 43;
+            this.RechercherResponsableAdherent_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RechercherResponsableAdherent_dataGridView.Location = new System.Drawing.Point(16, 65);
+            this.RechercherResponsableAdherent_dataGridView.Name = "RechercherResponsableAdherent_dataGridView";
+            this.RechercherResponsableAdherent_dataGridView.Size = new System.Drawing.Size(710, 145);
+            this.RechercherResponsableAdherent_dataGridView.TabIndex = 43;
             // 
             // SupprResponsable2Adherent_label
             // 
@@ -265,6 +265,7 @@
             this.SupprResponsable2Adherent_label.Size = new System.Drawing.Size(23, 22);
             this.SupprResponsable2Adherent_label.TabIndex = 42;
             this.SupprResponsable2Adherent_label.Text = "X";
+            this.SupprResponsable2Adherent_label.Click += new System.EventHandler(this.SupprResponsable2Adherent_label_Click);
             // 
             // SupprResponsable1Adherent_label
             // 
@@ -276,6 +277,7 @@
             this.SupprResponsable1Adherent_label.Size = new System.Drawing.Size(23, 22);
             this.SupprResponsable1Adherent_label.TabIndex = 41;
             this.SupprResponsable1Adherent_label.Text = "X";
+            this.SupprResponsable1Adherent_label.Click += new System.EventHandler(this.SupprResponsable1Adherent_label_Click);
             // 
             // Responsable2Adherent_label
             // 
@@ -299,16 +301,16 @@
             this.Responsable1Adherent_label.TabIndex = 39;
             this.Responsable1Adherent_label.Text = "Responsable 1";
             // 
-            // RechercherResponsable_textBox
+            // RechercherResponsableAdherent_textBox
             // 
-            this.RechercherResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RechercherResponsableAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RechercherResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.RechercherResponsable_textBox.Location = new System.Drawing.Point(16, 30);
-            this.RechercherResponsable_textBox.Name = "RechercherResponsable_textBox";
-            this.RechercherResponsable_textBox.Size = new System.Drawing.Size(940, 30);
-            this.RechercherResponsable_textBox.TabIndex = 34;
-            this.RechercherResponsable_textBox.Text = "Rechercher un adhérent";
+            this.RechercherResponsableAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherResponsableAdherent_textBox.Location = new System.Drawing.Point(16, 30);
+            this.RechercherResponsableAdherent_textBox.Name = "RechercherResponsableAdherent_textBox";
+            this.RechercherResponsableAdherent_textBox.Size = new System.Drawing.Size(940, 30);
+            this.RechercherResponsableAdherent_textBox.TabIndex = 34;
+            this.RechercherResponsableAdherent_textBox.Text = "Rechercher un adhérent";
             // 
             // ResponsableNonAdherent_tabPage
             // 
@@ -366,6 +368,7 @@
             this.SupprResponsable2NonAdherent_label.Size = new System.Drawing.Size(23, 22);
             this.SupprResponsable2NonAdherent_label.TabIndex = 51;
             this.SupprResponsable2NonAdherent_label.Text = "X";
+            this.SupprResponsable2NonAdherent_label.Click += new System.EventHandler(this.SupprResponsable2NonAdherent_label_Click);
             // 
             // SupprResponsable1NonAdherent_label
             // 
@@ -377,6 +380,7 @@
             this.SupprResponsable1NonAdherent_label.Size = new System.Drawing.Size(23, 22);
             this.SupprResponsable1NonAdherent_label.TabIndex = 50;
             this.SupprResponsable1NonAdherent_label.Text = "X";
+            this.SupprResponsable1NonAdherent_label.Click += new System.EventHandler(this.SupprResponsable1NonAdherent_label_Click);
             // 
             // Responsable2NonAdherent_label
             // 
@@ -481,11 +485,11 @@
             // Classe_tabPage
             // 
             this.Classe_tabPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.Classe_tabPage.Controls.Add(this.button3);
+            this.Classe_tabPage.Controls.Add(this.AjouterALaClasse_button);
             this.Classe_tabPage.Controls.Add(this.SupprClasse_label);
             this.Classe_tabPage.Controls.Add(this.Classe_label);
-            this.Classe_tabPage.Controls.Add(this.dataGridView3);
-            this.Classe_tabPage.Controls.Add(this.textBox2);
+            this.Classe_tabPage.Controls.Add(this.ResultatClasse_dataGridView);
+            this.Classe_tabPage.Controls.Add(this.RechercherClasse_textBox);
             this.Classe_tabPage.Location = new System.Drawing.Point(4, 22);
             this.Classe_tabPage.Name = "Classe_tabPage";
             this.Classe_tabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -493,16 +497,16 @@
             this.Classe_tabPage.TabIndex = 2;
             this.Classe_tabPage.Text = "Classe";
             // 
-            // button3
+            // AjouterALaClasse_button
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.button3.Location = new System.Drawing.Point(737, 178);
-            this.button3.Margin = new System.Windows.Forms.Padding(8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(219, 32);
-            this.button3.TabIndex = 47;
-            this.button3.Text = "Ajouter à la classe";
-            this.button3.UseVisualStyleBackColor = true;
+            this.AjouterALaClasse_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AjouterALaClasse_button.Location = new System.Drawing.Point(737, 178);
+            this.AjouterALaClasse_button.Margin = new System.Windows.Forms.Padding(8);
+            this.AjouterALaClasse_button.Name = "AjouterALaClasse_button";
+            this.AjouterALaClasse_button.Size = new System.Drawing.Size(219, 32);
+            this.AjouterALaClasse_button.TabIndex = 47;
+            this.AjouterALaClasse_button.Text = "Ajouter à la classe";
+            this.AjouterALaClasse_button.UseVisualStyleBackColor = true;
             // 
             // SupprClasse_label
             // 
@@ -514,6 +518,7 @@
             this.SupprClasse_label.Size = new System.Drawing.Size(23, 22);
             this.SupprClasse_label.TabIndex = 46;
             this.SupprClasse_label.Text = "X";
+            this.SupprClasse_label.Click += new System.EventHandler(this.SupprClasse_label_Click);
             // 
             // Classe_label
             // 
@@ -526,24 +531,24 @@
             this.Classe_label.TabIndex = 45;
             this.Classe_label.Text = "Classe";
             // 
-            // dataGridView3
+            // ResultatClasse_dataGridView
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(16, 65);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(710, 145);
-            this.dataGridView3.TabIndex = 44;
+            this.ResultatClasse_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatClasse_dataGridView.Location = new System.Drawing.Point(16, 65);
+            this.ResultatClasse_dataGridView.Name = "ResultatClasse_dataGridView";
+            this.ResultatClasse_dataGridView.Size = new System.Drawing.Size(710, 145);
+            this.ResultatClasse_dataGridView.TabIndex = 44;
             // 
-            // textBox2
+            // RechercherClasse_textBox
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.RechercherClasse_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox2.Location = new System.Drawing.Point(16, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(940, 30);
-            this.textBox2.TabIndex = 35;
-            this.textBox2.Text = "Rechercher une classe";
+            this.RechercherClasse_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.RechercherClasse_textBox.Location = new System.Drawing.Point(16, 30);
+            this.RechercherClasse_textBox.Name = "RechercherClasse_textBox";
+            this.RechercherClasse_textBox.Size = new System.Drawing.Size(940, 30);
+            this.RechercherClasse_textBox.TabIndex = 35;
+            this.RechercherClasse_textBox.Text = "Rechercher une classe";
             // 
             // AdherentValider_button
             // 
@@ -672,18 +677,18 @@
             this.Text = "BiblioFusion - adhérents";
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.Responsable_tabControl.ResumeLayout(false);
             this.ResponsableAdherent_tabPage.ResumeLayout(false);
             this.ResponsableAdherent_tabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RechercherResponsableAdherent_dataGridView)).EndInit();
             this.ResponsableNonAdherent_tabPage.ResumeLayout(false);
             this.ResponsableNonAdherent_tabPage.PerformLayout();
             this.Classe_tabPage.ResumeLayout(false);
             this.Classe_tabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).EndInit();
             this.Adherent_tabControl.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -695,7 +700,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl Responsable_tabControl;
         private System.Windows.Forms.TabPage ResponsableAdherent_tabPage;
-        private System.Windows.Forms.TextBox RechercherResponsable_textBox;
+        private System.Windows.Forms.TextBox RechercherResponsableAdherent_textBox;
         private System.Windows.Forms.TabPage ResponsableNonAdherent_tabPage;
         private System.Windows.Forms.TextBox NomResponsable_textBox;
         private System.Windows.Forms.TextBox MobileResponsable_textBox;
@@ -713,12 +718,12 @@
         private System.Windows.Forms.TextBox FixeAdherant_textBox;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.TabControl Adherent_tabControl;
-        private System.Windows.Forms.TextBox ChercherAdherant_textBox;
+        private System.Windows.Forms.TextBox RechercherAdherant_textBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckedListBox FiltresRechercheAdherent_checkedListBox;
         private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
         private System.Windows.Forms.DateTimePicker NaissanceResponsable_dateTimePicker;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView ResultatAdherent_dataGridView;
         private System.Windows.Forms.TextBox CodePostalAdherant_textBox;
         private System.Windows.Forms.Label Responsable2Adherent_label;
         private System.Windows.Forms.Label Responsable1Adherent_label;
@@ -730,14 +735,14 @@
         private System.Windows.Forms.Label SupprResponsable1NonAdherent_label;
         private System.Windows.Forms.CheckBox Eleve_checkBox;
         private System.Windows.Forms.TextBox CodePostalResponsable_textBox;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView RechercherResponsableAdherent_dataGridView;
         private System.Windows.Forms.Button AjoutResponsableNonAdherent_button;
         private System.Windows.Forms.Button AjoutResponsableAdherent_button;
         private System.Windows.Forms.TabPage Classe_tabPage;
         private System.Windows.Forms.Label SupprClasse_label;
         private System.Windows.Forms.Label Classe_label;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridView ResultatClasse_dataGridView;
+        private System.Windows.Forms.TextBox RechercherClasse_textBox;
+        private System.Windows.Forms.Button AjouterALaClasse_button;
     }
 }

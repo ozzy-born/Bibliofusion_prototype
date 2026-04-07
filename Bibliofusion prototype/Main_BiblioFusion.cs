@@ -13,6 +13,7 @@ namespace Bibliofusion_prototype
 {
     public partial class MainForm : Form
     {
+        public static int nPage;
         public MainForm()
         {
             InitializeComponent();
@@ -20,6 +21,21 @@ namespace Bibliofusion_prototype
 
         private void NouvelEmpruntToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            nPage = 1;
+            Form_Emprunts form_Emprents = new Form_Emprunts();
+            form_Emprents.ShowDialog();
+
+        }
+        private void enregisterUnRetourToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            nPage = 2;
+            Form_Emprunts form_Emprents = new Form_Emprunts();
+            form_Emprents.ShowDialog();
+        }
+
+        private void reserverUnArticleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            nPage = 3;
             Form_Emprunts form_Emprents = new Form_Emprunts();
             form_Emprents.ShowDialog();
         }
@@ -66,5 +82,6 @@ namespace Bibliofusion_prototype
             Form_Connexion formConnexion = new Form_Connexion();
             formConnexion.ShowDialog();
         }
+
     }
 }
