@@ -30,6 +30,8 @@
         {
             this.Jouet_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutJouet_tabPage = new System.Windows.Forms.TabPage();
+            this.DateVenteJouet_label = new System.Windows.Forms.Label();
+            this.DateVenteJouet_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.AgeMaxJouet_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.AgeMaxJouet_label = new System.Windows.Forms.Label();
             this.AgeMinJouet_label = new System.Windows.Forms.Label();
@@ -48,16 +50,14 @@
             this.FiltresDeRechercheJouet_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherJouet_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
-            this.DateVenteJouet_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.DateVenteJouet_label = new System.Windows.Forms.Label();
             this.Jouet_tabControl.SuspendLayout();
             this.AjoutJouet_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DateVenteJouet_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxJouet_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMinJouet_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NbExemplairesJouet_numericUpDown)).BeginInit();
             this.EditJouet_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatJouet_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DateVenteJouet_numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // Jouet_tabControl
@@ -95,10 +95,38 @@
             this.AjoutJouet_tabPage.TabIndex = 0;
             this.AjoutJouet_tabPage.Text = "Ajouter un jouet";
             // 
+            // DateVenteJouet_label
+            // 
+            this.DateVenteJouet_label.AutoSize = true;
+            this.DateVenteJouet_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.DateVenteJouet_label.Location = new System.Drawing.Point(30, 365);
+            this.DateVenteJouet_label.Name = "DateVenteJouet_label";
+            this.DateVenteJouet_label.Size = new System.Drawing.Size(248, 25);
+            this.DateVenteJouet_label.TabIndex = 76;
+            this.DateVenteJouet_label.Text = "Annee de Mise en Vente";
+            // 
+            // DateVenteJouet_numericUpDown
+            // 
+            this.DateVenteJouet_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.DateVenteJouet_numericUpDown.Location = new System.Drawing.Point(285, 365);
+            this.DateVenteJouet_numericUpDown.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.DateVenteJouet_numericUpDown.Name = "DateVenteJouet_numericUpDown";
+            this.DateVenteJouet_numericUpDown.Size = new System.Drawing.Size(120, 30);
+            this.DateVenteJouet_numericUpDown.TabIndex = 75;
+            this.DateVenteJouet_numericUpDown.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            // 
             // AgeMaxJouet_numericUpDown
             // 
             this.AgeMaxJouet_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AgeMaxJouet_numericUpDown.Location = new System.Drawing.Point(284, 465);
+            this.AgeMaxJouet_numericUpDown.Location = new System.Drawing.Point(285, 465);
             this.AgeMaxJouet_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -141,7 +169,7 @@
             // AgeMinJouet_numericUpDown
             // 
             this.AgeMinJouet_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AgeMinJouet_numericUpDown.Location = new System.Drawing.Point(284, 415);
+            this.AgeMinJouet_numericUpDown.Location = new System.Drawing.Point(285, 415);
             this.AgeMinJouet_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -174,7 +202,7 @@
             // NbExemplairesJouet_numericUpDown
             // 
             this.NbExemplairesJouet_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NbExemplairesJouet_numericUpDown.Location = new System.Drawing.Point(284, 515);
+            this.NbExemplairesJouet_numericUpDown.Location = new System.Drawing.Point(285, 515);
             this.NbExemplairesJouet_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -332,34 +360,6 @@
             this.BiblioFusion_label2.TabIndex = 51;
             this.BiblioFusion_label2.Text = "BiblioFusion";
             // 
-            // DateVenteJouet_numericUpDown
-            // 
-            this.DateVenteJouet_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.DateVenteJouet_numericUpDown.Location = new System.Drawing.Point(284, 363);
-            this.DateVenteJouet_numericUpDown.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.DateVenteJouet_numericUpDown.Name = "DateVenteJouet_numericUpDown";
-            this.DateVenteJouet_numericUpDown.Size = new System.Drawing.Size(120, 30);
-            this.DateVenteJouet_numericUpDown.TabIndex = 75;
-            this.DateVenteJouet_numericUpDown.Value = new decimal(new int[] {
-            1900,
-            0,
-            0,
-            0});
-            // 
-            // DateVenteJouet_label
-            // 
-            this.DateVenteJouet_label.AutoSize = true;
-            this.DateVenteJouet_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.DateVenteJouet_label.Location = new System.Drawing.Point(30, 365);
-            this.DateVenteJouet_label.Name = "DateVenteJouet_label";
-            this.DateVenteJouet_label.Size = new System.Drawing.Size(248, 25);
-            this.DateVenteJouet_label.TabIndex = 76;
-            this.DateVenteJouet_label.Text = "Annee de Mise en Vente";
-            // 
             // Form_Jouets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -373,13 +373,13 @@
             this.Jouet_tabControl.ResumeLayout(false);
             this.AjoutJouet_tabPage.ResumeLayout(false);
             this.AjoutJouet_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DateVenteJouet_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxJouet_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMinJouet_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NbExemplairesJouet_numericUpDown)).EndInit();
             this.EditJouet_tabPage.ResumeLayout(false);
             this.EditJouet_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatJouet_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DateVenteJouet_numericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }

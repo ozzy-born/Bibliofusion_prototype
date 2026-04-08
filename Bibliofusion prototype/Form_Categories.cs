@@ -28,11 +28,11 @@ namespace Bibliofusion_prototype
         private void ValiderAjoutCategorie_button_Click(object sender, EventArgs e)
         {
             if (CategorieJouet_radioButton.Checked == true) { 
-                TypeArticle = "Jouet";
+                TypeArticle = "jouet";
             }
             else if (CategorieLivre_radioButton.Checked == true)
             {
-                TypeArticle = "Livre";
+                TypeArticle = "livre";
             }
             else
             {
@@ -40,7 +40,7 @@ namespace Bibliofusion_prototype
                 return;
             }
 
-            DialogResult verfication = MessageBox.Show("Voulez-vous valider cette catégorie ?", "Nouvelle catégorie de " + TypeArticle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult verfication = MessageBox.Show("Voulez-vous ajouter la categorie de " + TypeArticle + " " + NomCategorie_textBox.Text +" ?" , "Nouvelle catégorie de " + TypeArticle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verfication == DialogResult.Yes)
             {
                 NomCatergorie = NomCategorie_textBox.Text;

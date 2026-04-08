@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form_Adherents : Form
     {
-        public static string Nom, Nom1, Nom2, Prenom, Prenom1, Prenom2, DateNaissance, DateNaissance1, DateNaissance2, Email, Email1, Email2, Mobile, Mobile1, Mobile2, Fixe, Fixe1, Fixe2, Classe;
+        public static string Nom, Nom1, Nom2, Prenom, Prenom1, Prenom2, DateNaissance, DateNaissance1, DateNaissance2, Email, Email1, Email2, Mobile, Mobile1, Mobile2, Fixe, Fixe1, Fixe2, Classe, Adresse, Adresse1, Adresse2;
         public static int CodePostal, CodePostal1, CodePostal2;
         public Form_Adherents()
         {
@@ -145,15 +145,35 @@ namespace WindowsFormsApp1
 
         private void AdherentValider_button_Click(object sender, EventArgs e)
         {
-            DialogResult verfication = MessageBox.Show("Voulez-vous valider cet adhérent ?", "Nouvel adhérent", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            try
+            {
+                CodePostal = int.Parse(CodePostalAdherent_textBox.Text);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Le code postal doit être un nombre entier. \nEntrez 0 Si le code postal est inconnu", "Erreur de format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            DialogResult verfication = MessageBox.Show("Voulez-vous ajouter cet adhérent ?", "Nouvel adhérent", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verfication == DialogResult.Yes)
             {
                 // Code pour valider l'adhérent
-                MessageBox.Show("Nouvel adhérent créé !");
-            }
-            else
-            {
-                MessageBox.Show("Validation annulée.");
+                Nom = NomAdherent_textBox.Text;
+                Prenom = PrenomAdherent_textBox.Text;
+                DateNaissance = NaissanceAdherent_dateTimePicker.Value.ToShortDateString();
+                Email = MailAdherent_textBox.Text;
+                Mobile = MobileAdherent_textBox.Text;
+                Fixe = FixeAdherent_textBox.Text;
+                Adresse = AdresseAdherent_textBox.Text;
+                MessageBox.Show(
+                    "Nom : " + Nom +
+                    "\nPrénom : " + Prenom +
+                    "\nDate de naissance : " + DateNaissance +
+                    "\nEmail : " + Email +
+                    "\nMobile : " + Mobile +
+                    "\nFixe : " + Fixe +
+                    "\nAdresse : " + Adresse + " " + CodePostal,
+                    "Nouvel adhérent créé");
             }
         }
     }

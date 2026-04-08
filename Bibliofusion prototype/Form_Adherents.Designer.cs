@@ -35,7 +35,7 @@
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.AjoutAdherent_tabPage = new System.Windows.Forms.TabPage();
             this.Eleve_checkBox = new System.Windows.Forms.CheckBox();
-            this.CodePostalAdherant_textBox = new System.Windows.Forms.TextBox();
+            this.CodePostalAdherent_textBox = new System.Windows.Forms.TextBox();
             this.NaissanceAdherent_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Responsable_tabControl = new System.Windows.Forms.TabControl();
             this.ResponsableAdherent_tabPage = new System.Windows.Forms.TabPage();
@@ -68,12 +68,12 @@
             this.RechercherClasse_textBox = new System.Windows.Forms.TextBox();
             this.AdherentAjoutValider_button = new System.Windows.Forms.Button();
             this.Mineur_checkBox = new System.Windows.Forms.CheckBox();
-            this.NomAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.MobileAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.AdresseAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.PrenomAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.MailAdherant_textBox = new System.Windows.Forms.TextBox();
-            this.FixeAdherant_textBox = new System.Windows.Forms.TextBox();
+            this.NomAdherent_textBox = new System.Windows.Forms.TextBox();
+            this.MobileAdherent_textBox = new System.Windows.Forms.TextBox();
+            this.AdresseAdherent_textBox = new System.Windows.Forms.TextBox();
+            this.PrenomAdherent_textBox = new System.Windows.Forms.TextBox();
+            this.MailAdherent_textBox = new System.Windows.Forms.TextBox();
+            this.FixeAdherent_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.Adherent_tabControl = new System.Windows.Forms.TabControl();
             this.EditAdherent_tabPage.SuspendLayout();
@@ -152,17 +152,17 @@
             // 
             this.AjoutAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AjoutAdherent_tabPage.Controls.Add(this.Eleve_checkBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.CodePostalAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.CodePostalAdherent_textBox);
             this.AjoutAdherent_tabPage.Controls.Add(this.NaissanceAdherent_dateTimePicker);
             this.AjoutAdherent_tabPage.Controls.Add(this.Responsable_tabControl);
             this.AjoutAdherent_tabPage.Controls.Add(this.AdherentAjoutValider_button);
             this.AjoutAdherent_tabPage.Controls.Add(this.Mineur_checkBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.NomAdherant_textBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.MobileAdherant_textBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.AdresseAdherant_textBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.PrenomAdherant_textBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.MailAdherant_textBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.FixeAdherant_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.NomAdherent_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.MobileAdherent_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.AdresseAdherent_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.PrenomAdherent_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.MailAdherent_textBox);
+            this.AjoutAdherent_tabPage.Controls.Add(this.FixeAdherent_textBox);
             this.AjoutAdherent_tabPage.Controls.Add(this.BiblioFusion_label1);
             this.AjoutAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
             this.AjoutAdherent_tabPage.Name = "AjoutAdherent_tabPage";
@@ -184,16 +184,16 @@
             this.Eleve_checkBox.UseVisualStyleBackColor = true;
             this.Eleve_checkBox.CheckedChanged += new System.EventHandler(this.Eleve_checkBox_CheckedChanged);
             // 
-            // CodePostalAdherant_textBox
+            // CodePostalAdherent_textBox
             // 
-            this.CodePostalAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.CodePostalAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.CodePostalAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CodePostalAdherant_textBox.Location = new System.Drawing.Point(510, 265);
-            this.CodePostalAdherant_textBox.Name = "CodePostalAdherant_textBox";
-            this.CodePostalAdherant_textBox.Size = new System.Drawing.Size(230, 30);
-            this.CodePostalAdherant_textBox.TabIndex = 43;
-            this.CodePostalAdherant_textBox.Text = "Code postale";
+            this.CodePostalAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.CodePostalAdherent_textBox.Location = new System.Drawing.Point(510, 265);
+            this.CodePostalAdherent_textBox.Name = "CodePostalAdherent_textBox";
+            this.CodePostalAdherent_textBox.Size = new System.Drawing.Size(230, 30);
+            this.CodePostalAdherent_textBox.TabIndex = 43;
+            this.CodePostalAdherent_textBox.Text = "Code postale";
             // 
             // NaissanceAdherent_dateTimePicker
             // 
@@ -575,71 +575,71 @@
             this.Mineur_checkBox.UseVisualStyleBackColor = true;
             this.Mineur_checkBox.CheckedChanged += new System.EventHandler(this.Mineur_checkBox_CheckedChanged);
             // 
-            // NomAdherant_textBox
+            // NomAdherent_textBox
             // 
-            this.NomAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.NomAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NomAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomAdherant_textBox.Location = new System.Drawing.Point(30, 115);
-            this.NomAdherant_textBox.Name = "NomAdherant_textBox";
-            this.NomAdherant_textBox.Size = new System.Drawing.Size(460, 30);
-            this.NomAdherant_textBox.TabIndex = 38;
-            this.NomAdherant_textBox.Text = "Nom";
+            this.NomAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomAdherent_textBox.Location = new System.Drawing.Point(30, 115);
+            this.NomAdherent_textBox.Name = "NomAdherent_textBox";
+            this.NomAdherent_textBox.Size = new System.Drawing.Size(460, 30);
+            this.NomAdherent_textBox.TabIndex = 38;
+            this.NomAdherent_textBox.Text = "Nom";
             // 
-            // MobileAdherant_textBox
+            // MobileAdherent_textBox
             // 
-            this.MobileAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.MobileAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MobileAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.MobileAdherant_textBox.Location = new System.Drawing.Point(30, 215);
-            this.MobileAdherant_textBox.Name = "MobileAdherant_textBox";
-            this.MobileAdherant_textBox.Size = new System.Drawing.Size(460, 30);
-            this.MobileAdherant_textBox.TabIndex = 36;
-            this.MobileAdherant_textBox.Text = "N° de téléphone mobile";
+            this.MobileAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.MobileAdherent_textBox.Location = new System.Drawing.Point(30, 215);
+            this.MobileAdherent_textBox.Name = "MobileAdherent_textBox";
+            this.MobileAdherent_textBox.Size = new System.Drawing.Size(460, 30);
+            this.MobileAdherent_textBox.TabIndex = 36;
+            this.MobileAdherent_textBox.Text = "N° de téléphone mobile";
             // 
-            // AdresseAdherant_textBox
+            // AdresseAdherent_textBox
             // 
-            this.AdresseAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.AdresseAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdresseAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AdresseAdherant_textBox.Location = new System.Drawing.Point(30, 265);
-            this.AdresseAdherant_textBox.Name = "AdresseAdherant_textBox";
-            this.AdresseAdherant_textBox.Size = new System.Drawing.Size(460, 30);
-            this.AdresseAdherant_textBox.TabIndex = 35;
-            this.AdresseAdherant_textBox.Text = "Adresse postale";
+            this.AdresseAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AdresseAdherent_textBox.Location = new System.Drawing.Point(30, 265);
+            this.AdresseAdherent_textBox.Name = "AdresseAdherent_textBox";
+            this.AdresseAdherent_textBox.Size = new System.Drawing.Size(460, 30);
+            this.AdresseAdherent_textBox.TabIndex = 35;
+            this.AdresseAdherent_textBox.Text = "Adresse postale";
             // 
-            // PrenomAdherant_textBox
+            // PrenomAdherent_textBox
             // 
-            this.PrenomAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PrenomAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PrenomAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.PrenomAdherant_textBox.Location = new System.Drawing.Point(510, 115);
-            this.PrenomAdherant_textBox.Name = "PrenomAdherant_textBox";
-            this.PrenomAdherant_textBox.Size = new System.Drawing.Size(460, 30);
-            this.PrenomAdherant_textBox.TabIndex = 34;
-            this.PrenomAdherant_textBox.Text = "Prénom";
+            this.PrenomAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.PrenomAdherent_textBox.Location = new System.Drawing.Point(510, 115);
+            this.PrenomAdherent_textBox.Name = "PrenomAdherent_textBox";
+            this.PrenomAdherent_textBox.Size = new System.Drawing.Size(460, 30);
+            this.PrenomAdherent_textBox.TabIndex = 34;
+            this.PrenomAdherent_textBox.Text = "Prénom";
             // 
-            // MailAdherant_textBox
+            // MailAdherent_textBox
             // 
-            this.MailAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.MailAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.MailAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.MailAdherant_textBox.Location = new System.Drawing.Point(510, 165);
-            this.MailAdherant_textBox.Name = "MailAdherant_textBox";
-            this.MailAdherant_textBox.Size = new System.Drawing.Size(460, 30);
-            this.MailAdherant_textBox.TabIndex = 33;
-            this.MailAdherant_textBox.Text = "Adresse mail";
+            this.MailAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.MailAdherent_textBox.Location = new System.Drawing.Point(510, 165);
+            this.MailAdherent_textBox.Name = "MailAdherent_textBox";
+            this.MailAdherent_textBox.Size = new System.Drawing.Size(460, 30);
+            this.MailAdherent_textBox.TabIndex = 33;
+            this.MailAdherent_textBox.Text = "Adresse mail";
             // 
-            // FixeAdherant_textBox
+            // FixeAdherent_textBox
             // 
-            this.FixeAdherant_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.FixeAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FixeAdherant_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.FixeAdherant_textBox.Location = new System.Drawing.Point(510, 215);
-            this.FixeAdherant_textBox.Name = "FixeAdherant_textBox";
-            this.FixeAdherant_textBox.Size = new System.Drawing.Size(460, 30);
-            this.FixeAdherant_textBox.TabIndex = 32;
-            this.FixeAdherant_textBox.Text = "N° de fixe";
+            this.FixeAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.FixeAdherent_textBox.Location = new System.Drawing.Point(510, 215);
+            this.FixeAdherent_textBox.Name = "FixeAdherent_textBox";
+            this.FixeAdherent_textBox.Size = new System.Drawing.Size(460, 30);
+            this.FixeAdherent_textBox.TabIndex = 32;
+            this.FixeAdherent_textBox.Text = "N° de fixe";
             // 
             // BiblioFusion_label1
             // 
@@ -710,12 +710,12 @@
         private System.Windows.Forms.TextBox FixeResponsable_textBox;
         private System.Windows.Forms.Button AdherentAjoutValider_button;
         private System.Windows.Forms.CheckBox Mineur_checkBox;
-        private System.Windows.Forms.TextBox NomAdherant_textBox;
-        private System.Windows.Forms.TextBox MobileAdherant_textBox;
-        private System.Windows.Forms.TextBox AdresseAdherant_textBox;
-        private System.Windows.Forms.TextBox PrenomAdherant_textBox;
-        private System.Windows.Forms.TextBox MailAdherant_textBox;
-        private System.Windows.Forms.TextBox FixeAdherant_textBox;
+        private System.Windows.Forms.TextBox NomAdherent_textBox;
+        private System.Windows.Forms.TextBox MobileAdherent_textBox;
+        private System.Windows.Forms.TextBox AdresseAdherent_textBox;
+        private System.Windows.Forms.TextBox PrenomAdherent_textBox;
+        private System.Windows.Forms.TextBox MailAdherent_textBox;
+        private System.Windows.Forms.TextBox FixeAdherent_textBox;
         private System.Windows.Forms.Label BiblioFusion_label1;
         private System.Windows.Forms.TabControl Adherent_tabControl;
         private System.Windows.Forms.TextBox RechercherAdherant_textBox;
@@ -724,7 +724,7 @@
         private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
         private System.Windows.Forms.DateTimePicker NaissanceResponsable_dateTimePicker;
         private System.Windows.Forms.DataGridView ResultatAdherent_dataGridView;
-        private System.Windows.Forms.TextBox CodePostalAdherant_textBox;
+        private System.Windows.Forms.TextBox CodePostalAdherent_textBox;
         private System.Windows.Forms.Label Responsable2Adherent_label;
         private System.Windows.Forms.Label Responsable1Adherent_label;
         private System.Windows.Forms.Label Responsable2NonAdherent_label;

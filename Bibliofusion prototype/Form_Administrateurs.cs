@@ -21,28 +21,33 @@ namespace Bibliofusion_prototype
 
         private void ValiderAjoutAdmin_button_Click(object sender, EventArgs e)
         {
-            try 
-            {
+            try {
                 CodePostal = int.Parse(CodePostalAdmin_textBox.Text);
             }
             catch (FormatException)
             {
-                MessageBox.Show("Le code postal doit être un nombre entier.", "Erreur de format", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Le code postal doit être un nombre entier. \nEntrez 0 Si le code postal est inconnu", "Erreur de format", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             DialogResult verfication = MessageBox.Show("Voulez-vous valider cet Administrateur ?", "Nouvel Administrateur", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verfication == DialogResult.Yes)
             {
                 // Code pour valider l'adhérent
-                Nom = NomAdmin_textBox.Text;
+                                Nom = NomAdmin_textBox.Text;
                 Prenom = PrenomAdmin_textBox.Text;
                 DateNaissance = NaissanceAdmin_dateTimePicker.Value.ToString("dd/MM/yyyy");
                 Email = EmailAdmin_textBox.Text;
                 Mobile = MobileAdmin_textBox.Text;
                 Fixe = FixeAdmin_textBox.Text;
                 Adresse = AdresseAdmin_textBox.Text;
-                MessageBox.Show("Nouvel Administrateur créé !");
+                MessageBox.Show("Nom : " + Nom +
+                    "\nPrénom : " + Prenom +
+                    "\nDate de naissance : " + DateNaissance +
+                    "\nEmail : " + Email +
+                    "\nMobile : " + Mobile +
+                    "\nFixe : " + Fixe +
+                    "\nAdresse : " + Adresse + " " + CodePostal,
+                    "Nouvel Administrateur créé !");
             }
         }
     }

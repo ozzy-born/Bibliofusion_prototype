@@ -31,10 +31,11 @@
             this.ValiderAjoutLivre_button = new System.Windows.Forms.Button();
             this.Livre_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutLivre_tabPage = new System.Windows.Forms.TabPage();
+            this.NbExemplairesLivre_label = new System.Windows.Forms.Label();
+            this.NbExemplairesLivre_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.CategorieLivre_comboBox = new System.Windows.Forms.ComboBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.TitreLivre_textBox = new System.Windows.Forms.TextBox();
-            this.DateParutionLivre_textBox = new System.Windows.Forms.TextBox();
             this.ISBNLivre_textBox = new System.Windows.Forms.TextBox();
             this.AuteurLivre_textBox = new System.Windows.Forms.TextBox();
             this.EmplacementLivre_textBox = new System.Windows.Forms.TextBox();
@@ -45,25 +46,33 @@
             this.RechercherLivre_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.NbExemplairesLivre_label = new System.Windows.Forms.Label();
-            this.NbExemplairesLivre_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.AnneeParutionLivre_label = new System.Windows.Forms.Label();
+            this.DateParutionLivre_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.AgeMaxLivre_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.AgeMaxLivre_label = new System.Windows.Forms.Label();
+            this.AgeMinLivre_label = new System.Windows.Forms.Label();
+            this.AgeMinLivre_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Livre_tabControl.SuspendLayout();
             this.AjoutLivre_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NbExemplairesLivre_numericUpDown)).BeginInit();
             this.EditLivre_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatLivre_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NbExemplairesLivre_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DateParutionLivre_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeMaxLivre_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeMinLivre_numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // ValiderAjoutLivre_button
             // 
             this.ValiderAjoutLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.ValiderAjoutLivre_button.Location = new System.Drawing.Point(850, 465);
+            this.ValiderAjoutLivre_button.Location = new System.Drawing.Point(850, 415);
             this.ValiderAjoutLivre_button.Margin = new System.Windows.Forms.Padding(8);
             this.ValiderAjoutLivre_button.Name = "ValiderAjoutLivre_button";
             this.ValiderAjoutLivre_button.Size = new System.Drawing.Size(101, 32);
             this.ValiderAjoutLivre_button.TabIndex = 29;
             this.ValiderAjoutLivre_button.Text = "Valider";
             this.ValiderAjoutLivre_button.UseVisualStyleBackColor = true;
+            this.ValiderAjoutLivre_button.Click += new System.EventHandler(this.ValiderAjoutLivre_button_Click);
             // 
             // Livre_tabControl
             // 
@@ -78,13 +87,18 @@
             // AjoutLivre_tabPage
             // 
             this.AjoutLivre_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutLivre_tabPage.Controls.Add(this.AgeMaxLivre_numericUpDown);
+            this.AjoutLivre_tabPage.Controls.Add(this.AgeMaxLivre_label);
+            this.AjoutLivre_tabPage.Controls.Add(this.AgeMinLivre_label);
+            this.AjoutLivre_tabPage.Controls.Add(this.AgeMinLivre_numericUpDown);
+            this.AjoutLivre_tabPage.Controls.Add(this.DateParutionLivre_numericUpDown);
+            this.AjoutLivre_tabPage.Controls.Add(this.AnneeParutionLivre_label);
             this.AjoutLivre_tabPage.Controls.Add(this.NbExemplairesLivre_label);
             this.AjoutLivre_tabPage.Controls.Add(this.NbExemplairesLivre_numericUpDown);
             this.AjoutLivre_tabPage.Controls.Add(this.CategorieLivre_comboBox);
             this.AjoutLivre_tabPage.Controls.Add(this.BiblioFusion_label1);
             this.AjoutLivre_tabPage.Controls.Add(this.TitreLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.ValiderAjoutLivre_button);
-            this.AjoutLivre_tabPage.Controls.Add(this.DateParutionLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.ISBNLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.AuteurLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.EmplacementLivre_textBox);
@@ -95,6 +109,39 @@
             this.AjoutLivre_tabPage.Size = new System.Drawing.Size(997, 699);
             this.AjoutLivre_tabPage.TabIndex = 0;
             this.AjoutLivre_tabPage.Text = "Ajouter un livre";
+            // 
+            // NbExemplairesLivre_label
+            // 
+            this.NbExemplairesLivre_label.AutoSize = true;
+            this.NbExemplairesLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NbExemplairesLivre_label.Location = new System.Drawing.Point(30, 565);
+            this.NbExemplairesLivre_label.Name = "NbExemplairesLivre_label";
+            this.NbExemplairesLivre_label.Size = new System.Drawing.Size(225, 25);
+            this.NbExemplairesLivre_label.TabIndex = 72;
+            this.NbExemplairesLivre_label.Text = "Nombre d\'exemplaires";
+            // 
+            // NbExemplairesLivre_numericUpDown
+            // 
+            this.NbExemplairesLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NbExemplairesLivre_numericUpDown.Location = new System.Drawing.Point(285, 565);
+            this.NbExemplairesLivre_numericUpDown.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.NbExemplairesLivre_numericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.NbExemplairesLivre_numericUpDown.Name = "NbExemplairesLivre_numericUpDown";
+            this.NbExemplairesLivre_numericUpDown.Size = new System.Drawing.Size(120, 30);
+            this.NbExemplairesLivre_numericUpDown.TabIndex = 71;
+            this.NbExemplairesLivre_numericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // CategorieLivre_comboBox
             // 
@@ -130,23 +177,12 @@
             this.TitreLivre_textBox.TabIndex = 37;
             this.TitreLivre_textBox.Text = "Titre";
             // 
-            // DateParutionLivre_textBox
-            // 
-            this.DateParutionLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DateParutionLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.DateParutionLivre_textBox.Location = new System.Drawing.Point(30, 315);
-            this.DateParutionLivre_textBox.Name = "DateParutionLivre_textBox";
-            this.DateParutionLivre_textBox.Size = new System.Drawing.Size(940, 30);
-            this.DateParutionLivre_textBox.TabIndex = 36;
-            this.DateParutionLivre_textBox.Text = "Année de parution";
-            // 
             // ISBNLivre_textBox
             // 
             this.ISBNLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ISBNLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.ISBNLivre_textBox.Location = new System.Drawing.Point(30, 415);
+            this.ISBNLivre_textBox.Location = new System.Drawing.Point(30, 365);
             this.ISBNLivre_textBox.Name = "ISBNLivre_textBox";
             this.ISBNLivre_textBox.Size = new System.Drawing.Size(940, 30);
             this.ISBNLivre_textBox.TabIndex = 34;
@@ -162,14 +198,13 @@
             this.AuteurLivre_textBox.Size = new System.Drawing.Size(940, 30);
             this.AuteurLivre_textBox.TabIndex = 33;
             this.AuteurLivre_textBox.Text = "Auteur";
-            this.AuteurLivre_textBox.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             // 
             // EmplacementLivre_textBox
             // 
             this.EmplacementLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmplacementLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.EmplacementLivre_textBox.Location = new System.Drawing.Point(30, 365);
+            this.EmplacementLivre_textBox.Location = new System.Drawing.Point(30, 315);
             this.EmplacementLivre_textBox.Name = "EmplacementLivre_textBox";
             this.EmplacementLivre_textBox.Size = new System.Drawing.Size(940, 30);
             this.EmplacementLivre_textBox.TabIndex = 32;
@@ -257,34 +292,95 @@
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // NbExemplairesLivre_label
+            // AnneeParutionLivre_label
             // 
-            this.NbExemplairesLivre_label.AutoSize = true;
-            this.NbExemplairesLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NbExemplairesLivre_label.Location = new System.Drawing.Point(25, 472);
-            this.NbExemplairesLivre_label.Name = "NbExemplairesLivre_label";
-            this.NbExemplairesLivre_label.Size = new System.Drawing.Size(284, 25);
-            this.NbExemplairesLivre_label.TabIndex = 72;
-            this.NbExemplairesLivre_label.Text = "Nombre d\'exemplaires total :";
+            this.AnneeParutionLivre_label.AutoSize = true;
+            this.AnneeParutionLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AnneeParutionLivre_label.Location = new System.Drawing.Point(30, 415);
+            this.AnneeParutionLivre_label.Name = "AnneeParutionLivre_label";
+            this.AnneeParutionLivre_label.Size = new System.Drawing.Size(188, 25);
+            this.AnneeParutionLivre_label.TabIndex = 74;
+            this.AnneeParutionLivre_label.Text = "Année de parution";
             // 
-            // NbExemplairesLivre_numericUpDown
+            // DateParutionLivre_numericUpDown
             // 
-            this.NbExemplairesLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NbExemplairesLivre_numericUpDown.Location = new System.Drawing.Point(315, 470);
-            this.NbExemplairesLivre_numericUpDown.Maximum = new decimal(new int[] {
+            this.DateParutionLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.DateParutionLivre_numericUpDown.Location = new System.Drawing.Point(285, 415);
+            this.DateParutionLivre_numericUpDown.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.DateParutionLivre_numericUpDown.Name = "DateParutionLivre_numericUpDown";
+            this.DateParutionLivre_numericUpDown.Size = new System.Drawing.Size(120, 30);
+            this.DateParutionLivre_numericUpDown.TabIndex = 76;
+            this.DateParutionLivre_numericUpDown.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
+            // 
+            // AgeMaxLivre_numericUpDown
+            // 
+            this.AgeMaxLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AgeMaxLivre_numericUpDown.Location = new System.Drawing.Point(285, 515);
+            this.AgeMaxLivre_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
             0,
             0});
-            this.NbExemplairesLivre_numericUpDown.Minimum = new decimal(new int[] {
+            this.AgeMaxLivre_numericUpDown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.NbExemplairesLivre_numericUpDown.Name = "NbExemplairesLivre_numericUpDown";
-            this.NbExemplairesLivre_numericUpDown.Size = new System.Drawing.Size(120, 30);
-            this.NbExemplairesLivre_numericUpDown.TabIndex = 71;
-            this.NbExemplairesLivre_numericUpDown.Value = new decimal(new int[] {
+            this.AgeMaxLivre_numericUpDown.Name = "AgeMaxLivre_numericUpDown";
+            this.AgeMaxLivre_numericUpDown.Size = new System.Drawing.Size(120, 30);
+            this.AgeMaxLivre_numericUpDown.TabIndex = 80;
+            this.AgeMaxLivre_numericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // AgeMaxLivre_label
+            // 
+            this.AgeMaxLivre_label.AutoSize = true;
+            this.AgeMaxLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AgeMaxLivre_label.Location = new System.Drawing.Point(30, 515);
+            this.AgeMaxLivre_label.Name = "AgeMaxLivre_label";
+            this.AgeMaxLivre_label.Size = new System.Drawing.Size(147, 25);
+            this.AgeMaxLivre_label.TabIndex = 79;
+            this.AgeMaxLivre_label.Text = "Age maximum";
+            // 
+            // AgeMinLivre_label
+            // 
+            this.AgeMinLivre_label.AutoSize = true;
+            this.AgeMinLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AgeMinLivre_label.Location = new System.Drawing.Point(30, 465);
+            this.AgeMinLivre_label.Name = "AgeMinLivre_label";
+            this.AgeMinLivre_label.Size = new System.Drawing.Size(141, 25);
+            this.AgeMinLivre_label.TabIndex = 78;
+            this.AgeMinLivre_label.Text = "Age minimum";
+            // 
+            // AgeMinLivre_numericUpDown
+            // 
+            this.AgeMinLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.AgeMinLivre_numericUpDown.Location = new System.Drawing.Point(285, 465);
+            this.AgeMinLivre_numericUpDown.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.AgeMinLivre_numericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.AgeMinLivre_numericUpDown.Name = "AgeMinLivre_numericUpDown";
+            this.AgeMinLivre_numericUpDown.Size = new System.Drawing.Size(120, 30);
+            this.AgeMinLivre_numericUpDown.TabIndex = 77;
+            this.AgeMinLivre_numericUpDown.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -304,10 +400,13 @@
             this.Livre_tabControl.ResumeLayout(false);
             this.AjoutLivre_tabPage.ResumeLayout(false);
             this.AjoutLivre_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NbExemplairesLivre_numericUpDown)).EndInit();
             this.EditLivre_tabPage.ResumeLayout(false);
             this.EditLivre_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatLivre_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NbExemplairesLivre_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DateParutionLivre_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeMaxLivre_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AgeMinLivre_numericUpDown)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -318,7 +417,6 @@
         private System.Windows.Forms.TabPage EditLivre_tabPage;
         private System.Windows.Forms.TabPage AjoutLivre_tabPage;
         private System.Windows.Forms.TextBox TitreLivre_textBox;
-        private System.Windows.Forms.TextBox DateParutionLivre_textBox;
         private System.Windows.Forms.TextBox ISBNLivre_textBox;
         private System.Windows.Forms.TextBox AuteurLivre_textBox;
         private System.Windows.Forms.TextBox EmplacementLivre_textBox;
@@ -332,5 +430,11 @@
         private System.Windows.Forms.ComboBox CategorieLivre_comboBox;
         private System.Windows.Forms.Label NbExemplairesLivre_label;
         private System.Windows.Forms.NumericUpDown NbExemplairesLivre_numericUpDown;
+        private System.Windows.Forms.Label AnneeParutionLivre_label;
+        private System.Windows.Forms.NumericUpDown DateParutionLivre_numericUpDown;
+        private System.Windows.Forms.NumericUpDown AgeMaxLivre_numericUpDown;
+        private System.Windows.Forms.Label AgeMaxLivre_label;
+        private System.Windows.Forms.Label AgeMinLivre_label;
+        private System.Windows.Forms.NumericUpDown AgeMinLivre_numericUpDown;
     }
 }
