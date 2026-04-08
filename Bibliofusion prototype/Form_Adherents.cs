@@ -12,7 +12,14 @@ namespace WindowsFormsApp1
 {
     public partial class Form_Adherents : Form
     {
-        public static string Nom, Nom1, Nom2, Prenom, Prenom1, Prenom2, DateNaissance, DateNaissance1, DateNaissance2, Email, Email1, Email2, Mobile, Mobile1, Mobile2, Fixe, Fixe1, Fixe2, Classe, Adresse, Adresse1, Adresse2;
+        public static string Nom, Nom1, Nom2;
+        public static string Prenom, Prenom1, Prenom2;
+        public static string DateNaissance, DateNaissance1, DateNaissance2;
+        public static string Email, Email1, Email2;
+        public static string Mobile, Mobile1, Mobile2;
+        public static string Fixe, Fixe1, Fixe2;
+        public static string Adresse, Adresse1, Adresse2;
+        public static string Classe;
         public static int CodePostal, CodePostal1, CodePostal2;
         public Form_Adherents()
         {
