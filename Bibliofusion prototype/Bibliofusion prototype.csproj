@@ -33,6 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.8.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.8.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,8 +49,15 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_CodeQr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_CodeQr.Designer.cs">
+      <DependentUpon>Form_CodeQr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Adherents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +114,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_CodeQr.resx">
+      <DependentUpon>Form_CodeQr.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_Adherents.resx">
       <DependentUpon>Form_Adherents.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,6 +153,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

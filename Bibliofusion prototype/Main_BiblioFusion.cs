@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QRcode_generator;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -78,10 +79,14 @@ namespace Bibliofusion_prototype
 
         private void DeconnexionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MainForm.ActiveForm.Hide();
             Form_Connexion formConnexion = new Form_Connexion();
             formConnexion.ShowDialog();
         }
 
+        private void qRCodeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_CodeQr formQrCode = new Form_CodeQr();
+            formQrCode.ShowDialog();
+        }
     }
 }

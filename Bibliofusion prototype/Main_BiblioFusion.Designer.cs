@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Main_menuStrip = new System.Windows.Forms.MenuStrip();
-            this.EmpruntsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.NouvelEmpruntToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EnregisterUnRetourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ReserverUnArticleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.OptionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LivreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.JouetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AdherentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ClassesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AdministateursToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DeconnexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Emprunts_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NouvelEmprunt_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnregisterRetour_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ReserverArticle_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Options_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Livres_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Jouets_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Categories_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Adherents_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Classes_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Administateurs_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Deconnexion_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_tabControl = new System.Windows.Forms.TabControl();
             this.TabDeBord_tabPage = new System.Windows.Forms.TabPage();
             this.Reservations_dataGridView = new System.Windows.Forms.DataGridView();
@@ -64,6 +64,7 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.CodeQR_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menuStrip.SuspendLayout();
             this.Main_tabControl.SuspendLayout();
             this.TabDeBord_tabPage.SuspendLayout();
@@ -79,108 +80,109 @@
             // Main_menuStrip
             // 
             this.Main_menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EmpruntsToolStripMenuItem,
-            this.OptionsToolStripMenuItem,
-            this.DeconnexionToolStripMenuItem});
+            this.Emprunts_ToolStripMenuItem,
+            this.Options_ToolStripMenuItem,
+            this.Deconnexion_ToolStripMenuItem});
             this.Main_menuStrip.Location = new System.Drawing.Point(0, 0);
             this.Main_menuStrip.Name = "Main_menuStrip";
             this.Main_menuStrip.Size = new System.Drawing.Size(1007, 24);
             this.Main_menuStrip.TabIndex = 0;
             this.Main_menuStrip.Text = "menuStrip1";
             // 
-            // EmpruntsToolStripMenuItem
+            // Emprunts_ToolStripMenuItem
             // 
-            this.EmpruntsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.NouvelEmpruntToolStripMenuItem,
-            this.EnregisterUnRetourToolStripMenuItem,
-            this.ReserverUnArticleToolStripMenuItem});
-            this.EmpruntsToolStripMenuItem.Name = "EmpruntsToolStripMenuItem";
-            this.EmpruntsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.EmpruntsToolStripMenuItem.Text = "Emprunts";
+            this.Emprunts_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NouvelEmprunt_ToolStripMenuItem,
+            this.EnregisterRetour_ToolStripMenuItem,
+            this.ReserverArticle_ToolStripMenuItem});
+            this.Emprunts_ToolStripMenuItem.Name = "Emprunts_ToolStripMenuItem";
+            this.Emprunts_ToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.Emprunts_ToolStripMenuItem.Text = "Emprunts";
             // 
-            // NouvelEmpruntToolStripMenuItem
+            // NouvelEmprunt_ToolStripMenuItem
             // 
-            this.NouvelEmpruntToolStripMenuItem.Name = "NouvelEmpruntToolStripMenuItem";
-            this.NouvelEmpruntToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.NouvelEmpruntToolStripMenuItem.Text = "Nouvel emprunt";
-            this.NouvelEmpruntToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
+            this.NouvelEmprunt_ToolStripMenuItem.Name = "NouvelEmprunt_ToolStripMenuItem";
+            this.NouvelEmprunt_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.NouvelEmprunt_ToolStripMenuItem.Text = "Nouvel emprunt";
+            this.NouvelEmprunt_ToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
             // 
-            // EnregisterUnRetourToolStripMenuItem
+            // EnregisterRetour_ToolStripMenuItem
             // 
-            this.EnregisterUnRetourToolStripMenuItem.Name = "EnregisterUnRetourToolStripMenuItem";
-            this.EnregisterUnRetourToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.EnregisterUnRetourToolStripMenuItem.Text = "Enregister un retour";
-            this.EnregisterUnRetourToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
+            this.EnregisterRetour_ToolStripMenuItem.Name = "EnregisterRetour_ToolStripMenuItem";
+            this.EnregisterRetour_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EnregisterRetour_ToolStripMenuItem.Text = "Enregister un retour";
+            this.EnregisterRetour_ToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
             // 
-            // ReserverUnArticleToolStripMenuItem
+            // ReserverArticle_ToolStripMenuItem
             // 
-            this.ReserverUnArticleToolStripMenuItem.Name = "ReserverUnArticleToolStripMenuItem";
-            this.ReserverUnArticleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ReserverUnArticleToolStripMenuItem.Text = "Reserver un article";
-            this.ReserverUnArticleToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
+            this.ReserverArticle_ToolStripMenuItem.Name = "ReserverArticle_ToolStripMenuItem";
+            this.ReserverArticle_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReserverArticle_ToolStripMenuItem.Text = "Reserver un article";
+            this.ReserverArticle_ToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
             // 
-            // OptionsToolStripMenuItem
+            // Options_ToolStripMenuItem
             // 
-            this.OptionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LivreToolStripMenuItem,
-            this.JouetToolStripMenuItem,
-            this.CategoriesToolStripMenuItem,
-            this.AdherentToolStripMenuItem,
-            this.ClassesToolStripMenuItem,
-            this.AdministateursToolStripMenuItem});
-            this.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem";
-            this.OptionsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.OptionsToolStripMenuItem.Text = "Options";
+            this.Options_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Livres_ToolStripMenuItem,
+            this.Jouets_ToolStripMenuItem,
+            this.Categories_ToolStripMenuItem,
+            this.Adherents_ToolStripMenuItem,
+            this.Classes_ToolStripMenuItem,
+            this.Administateurs_ToolStripMenuItem,
+            this.CodeQR_ToolStripMenuItem});
+            this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
+            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.Options_ToolStripMenuItem.Text = "Options";
             // 
-            // LivreToolStripMenuItem
+            // Livres_ToolStripMenuItem
             // 
-            this.LivreToolStripMenuItem.Name = "LivreToolStripMenuItem";
-            this.LivreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.LivreToolStripMenuItem.Text = "Livres";
-            this.LivreToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
+            this.Livres_ToolStripMenuItem.Name = "Livres_ToolStripMenuItem";
+            this.Livres_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Livres_ToolStripMenuItem.Text = "Livres";
+            this.Livres_ToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
             // 
-            // JouetToolStripMenuItem
+            // Jouets_ToolStripMenuItem
             // 
-            this.JouetToolStripMenuItem.Name = "JouetToolStripMenuItem";
-            this.JouetToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.JouetToolStripMenuItem.Text = "Jouets";
-            this.JouetToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
+            this.Jouets_ToolStripMenuItem.Name = "Jouets_ToolStripMenuItem";
+            this.Jouets_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Jouets_ToolStripMenuItem.Text = "Jouets";
+            this.Jouets_ToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
             // 
-            // CategoriesToolStripMenuItem
+            // Categories_ToolStripMenuItem
             // 
-            this.CategoriesToolStripMenuItem.Name = "CategoriesToolStripMenuItem";
-            this.CategoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.CategoriesToolStripMenuItem.Text = "Catégories";
-            this.CategoriesToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
+            this.Categories_ToolStripMenuItem.Name = "Categories_ToolStripMenuItem";
+            this.Categories_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Categories_ToolStripMenuItem.Text = "Catégories";
+            this.Categories_ToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
             // 
-            // AdherentToolStripMenuItem
+            // Adherents_ToolStripMenuItem
             // 
-            this.AdherentToolStripMenuItem.Name = "AdherentToolStripMenuItem";
-            this.AdherentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.AdherentToolStripMenuItem.Text = "Adhérents";
-            this.AdherentToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
+            this.Adherents_ToolStripMenuItem.Name = "Adherents_ToolStripMenuItem";
+            this.Adherents_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Adherents_ToolStripMenuItem.Text = "Adhérents";
+            this.Adherents_ToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
             // 
-            // ClassesToolStripMenuItem
+            // Classes_ToolStripMenuItem
             // 
-            this.ClassesToolStripMenuItem.Name = "ClassesToolStripMenuItem";
-            this.ClassesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ClassesToolStripMenuItem.Text = "Classes";
-            this.ClassesToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
+            this.Classes_ToolStripMenuItem.Name = "Classes_ToolStripMenuItem";
+            this.Classes_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Classes_ToolStripMenuItem.Text = "Classes";
+            this.Classes_ToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
             // 
-            // AdministateursToolStripMenuItem
+            // Administateurs_ToolStripMenuItem
             // 
-            this.AdministateursToolStripMenuItem.Name = "AdministateursToolStripMenuItem";
-            this.AdministateursToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.AdministateursToolStripMenuItem.Text = "Administateurs";
-            this.AdministateursToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
+            this.Administateurs_ToolStripMenuItem.Name = "Administateurs_ToolStripMenuItem";
+            this.Administateurs_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Administateurs_ToolStripMenuItem.Text = "Administateurs";
+            this.Administateurs_ToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
             // 
-            // DeconnexionToolStripMenuItem
+            // Deconnexion_ToolStripMenuItem
             // 
-            this.DeconnexionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DeconnexionToolStripMenuItem.Name = "DeconnexionToolStripMenuItem";
-            this.DeconnexionToolStripMenuItem.Size = new System.Drawing.Size(89, 20);
-            this.DeconnexionToolStripMenuItem.Text = "Déconnexion";
-            this.DeconnexionToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
+            this.Deconnexion_ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Deconnexion_ToolStripMenuItem.Name = "Deconnexion_ToolStripMenuItem";
+            this.Deconnexion_ToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.Deconnexion_ToolStripMenuItem.Text = "Déconnexion";
+            this.Deconnexion_ToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
             // 
             // Main_tabControl
             // 
@@ -411,6 +413,13 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // CodeQR_ToolStripMenuItem
+            // 
+            this.CodeQR_ToolStripMenuItem.Name = "CodeQR_ToolStripMenuItem";
+            this.CodeQR_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CodeQR_ToolStripMenuItem.Text = "CodeQR";
+            this.CodeQR_ToolStripMenuItem.Click += new System.EventHandler(this.qRCodeToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -447,40 +456,41 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip Main_menuStrip;
-        private System.Windows.Forms.ToolStripMenuItem OptionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem DeconnexionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Options_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Deconnexion_ToolStripMenuItem;
         private System.Windows.Forms.TabControl Main_tabControl;
         private System.Windows.Forms.TabPage TabDeBord_tabPage;
         private System.Windows.Forms.TabPage MainRechercher_tabPage;
         private System.Windows.Forms.TabPage MainScanner_tabPage;
         private System.Windows.Forms.TabPage MainStat_tabPage;
-        private System.Windows.Forms.ToolStripMenuItem AdherentToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem LivreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem CategoriesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem AdministateursToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Adherents_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Livres_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Categories_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Administateurs_ToolStripMenuItem;
         private System.Windows.Forms.Label Reservations_label;
         private System.Windows.Forms.Label Retours_label;
         private System.Windows.Forms.Label Retards_label;
-        private System.Windows.Forms.ToolStripMenuItem JouetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Jouets_ToolStripMenuItem;
         private System.Windows.Forms.CheckedListBox FiltresDeRechercheMain_checkedListBox;
         private System.Windows.Forms.TextBox RechercherMain_textBox;
-        private System.Windows.Forms.ToolStripMenuItem ClassesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Classes_ToolStripMenuItem;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox descriptf;
-        private System.Windows.Forms.ToolStripMenuItem EmpruntsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Emprunts_ToolStripMenuItem;
         private System.Windows.Forms.ListBox chaine_de_caracter;
-        private System.Windows.Forms.ToolStripMenuItem NouvelEmpruntToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem EnregisterUnRetourToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem ReserverUnArticleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem NouvelEmprunt_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnregisterRetour_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ReserverArticle_ToolStripMenuItem;
         private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.DataGridView Retards_dataGridView;
         private System.Windows.Forms.DataGridView ResultatMain_dataGridView;
         private System.Windows.Forms.DataGridView Reservations_dataGridView;
         private System.Windows.Forms.DataGridView Retours_dataGridView;
+        private System.Windows.Forms.ToolStripMenuItem CodeQR_ToolStripMenuItem;
     }
 }
 
