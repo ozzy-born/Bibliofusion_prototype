@@ -110,6 +110,15 @@ namespace QRcode_generator
 
             Bitmap qrCodeImage = qrCode.GetGraphic(5);                      // Génère une image Bitmap du QR Code avec une taille de module de 5 pixels
             QRpicture.Image = qrCodeImage;                                  // Affiche l'image du QR Code dans un contrôle PictureBox nommé QRpicture
+            //
+            PrintDialog printDialog1 = new PrintDialog();                       // Crée une nouvelle instance de la boîte de dialogue d'impression
+            printDialog1.Document = printDocument1;                             // Associe le document d'impression à la boîte de dialogue d'impression
+            printDocument.DefaultPageSettings = printDialog1.PrinterSettings.DefaultPageSettings;        // Définit les paramètres de page par défaut du document d'impression en fonction des paramètres de l'imprimante sélectionnée dans la boîte de dialogue d'impression
+            //DialogResult result = printDialog1.ShowDialog();                    // Affiche la boîte de dialogue d'impression et stocke le résultat (OK ou Annuler)
+            previewDialog.Width = 800;                                          // Définit la largeur de la boîte de dialogue d'aperçu
+            previewDialog.Height = 600;                                         // Définit la hauteur de la boîte de dialogue d'aperçu
+
+            previewDialog.ShowDialog();                                         // Affiche la boîte de dialogue d'aperçu avant impression
         }
 
         private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)       // Gestionnaire d'événement pour dessiner le contenu à imprimer sur la page
@@ -143,25 +152,6 @@ namespace QRcode_generator
 
         private void BtnAperçu_Click(object sender, EventArgs e)                // Gestionnaire d'événement pour le clic sur le bouton d'aperçu avant impression
         {
-            if (QRpicture.Image == null)                                        // Vérifie si une image de QR Code est présente dans le contrôle PictureBox
-            {
-                MessageBox.Show("il faut générer un QR Code avant d'afficher l'aperçu !");          // Affiche un message d'erreur si aucun QR Code n'est généré
-                return;                                                        // Sort de la méthode pour éviter d'afficher l'aperçu
-            }
-
-            PrintDialog printDialog1 = new PrintDialog();                       // Crée une nouvelle instance de la boîte de dialogue d'impression
-            printDialog1.Document = printDocument1;                             // Associe le document d'impression à la boîte de dialogue d'impression
-            printDocument.DefaultPageSettings = printDialog1.PrinterSettings.DefaultPageSettings;        // Définit les paramètres de page par défaut du document d'impression en fonction des paramètres de l'imprimante sélectionnée dans la boîte de dialogue d'impression
-            //DialogResult result = printDialog1.ShowDialog();                    // Affiche la boîte de dialogue d'impression et stocke le résultat (OK ou Annuler)
-            previewDialog.Width = 800;                                          // Définit la largeur de la boîte de dialogue d'aperçu
-            previewDialog.Height = 600;                                         // Définit la hauteur de la boîte de dialogue d'aperçu
-
-            previewDialog.ShowDialog();                                         // Affiche la boîte de dialogue d'aperçu avant impression
-        }
-
-        private void Form_CodeQr_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

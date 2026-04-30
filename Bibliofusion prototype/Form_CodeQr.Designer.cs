@@ -40,7 +40,7 @@ namespace QRcode_generator
             // 
             // genererQR_button
             // 
-            this.genererQR_button.Location = new System.Drawing.Point(176, 234);
+            this.genererQR_button.Location = new System.Drawing.Point(125, 233);
             this.genererQR_button.Name = "genererQR_button";
             this.genererQR_button.Size = new System.Drawing.Size(106, 71);
             this.genererQR_button.TabIndex = 0;
@@ -92,7 +92,6 @@ namespace QRcode_generator
             this.MinimumSize = new System.Drawing.Size(379, 373);
             this.Name = "Form_CodeQr";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form_CodeQr_Load);
             ((System.ComponentModel.ISupportInitialize)(this.QRpicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
