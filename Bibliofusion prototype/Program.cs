@@ -21,6 +21,8 @@ namespace Bibliofusion_prototype
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Form_test Formtest=new Form_test();
+            Formtest.ShowDialog();
             Form_Connexion formConnexion = new Form_Connexion();
             MainForm mainForm = new MainForm();
             Application.Run(formConnexion);

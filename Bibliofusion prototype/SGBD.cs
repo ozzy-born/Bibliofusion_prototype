@@ -64,7 +64,7 @@ namespace Package1 {
             }
         }
 
-		public void ecrire(string bdd, string[] champs, string[] valeurs){
+		public void ecrire(){
 
 		}
 

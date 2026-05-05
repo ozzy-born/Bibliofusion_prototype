@@ -1,5 +1,6 @@
-using System;
+/*using System;
 using System.Data;
+using System.Configuration;
 using MySql.Data.MySqlClient;
 
 //Project -> Manage NuGet Packages -> Browse -> MySql.Data (à télécharger)
@@ -7,10 +8,17 @@ using MySql.Data.MySqlClient;
 
 Console.WriteLine("Hello, World!");
 
+
 string server = "localhost";
 string uid = "root";
 string password = "";
 string database = "bibliofusion3";
+/*
+string server = ConfigurationManager.AppSettings["ServerName"];
+string uid = ConfigurationManager.AppSettings["UserId"];
+string password = ConfigurationManager.AppSettings["Password"];
+string database = ConfigurationManager.AppSettings["DataBase"];
+
 
 string conString = $"server={server};uid={uid};pwd={password};database={database}";
 
@@ -35,3 +43,4 @@ catch (Exception ex)
 {
     Console.WriteLine("Error: " + ex.Message);
 }
+*/
