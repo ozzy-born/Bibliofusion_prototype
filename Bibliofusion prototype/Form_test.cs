@@ -18,6 +18,14 @@ namespace Bibliofusion_prototype
 
         private readonly string server, uid, password, database, conString;
 
+        private void btn_res_Click(object sender, EventArgs e)
+        {
+            tb_recherche.Clear();
+            tb_id.Clear();
+            tb_nom.Clear();
+            tb_adresse.Clear();
+
+        }
 
         public Form_test()
         {
@@ -28,14 +36,42 @@ namespace Bibliofusion_prototype
             password = ConfigurationManager.AppSettings["Password"];
             database = ConfigurationManager.AppSettings["DataBase"];
 
-            //conString = $"server={server};uid={uid};pwd={password};database={database}";
+            conString = $"server={server};uid={uid};pwd={password};database={database}";
             //conString = "server = 'localhost';uid='root';pwd='';database='bibliofusionbdd'";
+        }
+
+        private void btn_ajout_Click(object sender, EventArgs e)
+        {
+             try
+            {
+                using (MySqlConnection con = new MySqlConnection(conString))
+                {
+                    con.Open();
+                    string query = "INSERT INTO adherents (Nom, Adresse,Date_Naissance) VALUES (@nom, @adresse, @date)";
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+
+                        cmd.Parameters.AddWithValue("@nom", tb_nom.Text);
+                        cmd.Parameters.AddWithValue("@adresse", tb_adresse.Text);
+                        cmd.Parameters.AddWithValue("@date", date_naissance.Text);
+                        cmd.ExecuteNonQuery();
+
+
+                        MessageBox.Show($"{tb_nom.Text}\n{tb_adresse.Text}\n{date_naissance.Text}\nAjouté avec succès!");
+                    }
+                }
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show($"Erreur : {erreur.Message}");
+            }
+            btn_res_Click(sender, e);
         }
 
         private void btn_testco_Click(object sender, EventArgs e)
         {
             
-            /*
+            
             try
             {
                 using (MySqlConnection con = new MySqlConnection(conString))
@@ -48,7 +84,7 @@ namespace Bibliofusion_prototype
             {
                 MessageBox.Show($"erreur : {erreur.Message}");
             }
-            */
+            
         }
     }
 }

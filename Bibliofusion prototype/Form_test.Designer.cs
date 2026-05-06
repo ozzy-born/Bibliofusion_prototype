@@ -34,14 +34,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btn_res = new System.Windows.Forms.Button();
-            this.tb_testco = new System.Windows.Forms.TextBox();
-            this.tb_ajout = new System.Windows.Forms.TextBox();
-            this.tb_reset = new System.Windows.Forms.TextBox();
-            this.tb_suppr = new System.Windows.Forms.TextBox();
+            this.tb_id = new System.Windows.Forms.TextBox();
+            this.tb_nom = new System.Windows.Forms.TextBox();
+            this.tb_adresse = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.tb_recherche = new System.Windows.Forms.TextBox();
             this.btn_recherche = new System.Windows.Forms.Button();
+            this.date_naissance = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // btn_testco
@@ -71,6 +71,7 @@
             this.btn_ajout.TabIndex = 2;
             this.btn_ajout.Text = "ajouter";
             this.btn_ajout.UseVisualStyleBackColor = true;
+            this.btn_ajout.Click += new System.EventHandler(this.btn_ajout_Click);
             // 
             // button4
             // 
@@ -98,34 +99,31 @@
             this.btn_res.TabIndex = 5;
             this.btn_res.Text = "vider";
             this.btn_res.UseVisualStyleBackColor = true;
+            this.btn_res.Click += new System.EventHandler(this.btn_res_Click);
             // 
-            // tb_testco
+            // tb_id
             // 
-            this.tb_testco.Location = new System.Drawing.Point(152, 128);
-            this.tb_testco.Name = "tb_testco";
-            this.tb_testco.Size = new System.Drawing.Size(214, 20);
-            this.tb_testco.TabIndex = 6;
+            this.tb_id.Location = new System.Drawing.Point(152, 128);
+            this.tb_id.Name = "tb_id";
+            this.tb_id.Size = new System.Drawing.Size(214, 20);
+            this.tb_id.TabIndex = 6;
+            this.tb_id.Text = "id";
             // 
-            // tb_ajout
+            // tb_nom
             // 
-            this.tb_ajout.Location = new System.Drawing.Point(152, 189);
-            this.tb_ajout.Name = "tb_ajout";
-            this.tb_ajout.Size = new System.Drawing.Size(214, 20);
-            this.tb_ajout.TabIndex = 7;
+            this.tb_nom.Location = new System.Drawing.Point(152, 189);
+            this.tb_nom.Name = "tb_nom";
+            this.tb_nom.Size = new System.Drawing.Size(214, 20);
+            this.tb_nom.TabIndex = 7;
+            this.tb_nom.Text = "nom";
             // 
-            // tb_reset
+            // tb_adresse
             // 
-            this.tb_reset.Location = new System.Drawing.Point(152, 308);
-            this.tb_reset.Name = "tb_reset";
-            this.tb_reset.Size = new System.Drawing.Size(214, 20);
-            this.tb_reset.TabIndex = 9;
-            // 
-            // tb_suppr
-            // 
-            this.tb_suppr.Location = new System.Drawing.Point(152, 247);
-            this.tb_suppr.Name = "tb_suppr";
-            this.tb_suppr.Size = new System.Drawing.Size(214, 20);
-            this.tb_suppr.TabIndex = 8;
+            this.tb_adresse.Location = new System.Drawing.Point(152, 247);
+            this.tb_adresse.Name = "tb_adresse";
+            this.tb_adresse.Size = new System.Drawing.Size(214, 20);
+            this.tb_adresse.TabIndex = 8;
+            this.tb_adresse.Text = "adresse";
             // 
             // textBox5
             // 
@@ -157,19 +155,30 @@
             this.btn_recherche.Text = "Rechercher";
             this.btn_recherche.UseVisualStyleBackColor = true;
             // 
+            // date_naissance
+            // 
+            this.date_naissance.CustomFormat = "yyyy-MM-dd";
+            this.date_naissance.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.date_naissance.Location = new System.Drawing.Point(158, 304);
+            this.date_naissance.MinDate = new System.DateTime(1800, 1, 1, 0, 0, 0, 0);
+            this.date_naissance.Name = "date_naissance";
+            this.date_naissance.Size = new System.Drawing.Size(207, 20);
+            this.date_naissance.TabIndex = 14;
+            this.date_naissance.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            // 
             // Form_test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 612);
+            this.Controls.Add(this.date_naissance);
             this.Controls.Add(this.btn_recherche);
             this.Controls.Add(this.tb_recherche);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.tb_reset);
-            this.Controls.Add(this.tb_suppr);
-            this.Controls.Add(this.tb_ajout);
-            this.Controls.Add(this.tb_testco);
+            this.Controls.Add(this.tb_adresse);
+            this.Controls.Add(this.tb_nom);
+            this.Controls.Add(this.tb_id);
             this.Controls.Add(this.btn_res);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -191,13 +200,13 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btn_res;
-        private System.Windows.Forms.TextBox tb_testco;
-        private System.Windows.Forms.TextBox tb_ajout;
-        private System.Windows.Forms.TextBox tb_reset;
-        private System.Windows.Forms.TextBox tb_suppr;
+        private System.Windows.Forms.TextBox tb_id;
+        private System.Windows.Forms.TextBox tb_nom;
+        private System.Windows.Forms.TextBox tb_adresse;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox tb_recherche;
         private System.Windows.Forms.Button btn_recherche;
+        private System.Windows.Forms.DateTimePicker date_naissance;
     }
 }

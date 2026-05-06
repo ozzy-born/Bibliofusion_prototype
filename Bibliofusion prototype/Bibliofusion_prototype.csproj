@@ -101,6 +101,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classe_adherent.cs" />
+    <Compile Include="classe_article.cs" />
+    <Compile Include="classe_classe.cs" />
     <Compile Include="Form_CodeQr.cs">
       <SubType>Form</SubType>
     </Compile>
