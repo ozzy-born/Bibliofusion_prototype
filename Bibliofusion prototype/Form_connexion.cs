@@ -25,21 +25,35 @@ namespace WindowsFormsApp1
             if (string.IsNullOrEmpty(Id_textBox.Text) && string.IsNullOrEmpty(Mdp_textBox.Text))
             {
                 MessageBox.Show("Veuillez vous identifier.");
-            }
-            if (string.IsNullOrEmpty(Id_textBox.Text) && !string.IsNullOrEmpty(Mdp_textBox.Text))
-            {
-                MessageBox.Show("Veuillez remplir l'identifiant.");
-            }
-            if (!string.IsNullOrEmpty(Id_textBox.Text) && string.IsNullOrEmpty(Mdp_textBox.Text))
-            {
-                MessageBox.Show("Veuillez remplir le mot de passe.");
+                return;
             }
 
-            if (!string.IsNullOrEmpty(Id_textBox.Text) && !string.IsNullOrEmpty(Mdp_textBox.Text))
+            if (string.IsNullOrEmpty(Id_textBox.Text))
+            {
+                MessageBox.Show("Veuillez remplir l'identifiant.");
+                return;
+            }
+
+            if (string.IsNullOrEmpty(Mdp_textBox.Text))
+            {
+                MessageBox.Show("Veuillez remplir le mot de passe.");
+                return;
+            }
+
+            // Vérification login
+            if (Id_textBox.Text == "id" && Mdp_textBox.Text == "mdp")
             {
                 Id = Id_textBox.Text;
                 Mdp = Mdp_textBox.Text;
+
+                this.DialogResult = DialogResult.OK;
                 this.Close();
+            }
+            else
+            {
+                Mdp_textBox.Clear();
+
+                MessageBox.Show("Identifiant ou mot de passe incorrect.");
             }
         }
 

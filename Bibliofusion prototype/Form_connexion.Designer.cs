@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Connexion));
             this.Connexion_button = new System.Windows.Forms.Button();
             this.Id_textBox = new System.Windows.Forms.TextBox();
             this.Mdp_textBox = new System.Windows.Forms.TextBox();
@@ -133,6 +134,7 @@
             this.Controls.Add(this.Mdp_textBox);
             this.Controls.Add(this.Id_textBox);
             this.Controls.Add(this.Connexion_button);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(379, 373);
             this.MinimumSize = new System.Drawing.Size(379, 373);
             this.Name = "Form_Connexion";
