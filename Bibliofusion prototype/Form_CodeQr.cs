@@ -34,6 +34,7 @@ namespace QRcode_generator
 
         // Clé secrète (à stocker ailleurs en prod)
         static string secretKey = "CLEE_VR@1M3NT_SECRETE";
+        static string version = "1";        // Version de la carte (peut être utilisée pour gérer les mises à jour ou les changements de format)
 
         static string Sign(string data, string secretKey)                         //!!!!!!!!!!!!!!!!!!!!!!changer secretKey (dans un fichier pour plus de sécurité)
         {
@@ -95,13 +96,14 @@ namespace QRcode_generator
 
 
 /*---------------------------------------------------------------------------------VARIABLE A MODIFIER------------------------------------------------------------------------------------------------------------------------*/
-        string variable = CreateCard("123456789", "1", secretKey);    //"123456789" = identifiant ou ISBN ; "1" = n° de version ; secretKey = clé de chiffrement
+        //string variable = CreateCard("123456789", "1", secretKey);    //"123456789" = identifiant ou ISBN ; "1" = n° de version ; secretKey = clé de chiffrement
         
 
         
         //Gestionnaire d'événement pour le clic sur le bouton de génération du QR Code
         private void genererQR_button_Click(object sender, EventArgs e)
         {
+            string variable = CreateCard(qr_textBox.Text, version, secretKey);
             QRCodeGenerator qrGenerator = new QRCodeGenerator();            // Crée une instance du générateur de QR Code
 
             /*---------------------penser à changer le nom de la VARIABLE qui va s'afficher--------------------------------------*/
@@ -125,6 +127,7 @@ namespace QRcode_generator
         {
             if (QRpicture.Image != null)                                    // Vérifie si une image de QR Code est présente dans le contrôle PictureBox
             {
+                string variable = CreateCard(qr_textBox.Text, version, secretKey);
                 // Taille souhaitée pour le QR Code à imprimer (80x80 pixels), poisition (10,10) pour laisser une marge
                 int size = 80;                                             
                 int x = 10;
