@@ -17,16 +17,6 @@ namespace Bibliofusion_prototype
     {
 
         private readonly string server, uid, password, database, conString;
-
-        private void btn_res_Click(object sender, EventArgs e)
-        {
-            tb_recherche.Clear();
-            tb_id.Clear();
-            tb_nom.Clear();
-            tb_adresse.Clear();
-
-        }
-
         public Form_test()
         {
             InitializeComponent();
@@ -38,7 +28,70 @@ namespace Bibliofusion_prototype
 
             conString = $"server={server};uid={uid};pwd={password};database={database}";
             //conString = "server = 'localhost';uid='root';pwd='';database='bibliofusionbdd'";
+
+            DataGrid();
         }
+        private void DataGrid()
+        {
+            try
+            {
+                using (MySqlConnection con = new MySqlConnection(conString))
+                {
+                    con.Open();
+                    string query = "SELECT * FROM adherents";
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
+                        {
+                            DataTable dt = new DataTable();
+                            adapter.Fill(dt);
+                            dataGridView1.DataSource = dt;
+                        }
+                    }
+                }
+            }
+            catch (Exception erreur){ 
+                MessageBox.Show($"Erreur : {erreur}");
+            }
+        }
+        private void btn_recherche_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                using (MySqlConnection con = new MySqlConnection(conString))
+                {
+                    con.Open();
+                    string query = "SELECT * FROM adherents WHERE Nom = @nom AND Adresse = @adresse AND Date_Naissance = @date";
+                    using (MySqlCommand cmd = new MySqlCommand(query, con))
+                    {
+
+                        cmd.Parameters.AddWithValue("@nom", tb_nom.Text);
+                        cmd.ExecuteNonQuery();
+
+
+                        MessageBox.Show($"{tb_nom.Text}\n{tb_adresse.Text}\n{date_naissance.Text}\nAjouté avec succès!");
+                    }
+                }
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show($"Erreur : {erreur.Message}");
+            }
+            btn_res_Click(sender, e);
+        }
+        
+
+        private void btn_res_Click(object sender, EventArgs e)
+        {
+            tb_recherche.Clear();
+            tb_id.Clear();
+            tb_nom.Clear();
+            tb_adresse.Clear();
+
+        }
+
+        
 
         private void btn_ajout_Click(object sender, EventArgs e)
         {
@@ -82,7 +135,7 @@ namespace Bibliofusion_prototype
             }
             catch (Exception erreur)
             {
-                MessageBox.Show($"erreur : {erreur.Message}");
+                MessageBox.Show($"Erreur : {erreur.Message}");
             }
             
         }

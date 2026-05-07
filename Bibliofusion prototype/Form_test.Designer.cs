@@ -42,6 +42,8 @@
             this.tb_recherche = new System.Windows.Forms.TextBox();
             this.btn_recherche = new System.Windows.Forms.Button();
             this.date_naissance = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_testco
@@ -154,6 +156,7 @@
             this.btn_recherche.TabIndex = 13;
             this.btn_recherche.Text = "Rechercher";
             this.btn_recherche.UseVisualStyleBackColor = true;
+            this.btn_recherche.Click += new System.EventHandler(this.btn_recherche_Click);
             // 
             // date_naissance
             // 
@@ -166,11 +169,20 @@
             this.date_naissance.TabIndex = 14;
             this.date_naissance.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(14, 459);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(488, 140);
+            this.dataGridView1.TabIndex = 15;
+            // 
             // Form_test
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(988, 612);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.date_naissance);
             this.Controls.Add(this.btn_recherche);
             this.Controls.Add(this.tb_recherche);
@@ -187,6 +199,7 @@
             this.Controls.Add(this.btn_testco);
             this.Name = "Form_test";
             this.Text = "Form_test";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +221,6 @@
         private System.Windows.Forms.TextBox tb_recherche;
         private System.Windows.Forms.Button btn_recherche;
         private System.Windows.Forms.DateTimePicker date_naissance;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
