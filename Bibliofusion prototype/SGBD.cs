@@ -49,6 +49,7 @@ namespace Package1 {
 
 		public void deconnect(string nom_server, string identifiant, string mdp, string bdd)
         { 
+
             string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
             try
             {
