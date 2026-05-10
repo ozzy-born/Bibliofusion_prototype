@@ -12,8 +12,10 @@ namespace Bibliofusion_prototype
 {
     public partial class Form_Jouets : Form
     {
-        public static string NomJouet, CategorieJouet, MarqueJouet, EmplacementJouet, IdJouet;
-        public static int DateMiseEnVenteJouet, AgeMinJouet, AgeMaxJouet, NbExemplaires;
+        public static string NomJouet, CategorieJouet, MarqueJouet, EmplacementJouet, IdJouet, DateMiseEnVenteJouet;
+
+
+        public static int AgeMinJouet, AgeMaxJouet, NbExemplaires;
         public Form_Jouets()
         {
             InitializeComponent();
@@ -36,7 +38,7 @@ namespace Bibliofusion_prototype
                 MarqueJouet = MarqueJouet_textBox.Text;
                 EmplacementJouet = EmplacementJouet_textBox.Text;
                 IdJouet = IdJouet_textBox.Text;
-                DateMiseEnVenteJouet = (int)DateVenteJouet_numericUpDown.Value;
+                DateMiseEnVenteJouet = DateVenteJouet_dateTimePicker.Text;
                 AgeMinJouet = (int)AgeMinJouet_numericUpDown.Value;
                 AgeMaxJouet = (int)AgeMaxJouet_numericUpDown.Value;
                 NbExemplaires = (int)NbExemplairesJouet_numericUpDown.Value;

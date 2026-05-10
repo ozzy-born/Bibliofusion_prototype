@@ -10,10 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using MySql.Data.MySqlClient;
+using System.Runtime.CompilerServices;
 
-
-
-using Package1;
 namespace Package1 {
 	public class adherent {
 
@@ -35,11 +34,12 @@ namespace Package1 {
 
 		}
 
-		public void ajouter(){
+		public void ajouter(string adresse, int codePostal,string dateNaissance, string email, string nom, int fixe, int mobile, string prenom)
+		{
 
-		}
+        }
 
-		public void consulter(){
+        public void consulter(){
 
 		}
 

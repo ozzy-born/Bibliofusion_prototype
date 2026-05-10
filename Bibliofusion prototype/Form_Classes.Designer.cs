@@ -44,6 +44,12 @@
             this.FiltresDeRechercheClasse_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherClasse_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.RechercherAjoutClasse_button = new System.Windows.Forms.Button();
+            this.RechercherEditerClasse_button = new System.Windows.Forms.Button();
             this.Classes_tabControl.SuspendLayout();
             this.AjoutClasse_tabPage.SuspendLayout();
             this.EditClasse_tabPage.SuspendLayout();
@@ -63,6 +69,11 @@
             // AjoutClasse_tabPage
             // 
             this.AjoutClasse_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutClasse_tabPage.Controls.Add(this.RechercherAjoutClasse_button);
+            this.AjoutClasse_tabPage.Controls.Add(this.label3);
+            this.AjoutClasse_tabPage.Controls.Add(this.label4);
+            this.AjoutClasse_tabPage.Controls.Add(this.label2);
+            this.AjoutClasse_tabPage.Controls.Add(this.label1);
             this.AjoutClasse_tabPage.Controls.Add(this.NiveauClasse_comboBox);
             this.AjoutClasse_tabPage.Controls.Add(this.RechercherEleve_textBox);
             this.AjoutClasse_tabPage.Controls.Add(this.SelectionEleves_CheckListBox);
@@ -96,7 +107,7 @@
             this.RechercherEleve_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
             this.RechercherEleve_textBox.Location = new System.Drawing.Point(30, 290);
             this.RechercherEleve_textBox.Name = "RechercherEleve_textBox";
-            this.RechercherEleve_textBox.Size = new System.Drawing.Size(460, 30);
+            this.RechercherEleve_textBox.Size = new System.Drawing.Size(309, 30);
             this.RechercherEleve_textBox.TabIndex = 42;
             this.RechercherEleve_textBox.Text = "Rechercher un élève";
             // 
@@ -125,44 +136,40 @@
             this.NomClasse_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NomClasse_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomClasse_textBox.Location = new System.Drawing.Point(30, 90);
+            this.NomClasse_textBox.Location = new System.Drawing.Point(237, 90);
             this.NomClasse_textBox.Name = "NomClasse_textBox";
-            this.NomClasse_textBox.Size = new System.Drawing.Size(940, 30);
+            this.NomClasse_textBox.Size = new System.Drawing.Size(733, 30);
             this.NomClasse_textBox.TabIndex = 38;
-            this.NomClasse_textBox.Text = "Nom de la classe";
             // 
             // NomProf_textBox
             // 
             this.NomProf_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NomProf_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomProf_textBox.Location = new System.Drawing.Point(30, 140);
+            this.NomProf_textBox.Location = new System.Drawing.Point(237, 140);
             this.NomProf_textBox.Name = "NomProf_textBox";
-            this.NomProf_textBox.Size = new System.Drawing.Size(940, 30);
+            this.NomProf_textBox.Size = new System.Drawing.Size(733, 30);
             this.NomProf_textBox.TabIndex = 37;
-            this.NomProf_textBox.Text = "Nom du professeur";
             // 
             // NomEtablissement_textBox
             // 
             this.NomEtablissement_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NomEtablissement_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomEtablissement_textBox.Location = new System.Drawing.Point(30, 190);
+            this.NomEtablissement_textBox.Location = new System.Drawing.Point(237, 190);
             this.NomEtablissement_textBox.Name = "NomEtablissement_textBox";
-            this.NomEtablissement_textBox.Size = new System.Drawing.Size(940, 30);
+            this.NomEtablissement_textBox.Size = new System.Drawing.Size(733, 30);
             this.NomEtablissement_textBox.TabIndex = 36;
-            this.NomEtablissement_textBox.Text = "Nom de l\'établissement";
             // 
             // AdresseEtablissement_textBox
             // 
             this.AdresseEtablissement_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AdresseEtablissement_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AdresseEtablissement_textBox.Location = new System.Drawing.Point(30, 240);
+            this.AdresseEtablissement_textBox.Location = new System.Drawing.Point(237, 240);
             this.AdresseEtablissement_textBox.Name = "AdresseEtablissement_textBox";
-            this.AdresseEtablissement_textBox.Size = new System.Drawing.Size(940, 30);
+            this.AdresseEtablissement_textBox.Size = new System.Drawing.Size(733, 30);
             this.AdresseEtablissement_textBox.TabIndex = 35;
-            this.AdresseEtablissement_textBox.Text = "Adresse postale";
             // 
             // BiblioFusion_label1
             // 
@@ -180,6 +187,7 @@
             // EditClasse_tabPage
             // 
             this.EditClasse_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditClasse_tabPage.Controls.Add(this.RechercherEditerClasse_button);
             this.EditClasse_tabPage.Controls.Add(this.ResultatClasse_dataGridView);
             this.EditClasse_tabPage.Controls.Add(this.FiltresDeRechercheClasse_checkedListBox);
             this.EditClasse_tabPage.Controls.Add(this.RechercherClasse_textBox);
@@ -215,7 +223,7 @@
             this.RechercherClasse_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
             this.RechercherClasse_textBox.Location = new System.Drawing.Point(125, 115);
             this.RechercherClasse_textBox.Name = "RechercherClasse_textBox";
-            this.RechercherClasse_textBox.Size = new System.Drawing.Size(750, 30);
+            this.RechercherClasse_textBox.Size = new System.Drawing.Size(694, 30);
             this.RechercherClasse_textBox.TabIndex = 52;
             this.RechercherClasse_textBox.Text = "Rechercher une classe";
             // 
@@ -231,6 +239,68 @@
             this.BiblioFusion_label2.Size = new System.Drawing.Size(191, 42);
             this.BiblioFusion_label2.TabIndex = 51;
             this.BiblioFusion_label2.Text = "BiblioFusion";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label3.Location = new System.Drawing.Point(25, 243);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 25);
+            this.label3.TabIndex = 57;
+            this.label3.Text = "Adresse";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label4.Location = new System.Drawing.Point(25, 193);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(147, 25);
+            this.label4.TabIndex = 56;
+            this.label4.Text = "Etablissement";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label2.Location = new System.Drawing.Point(25, 143);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(196, 25);
+            this.label2.TabIndex = 55;
+            this.label2.Text = "Professeur référant";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label1.Location = new System.Drawing.Point(25, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 25);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "Nom de la classe";
+            // 
+            // RechercherAjoutClasse_button
+            // 
+            this.RechercherAjoutClasse_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherAjoutClasse_button.Location = new System.Drawing.Point(350, 290);
+            this.RechercherAjoutClasse_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherAjoutClasse_button.Name = "RechercherAjoutClasse_button";
+            this.RechercherAjoutClasse_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherAjoutClasse_button.TabIndex = 58;
+            this.RechercherAjoutClasse_button.Text = "Rechercher";
+            this.RechercherAjoutClasse_button.UseVisualStyleBackColor = true;
+            // 
+            // RechercherEditerClasse_button
+            // 
+            this.RechercherEditerClasse_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherEditerClasse_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherEditerClasse_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherEditerClasse_button.Name = "RechercherEditerClasse_button";
+            this.RechercherEditerClasse_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherEditerClasse_button.TabIndex = 59;
+            this.RechercherEditerClasse_button.Text = "Rechercher";
+            this.RechercherEditerClasse_button.UseVisualStyleBackColor = true;
             // 
             // Form_Classes
             // 
@@ -270,5 +340,11 @@
         private System.Windows.Forms.CheckedListBox SelectionEleves_CheckListBox;
         private System.Windows.Forms.ComboBox NiveauClasse_comboBox;
         private System.Windows.Forms.DataGridView ResultatClasse_dataGridView;
+        private System.Windows.Forms.Button RechercherAjoutClasse_button;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button RechercherEditerClasse_button;
     }
 }

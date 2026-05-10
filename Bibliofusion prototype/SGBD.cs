@@ -32,17 +32,9 @@ namespace Package1 {
 
 		public void connect(string nom_server,string identifiant,string mdp, string bdd){
             string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
-            try
+            using (MySqlConnection connection = new MySqlConnection(conString))
             {
-                using (MySqlConnection con = new MySqlConnection(conString))
-                {
-                    con.Open();
-                    Console.WriteLine("Connection réussie!");
-                }
-            }
-            catch (Exception erreur)
-            {
-                Console.WriteLine($"erreur : {erreur.Message}");
+                connection.Open();
             }
 
         }
@@ -51,17 +43,9 @@ namespace Package1 {
         { 
 
             string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
-            try
+            using (MySqlConnection connection = new MySqlConnection(conString))
             {
-                using (MySqlConnection con = new MySqlConnection(conString))
-                {
-                    con.Close();
-                    Console.WriteLine("Deconnexion réussie!");
-                }
-            }
-            catch (Exception erreur)
-            {
-                Console.WriteLine($"erreur : {erreur.Message}");
+                connection.Close();
             }
         }
 

@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.EditCategorie_tabPage = new System.Windows.Forms.TabPage();
+            this.RechercherAjoutClasse_button = new System.Windows.Forms.Button();
             this.ResultatCategorieJouet_dataGridView = new System.Windows.Forms.DataGridView();
             this.ResultatCategorieLivre_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherCategorie_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.AjoutCategorie_tabPage = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.CategorieJouet_radioButton = new System.Windows.Forms.RadioButton();
             this.CategorieLivre_radioButton = new System.Windows.Forms.RadioButton();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
@@ -50,6 +52,7 @@
             // EditCategorie_tabPage
             // 
             this.EditCategorie_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditCategorie_tabPage.Controls.Add(this.RechercherAjoutClasse_button);
             this.EditCategorie_tabPage.Controls.Add(this.ResultatCategorieJouet_dataGridView);
             this.EditCategorie_tabPage.Controls.Add(this.ResultatCategorieLivre_dataGridView);
             this.EditCategorie_tabPage.Controls.Add(this.RechercherCategorie_textBox);
@@ -60,6 +63,17 @@
             this.EditCategorie_tabPage.Size = new System.Drawing.Size(997, 699);
             this.EditCategorie_tabPage.TabIndex = 1;
             this.EditCategorie_tabPage.Text = "Editer les catégories";
+            // 
+            // RechercherAjoutClasse_button
+            // 
+            this.RechercherAjoutClasse_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherAjoutClasse_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherAjoutClasse_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherAjoutClasse_button.Name = "RechercherAjoutClasse_button";
+            this.RechercherAjoutClasse_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherAjoutClasse_button.TabIndex = 62;
+            this.RechercherAjoutClasse_button.Text = "Rechercher";
+            this.RechercherAjoutClasse_button.UseVisualStyleBackColor = true;
             // 
             // ResultatCategorieJouet_dataGridView
             // 
@@ -84,7 +98,7 @@
             this.RechercherCategorie_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
             this.RechercherCategorie_textBox.Location = new System.Drawing.Point(125, 115);
             this.RechercherCategorie_textBox.Name = "RechercherCategorie_textBox";
-            this.RechercherCategorie_textBox.Size = new System.Drawing.Size(750, 30);
+            this.RechercherCategorie_textBox.Size = new System.Drawing.Size(694, 30);
             this.RechercherCategorie_textBox.TabIndex = 52;
             this.RechercherCategorie_textBox.Text = "Rechercher une catégorie";
             // 
@@ -104,6 +118,7 @@
             // AjoutCategorie_tabPage
             // 
             this.AjoutCategorie_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutCategorie_tabPage.Controls.Add(this.label1);
             this.AjoutCategorie_tabPage.Controls.Add(this.CategorieJouet_radioButton);
             this.AjoutCategorie_tabPage.Controls.Add(this.CategorieLivre_radioButton);
             this.AjoutCategorie_tabPage.Controls.Add(this.BiblioFusion_label1);
@@ -116,11 +131,21 @@
             this.AjoutCategorie_tabPage.TabIndex = 0;
             this.AjoutCategorie_tabPage.Text = "Ajouter une catégorie";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label1.Location = new System.Drawing.Point(29, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 25);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "Nom de la classe";
+            // 
             // CategorieJouet_radioButton
             // 
             this.CategorieJouet_radioButton.AutoSize = true;
             this.CategorieJouet_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CategorieJouet_radioButton.Location = new System.Drawing.Point(125, 215);
+            this.CategorieJouet_radioButton.Location = new System.Drawing.Point(222, 216);
             this.CategorieJouet_radioButton.Name = "CategorieJouet_radioButton";
             this.CategorieJouet_radioButton.Size = new System.Drawing.Size(83, 29);
             this.CategorieJouet_radioButton.TabIndex = 54;
@@ -132,7 +157,7 @@
             // 
             this.CategorieLivre_radioButton.AutoSize = true;
             this.CategorieLivre_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CategorieLivre_radioButton.Location = new System.Drawing.Point(125, 165);
+            this.CategorieLivre_radioButton.Location = new System.Drawing.Point(222, 166);
             this.CategorieLivre_radioButton.Name = "CategorieLivre_radioButton";
             this.CategorieLivre_radioButton.Size = new System.Drawing.Size(77, 29);
             this.CategorieLivre_radioButton.TabIndex = 53;
@@ -158,11 +183,10 @@
             this.NomCategorie_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NomCategorie_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomCategorie_textBox.Location = new System.Drawing.Point(125, 115);
+            this.NomCategorie_textBox.Location = new System.Drawing.Point(222, 115);
             this.NomCategorie_textBox.Name = "NomCategorie_textBox";
-            this.NomCategorie_textBox.Size = new System.Drawing.Size(750, 30);
+            this.NomCategorie_textBox.Size = new System.Drawing.Size(653, 30);
             this.NomCategorie_textBox.TabIndex = 36;
-            this.NomCategorie_textBox.Text = "Nom de la Catégorie";
             // 
             // ValiderAjoutCategorie_button
             // 
@@ -222,5 +246,7 @@
         private System.Windows.Forms.RadioButton CategorieLivre_radioButton;
         private System.Windows.Forms.DataGridView ResultatCategorieJouet_dataGridView;
         private System.Windows.Forms.DataGridView ResultatCategorieLivre_dataGridView;
+        private System.Windows.Forms.Button RechercherAjoutClasse_button;
+        private System.Windows.Forms.Label label1;
     }
 }

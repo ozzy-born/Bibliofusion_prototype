@@ -21,6 +21,7 @@ namespace WindowsFormsApp1
         public static string Adresse, Adresse1, Adresse2;
         public static string Classe;
         public static int CodePostal, CodePostal1, CodePostal2;
+
         public Form_Adherents()
         {
             InitializeComponent();

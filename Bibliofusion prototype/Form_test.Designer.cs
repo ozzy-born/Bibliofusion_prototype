@@ -31,8 +31,8 @@
             this.btn_testco = new System.Windows.Forms.Button();
             this.btn_suppr = new System.Windows.Forms.Button();
             this.btn_ajout = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btn_modifier = new System.Windows.Forms.Button();
+            this.btn_refresh = new System.Windows.Forms.Button();
             this.btn_res = new System.Windows.Forms.Button();
             this.tb_id = new System.Windows.Forms.TextBox();
             this.tb_nom = new System.Windows.Forms.TextBox();
@@ -64,6 +64,7 @@
             this.btn_suppr.TabIndex = 1;
             this.btn_suppr.Text = "supprimer";
             this.btn_suppr.UseVisualStyleBackColor = true;
+            this.btn_suppr.Click += new System.EventHandler(this.btn_suppr_Click);
             // 
             // btn_ajout
             // 
@@ -75,23 +76,25 @@
             this.btn_ajout.UseVisualStyleBackColor = true;
             this.btn_ajout.Click += new System.EventHandler(this.btn_ajout_Click);
             // 
-            // button4
+            // btn_modifier
             // 
-            this.button4.Location = new System.Drawing.Point(519, 404);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(236, 52);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_modifier.Location = new System.Drawing.Point(519, 404);
+            this.btn_modifier.Name = "btn_modifier";
+            this.btn_modifier.Size = new System.Drawing.Size(236, 52);
+            this.btn_modifier.TabIndex = 3;
+            this.btn_modifier.Text = "modifier";
+            this.btn_modifier.UseVisualStyleBackColor = true;
+            this.btn_modifier.Click += new System.EventHandler(this.btn_modifier_Click);
             // 
-            // button5
+            // btn_refresh
             // 
-            this.button5.Location = new System.Drawing.Point(519, 346);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(236, 52);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_refresh.Location = new System.Drawing.Point(519, 346);
+            this.btn_refresh.Name = "btn_refresh";
+            this.btn_refresh.Size = new System.Drawing.Size(236, 52);
+            this.btn_refresh.TabIndex = 4;
+            this.btn_refresh.Text = "rafraichir";
+            this.btn_refresh.UseVisualStyleBackColor = true;
+            this.btn_refresh.Click += new System.EventHandler(this.btn_refresh_Click);
             // 
             // btn_res
             // 
@@ -176,6 +179,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(488, 140);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // Form_test
             // 
@@ -192,8 +196,8 @@
             this.Controls.Add(this.tb_nom);
             this.Controls.Add(this.tb_id);
             this.Controls.Add(this.btn_res);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn_refresh);
+            this.Controls.Add(this.btn_modifier);
             this.Controls.Add(this.btn_ajout);
             this.Controls.Add(this.btn_suppr);
             this.Controls.Add(this.btn_testco);
@@ -210,8 +214,8 @@
         private System.Windows.Forms.Button btn_testco;
         private System.Windows.Forms.Button btn_suppr;
         private System.Windows.Forms.Button btn_ajout;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btn_modifier;
+        private System.Windows.Forms.Button btn_refresh;
         private System.Windows.Forms.Button btn_res;
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.TextBox tb_nom;
