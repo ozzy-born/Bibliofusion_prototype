@@ -1,4 +1,4 @@
-﻿using QRcode_generator;
+﻿﻿using QRcode_generator;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +18,7 @@ namespace Bibliofusion_prototype
         public MainForm()
         {
             InitializeComponent();
+            Icon = Icon.ExtractAssociatedIcon(System.Reflection.Assembly.GetExecutingAssembly().Location); // Définit l'icône de l'application à partir de l'icône associée à l'exécutable
         }
 
         private void NouvelEmpruntToolStripMenuItem_Click(object sender, EventArgs e)
@@ -79,8 +80,8 @@ namespace Bibliofusion_prototype
 
         private void DeconnexionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form_Connexion formConnexion = new Form_Connexion();
-            formConnexion.ShowDialog();
+
+            this.Close();
         }
 
         private void qRCodeToolStripMenuItem_Click(object sender, EventArgs e)

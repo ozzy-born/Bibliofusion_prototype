@@ -28,9 +28,9 @@ namespace Bibliofusion_prototype
 
             conString = $"server={server};uid={uid};pwd={password};database={database}";    //conString = "server = 'localhost';uid='root';pwd='';database='bibliofusionbdd'";
 
-            SGBD SGBD = new SGBD(conString);
+            SGBD sgbd = new SGBD(conString);
             connection = new MySqlConnection(conString);
-            SGBD.connect();
+            sgbd.connect();
 
             DataGrid();
         }

@@ -78,7 +78,7 @@
             // 
             this.ID.AutoSize = true;
             this.ID.Font = new System.Drawing.Font("Microsoft Himalaya", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(47, 108);
+            this.ID.Location = new System.Drawing.Point(47, 98);
             this.ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(97, 27);

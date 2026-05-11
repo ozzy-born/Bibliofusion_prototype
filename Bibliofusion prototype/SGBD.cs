@@ -21,9 +21,12 @@ namespace Package1 {
 		private string mdp;
 		public Package1.article m_article;
 		public Package1.adherent m_adherent;
-		private readonly string conString;
+		private string conString;
+		private MySqlConnection con;
+		private MySqlCommand cmd;
+		private MySqlDataReader reader;
 
-		public SGBD(string connectionString){
+        public SGBD(string connectionString){
 			conString = connectionString;
         }
 
@@ -33,37 +36,42 @@ namespace Package1 {
 
 		public void connect()
         {
-            MySqlConnection connection = new MySqlConnection(conString);
-            connection.Open();
+           con.Open();
         }
 
 		public void deconnect()
         {
-            MySqlConnection connection = new MySqlConnection(conString);
-            connection.Close();
+            con.Close();
         }
 
-		public void ecrire()
-		{
-
-		}
+		public void ecrire(string requette)
+        {
+            con = new MySqlConnection(conString);
+            cmd.Connection = con;
+            cmd.CommandText = requette;
+        }
 
 		/// 
 		/// <param name="mdp"></param>
 		public string hachage(string mdp){
 
 			return "";
+        }
+
+        /// 
+        /// <param name="requette_SQL"></param>
+        public void prep_req_SQL(string requette_SQL)
+        {
+			
+        }
+
+        public string lire(string requette)
+		{
+			reader = cmd.ExecuteReader();
+			reader.Read();
+            return "";
 		}
 
-		public void lire()
-		{
-		}
-
-		/// 
-		/// <param name="requette_SQL"></param>
-		public void prep_req_SQL(string requette_SQL)
-		{
-		}
 
 		/// 
 		/// <param name="mdp"></param>

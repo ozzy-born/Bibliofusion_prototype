@@ -22,25 +22,6 @@ namespace WindowsFormsApp1
 
         private void Connexion_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Id_textBox.Text) && string.IsNullOrEmpty(Mdp_textBox.Text))
-            {
-                MessageBox.Show("Veuillez vous identifier.");
-            }
-            if (string.IsNullOrEmpty(Id_textBox.Text) && !string.IsNullOrEmpty(Mdp_textBox.Text))
-            {
-                MessageBox.Show("Veuillez remplir l'identifiant.");
-            }
-            if (!string.IsNullOrEmpty(Id_textBox.Text) && string.IsNullOrEmpty(Mdp_textBox.Text))
-            {
-                MessageBox.Show("Veuillez remplir le mot de passe.");
-            }
-
-            if (!string.IsNullOrEmpty(Id_textBox.Text) && !string.IsNullOrEmpty(Mdp_textBox.Text))
-            {
-                Id = Id_textBox.Text;
-                Mdp = Mdp_textBox.Text;
-                this.Close();
-            }
 
             if (Id_textBox.Text == "id" && Mdp_textBox.Text == "mdp")
             {
@@ -49,6 +30,18 @@ namespace WindowsFormsApp1
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(Id_textBox.Text) || string.IsNullOrEmpty(Mdp_textBox.Text))
+                {
+                    MessageBox.Show("Veuillez vous identifier.");
+                }
+                else
+                {
+                    MessageBox.Show("Mot de passe incorrect");
+                }
+                Mdp_textBox.Clear();
             }
         }
 

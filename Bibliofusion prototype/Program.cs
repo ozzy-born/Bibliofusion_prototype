@@ -14,7 +14,7 @@ namespace Bibliofusion_prototype
     internal static class Program
     {
 
-        public static bool IsAuthenticated = false;
+
         public static string server = ConfigurationManager.AppSettings["ServerName"];
         public static string uid = ConfigurationManager.AppSettings["UserId"];
         public static string password = ConfigurationManager.AppSettings["Password"];
@@ -34,16 +34,18 @@ namespace Bibliofusion_prototype
             Application.SetCompatibleTextRenderingDefault(false);
             connection.Open();
 
-            Form_test Formtest = new Form_test();
-            Formtest.ShowDialog();
             while (true)
             {
-                Form_Connexion FormulaireConnection = new Form_Connexion();
-                if (FormulaireConnection.ShowDialog() == DialogResult.OK)
-                    { break; }
+                using (Form_Connexion FormulaireConnection = new Form_Connexion())
+                {
+                    if (FormulaireConnection.ShowDialog() != DialogResult.OK)
+                        break;
+                }
+                using (MainForm mainForm = new MainForm())
+                {
+                    Application.Run(mainForm);
+                }
             }
-            MainForm mainForm = new MainForm();
-            Application.Run(mainForm);
         }
     }
 }
