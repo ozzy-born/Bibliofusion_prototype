@@ -31,6 +31,13 @@
             this.ValiderAjoutLivre_button = new System.Windows.Forms.Button();
             this.Livre_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutLivre_tabPage = new System.Windows.Forms.TabPage();
+            this.DateParutionLivre_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.AgeMaxLivre_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.AgeMaxLivre_label = new System.Windows.Forms.Label();
             this.AgeMinLivre_label = new System.Windows.Forms.Label();
@@ -46,19 +53,14 @@
             this.EmplacementLivre_textBox = new System.Windows.Forms.TextBox();
             this.EditeurLivre_textBox = new System.Windows.Forms.TextBox();
             this.EditLivre_tabPage = new System.Windows.Forms.TabPage();
+            this.RechercherEditerLivre_button = new System.Windows.Forms.Button();
             this.ResultatLivre_dataGridView = new System.Windows.Forms.DataGridView();
             this.FiltresDeRechercheLivre_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherLivre_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.RechercherEditerLivre_button = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.DateParutionLivre_dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Livre_tabControl.SuspendLayout();
             this.AjoutLivre_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxLivre_numericUpDown)).BeginInit();
@@ -71,7 +73,7 @@
             // ValiderAjoutLivre_button
             // 
             this.ValiderAjoutLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.ValiderAjoutLivre_button.Location = new System.Drawing.Point(850, 415);
+            this.ValiderAjoutLivre_button.Location = new System.Drawing.Point(850, 462);
             this.ValiderAjoutLivre_button.Margin = new System.Windows.Forms.Padding(8);
             this.ValiderAjoutLivre_button.Name = "ValiderAjoutLivre_button";
             this.ValiderAjoutLivre_button.Size = new System.Drawing.Size(101, 32);
@@ -84,6 +86,7 @@
             // 
             this.Livre_tabControl.Controls.Add(this.AjoutLivre_tabPage);
             this.Livre_tabControl.Controls.Add(this.EditLivre_tabPage);
+            this.Livre_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Livre_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Livre_tabControl.Name = "Livre_tabControl";
             this.Livre_tabControl.SelectedIndex = 0;
@@ -93,6 +96,8 @@
             // AjoutLivre_tabPage
             // 
             this.AjoutLivre_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutLivre_tabPage.Controls.Add(this.textBox1);
+            this.AjoutLivre_tabPage.Controls.Add(this.label7);
             this.AjoutLivre_tabPage.Controls.Add(this.DateParutionLivre_dateTimePicker);
             this.AjoutLivre_tabPage.Controls.Add(this.label5);
             this.AjoutLivre_tabPage.Controls.Add(this.label6);
@@ -115,17 +120,90 @@
             this.AjoutLivre_tabPage.Controls.Add(this.AuteurLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.EmplacementLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.EditeurLivre_textBox);
-            this.AjoutLivre_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutLivre_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutLivre_tabPage.Name = "AjoutLivre_tabPage";
             this.AjoutLivre_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AjoutLivre_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.AjoutLivre_tabPage.Size = new System.Drawing.Size(997, 692);
             this.AjoutLivre_tabPage.TabIndex = 0;
             this.AjoutLivre_tabPage.Text = "Ajouter un livre";
+            // 
+            // DateParutionLivre_dateTimePicker
+            // 
+            this.DateParutionLivre_dateTimePicker.CustomFormat = "yyyy-MM-dd";
+            this.DateParutionLivre_dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.DateParutionLivre_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateParutionLivre_dateTimePicker.Location = new System.Drawing.Point(285, 461);
+            this.DateParutionLivre_dateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.DateParutionLivre_dateTimePicker.Name = "DateParutionLivre_dateTimePicker";
+            this.DateParutionLivre_dateTimePicker.Size = new System.Drawing.Size(148, 30);
+            this.DateParutionLivre_dateTimePicker.TabIndex = 87;
+            this.DateParutionLivre_dateTimePicker.Tag = "";
+            this.DateParutionLivre_dateTimePicker.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label5.Location = new System.Drawing.Point(36, 365);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 25);
+            this.label5.TabIndex = 86;
+            this.label5.Text = "Emplacement";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label6.Location = new System.Drawing.Point(36, 415);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(137, 25);
+            this.label6.TabIndex = 85;
+            this.label6.Text = "Code Unique";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label1.Location = new System.Drawing.Point(36, 265);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 25);
+            this.label1.TabIndex = 84;
+            this.label1.Text = "Editeur";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label2.Location = new System.Drawing.Point(36, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.TabIndex = 83;
+            this.label2.Text = "Nom Auteur";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label3.Location = new System.Drawing.Point(36, 118);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 25);
+            this.label3.TabIndex = 82;
+            this.label3.Text = "Titre";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label4.Location = new System.Drawing.Point(36, 315);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 25);
+            this.label4.TabIndex = 81;
+            this.label4.Text = "Catégorie";
             // 
             // AgeMaxLivre_numericUpDown
             // 
             this.AgeMaxLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AgeMaxLivre_numericUpDown.Location = new System.Drawing.Point(285, 515);
+            this.AgeMaxLivre_numericUpDown.Location = new System.Drawing.Point(285, 562);
             this.AgeMaxLivre_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -149,7 +227,7 @@
             // 
             this.AgeMaxLivre_label.AutoSize = true;
             this.AgeMaxLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AgeMaxLivre_label.Location = new System.Drawing.Point(30, 515);
+            this.AgeMaxLivre_label.Location = new System.Drawing.Point(30, 562);
             this.AgeMaxLivre_label.Name = "AgeMaxLivre_label";
             this.AgeMaxLivre_label.Size = new System.Drawing.Size(147, 25);
             this.AgeMaxLivre_label.TabIndex = 79;
@@ -159,7 +237,7 @@
             // 
             this.AgeMinLivre_label.AutoSize = true;
             this.AgeMinLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AgeMinLivre_label.Location = new System.Drawing.Point(30, 465);
+            this.AgeMinLivre_label.Location = new System.Drawing.Point(30, 512);
             this.AgeMinLivre_label.Name = "AgeMinLivre_label";
             this.AgeMinLivre_label.Size = new System.Drawing.Size(141, 25);
             this.AgeMinLivre_label.TabIndex = 78;
@@ -168,7 +246,7 @@
             // AgeMinLivre_numericUpDown
             // 
             this.AgeMinLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AgeMinLivre_numericUpDown.Location = new System.Drawing.Point(285, 465);
+            this.AgeMinLivre_numericUpDown.Location = new System.Drawing.Point(285, 512);
             this.AgeMinLivre_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -192,7 +270,7 @@
             // 
             this.AnneeParutionLivre_label.AutoSize = true;
             this.AnneeParutionLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AnneeParutionLivre_label.Location = new System.Drawing.Point(30, 415);
+            this.AnneeParutionLivre_label.Location = new System.Drawing.Point(30, 462);
             this.AnneeParutionLivre_label.Name = "AnneeParutionLivre_label";
             this.AnneeParutionLivre_label.Size = new System.Drawing.Size(188, 25);
             this.AnneeParutionLivre_label.TabIndex = 74;
@@ -202,7 +280,7 @@
             // 
             this.NbExemplairesLivre_label.AutoSize = true;
             this.NbExemplairesLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NbExemplairesLivre_label.Location = new System.Drawing.Point(30, 565);
+            this.NbExemplairesLivre_label.Location = new System.Drawing.Point(30, 612);
             this.NbExemplairesLivre_label.Name = "NbExemplairesLivre_label";
             this.NbExemplairesLivre_label.Size = new System.Drawing.Size(225, 25);
             this.NbExemplairesLivre_label.TabIndex = 72;
@@ -211,7 +289,7 @@
             // NbExemplairesLivre_numericUpDown
             // 
             this.NbExemplairesLivre_numericUpDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NbExemplairesLivre_numericUpDown.Location = new System.Drawing.Point(285, 565);
+            this.NbExemplairesLivre_numericUpDown.Location = new System.Drawing.Point(285, 612);
             this.NbExemplairesLivre_numericUpDown.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -235,7 +313,7 @@
             // 
             this.CategorieLivre_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
             this.CategorieLivre_comboBox.FormattingEnabled = true;
-            this.CategorieLivre_comboBox.Location = new System.Drawing.Point(183, 265);
+            this.CategorieLivre_comboBox.Location = new System.Drawing.Point(183, 312);
             this.CategorieLivre_comboBox.Name = "CategorieLivre_comboBox";
             this.CategorieLivre_comboBox.Size = new System.Drawing.Size(787, 33);
             this.CategorieLivre_comboBox.TabIndex = 57;
@@ -268,7 +346,7 @@
             this.ISBNLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ISBNLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.ISBNLivre_textBox.Location = new System.Drawing.Point(183, 365);
+            this.ISBNLivre_textBox.Location = new System.Drawing.Point(183, 412);
             this.ISBNLivre_textBox.Name = "ISBNLivre_textBox";
             this.ISBNLivre_textBox.Size = new System.Drawing.Size(787, 30);
             this.ISBNLivre_textBox.TabIndex = 34;
@@ -288,7 +366,7 @@
             this.EmplacementLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmplacementLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.EmplacementLivre_textBox.Location = new System.Drawing.Point(183, 315);
+            this.EmplacementLivre_textBox.Location = new System.Drawing.Point(183, 362);
             this.EmplacementLivre_textBox.Name = "EmplacementLivre_textBox";
             this.EmplacementLivre_textBox.Size = new System.Drawing.Size(787, 30);
             this.EmplacementLivre_textBox.TabIndex = 32;
@@ -298,7 +376,7 @@
             this.EditeurLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EditeurLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.EditeurLivre_textBox.Location = new System.Drawing.Point(183, 215);
+            this.EditeurLivre_textBox.Location = new System.Drawing.Point(183, 262);
             this.EditeurLivre_textBox.Name = "EditeurLivre_textBox";
             this.EditeurLivre_textBox.Size = new System.Drawing.Size(787, 30);
             this.EditeurLivre_textBox.TabIndex = 31;
@@ -312,12 +390,24 @@
             this.EditLivre_tabPage.Controls.Add(this.RechercherLivre_textBox);
             this.EditLivre_tabPage.Controls.Add(this.BiblioFusion_label2);
             this.EditLivre_tabPage.Controls.Add(this.button1);
-            this.EditLivre_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditLivre_tabPage.Location = new System.Drawing.Point(4, 29);
             this.EditLivre_tabPage.Name = "EditLivre_tabPage";
             this.EditLivre_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.EditLivre_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.EditLivre_tabPage.Size = new System.Drawing.Size(997, 692);
             this.EditLivre_tabPage.TabIndex = 1;
             this.EditLivre_tabPage.Text = "Editer les livres";
+            // 
+            // RechercherEditerLivre_button
+            // 
+            this.RechercherEditerLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherEditerLivre_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherEditerLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherEditerLivre_button.Name = "RechercherEditerLivre_button";
+            this.RechercherEditerLivre_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherEditerLivre_button.TabIndex = 61;
+            this.RechercherEditerLivre_button.Text = "Rechercher";
+            this.RechercherEditerLivre_button.UseVisualStyleBackColor = true;
+            this.RechercherEditerLivre_button.Click += new System.EventHandler(this.RechercherEditerLivre_button_Click);
             // 
             // ResultatLivre_dataGridView
             // 
@@ -374,89 +464,25 @@
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // RechercherEditerLivre_button
+            // label7
             // 
-            this.RechercherEditerLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherEditerLivre_button.Location = new System.Drawing.Point(830, 115);
-            this.RechercherEditerLivre_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherEditerLivre_button.Name = "RechercherEditerLivre_button";
-            this.RechercherEditerLivre_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherEditerLivre_button.TabIndex = 61;
-            this.RechercherEditerLivre_button.Text = "Rechercher";
-            this.RechercherEditerLivre_button.UseVisualStyleBackColor = true;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label7.Location = new System.Drawing.Point(36, 214);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 25);
+            this.label7.TabIndex = 88;
+            this.label7.Text = "Prénom";
             // 
-            // label1
+            // textBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label1.Location = new System.Drawing.Point(36, 218);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 25);
-            this.label1.TabIndex = 84;
-            this.label1.Text = "Editeur";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label2.Location = new System.Drawing.Point(36, 168);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 25);
-            this.label2.TabIndex = 83;
-            this.label2.Text = "Auteur";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label3.Location = new System.Drawing.Point(36, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 25);
-            this.label3.TabIndex = 82;
-            this.label3.Text = "Titre";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label4.Location = new System.Drawing.Point(36, 268);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 25);
-            this.label4.TabIndex = 81;
-            this.label4.Text = "Catégorie";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label5.Location = new System.Drawing.Point(36, 318);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 25);
-            this.label5.TabIndex = 86;
-            this.label5.Text = "Emplacement";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label6.Location = new System.Drawing.Point(36, 368);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(137, 25);
-            this.label6.TabIndex = 85;
-            this.label6.Text = "Code Unique";
-            // 
-            // DateParutionLivre_dateTimePicker
-            // 
-            this.DateParutionLivre_dateTimePicker.CustomFormat = "yyyy-MM-dd";
-            this.DateParutionLivre_dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.DateParutionLivre_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateParutionLivre_dateTimePicker.Location = new System.Drawing.Point(285, 414);
-            this.DateParutionLivre_dateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.DateParutionLivre_dateTimePicker.Name = "DateParutionLivre_dateTimePicker";
-            this.DateParutionLivre_dateTimePicker.Size = new System.Drawing.Size(148, 30);
-            this.DateParutionLivre_dateTimePicker.TabIndex = 87;
-            this.DateParutionLivre_dateTimePicker.Tag = "";
-            this.DateParutionLivre_dateTimePicker.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.textBox1.Location = new System.Drawing.Point(183, 214);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(787, 30);
+            this.textBox1.TabIndex = 89;
             // 
             // Form_Livres
             // 
@@ -514,5 +540,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker DateParutionLivre_dateTimePicker;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label7;
     }
 }

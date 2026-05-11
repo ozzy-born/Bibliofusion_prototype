@@ -23,17 +23,7 @@ namespace Bibliofusion_prototype
             DialogResult verification = MessageBox.Show("Voulez-vous valider cette classe", "Nouvelle classe", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verification == DialogResult.Yes)
             {
-                NomClasse = NomClasse_textBox.Text;
-                NomProf = NomProf_textBox.Text;
-                NomEtablissement = NomEtablissement_textBox.Text;
-                AdresseEtablissement = AdresseEtablissement_textBox.Text;
-                if (NiveauClasse_comboBox != null) {
-                    NiveauClasse = "NA";
-                }
-                else
-                {
-                    NiveauClasse = NiveauClasse_comboBox.SelectedItem.ToString();
-                }
+
 
                 MessageBox.Show(
                     "Nom de la classe : " + NomClasse +

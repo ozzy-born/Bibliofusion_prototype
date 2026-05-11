@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,23 @@ namespace Bibliofusion_prototype
     {
         public static string NomJouet, CategorieJouet, MarqueJouet, EmplacementJouet, IdJouet, DateMiseEnVenteJouet;
 
+        private void RechercherEditerJouet_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string requette = "SELECT * FROM jouets WHERE Nom LIKE @nom";
+                MySqlCommand commande = new MySqlCommand(requette, Program.connection);
+                commande.Parameters.AddWithValue("@nom", RechercherJouet_textBox.Text);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(commande);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                ResultatJouet_dataGridView.DataSource = table;
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show(erreur.Message);
+            }
+        }
 
         public static int AgeMinJouet, AgeMaxJouet, NbExemplaires;
         public Form_Jouets()
@@ -26,33 +44,32 @@ namespace Bibliofusion_prototype
             DialogResult verification = MessageBox.Show("Voulez-vous valider ce jouet ?", "Nouveau jouet", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verification == DialogResult.Yes)
             {
-                if (CategorieJouet_comboBox != null)
+                try
                 {
-                    CategorieJouet = "NA";
+                    DateTime DateActuelle = DateTime.Now;
+                    string DateFormate = DateActuelle.ToString("yyyy-MM-dd");
+                    string TrancheAges = $"{AgeMinJouet_numericUpDown.Text} - {AgeMaxJouet_numericUpDown.Text}";
+
+                    string requette = "INSERT INTO jouets ( idJouets_Code_Barre, Nom, Marque, Date_Entree_Bibliotheque,Date_Mise_En_Vente, Emplacement,Exemplaires_Disponibles, Tranche_Ages) " +
+                                        "VALUES ( @idJouets_Code_Barre, @Nom, @Marque, @Date_Entree_Bibliotheque, @Date_Mise_En_Vente, @Emplacement, @Exemplaires_Disponibles, @Tranche_Ages)";
+                    MySqlCommand commande = new MySqlCommand(requette, Program.connection);
+
+                    commande.Parameters.AddWithValue("@idJouets_Code_Barre", IdJouet_textBox.Text);
+                    commande.Parameters.AddWithValue("@Nom", NomJouet_textBox.Text);
+                    commande.Parameters.AddWithValue("@Marque", MarqueJouet_textBox.Text);
+                    commande.Parameters.AddWithValue("@Date_Mise_En_Vente", DateVenteJouet_dateTimePicker.Text);
+                    commande.Parameters.AddWithValue("@Date_Entree_Bibliotheque", DateFormate);
+                    commande.Parameters.AddWithValue("@Exemplaires_Disponibles", NbExemplairesJouet_numericUpDown.Text);
+                    commande.Parameters.AddWithValue("@Emplacement", EmplacementJouet_textBox.Text);
+                    commande.Parameters.AddWithValue("@Tranche_Ages", TrancheAges);
+                    commande.ExecuteNonQuery();
+
+                    MessageBox.Show($"Jouet : {NomJouet_textBox.Text} ajouté");
                 }
-                else
+                catch (Exception erreur)
                 {
-                    CategorieJouet = CategorieJouet_comboBox.SelectedItem.ToString();
+                    MessageBox.Show(erreur.Message);
                 }
-                NomJouet = NomJouet_textBox.Text;
-                MarqueJouet = MarqueJouet_textBox.Text;
-                EmplacementJouet = EmplacementJouet_textBox.Text;
-                IdJouet = IdJouet_textBox.Text;
-                DateMiseEnVenteJouet = DateVenteJouet_dateTimePicker.Text;
-                AgeMinJouet = (int)AgeMinJouet_numericUpDown.Value;
-                AgeMaxJouet = (int)AgeMaxJouet_numericUpDown.Value;
-                NbExemplaires = (int)NbExemplairesJouet_numericUpDown.Value;
-                MessageBox.Show(
-                    "Nom du jouet : " + NomJouet +
-                    "\nCatégorie du jouet : " + CategorieJouet +
-                    "\nMarque du jouet : " + MarqueJouet +
-                    "\nEmplacement du jouet : " + EmplacementJouet +
-                    "\nID du jouet : " + IdJouet +
-                    "\nDate de mise en vente du jouet : " + DateMiseEnVenteJouet +
-                    "\nÂge minimum recommandé pour le jouet : " + AgeMinJouet +
-                    "\nÂge maximum recommandé pour le jouet : " + AgeMaxJouet +
-                    "\nNombre d'exemplaires disponibles du jouet : " + NbExemplaires
-                    ,"Nouveau jouet créé");
             }
         }
     }

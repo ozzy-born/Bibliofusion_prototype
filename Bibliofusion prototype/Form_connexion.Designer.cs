@@ -77,22 +77,22 @@
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Font = new System.Drawing.Font("Microsoft Himalaya", 15.2F);
-            this.ID.Location = new System.Drawing.Point(48, 112);
+            this.ID.Font = new System.Drawing.Font("Microsoft Himalaya", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ID.Location = new System.Drawing.Point(47, 108);
             this.ID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(77, 21);
+            this.ID.Size = new System.Drawing.Size(97, 27);
             this.ID.TabIndex = 3;
             this.ID.Text = "Identifiant :";
             // 
             // MDP
             // 
             this.MDP.AutoSize = true;
-            this.MDP.Font = new System.Drawing.Font("Microsoft Himalaya", 15.2F);
-            this.MDP.Location = new System.Drawing.Point(48, 176);
+            this.MDP.Font = new System.Drawing.Font("Microsoft Himalaya", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MDP.Location = new System.Drawing.Point(47, 168);
             this.MDP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MDP.Name = "MDP";
-            this.MDP.Size = new System.Drawing.Size(93, 21);
+            this.MDP.Size = new System.Drawing.Size(119, 27);
             this.MDP.TabIndex = 4;
             this.MDP.Text = "Mot de Passe :";
             // 
@@ -112,10 +112,11 @@
             // MdpOublie_button
             // 
             this.MdpOublie_button.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.MdpOublie_button.Location = new System.Drawing.Point(195, 232);
+            this.MdpOublie_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MdpOublie_button.Location = new System.Drawing.Point(140, 226);
             this.MdpOublie_button.Margin = new System.Windows.Forms.Padding(0);
             this.MdpOublie_button.Name = "MdpOublie_button";
-            this.MdpOublie_button.Size = new System.Drawing.Size(111, 23);
+            this.MdpOublie_button.Size = new System.Drawing.Size(166, 29);
             this.MdpOublie_button.TabIndex = 6;
             this.MdpOublie_button.Text = "Mot de Passe oublié";
             this.MdpOublie_button.UseVisualStyleBackColor = false;

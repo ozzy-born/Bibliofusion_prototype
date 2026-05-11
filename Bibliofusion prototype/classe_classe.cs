@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using MySql.Data.MySqlClient;
 
 
 
@@ -22,7 +23,7 @@ namespace Package1 {
 		private string niveau;
 		private string nom_classe;
 		private string professeur;
-		public Package1.SGBD m_SGBD;
+		public Package1.SGBD sgbd;
 
 		public classe(){
 
@@ -32,13 +33,22 @@ namespace Package1 {
 
 		}
 
-		public void ajouter(){
+		public void ajouter()
+		{
+            string query = "INSERT INTO classes (nom_classe, professeur, etablissement, adresse_etablissement, niveau) VALUES (@nom_classe, @professeur, @etablissement, @adresse_etablissement, @niveau)";
+            MySqlCommand cmd = new MySqlCommand(query);
+            cmd.Parameters.AddWithValue("@nom_classe", nom_classe);
+            cmd.Parameters.AddWithValue("@professeur", professeur);
+            cmd.Parameters.AddWithValue("@etablissement", etablissement);
+            cmd.Parameters.AddWithValue("@adresse_etablissement", adresse_Etablissement);
+            cmd.Parameters.AddWithValue("@niveau", niveau);
+            cmd.ExecuteNonQuery();
 
-		}
+        }
 
-		/// 
-		/// <param name="classes"></param>
-		public void consulter(string classes){
+        /// 
+        /// <param name="classes"></param>
+        public void consulter(string classes){
 
 		}
 

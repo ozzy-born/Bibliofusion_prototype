@@ -32,7 +32,6 @@
             this.AjoutClasse_tabPage = new System.Windows.Forms.TabPage();
             this.NiveauClasse_comboBox = new System.Windows.Forms.ComboBox();
             this.RechercherEleve_textBox = new System.Windows.Forms.TextBox();
-            this.SelectionEleves_CheckListBox = new System.Windows.Forms.CheckedListBox();
             this.ValiderAjoutClasse_button = new System.Windows.Forms.Button();
             this.NomClasse_textBox = new System.Windows.Forms.TextBox();
             this.NomProf_textBox = new System.Windows.Forms.TextBox();
@@ -50,16 +49,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.RechercherAjoutClasse_button = new System.Windows.Forms.Button();
             this.RechercherEditerClasse_button = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Classes_tabControl.SuspendLayout();
             this.AjoutClasse_tabPage.SuspendLayout();
             this.EditClasse_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Classes_tabControl
             // 
             this.Classes_tabControl.Controls.Add(this.AjoutClasse_tabPage);
             this.Classes_tabControl.Controls.Add(this.EditClasse_tabPage);
+            this.Classes_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Classes_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Classes_tabControl.Name = "Classes_tabControl";
             this.Classes_tabControl.SelectedIndex = 0;
@@ -69,6 +71,7 @@
             // AjoutClasse_tabPage
             // 
             this.AjoutClasse_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutClasse_tabPage.Controls.Add(this.dataGridView1);
             this.AjoutClasse_tabPage.Controls.Add(this.RechercherAjoutClasse_button);
             this.AjoutClasse_tabPage.Controls.Add(this.label3);
             this.AjoutClasse_tabPage.Controls.Add(this.label4);
@@ -76,17 +79,16 @@
             this.AjoutClasse_tabPage.Controls.Add(this.label1);
             this.AjoutClasse_tabPage.Controls.Add(this.NiveauClasse_comboBox);
             this.AjoutClasse_tabPage.Controls.Add(this.RechercherEleve_textBox);
-            this.AjoutClasse_tabPage.Controls.Add(this.SelectionEleves_CheckListBox);
             this.AjoutClasse_tabPage.Controls.Add(this.ValiderAjoutClasse_button);
             this.AjoutClasse_tabPage.Controls.Add(this.NomClasse_textBox);
             this.AjoutClasse_tabPage.Controls.Add(this.NomProf_textBox);
             this.AjoutClasse_tabPage.Controls.Add(this.NomEtablissement_textBox);
             this.AjoutClasse_tabPage.Controls.Add(this.AdresseEtablissement_textBox);
             this.AjoutClasse_tabPage.Controls.Add(this.BiblioFusion_label1);
-            this.AjoutClasse_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutClasse_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutClasse_tabPage.Name = "AjoutClasse_tabPage";
             this.AjoutClasse_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AjoutClasse_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.AjoutClasse_tabPage.Size = new System.Drawing.Size(996, 692);
             this.AjoutClasse_tabPage.TabIndex = 0;
             this.AjoutClasse_tabPage.Text = "Ajouter une classe";
             // 
@@ -110,14 +112,6 @@
             this.RechercherEleve_textBox.Size = new System.Drawing.Size(309, 30);
             this.RechercherEleve_textBox.TabIndex = 42;
             this.RechercherEleve_textBox.Text = "Rechercher un élève";
-            // 
-            // SelectionEleves_CheckListBox
-            // 
-            this.SelectionEleves_CheckListBox.FormattingEnabled = true;
-            this.SelectionEleves_CheckListBox.Location = new System.Drawing.Point(30, 321);
-            this.SelectionEleves_CheckListBox.Name = "SelectionEleves_CheckListBox";
-            this.SelectionEleves_CheckListBox.Size = new System.Drawing.Size(460, 304);
-            this.SelectionEleves_CheckListBox.TabIndex = 41;
             // 
             // ValiderAjoutClasse_button
             // 
@@ -302,6 +296,14 @@
             this.RechercherEditerClasse_button.Text = "Rechercher";
             this.RechercherEditerClasse_button.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(33, 331);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(802, 300);
+            this.dataGridView1.TabIndex = 59;
+            // 
             // Form_Classes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,6 +320,7 @@
             this.EditClasse_tabPage.ResumeLayout(false);
             this.EditClasse_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -337,7 +340,6 @@
         private System.Windows.Forms.TextBox RechercherClasse_textBox;
         private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.TextBox RechercherEleve_textBox;
-        private System.Windows.Forms.CheckedListBox SelectionEleves_CheckListBox;
         private System.Windows.Forms.ComboBox NiveauClasse_comboBox;
         private System.Windows.Forms.DataGridView ResultatClasse_dataGridView;
         private System.Windows.Forms.Button RechercherAjoutClasse_button;
@@ -346,5 +348,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RechercherEditerClasse_button;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

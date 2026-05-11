@@ -41,6 +41,7 @@
             this.Adherents_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Classes_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Administateurs_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CodeQR_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Deconnexion_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_tabControl = new System.Windows.Forms.TabControl();
             this.TabDeBord_tabPage = new System.Windows.Forms.TabPage();
@@ -64,7 +65,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.CodeQR_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menuStrip.SuspendLayout();
             this.Main_tabControl.SuspendLayout();
             this.TabDeBord_tabPage.SuspendLayout();
@@ -85,7 +85,7 @@
             this.Deconnexion_ToolStripMenuItem});
             this.Main_menuStrip.Location = new System.Drawing.Point(0, 0);
             this.Main_menuStrip.Name = "Main_menuStrip";
-            this.Main_menuStrip.Size = new System.Drawing.Size(1007, 24);
+            this.Main_menuStrip.Size = new System.Drawing.Size(1007, 30);
             this.Main_menuStrip.TabIndex = 0;
             this.Main_menuStrip.Text = "menuStrip1";
             // 
@@ -95,28 +95,29 @@
             this.NouvelEmprunt_ToolStripMenuItem,
             this.EnregisterRetour_ToolStripMenuItem,
             this.ReserverArticle_ToolStripMenuItem});
+            this.Emprunts_ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Emprunts_ToolStripMenuItem.Name = "Emprunts_ToolStripMenuItem";
-            this.Emprunts_ToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.Emprunts_ToolStripMenuItem.Size = new System.Drawing.Size(106, 26);
             this.Emprunts_ToolStripMenuItem.Text = "Emprunts";
             // 
             // NouvelEmprunt_ToolStripMenuItem
             // 
             this.NouvelEmprunt_ToolStripMenuItem.Name = "NouvelEmprunt_ToolStripMenuItem";
-            this.NouvelEmprunt_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.NouvelEmprunt_ToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
             this.NouvelEmprunt_ToolStripMenuItem.Text = "Nouvel emprunt";
             this.NouvelEmprunt_ToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
             // 
             // EnregisterRetour_ToolStripMenuItem
             // 
             this.EnregisterRetour_ToolStripMenuItem.Name = "EnregisterRetour_ToolStripMenuItem";
-            this.EnregisterRetour_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EnregisterRetour_ToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
             this.EnregisterRetour_ToolStripMenuItem.Text = "Enregister un retour";
             this.EnregisterRetour_ToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
             // 
             // ReserverArticle_ToolStripMenuItem
             // 
             this.ReserverArticle_ToolStripMenuItem.Name = "ReserverArticle_ToolStripMenuItem";
-            this.ReserverArticle_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReserverArticle_ToolStripMenuItem.Size = new System.Drawing.Size(259, 26);
             this.ReserverArticle_ToolStripMenuItem.Text = "Reserver un article";
             this.ReserverArticle_ToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
             // 
@@ -130,57 +131,66 @@
             this.Classes_ToolStripMenuItem,
             this.Administateurs_ToolStripMenuItem,
             this.CodeQR_ToolStripMenuItem});
+            this.Options_ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
+            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(91, 26);
             this.Options_ToolStripMenuItem.Text = "Options";
             // 
             // Livres_ToolStripMenuItem
             // 
             this.Livres_ToolStripMenuItem.Name = "Livres_ToolStripMenuItem";
-            this.Livres_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Livres_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.Livres_ToolStripMenuItem.Text = "Livres";
             this.Livres_ToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
             // 
             // Jouets_ToolStripMenuItem
             // 
             this.Jouets_ToolStripMenuItem.Name = "Jouets_ToolStripMenuItem";
-            this.Jouets_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Jouets_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.Jouets_ToolStripMenuItem.Text = "Jouets";
             this.Jouets_ToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
             // 
             // Categories_ToolStripMenuItem
             // 
             this.Categories_ToolStripMenuItem.Name = "Categories_ToolStripMenuItem";
-            this.Categories_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Categories_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.Categories_ToolStripMenuItem.Text = "Catégories";
             this.Categories_ToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
             // 
             // Adherents_ToolStripMenuItem
             // 
             this.Adherents_ToolStripMenuItem.Name = "Adherents_ToolStripMenuItem";
-            this.Adherents_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Adherents_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.Adherents_ToolStripMenuItem.Text = "Adhérents";
             this.Adherents_ToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
             // 
             // Classes_ToolStripMenuItem
             // 
             this.Classes_ToolStripMenuItem.Name = "Classes_ToolStripMenuItem";
-            this.Classes_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Classes_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.Classes_ToolStripMenuItem.Text = "Classes";
             this.Classes_ToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
             // 
             // Administateurs_ToolStripMenuItem
             // 
             this.Administateurs_ToolStripMenuItem.Name = "Administateurs_ToolStripMenuItem";
-            this.Administateurs_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Administateurs_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
             this.Administateurs_ToolStripMenuItem.Text = "Administateurs";
             this.Administateurs_ToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
             // 
+            // CodeQR_ToolStripMenuItem
+            // 
+            this.CodeQR_ToolStripMenuItem.Name = "CodeQR_ToolStripMenuItem";
+            this.CodeQR_ToolStripMenuItem.Size = new System.Drawing.Size(212, 26);
+            this.CodeQR_ToolStripMenuItem.Text = "CodeQR";
+            this.CodeQR_ToolStripMenuItem.Click += new System.EventHandler(this.qRCodeToolStripMenuItem_Click);
+            // 
             // Deconnexion_ToolStripMenuItem
             // 
+            this.Deconnexion_ToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Deconnexion_ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Deconnexion_ToolStripMenuItem.Name = "Deconnexion_ToolStripMenuItem";
-            this.Deconnexion_ToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.Deconnexion_ToolStripMenuItem.Size = new System.Drawing.Size(138, 26);
             this.Deconnexion_ToolStripMenuItem.Text = "Déconnexion";
             this.Deconnexion_ToolStripMenuItem.Click += new System.EventHandler(this.DeconnexionToolStripMenuItem_Click);
             // 
@@ -193,6 +203,7 @@
             this.Main_tabControl.Controls.Add(this.MainRechercher_tabPage);
             this.Main_tabControl.Controls.Add(this.MainScanner_tabPage);
             this.Main_tabControl.Controls.Add(this.MainStat_tabPage);
+            this.Main_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Main_tabControl.Location = new System.Drawing.Point(0, 27);
             this.Main_tabControl.Name = "Main_tabControl";
             this.Main_tabControl.SelectedIndex = 0;
@@ -208,10 +219,10 @@
             this.TabDeBord_tabPage.Controls.Add(this.Reservations_label);
             this.TabDeBord_tabPage.Controls.Add(this.Retours_label);
             this.TabDeBord_tabPage.Controls.Add(this.Retards_label);
-            this.TabDeBord_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.TabDeBord_tabPage.Location = new System.Drawing.Point(4, 29);
             this.TabDeBord_tabPage.Name = "TabDeBord_tabPage";
             this.TabDeBord_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.TabDeBord_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.TabDeBord_tabPage.Size = new System.Drawing.Size(999, 670);
             this.TabDeBord_tabPage.TabIndex = 0;
             this.TabDeBord_tabPage.Text = "Tableau de Bord";
             // 
@@ -412,13 +423,6 @@
             this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // CodeQR_ToolStripMenuItem
-            // 
-            this.CodeQR_ToolStripMenuItem.Name = "CodeQR_ToolStripMenuItem";
-            this.CodeQR_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.CodeQR_ToolStripMenuItem.Text = "CodeQR";
-            this.CodeQR_ToolStripMenuItem.Click += new System.EventHandler(this.qRCodeToolStripMenuItem_Click);
             // 
             // MainForm
             // 

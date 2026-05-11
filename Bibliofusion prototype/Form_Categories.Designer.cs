@@ -124,10 +124,10 @@
             this.AjoutCategorie_tabPage.Controls.Add(this.BiblioFusion_label1);
             this.AjoutCategorie_tabPage.Controls.Add(this.NomCategorie_textBox);
             this.AjoutCategorie_tabPage.Controls.Add(this.ValiderAjoutCategorie_button);
-            this.AjoutCategorie_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutCategorie_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutCategorie_tabPage.Name = "AjoutCategorie_tabPage";
             this.AjoutCategorie_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AjoutCategorie_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.AjoutCategorie_tabPage.Size = new System.Drawing.Size(997, 692);
             this.AjoutCategorie_tabPage.TabIndex = 0;
             this.AjoutCategorie_tabPage.Text = "Ajouter une catégorie";
             // 
@@ -204,6 +204,7 @@
             // 
             this.Categorie_tabControl.Controls.Add(this.AjoutCategorie_tabPage);
             this.Categorie_tabControl.Controls.Add(this.EditCategorie_tabPage);
+            this.Categorie_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Categorie_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Categorie_tabControl.Name = "Categorie_tabControl";
             this.Categorie_tabControl.SelectedIndex = 0;

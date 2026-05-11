@@ -69,6 +69,7 @@
             // 
             this.Jouet_tabControl.Controls.Add(this.AjoutJouet_tabPage);
             this.Jouet_tabControl.Controls.Add(this.EditJouet_tabPage);
+            this.Jouet_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Jouet_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Jouet_tabControl.Name = "Jouet_tabControl";
             this.Jouet_tabControl.SelectedIndex = 0;
@@ -98,10 +99,10 @@
             this.AjoutJouet_tabPage.Controls.Add(this.IdJouet_textBox);
             this.AjoutJouet_tabPage.Controls.Add(this.MarqueJouet_textBox);
             this.AjoutJouet_tabPage.Controls.Add(this.EmplacementJouet_textBox);
-            this.AjoutJouet_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutJouet_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutJouet_tabPage.Name = "AjoutJouet_tabPage";
             this.AjoutJouet_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AjoutJouet_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.AjoutJouet_tabPage.Size = new System.Drawing.Size(997, 692);
             this.AjoutJouet_tabPage.TabIndex = 0;
             this.AjoutJouet_tabPage.Text = "Ajouter un jouet";
             // 
@@ -359,10 +360,10 @@
             this.EditJouet_tabPage.Controls.Add(this.FiltresDeRechercheJouet_checkedListBox);
             this.EditJouet_tabPage.Controls.Add(this.RechercherJouet_textBox);
             this.EditJouet_tabPage.Controls.Add(this.BiblioFusion_label2);
-            this.EditJouet_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditJouet_tabPage.Location = new System.Drawing.Point(4, 29);
             this.EditJouet_tabPage.Name = "EditJouet_tabPage";
             this.EditJouet_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.EditJouet_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.EditJouet_tabPage.Size = new System.Drawing.Size(997, 692);
             this.EditJouet_tabPage.TabIndex = 1;
             this.EditJouet_tabPage.Text = "Editer les jouets";
             // 
@@ -376,6 +377,7 @@
             this.RechercherEditerJouet_button.TabIndex = 61;
             this.RechercherEditerJouet_button.Text = "Rechercher";
             this.RechercherEditerJouet_button.UseVisualStyleBackColor = true;
+            this.RechercherEditerJouet_button.Click += new System.EventHandler(this.RechercherEditerJouet_button_Click);
             // 
             // ResultatJouet_dataGridView
             // 

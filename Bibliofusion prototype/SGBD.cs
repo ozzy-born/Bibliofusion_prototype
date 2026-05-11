@@ -21,35 +21,30 @@ namespace Package1 {
 		private string mdp;
 		public Package1.article m_article;
 		public Package1.adherent m_adherent;
+		private readonly string conString;
 
-		public SGBD(){
-
-		}
+		public SGBD(string connectionString){
+			conString = connectionString;
+        }
 
 		~SGBD(){
 
 		}
 
-		public void connect(string nom_server,string identifiant,string mdp, string bdd){
-            string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
-            using (MySqlConnection connection = new MySqlConnection(conString))
-            {
-                connection.Open();
-            }
-
+		public void connect()
+        {
+            MySqlConnection connection = new MySqlConnection(conString);
+            connection.Open();
         }
 
-		public void deconnect(string nom_server, string identifiant, string mdp, string bdd)
-        { 
-
-            string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
-            using (MySqlConnection connection = new MySqlConnection(conString))
-            {
-                connection.Close();
-            }
+		public void deconnect()
+        {
+            MySqlConnection connection = new MySqlConnection(conString);
+            connection.Close();
         }
 
-		public void ecrire(){
+		public void ecrire()
+		{
 
 		}
 
@@ -60,20 +55,20 @@ namespace Package1 {
 			return "";
 		}
 
-		public void lire(){
-
+		public void lire()
+		{
 		}
 
 		/// 
 		/// <param name="requette_SQL"></param>
-		public void prep_req_SQL(string requette_SQL){
-
+		public void prep_req_SQL(string requette_SQL)
+		{
 		}
 
 		/// 
 		/// <param name="mdp"></param>
-		public bool verification_hachage(string mdp){
-
+		public bool verification_hachage(string mdp)
+		{
 			return false;
 		}
 

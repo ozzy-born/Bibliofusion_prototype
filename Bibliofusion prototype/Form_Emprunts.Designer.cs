@@ -67,6 +67,7 @@
             this.Emprunts_tabControl.Controls.Add(this.NouvelEmprunt_tabPage);
             this.Emprunts_tabControl.Controls.Add(this.EnregistrerUnRetour_tabPage);
             this.Emprunts_tabControl.Controls.Add(this.ReserverUnArticle_tabPage);
+            this.Emprunts_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Emprunts_tabControl.ItemSize = new System.Drawing.Size(86, 18);
             this.Emprunts_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Emprunts_tabControl.Name = "Emprunts_tabControl";

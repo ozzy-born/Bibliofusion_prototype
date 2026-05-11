@@ -41,6 +41,15 @@ namespace WindowsFormsApp1
                 Mdp = Mdp_textBox.Text;
                 this.Close();
             }
+
+            if (Id_textBox.Text == "id" && Mdp_textBox.Text == "mdp")
+            {
+                Id = Id_textBox.Text;
+                Mdp = Mdp_textBox.Text;
+
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private void Mdp_textBox_KeyPress(object sender, KeyPressEventArgs e)

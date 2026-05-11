@@ -17,10 +17,10 @@ namespace Bibliofusion_prototype
     {
 
         private readonly string server, uid, password, database, conString;
+        public readonly MySqlConnection connection;
         public Form_test()
         {
             InitializeComponent();
-            SGBD SGBD = new SGBD();
             server = ConfigurationManager.AppSettings["ServerName"];
             uid = ConfigurationManager.AppSettings["UserId"];
             password = ConfigurationManager.AppSettings["Password"];
@@ -28,7 +28,9 @@ namespace Bibliofusion_prototype
 
             conString = $"server={server};uid={uid};pwd={password};database={database}";    //conString = "server = 'localhost';uid='root';pwd='';database='bibliofusionbdd'";
 
-            SGBD.connect(server, uid, password, database);
+            SGBD SGBD = new SGBD(conString);
+            connection = new MySqlConnection(conString);
+            SGBD.connect();
 
             DataGrid();
         }
@@ -36,20 +38,14 @@ namespace Bibliofusion_prototype
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(conString))
-                {
-                    connection.Open();
-                    string requette = "SELECT * FROM adherents";
-                    using (MySqlCommand commande = new MySqlCommand(requette, connection))
-                    {
-                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(commande))
-                        {
-                            DataTable table = new DataTable();
-                            adapter.Fill(table);
-                            dataGridView1.DataSource = table;
-                        }
-                    }
-                }
+                MySqlConnection connection = new MySqlConnection(conString);
+                connection.Open();
+                string requette = "SELECT * FROM adherents";
+                MySqlCommand commande = new MySqlCommand(requette, connection);
+                MySqlDataAdapter adapter = new MySqlDataAdapter(commande);
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dataGridView1.DataSource = table;
             }
             catch (Exception erreur){ 
                 MessageBox.Show($"Erreur datagrid: {erreur}");
@@ -65,19 +61,16 @@ namespace Bibliofusion_prototype
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(conString))
-                {
-                    connection.Open();
-                    string requette = "UPDATE adherents SET Nom = @nom, Adresse = @adresse, Date_Naissance = @date WHERE idAdherents = @id";
-                        using (MySqlCommand commande = new MySqlCommand(requette, connection))
-                    {
-                        commande.Parameters.AddWithValue("@id", tb_id.Text);
-                        commande.Parameters.AddWithValue("@nom", tb_nom.Text);
-                        commande.Parameters.AddWithValue("@adresse", tb_adresse.Text);
-                        commande.Parameters.AddWithValue("@date", date_naissance.Text);
-                        commande.ExecuteNonQuery();
-                    }
-                }
+                MySqlConnection connection = new MySqlConnection(conString);
+
+                connection.Open();
+                string requette = "UPDATE adherents SET Nom = @nom, Adresse = @adresse, Date_Naissance = @date WHERE idAdherents = @id";
+                MySqlCommand commande = new MySqlCommand(requette, connection);
+                commande.Parameters.AddWithValue("@id", tb_id.Text);
+                commande.Parameters.AddWithValue("@nom", tb_nom.Text);
+                commande.Parameters.AddWithValue("@adresse", tb_adresse.Text);
+                commande.Parameters.AddWithValue("@date", date_naissance.Text);
+                commande.ExecuteNonQuery();
             }
             catch (Exception erreur)
             {
@@ -93,8 +86,8 @@ namespace Bibliofusion_prototype
             {
                 tb_id.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
                 tb_nom.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-                tb_adresse.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
                 date_naissance.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
+                tb_adresse.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
             }
             catch (Exception erreur)
             {
@@ -107,16 +100,12 @@ namespace Bibliofusion_prototype
         {
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(conString))
-                {
-                    connection.Open();
-                    string requette = "DELETE FROM adherents WHERE idAdherents = @id";
-                    using (MySqlCommand commande = new MySqlCommand(requette, connection))
-                    {
-                        commande.Parameters.AddWithValue("@id", tb_id.Text);
-                        commande.ExecuteNonQuery();
-                    }
-                }
+                MySqlConnection connection = new MySqlConnection(conString);
+                connection.Open();
+                string requette = "DELETE FROM adherents WHERE idAdherents = @id";
+                MySqlCommand commande = new MySqlCommand(requette, connection);
+                commande.Parameters.AddWithValue("@id", tb_id.Text);
+                commande.ExecuteNonQuery();
             }
             catch ( Exception erreur)
             {
@@ -130,20 +119,13 @@ namespace Bibliofusion_prototype
 
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(conString))
-                {
-                    connection.Open();
-                    string requette = "SELECT * FROM adherents WHERE Nom = @nom AND Adresse = @adresse AND Date_Naissance = @date";
-                    using (MySqlCommand commande = new MySqlCommand(requette, connection))
-                    {
-
-                        commande.Parameters.AddWithValue("@nom", tb_nom.Text);
-                        commande.ExecuteNonQuery();
-
-
-                        MessageBox.Show($"{tb_nom.Text}\n{tb_adresse.Text}\n{date_naissance.Text}\nAjouté avec succès!");
-                    }
-                }
+                MySqlConnection connection = new MySqlConnection(conString);
+                connection.Open();
+                string requette = "SELECT * FROM adherents WHERE Nom = @nom AND Adresse = @adresse AND Date_Naissance = @date";
+                MySqlCommand commande = new MySqlCommand(requette, connection);
+                commande.Parameters.AddWithValue("@nom", tb_nom.Text);
+                commande.ExecuteNonQuery();
+                MessageBox.Show($"{tb_nom.Text}\n{tb_adresse.Text}\n{date_naissance.Text}\nAjouté avec succès!");
             }
             catch (Exception erreur)
             {
@@ -169,31 +151,23 @@ namespace Bibliofusion_prototype
         {
              try
             {
-                using (MySqlConnection connection = new MySqlConnection(conString))
-                {
-                    connection.Open();
-                    string requette = "INSERT INTO adherents (Nom, Adresse,Date_Naissance) VALUES (@nom, @adresse, @date)";
-                    using (MySqlCommand commande = new MySqlCommand(requette, connection))
-                    {
+                string requette = "INSERT INTO adherents (Nom, Adresse,Date_Naissance) VALUES (@nom, @adresse, @date)";
+                MySqlCommand commande = new MySqlCommand(requette, connection);
 
-                        commande.Parameters.AddWithValue("@nom", tb_nom.Text);
-                        commande.Parameters.AddWithValue("@adresse", tb_adresse.Text);
-                        commande.Parameters.AddWithValue("@date", date_naissance.Text);
-                        commande.ExecuteNonQuery();
+                commande.Parameters.AddWithValue("@nom", tb_nom.Text);
+                commande.Parameters.AddWithValue("@adresse", tb_adresse.Text);
+                commande.Parameters.AddWithValue("@date", date_naissance.Text);
+                commande.ExecuteNonQuery();
 
 
-                        MessageBox.Show($"{tb_nom.Text}\n{tb_adresse.Text}\n{date_naissance.Text}\nAjouté avec succès!");
-                    }
-                }
+                MessageBox.Show($"{tb_nom.Text}\n{tb_adresse.Text}\n{date_naissance.Text}\nAjouté avec succès!");
             }
             catch (Exception erreur)
             {
                 MessageBox.Show($"Erreur btn_ajout_click: {erreur.Message}");
             }
-            /*
             btn_res_Click(sender, e);
             DataGrid();
-            */
         }
 
         private void btn_testco_Click(object sender, EventArgs e)
@@ -202,11 +176,9 @@ namespace Bibliofusion_prototype
             
             try
             {
-                using (MySqlConnection connection = new MySqlConnection(conString))
-                {
-                    connection.Open();
-                    MessageBox.Show("Connection résusie!");
-                }
+                MySqlConnection connection = new MySqlConnection(conString);
+                connection.Open();
+                MessageBox.Show("Connection résusie!");
             }
             catch (Exception erreur)
             {

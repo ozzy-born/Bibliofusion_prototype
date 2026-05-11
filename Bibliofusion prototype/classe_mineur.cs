@@ -17,8 +17,8 @@ using Package1;
 namespace Package1 {
 	public class mineur : adherent {
 
-		private *string responsable1;
-		private *string responsable2;
+		private string responsable1;
+		private string responsable2;
 
 		public mineur(){
 

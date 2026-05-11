@@ -1,5 +1,9 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using Package1;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -11,6 +15,12 @@ namespace Bibliofusion_prototype
     {
 
         public static bool IsAuthenticated = false;
+        public static string server = ConfigurationManager.AppSettings["ServerName"];
+        public static string uid = ConfigurationManager.AppSettings["UserId"];
+        public static string password = ConfigurationManager.AppSettings["Password"];
+        public static string database = ConfigurationManager.AppSettings["DataBase"];
+        public static string conString = $"server={server};uid={uid};pwd={password};database={database}";
+        public static MySqlConnection connection = new MySqlConnection(conString);
         /// <summary>
         /// Point d'entrée principal de l'application.
         /// </summary>
@@ -19,16 +29,21 @@ namespace Bibliofusion_prototype
         {
 
 
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Form_test Formtest=new Form_test();
+            connection.Open();
+
+            Form_test Formtest = new Form_test();
             Formtest.ShowDialog();
-            Form_Connexion formConnexion = new Form_Connexion();
-            MainForm mainForm = new MainForm();
-            Application.Run(formConnexion);
-            if (Form_Connexion.Id == "id" && Form_Connexion.Mdp == "mdp"){
-                Application.Run(mainForm);
+            while (true)
+            {
+                Form_Connexion FormulaireConnection = new Form_Connexion();
+                if (FormulaireConnection.ShowDialog() == DialogResult.OK)
+                    { break; }
             }
+            MainForm mainForm = new MainForm();
+            Application.Run(mainForm);
         }
     }
 }

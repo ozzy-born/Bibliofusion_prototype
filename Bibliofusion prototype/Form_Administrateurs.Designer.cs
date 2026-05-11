@@ -141,10 +141,10 @@
             this.AjoutAdmin_tabPage.Controls.Add(this.EmailAdmin_textBox);
             this.AjoutAdmin_tabPage.Controls.Add(this.FixeAdmin_textBox);
             this.AjoutAdmin_tabPage.Controls.Add(this.BiblioFusion_label1);
-            this.AjoutAdmin_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutAdmin_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutAdmin_tabPage.Name = "AjoutAdmin_tabPage";
             this.AjoutAdmin_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AjoutAdmin_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.AjoutAdmin_tabPage.Size = new System.Drawing.Size(996, 692);
             this.AjoutAdmin_tabPage.TabIndex = 0;
             this.AjoutAdmin_tabPage.Text = "Ajouter un administrateur";
             // 
@@ -260,6 +260,7 @@
             // 
             this.Admin_tabControl.Controls.Add(this.AjoutAdmin_tabPage);
             this.Admin_tabControl.Controls.Add(this.EditAdmin_tabPage);
+            this.Admin_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Admin_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Admin_tabControl.Name = "Admin_tabControl";
             this.Admin_tabControl.SelectedIndex = 0;

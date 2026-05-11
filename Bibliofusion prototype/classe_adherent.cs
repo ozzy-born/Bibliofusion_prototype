@@ -34,8 +34,7 @@ namespace Package1 {
 
 		}
 
-		public void ajouter(string adresse, int codePostal,string dateNaissance, string email, string nom, int fixe, int mobile, string prenom)
-		{
+		public void ajouter(string adresse, int codePostal,string dateNaissance, string email, string nom, int fixe, int mobile, string prenom){
 
         }
 

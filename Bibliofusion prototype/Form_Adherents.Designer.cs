@@ -192,10 +192,10 @@
             this.AjoutAdherent_tabPage.Controls.Add(this.MailAdherent_textBox);
             this.AjoutAdherent_tabPage.Controls.Add(this.FixeAdherent_textBox);
             this.AjoutAdherent_tabPage.Controls.Add(this.BiblioFusion_label1);
-            this.AjoutAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.AjoutAdherent_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutAdherent_tabPage.Name = "AjoutAdherent_tabPage";
             this.AjoutAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.AjoutAdherent_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.AjoutAdherent_tabPage.Size = new System.Drawing.Size(996, 692);
             this.AjoutAdherent_tabPage.TabIndex = 0;
             this.AjoutAdherent_tabPage.Text = "Ajouter un adhérent";
             // 
@@ -337,10 +337,10 @@
             this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable2Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable1Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherResponsableAdherent_textBox);
-            this.ResponsableAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.ResponsableAdherent_tabPage.Location = new System.Drawing.Point(4, 29);
             this.ResponsableAdherent_tabPage.Name = "ResponsableAdherent_tabPage";
             this.ResponsableAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ResponsableAdherent_tabPage.Size = new System.Drawing.Size(971, 282);
+            this.ResponsableAdherent_tabPage.Size = new System.Drawing.Size(971, 275);
             this.ResponsableAdherent_tabPage.TabIndex = 0;
             this.ResponsableAdherent_tabPage.Text = "Responsable adhérent";
             // 
@@ -844,6 +844,7 @@
             // 
             this.Adherent_tabControl.Controls.Add(this.AjoutAdherent_tabPage);
             this.Adherent_tabControl.Controls.Add(this.EditAdherent_tabPage);
+            this.Adherent_tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
             this.Adherent_tabControl.Location = new System.Drawing.Point(0, 0);
             this.Adherent_tabControl.Name = "Adherent_tabControl";
             this.Adherent_tabControl.SelectedIndex = 0;
