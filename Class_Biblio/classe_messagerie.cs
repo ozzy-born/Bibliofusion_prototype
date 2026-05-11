@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 
 
 
@@ -24,11 +26,20 @@ namespace Package1 {
 		private string objet;
 		private string serveurSMTP;
 		private string utilisateur;
+		private int port;
 		public Package1.Systbiblio m_Systbiblio;
 
-		public messagerie(){
+		public messagerie(string _serveurSMTP, string _utilisateur, string _mot_de_passe, string _expediteur, string _destinataire, string _objet, string _mail, int _port){
+			this.serveurSMTP = _serveurSMTP;
+			this.utilisateur = _utilisateur;
+			this.mot_de_passe = _mot_de_passe;
+			this.expediteur = _expediteur;
+			this.destinataire = _destinataire;
+			this.objet = _objet;
+			this.mail = _mail;
+			this.port = _port;
 
-		}
+        }
 
 		~messagerie(){
 
@@ -36,9 +47,32 @@ namespace Package1 {
 
 		/// 
 		/// <param name="message"></param>
-		public void envoyer(string message){
+		public bool envoyer(string message){
+			try
+			{ 
+				MailMessage mail = new MailMessage();
+				mail.From = new MailAddress(expediteur);
+				mail.To.Add(destinataire);
+				mail.Subject = objet;
+				mail.Body = message;
 
-		}
+				SmtpClient smtp = new SmtpClient(serveurSMTP, port);
+				smtp.Credentials = new NetworkCredential(utilisateur, mot_de_passe);
+				smtp.EnableSsl = true;
+				smtp.Send(mail);
+				return true;
+
+            }
+			catch (Exception ex)
+			{
+				Console.WriteLine(ex.Message);
+				return false;
+            }
+
+
+
+			return true;
+        }
 
 	}//end messagerie
 

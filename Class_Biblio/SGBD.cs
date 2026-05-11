@@ -6,66 +6,102 @@
 //  Original author: Utilisateur
 ///////////////////////////////////////////////////////////
 
+using MySql.Data.MySqlClient;
+using Package1;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Data;
 using System.IO;
+using System.Text;
+using System.Windows;
+namespace Package1
+{
+    public class SGBD
+    {
 
+        private string identifiant;
+        private string mdp;
+        public Package1.article m_article;
+        public Package1.adherent m_adherent;
 
+        public SGBD()
+        {
 
-using Package1;
-namespace Package1 {
-	public class SGBD {
+        }
 
-		private string identifiant;
-		private string mdp;
-		public Package1.article m_article;
-		public Package1.adherent m_adherent;
+        ~SGBD()
+        {
 
-		public SGBD(){
+        }
 
-		}
+        public void connect(string nom_server, string identifiant, string mdp, string bdd)
+        {
+            string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
+            try
+            {
+                using (MySqlConnection con = new MySqlConnection(conString))
+                {
+                    con.Open();
+                    Console.WriteLine("Connection réussie!");
+                }
+            }
+            catch (Exception erreur)
+            {
+                Console.WriteLine($"erreur : {erreur.Message}");
+            }
 
-		~SGBD(){
+        }
 
-		}
+        public void deconnect(string nom_server, string identifiant, string mdp, string bdd)
+        {
+            string conString = $"server={nom_server};uid={identifiant};pwd={mdp};database={bdd}";
+            try
+            {
+                using (MySqlConnection con = new MySqlConnection(conString))
+                {
+                    con.Close();
+                    Console.WriteLine("Deconnexion réussie!");
+                }
+            }
+            catch (Exception erreur)
+            {
+                Console.WriteLine($"erreur : {erreur.Message}");
+            }
+        }
 
-		public void connect(){
+        public void ecrire()
+        {
 
-		}
+        }
 
-		public void deconnect(){
+        /// 
+        /// <param name="mdp"></param>
+        public string hachage(string mdp)
+        {
 
-		}
+            return "";
+        }
 
-		public void ecrire(){
+        public void lire()
+        {
 
-		}
+        }
 
-		/// 
-		/// <param name="mdp"></param>
-		public string hachage(string mdp){
+        /// 
+        /// <param name="requette_SQL"></param>
+        public void prep_req_SQL(string requette_SQL)
+        {
 
-			return "";
-		}
+        }
 
-		public void lire(){
+        /// 
+        /// <param name="mdp"></param>
+        public bool verification_hachage(string mdp)
+        {
 
-		}
+            return false;
+        }
 
-		/// 
-		/// <param name="requette_SQL"></param>
-		public void prep_req_SQL(string requette_SQL){
-
-		}
-
-		/// 
-		/// <param name="mdp"></param>
-		public bool verification_hachage(string mdp){
-
-			return false;
-		}
-
-	}//end SGBD
+    }//end SGBD
 
 }//end namespace Package1

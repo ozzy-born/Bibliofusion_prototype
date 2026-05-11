@@ -1,4 +1,4 @@
-using System;
+/*using System;
 using System.Data;
 using MySql.Data.MySqlClient;
 
@@ -35,3 +35,4 @@ catch (Exception ex)
 {
     Console.WriteLine("Error: " + ex.Message);
 }
+*/

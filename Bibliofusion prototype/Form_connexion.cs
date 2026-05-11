@@ -9,20 +9,29 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
+
+
 namespace WindowsFormsApp1
 {
     public partial class Form_Connexion : Form
     {
         public static string Id, Mdp;
+        // moved here because top-level fields are not allowed in C# 7.3 / .NET Framework 4.7.2
+        private readonly string clee = "clee_SuP3r_S3cr3t3";
+        
         public Form_Connexion()
         {
             InitializeComponent();
         }
 
 
+
+
         private void Connexion_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Id_textBox.Text) && string.IsNullOrEmpty(Mdp_textBox.Text))
+            if (string.IsNullOrEmpty(Id_textBox.Text) || string.IsNullOrEmpty(Mdp_textBox.Text))
             {
                 MessageBox.Show("Veuillez vous identifier.");
                 return;
@@ -41,6 +50,11 @@ namespace WindowsFormsApp1
             }
 
             // Vérification login
+
+            
+
+
+
             if (Id_textBox.Text == "id" && Mdp_textBox.Text == "mdp")
             {
                 Id = Id_textBox.Text;
@@ -69,6 +83,10 @@ namespace WindowsFormsApp1
 
             }
         }
+
+
+
+       
 
         private void Id_textBox_KeyPress(object sender, KeyPressEventArgs e)
         {

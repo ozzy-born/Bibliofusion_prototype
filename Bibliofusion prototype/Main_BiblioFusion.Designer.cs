@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.Main_menuStrip = new System.Windows.Forms.MenuStrip();
             this.Emprunts_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NouvelEmprunt_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,6 +42,7 @@
             this.Adherents_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Classes_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Administateurs_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CodeQR_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Deconnexion_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_tabControl = new System.Windows.Forms.TabControl();
             this.TabDeBord_tabPage = new System.Windows.Forms.TabPage();
@@ -64,7 +66,6 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.CodeQR_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_menuStrip.SuspendLayout();
             this.Main_tabControl.SuspendLayout();
             this.TabDeBord_tabPage.SuspendLayout();
@@ -102,21 +103,21 @@
             // NouvelEmprunt_ToolStripMenuItem
             // 
             this.NouvelEmprunt_ToolStripMenuItem.Name = "NouvelEmprunt_ToolStripMenuItem";
-            this.NouvelEmprunt_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.NouvelEmprunt_ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.NouvelEmprunt_ToolStripMenuItem.Text = "Nouvel emprunt";
             this.NouvelEmprunt_ToolStripMenuItem.Click += new System.EventHandler(this.NouvelEmpruntToolStripMenuItem_Click);
             // 
             // EnregisterRetour_ToolStripMenuItem
             // 
             this.EnregisterRetour_ToolStripMenuItem.Name = "EnregisterRetour_ToolStripMenuItem";
-            this.EnregisterRetour_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EnregisterRetour_ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.EnregisterRetour_ToolStripMenuItem.Text = "Enregister un retour";
             this.EnregisterRetour_ToolStripMenuItem.Click += new System.EventHandler(this.enregisterUnRetourToolStripMenuItem_Click);
             // 
             // ReserverArticle_ToolStripMenuItem
             // 
             this.ReserverArticle_ToolStripMenuItem.Name = "ReserverArticle_ToolStripMenuItem";
-            this.ReserverArticle_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ReserverArticle_ToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
             this.ReserverArticle_ToolStripMenuItem.Text = "Reserver un article";
             this.ReserverArticle_ToolStripMenuItem.Click += new System.EventHandler(this.reserverUnArticleToolStripMenuItem_Click);
             // 
@@ -137,44 +138,51 @@
             // Livres_ToolStripMenuItem
             // 
             this.Livres_ToolStripMenuItem.Name = "Livres_ToolStripMenuItem";
-            this.Livres_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Livres_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.Livres_ToolStripMenuItem.Text = "Livres";
             this.Livres_ToolStripMenuItem.Click += new System.EventHandler(this.LivreToolStripMenuItem_Click);
             // 
             // Jouets_ToolStripMenuItem
             // 
             this.Jouets_ToolStripMenuItem.Name = "Jouets_ToolStripMenuItem";
-            this.Jouets_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Jouets_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.Jouets_ToolStripMenuItem.Text = "Jouets";
             this.Jouets_ToolStripMenuItem.Click += new System.EventHandler(this.JouetToolStripMenuItem_Click);
             // 
             // Categories_ToolStripMenuItem
             // 
             this.Categories_ToolStripMenuItem.Name = "Categories_ToolStripMenuItem";
-            this.Categories_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Categories_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.Categories_ToolStripMenuItem.Text = "Catégories";
             this.Categories_ToolStripMenuItem.Click += new System.EventHandler(this.CategoriesToolStripMenuItem_Click);
             // 
             // Adherents_ToolStripMenuItem
             // 
             this.Adherents_ToolStripMenuItem.Name = "Adherents_ToolStripMenuItem";
-            this.Adherents_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Adherents_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.Adherents_ToolStripMenuItem.Text = "Adhérents";
             this.Adherents_ToolStripMenuItem.Click += new System.EventHandler(this.AdherantToolStripMenuItem_Click);
             // 
             // Classes_ToolStripMenuItem
             // 
             this.Classes_ToolStripMenuItem.Name = "Classes_ToolStripMenuItem";
-            this.Classes_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Classes_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.Classes_ToolStripMenuItem.Text = "Classes";
             this.Classes_ToolStripMenuItem.Click += new System.EventHandler(this.ClassesToolStripMenuItem_Click);
             // 
             // Administateurs_ToolStripMenuItem
             // 
             this.Administateurs_ToolStripMenuItem.Name = "Administateurs_ToolStripMenuItem";
-            this.Administateurs_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Administateurs_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.Administateurs_ToolStripMenuItem.Text = "Administateurs";
             this.Administateurs_ToolStripMenuItem.Click += new System.EventHandler(this.AdministateursToolStripMenuItem_Click);
+            // 
+            // CodeQR_ToolStripMenuItem
+            // 
+            this.CodeQR_ToolStripMenuItem.Name = "CodeQR_ToolStripMenuItem";
+            this.CodeQR_ToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
+            this.CodeQR_ToolStripMenuItem.Text = "CodeQR";
+            this.CodeQR_ToolStripMenuItem.Click += new System.EventHandler(this.qRCodeToolStripMenuItem_Click);
             // 
             // Deconnexion_ToolStripMenuItem
             // 
@@ -413,13 +421,6 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // CodeQR_ToolStripMenuItem
-            // 
-            this.CodeQR_ToolStripMenuItem.Name = "CodeQR_ToolStripMenuItem";
-            this.CodeQR_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.CodeQR_ToolStripMenuItem.Text = "CodeQR";
-            this.CodeQR_ToolStripMenuItem.Click += new System.EventHandler(this.qRCodeToolStripMenuItem_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,6 +430,7 @@
             this.Controls.Add(this.Main_tabControl);
             this.Controls.Add(this.Main_menuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.Main_menuStrip;
             this.MaximumSize = new System.Drawing.Size(1023, 766);
             this.MinimumSize = new System.Drawing.Size(1023, 766);
