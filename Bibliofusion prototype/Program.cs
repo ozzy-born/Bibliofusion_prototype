@@ -27,20 +27,21 @@ namespace Bibliofusion_prototype
         [STAThread]
         static void Main()
         {
-
-
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             connection.Open();
 
+
+
             while (true)
             {
-                using (Form_Connexion FormulaireConnection = new Form_Connexion())
+                using (Form_Connexion loginForm = new Form_Connexion())
                 {
-                    if (FormulaireConnection.ShowDialog() != DialogResult.OK)
+                    // Si l'utilisateur annule -> quitter
+                    if (loginForm.ShowDialog() != DialogResult.OK)
                         break;
                 }
+
                 using (MainForm mainForm = new MainForm())
                 {
                     Application.Run(mainForm);

@@ -46,9 +46,9 @@ namespace Package1 {
 
 		public void ecrire(string requette)
         {
-            con = new MySqlConnection(conString);
-            cmd.Connection = con;
-            cmd.CommandText = requette;
+			cmd.Connection = con;
+			cmd.CommandText = requette;
+
         }
 
 		/// 
@@ -60,17 +60,16 @@ namespace Package1 {
 
         /// 
         /// <param name="requette_SQL"></param>
-        public void prep_req_SQL(string requette_SQL)
+        public string prep_req_SQL(string requette_SQL)
         {
-			
+			return "";
         }
 
         public string lire(string requette)
 		{
 			reader = cmd.ExecuteReader();
-			reader.Read();
-            return "";
-		}
+			return "";
+        }
 
 
 		/// 
