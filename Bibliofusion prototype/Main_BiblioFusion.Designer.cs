@@ -298,10 +298,10 @@
             this.MainRechercher_tabPage.Controls.Add(this.ResultatMain_dataGridView);
             this.MainRechercher_tabPage.Controls.Add(this.FiltresDeRechercheMain_checkedListBox);
             this.MainRechercher_tabPage.Controls.Add(this.RechercherMain_textBox);
-            this.MainRechercher_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.MainRechercher_tabPage.Location = new System.Drawing.Point(4, 29);
             this.MainRechercher_tabPage.Name = "MainRechercher_tabPage";
             this.MainRechercher_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.MainRechercher_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.MainRechercher_tabPage.Size = new System.Drawing.Size(999, 670);
             this.MainRechercher_tabPage.TabIndex = 1;
             this.MainRechercher_tabPage.Text = "Rechercher";
             // 
@@ -342,10 +342,10 @@
             this.MainScanner_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MainScanner_tabPage.Controls.Add(this.descriptf);
             this.MainScanner_tabPage.Controls.Add(this.chaine_de_caracter);
-            this.MainScanner_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.MainScanner_tabPage.Location = new System.Drawing.Point(4, 29);
             this.MainScanner_tabPage.Name = "MainScanner_tabPage";
             this.MainScanner_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.MainScanner_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.MainScanner_tabPage.Size = new System.Drawing.Size(999, 670);
             this.MainScanner_tabPage.TabIndex = 2;
             this.MainScanner_tabPage.Text = "Scanner";
             // 
@@ -375,10 +375,10 @@
             this.MainStat_tabPage.Controls.Add(this.label6);
             this.MainStat_tabPage.Controls.Add(this.label5);
             this.MainStat_tabPage.Controls.Add(this.label4);
-            this.MainStat_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.MainStat_tabPage.Location = new System.Drawing.Point(4, 29);
             this.MainStat_tabPage.Name = "MainStat_tabPage";
             this.MainStat_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.MainStat_tabPage.Size = new System.Drawing.Size(999, 677);
+            this.MainStat_tabPage.Size = new System.Drawing.Size(999, 670);
             this.MainStat_tabPage.TabIndex = 3;
             this.MainStat_tabPage.Text = "Statistiques";
             // 

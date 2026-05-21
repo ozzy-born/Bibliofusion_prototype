@@ -31,6 +31,8 @@
             this.ValiderAjoutLivre_button = new System.Windows.Forms.Button();
             this.Livre_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutLivre_tabPage = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.DateParutionLivre_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,12 +57,9 @@
             this.EditLivre_tabPage = new System.Windows.Forms.TabPage();
             this.RechercherEditerLivre_button = new System.Windows.Forms.Button();
             this.ResultatLivre_dataGridView = new System.Windows.Forms.DataGridView();
-            this.FiltresDeRechercheLivre_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherLivre_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.Livre_tabControl.SuspendLayout();
             this.AjoutLivre_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxLivre_numericUpDown)).BeginInit();
@@ -126,6 +125,26 @@
             this.AjoutLivre_tabPage.Size = new System.Drawing.Size(997, 692);
             this.AjoutLivre_tabPage.TabIndex = 0;
             this.AjoutLivre_tabPage.Text = "Ajouter un livre";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.textBox1.Location = new System.Drawing.Point(183, 214);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(787, 30);
+            this.textBox1.TabIndex = 89;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label7.Location = new System.Drawing.Point(36, 214);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 25);
+            this.label7.TabIndex = 88;
+            this.label7.Text = "Prénom";
             // 
             // DateParutionLivre_dateTimePicker
             // 
@@ -386,7 +405,6 @@
             this.EditLivre_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EditLivre_tabPage.Controls.Add(this.RechercherEditerLivre_button);
             this.EditLivre_tabPage.Controls.Add(this.ResultatLivre_dataGridView);
-            this.EditLivre_tabPage.Controls.Add(this.FiltresDeRechercheLivre_checkedListBox);
             this.EditLivre_tabPage.Controls.Add(this.RechercherLivre_textBox);
             this.EditLivre_tabPage.Controls.Add(this.BiblioFusion_label2);
             this.EditLivre_tabPage.Controls.Add(this.button1);
@@ -415,20 +433,11 @@
             this.ResultatLivre_dataGridView.AllowUserToDeleteRows = false;
             this.ResultatLivre_dataGridView.AllowUserToOrderColumns = true;
             this.ResultatLivre_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ResultatLivre_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatLivre_dataGridView.Location = new System.Drawing.Point(27, 180);
             this.ResultatLivre_dataGridView.Name = "ResultatLivre_dataGridView";
             this.ResultatLivre_dataGridView.ReadOnly = true;
-            this.ResultatLivre_dataGridView.Size = new System.Drawing.Size(620, 444);
+            this.ResultatLivre_dataGridView.Size = new System.Drawing.Size(943, 444);
             this.ResultatLivre_dataGridView.TabIndex = 60;
-            // 
-            // FiltresDeRechercheLivre_checkedListBox
-            // 
-            this.FiltresDeRechercheLivre_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.FiltresDeRechercheLivre_checkedListBox.FormattingEnabled = true;
-            this.FiltresDeRechercheLivre_checkedListBox.Location = new System.Drawing.Point(30, 180);
-            this.FiltresDeRechercheLivre_checkedListBox.Name = "FiltresDeRechercheLivre_checkedListBox";
-            this.FiltresDeRechercheLivre_checkedListBox.Size = new System.Drawing.Size(300, 445);
-            this.FiltresDeRechercheLivre_checkedListBox.TabIndex = 49;
             // 
             // RechercherLivre_textBox
             // 
@@ -463,26 +472,6 @@
             this.button1.TabIndex = 38;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label7.Location = new System.Drawing.Point(36, 214);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 25);
-            this.label7.TabIndex = 88;
-            this.label7.Text = "Prénom";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox1.Location = new System.Drawing.Point(183, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(787, 30);
-            this.textBox1.TabIndex = 89;
             // 
             // Form_Livres
             // 
@@ -519,7 +508,6 @@
         private System.Windows.Forms.TextBox EmplacementLivre_textBox;
         private System.Windows.Forms.TextBox EditeurLivre_textBox;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.CheckedListBox FiltresDeRechercheLivre_checkedListBox;
         private System.Windows.Forms.TextBox RechercherLivre_textBox;
         private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.Label BiblioFusion_label1;

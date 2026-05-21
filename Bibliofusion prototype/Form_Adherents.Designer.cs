@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.EditAdherent_tabPage = new System.Windows.Forms.TabPage();
+            this.RechercherEditerAdherent_button = new System.Windows.Forms.Button();
             this.ResultatAdherent_dataGridView = new System.Windows.Forms.DataGridView();
-            this.FiltresRechercheAdherent_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherAdherant_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.AjoutAdherent_tabPage = new System.Windows.Forms.TabPage();
@@ -47,6 +47,7 @@
             this.NaissanceAdherent_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Responsable_tabControl = new System.Windows.Forms.TabControl();
             this.ResponsableAdherent_tabPage = new System.Windows.Forms.TabPage();
+            this.RechercherAjoutAdherent_button = new System.Windows.Forms.Button();
             this.AjoutResponsableAdherent_button = new System.Windows.Forms.Button();
             this.RechercherResponsableAdherent_dataGridView = new System.Windows.Forms.DataGridView();
             this.SupprResponsable2Adherent_label = new System.Windows.Forms.Label();
@@ -77,6 +78,7 @@
             this.MailResponsable_textBox = new System.Windows.Forms.TextBox();
             this.FixeResponsable_textBox = new System.Windows.Forms.TextBox();
             this.Classe_tabPage = new System.Windows.Forms.TabPage();
+            this.RechercherAjouterAdherentClasse_button = new System.Windows.Forms.Button();
             this.AjouterALaClasse_button = new System.Windows.Forms.Button();
             this.SupprClasse_label = new System.Windows.Forms.Label();
             this.Classe_label = new System.Windows.Forms.Label();
@@ -92,9 +94,7 @@
             this.FixeAdherent_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.Adherent_tabControl = new System.Windows.Forms.TabControl();
-            this.RechercherEditerAdherent_button = new System.Windows.Forms.Button();
-            this.RechercherAjouterAdherentClasse_button = new System.Windows.Forms.Button();
-            this.RechercherAjoutAdherent_button = new System.Windows.Forms.Button();
+            this.FiltresRechercheAdherent_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.EditAdherent_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).BeginInit();
             this.AjoutAdherent_tabPage.SuspendLayout();
@@ -115,12 +115,23 @@
             this.EditAdherent_tabPage.Controls.Add(this.FiltresRechercheAdherent_checkedListBox);
             this.EditAdherent_tabPage.Controls.Add(this.RechercherAdherant_textBox);
             this.EditAdherent_tabPage.Controls.Add(this.BiblioFusion_label2);
-            this.EditAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditAdherent_tabPage.Location = new System.Drawing.Point(4, 29);
             this.EditAdherent_tabPage.Name = "EditAdherent_tabPage";
             this.EditAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.EditAdherent_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.EditAdherent_tabPage.Size = new System.Drawing.Size(996, 692);
             this.EditAdherent_tabPage.TabIndex = 1;
             this.EditAdherent_tabPage.Text = "Editer les adhérents";
+            // 
+            // RechercherEditerAdherent_button
+            // 
+            this.RechercherEditerAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherEditerAdherent_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherEditerAdherent_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherEditerAdherent_button.Name = "RechercherEditerAdherent_button";
+            this.RechercherEditerAdherent_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherEditerAdherent_button.TabIndex = 63;
+            this.RechercherEditerAdherent_button.Text = "Rechercher";
+            this.RechercherEditerAdherent_button.UseVisualStyleBackColor = true;
             // 
             // ResultatAdherent_dataGridView
             // 
@@ -134,15 +145,6 @@
             this.ResultatAdherent_dataGridView.ReadOnly = true;
             this.ResultatAdherent_dataGridView.Size = new System.Drawing.Size(620, 444);
             this.ResultatAdherent_dataGridView.TabIndex = 59;
-            // 
-            // FiltresRechercheAdherent_checkedListBox
-            // 
-            this.FiltresRechercheAdherent_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.FiltresRechercheAdherent_checkedListBox.FormattingEnabled = true;
-            this.FiltresRechercheAdherent_checkedListBox.Location = new System.Drawing.Point(30, 180);
-            this.FiltresRechercheAdherent_checkedListBox.Name = "FiltresRechercheAdherent_checkedListBox";
-            this.FiltresRechercheAdherent_checkedListBox.Size = new System.Drawing.Size(300, 445);
-            this.FiltresRechercheAdherent_checkedListBox.TabIndex = 55;
             // 
             // RechercherAdherant_textBox
             // 
@@ -344,6 +346,17 @@
             this.ResponsableAdherent_tabPage.TabIndex = 0;
             this.ResponsableAdherent_tabPage.Text = "Responsable adhérent";
             // 
+            // RechercherAjoutAdherent_button
+            // 
+            this.RechercherAjoutAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherAjoutAdherent_button.Location = new System.Drawing.Point(587, 30);
+            this.RechercherAjoutAdherent_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherAjoutAdherent_button.Name = "RechercherAjoutAdherent_button";
+            this.RechercherAjoutAdherent_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherAjoutAdherent_button.TabIndex = 64;
+            this.RechercherAjoutAdherent_button.Text = "Rechercher";
+            this.RechercherAjoutAdherent_button.UseVisualStyleBackColor = true;
+            // 
             // AjoutResponsableAdherent_button
             // 
             this.AjoutResponsableAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
@@ -445,10 +458,10 @@
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.PrenomResponsable_textBox);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.MailResponsable_textBox);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.FixeResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.ResponsableNonAdherent_tabPage.Location = new System.Drawing.Point(4, 29);
             this.ResponsableNonAdherent_tabPage.Name = "ResponsableNonAdherent_tabPage";
             this.ResponsableNonAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ResponsableNonAdherent_tabPage.Size = new System.Drawing.Size(971, 282);
+            this.ResponsableNonAdherent_tabPage.Size = new System.Drawing.Size(971, 275);
             this.ResponsableNonAdherent_tabPage.TabIndex = 1;
             this.ResponsableNonAdherent_tabPage.Text = "Responsable non adhérent";
             // 
@@ -682,12 +695,23 @@
             this.Classe_tabPage.Controls.Add(this.Classe_label);
             this.Classe_tabPage.Controls.Add(this.ResultatClasse_dataGridView);
             this.Classe_tabPage.Controls.Add(this.RechercherClasse_textBox);
-            this.Classe_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.Classe_tabPage.Location = new System.Drawing.Point(4, 29);
             this.Classe_tabPage.Name = "Classe_tabPage";
             this.Classe_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.Classe_tabPage.Size = new System.Drawing.Size(971, 282);
+            this.Classe_tabPage.Size = new System.Drawing.Size(971, 275);
             this.Classe_tabPage.TabIndex = 2;
             this.Classe_tabPage.Text = "Classe";
+            // 
+            // RechercherAjouterAdherentClasse_button
+            // 
+            this.RechercherAjouterAdherentClasse_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherAjouterAdherentClasse_button.Location = new System.Drawing.Point(587, 28);
+            this.RechercherAjouterAdherentClasse_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherAjouterAdherentClasse_button.Name = "RechercherAjouterAdherentClasse_button";
+            this.RechercherAjouterAdherentClasse_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherAjouterAdherentClasse_button.TabIndex = 63;
+            this.RechercherAjouterAdherentClasse_button.Text = "Rechercher";
+            this.RechercherAjouterAdherentClasse_button.UseVisualStyleBackColor = true;
             // 
             // AjouterALaClasse_button
             // 
@@ -851,38 +875,14 @@
             this.Adherent_tabControl.Size = new System.Drawing.Size(1004, 725);
             this.Adherent_tabControl.TabIndex = 0;
             // 
-            // RechercherEditerAdherent_button
+            // FiltresRechercheAdherent_checkedListBox
             // 
-            this.RechercherEditerAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherEditerAdherent_button.Location = new System.Drawing.Point(830, 115);
-            this.RechercherEditerAdherent_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherEditerAdherent_button.Name = "RechercherEditerAdherent_button";
-            this.RechercherEditerAdherent_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherEditerAdherent_button.TabIndex = 63;
-            this.RechercherEditerAdherent_button.Text = "Rechercher";
-            this.RechercherEditerAdherent_button.UseVisualStyleBackColor = true;
-            // 
-            // RechercherAjouterAdherentClasse_button
-            // 
-            this.RechercherAjouterAdherentClasse_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherAjouterAdherentClasse_button.Location = new System.Drawing.Point(587, 28);
-            this.RechercherAjouterAdherentClasse_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherAjouterAdherentClasse_button.Name = "RechercherAjouterAdherentClasse_button";
-            this.RechercherAjouterAdherentClasse_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherAjouterAdherentClasse_button.TabIndex = 63;
-            this.RechercherAjouterAdherentClasse_button.Text = "Rechercher";
-            this.RechercherAjouterAdherentClasse_button.UseVisualStyleBackColor = true;
-            // 
-            // RechercherAjoutAdherent_button
-            // 
-            this.RechercherAjoutAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherAjoutAdherent_button.Location = new System.Drawing.Point(587, 30);
-            this.RechercherAjoutAdherent_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherAjoutAdherent_button.Name = "RechercherAjoutAdherent_button";
-            this.RechercherAjoutAdherent_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherAjoutAdherent_button.TabIndex = 64;
-            this.RechercherAjoutAdherent_button.Text = "Rechercher";
-            this.RechercherAjoutAdherent_button.UseVisualStyleBackColor = true;
+            this.FiltresRechercheAdherent_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            this.FiltresRechercheAdherent_checkedListBox.FormattingEnabled = true;
+            this.FiltresRechercheAdherent_checkedListBox.Location = new System.Drawing.Point(30, 180);
+            this.FiltresRechercheAdherent_checkedListBox.Name = "FiltresRechercheAdherent_checkedListBox";
+            this.FiltresRechercheAdherent_checkedListBox.Size = new System.Drawing.Size(300, 445);
+            this.FiltresRechercheAdherent_checkedListBox.TabIndex = 55;
             // 
             // Form_Adherents
             // 
@@ -940,7 +940,6 @@
         private System.Windows.Forms.TabControl Adherent_tabControl;
         private System.Windows.Forms.TextBox RechercherAdherant_textBox;
         private System.Windows.Forms.Label BiblioFusion_label2;
-        private System.Windows.Forms.CheckedListBox FiltresRechercheAdherent_checkedListBox;
         private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
         private System.Windows.Forms.DateTimePicker NaissanceResponsable_dateTimePicker;
         private System.Windows.Forms.DataGridView ResultatAdherent_dataGridView;
@@ -983,5 +982,6 @@
         private System.Windows.Forms.Button RechercherEditerAdherent_button;
         private System.Windows.Forms.Button RechercherAjouterAdherentClasse_button;
         private System.Windows.Forms.Button RechercherAjoutAdherent_button;
+        private System.Windows.Forms.CheckedListBox FiltresRechercheAdherent_checkedListBox;
     }
 }

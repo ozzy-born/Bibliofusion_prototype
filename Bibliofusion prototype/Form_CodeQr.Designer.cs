@@ -33,16 +33,16 @@ namespace QRcode_generator
             this.genererQR_button = new System.Windows.Forms.Button();
             this.QRpicture = new System.Windows.Forms.PictureBox();
             this.qr_textBox = new System.Windows.Forms.TextBox();
-            this.Apperçu_button = new System.Windows.Forms.Button();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             ((System.ComponentModel.ISupportInitialize)(this.QRpicture)).BeginInit();
             this.SuspendLayout();
             // 
             // genererQR_button
             // 
-            this.genererQR_button.Location = new System.Drawing.Point(125, 233);
+            this.genererQR_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genererQR_button.Location = new System.Drawing.Point(12, 47);
             this.genererQR_button.Name = "genererQR_button";
-            this.genererQR_button.Size = new System.Drawing.Size(106, 71);
+            this.genererQR_button.Size = new System.Drawing.Size(326, 33);
             this.genererQR_button.TabIndex = 0;
             this.genererQR_button.Text = "Générer le code QR";
             this.genererQR_button.UseVisualStyleBackColor = true;
@@ -50,7 +50,7 @@ namespace QRcode_generator
             // 
             // QRpicture
             // 
-            this.QRpicture.Location = new System.Drawing.Point(28, 136);
+            this.QRpicture.Location = new System.Drawing.Point(89, 135);
             this.QRpicture.Name = "QRpicture";
             this.QRpicture.Size = new System.Drawing.Size(100, 50);
             this.QRpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -59,20 +59,11 @@ namespace QRcode_generator
             // 
             // qr_textBox
             // 
-            this.qr_textBox.Location = new System.Drawing.Point(28, 31);
+            this.qr_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.qr_textBox.Location = new System.Drawing.Point(12, 12);
             this.qr_textBox.Name = "qr_textBox";
-            this.qr_textBox.Size = new System.Drawing.Size(100, 20);
+            this.qr_textBox.Size = new System.Drawing.Size(326, 29);
             this.qr_textBox.TabIndex = 2;
-            // 
-            // Apperçu_button
-            // 
-            this.Apperçu_button.Location = new System.Drawing.Point(266, 174);
-            this.Apperçu_button.Name = "Apperçu_button";
-            this.Apperçu_button.Size = new System.Drawing.Size(75, 39);
-            this.Apperçu_button.TabIndex = 4;
-            this.Apperçu_button.Text = "Aperçu pour impression";
-            this.Apperçu_button.UseVisualStyleBackColor = true;
-            this.Apperçu_button.Click += new System.EventHandler(this.BtnAperçu_Click);
             // 
             // printDialog1
             // 
@@ -84,14 +75,13 @@ namespace QRcode_generator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(363, 334);
-            this.Controls.Add(this.Apperçu_button);
             this.Controls.Add(this.qr_textBox);
             this.Controls.Add(this.QRpicture);
             this.Controls.Add(this.genererQR_button);
             this.MaximumSize = new System.Drawing.Size(379, 373);
             this.MinimumSize = new System.Drawing.Size(379, 373);
             this.Name = "Form_CodeQr";
-            this.Text = "Form1";
+            this.Text = "BiblioFusion - Génération de Code QR";
             ((System.ComponentModel.ISupportInitialize)(this.QRpicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,7 +92,6 @@ namespace QRcode_generator
         private System.Windows.Forms.Button genererQR_button;
         private System.Windows.Forms.PictureBox QRpicture;
         private System.Windows.Forms.TextBox qr_textBox;
-        private System.Windows.Forms.Button Apperçu_button;
         //private System.Windows.Forms.PrintDialog printDialog1;
     }
 }
