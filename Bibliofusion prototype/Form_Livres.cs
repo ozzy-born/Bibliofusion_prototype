@@ -58,7 +58,22 @@ namespace WindowsFormsApp1
         {
             try
             {
-                string requette = "SELECT * FROM livres WHERE Titre LIKE @titre";
+                /*
+                string requette = "SELECT * FROM livres WHERE Titre LIKE @titre";*/
+                string requette =   "SELECT idLivres_Isbn AS ISBN,Titre," +
+                                    "Auteurs.Nom AS Nom_Auteur," +
+                                    "Auteurs.Prenom AS Prenom_Auteur," +
+                                    "Categories.Nom AS Categorie," +
+                                    "Editeurs.Nom AS Editeur," +
+                                    "Date AS Parution," +
+                                    "Date_Entree_Bibliotheque," +
+                                    "Tranche_Ages " +
+                                    "FROM livres " +
+                                    "INNER JOIN Auteurs " +
+                                    "ON Livres.Auteurs_idAuteurs = Auteurs.idAuteurs " +
+                                    "INNER JOIN Categories ON Livres.Categories_idCategories = Categories.idCategorie " +
+                                    "INNER JOIN Editeurs ON Livres.Editeurs_idEditeurs = Editeurs.idEditeurs " +
+                                    "WHERE Titre LIKE @titre";
                 MySqlCommand commande = new MySqlCommand(requette, Program.connection);
                 commande.Parameters.AddWithValue("@titre", RechercherLivre_textBox.Text);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(commande);
