@@ -53,7 +53,6 @@
             this.EditJouet_tabPage = new System.Windows.Forms.TabPage();
             this.RechercherEditerJouet_button = new System.Windows.Forms.Button();
             this.ResultatJouet_dataGridView = new System.Windows.Forms.DataGridView();
-            this.FiltresDeRechercheJouet_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherJouet_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.Jouet_tabControl.SuspendLayout();
@@ -357,7 +356,6 @@
             this.EditJouet_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EditJouet_tabPage.Controls.Add(this.RechercherEditerJouet_button);
             this.EditJouet_tabPage.Controls.Add(this.ResultatJouet_dataGridView);
-            this.EditJouet_tabPage.Controls.Add(this.FiltresDeRechercheJouet_checkedListBox);
             this.EditJouet_tabPage.Controls.Add(this.RechercherJouet_textBox);
             this.EditJouet_tabPage.Controls.Add(this.BiblioFusion_label2);
             this.EditJouet_tabPage.Location = new System.Drawing.Point(4, 29);
@@ -385,20 +383,11 @@
             this.ResultatJouet_dataGridView.AllowUserToDeleteRows = false;
             this.ResultatJouet_dataGridView.AllowUserToOrderColumns = true;
             this.ResultatJouet_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ResultatJouet_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatJouet_dataGridView.Location = new System.Drawing.Point(30, 180);
             this.ResultatJouet_dataGridView.Name = "ResultatJouet_dataGridView";
             this.ResultatJouet_dataGridView.ReadOnly = true;
-            this.ResultatJouet_dataGridView.Size = new System.Drawing.Size(620, 444);
+            this.ResultatJouet_dataGridView.Size = new System.Drawing.Size(940, 444);
             this.ResultatJouet_dataGridView.TabIndex = 60;
-            // 
-            // FiltresDeRechercheJouet_checkedListBox
-            // 
-            this.FiltresDeRechercheJouet_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.FiltresDeRechercheJouet_checkedListBox.FormattingEnabled = true;
-            this.FiltresDeRechercheJouet_checkedListBox.Location = new System.Drawing.Point(30, 180);
-            this.FiltresDeRechercheJouet_checkedListBox.Name = "FiltresDeRechercheJouet_checkedListBox";
-            this.FiltresDeRechercheJouet_checkedListBox.Size = new System.Drawing.Size(300, 445);
-            this.FiltresDeRechercheJouet_checkedListBox.TabIndex = 55;
             // 
             // RechercherJouet_textBox
             // 
@@ -459,7 +448,6 @@
         private System.Windows.Forms.TextBox RechercherJouet_textBox;
         private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.Label BiblioFusion_label1;
-        private System.Windows.Forms.CheckedListBox FiltresDeRechercheJouet_checkedListBox;
         private System.Windows.Forms.DataGridView ResultatJouet_dataGridView;
         private System.Windows.Forms.ComboBox CategorieJouet_comboBox;
         private System.Windows.Forms.NumericUpDown NbExemplairesJouet_numericUpDown;

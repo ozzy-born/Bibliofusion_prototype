@@ -60,6 +60,8 @@
             this.RechercherLivre_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.ModifierAjoutLivre_button = new System.Windows.Forms.Button();
+            this.NomModifierLivre_label = new System.Windows.Forms.Label();
             this.Livre_tabControl.SuspendLayout();
             this.AjoutLivre_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxLivre_numericUpDown)).BeginInit();
@@ -95,6 +97,8 @@
             // AjoutLivre_tabPage
             // 
             this.AjoutLivre_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutLivre_tabPage.Controls.Add(this.NomModifierLivre_label);
+            this.AjoutLivre_tabPage.Controls.Add(this.ModifierAjoutLivre_button);
             this.AjoutLivre_tabPage.Controls.Add(this.textBox1);
             this.AjoutLivre_tabPage.Controls.Add(this.label7);
             this.AjoutLivre_tabPage.Controls.Add(this.DateParutionLivre_dateTimePicker);
@@ -433,11 +437,12 @@
             this.ResultatLivre_dataGridView.AllowUserToDeleteRows = false;
             this.ResultatLivre_dataGridView.AllowUserToOrderColumns = true;
             this.ResultatLivre_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ResultatLivre_dataGridView.Location = new System.Drawing.Point(27, 180);
+            this.ResultatLivre_dataGridView.Location = new System.Drawing.Point(30, 180);
             this.ResultatLivre_dataGridView.Name = "ResultatLivre_dataGridView";
             this.ResultatLivre_dataGridView.ReadOnly = true;
-            this.ResultatLivre_dataGridView.Size = new System.Drawing.Size(943, 444);
+            this.ResultatLivre_dataGridView.Size = new System.Drawing.Size(940, 444);
             this.ResultatLivre_dataGridView.TabIndex = 60;
+            this.ResultatLivre_dataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ResultatLivre_dataGridView_CellClick);
             // 
             // RechercherLivre_textBox
             // 
@@ -472,6 +477,28 @@
             this.button1.TabIndex = 38;
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // ModifierAjoutLivre_button
+            // 
+            this.ModifierAjoutLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ModifierAjoutLivre_button.Location = new System.Drawing.Point(733, 462);
+            this.ModifierAjoutLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ModifierAjoutLivre_button.Name = "ModifierAjoutLivre_button";
+            this.ModifierAjoutLivre_button.Size = new System.Drawing.Size(101, 32);
+            this.ModifierAjoutLivre_button.TabIndex = 90;
+            this.ModifierAjoutLivre_button.Text = "Modifier";
+            this.ModifierAjoutLivre_button.UseVisualStyleBackColor = true;
+            this.ModifierAjoutLivre_button.Click += new System.EventHandler(this.ModifierAjoutLivre_button_Click);
+            // 
+            // NomModifierLivre_label
+            // 
+            this.NomModifierLivre_label.AutoSize = true;
+            this.NomModifierLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomModifierLivre_label.Location = new System.Drawing.Point(650, 65);
+            this.NomModifierLivre_label.Name = "NomModifierLivre_label";
+            this.NomModifierLivre_label.Size = new System.Drawing.Size(60, 25);
+            this.NomModifierLivre_label.TabIndex = 91;
+            this.NomModifierLivre_label.Text = "ISBN";
             // 
             // Form_Livres
             // 
@@ -530,5 +557,7 @@
         private System.Windows.Forms.DateTimePicker DateParutionLivre_dateTimePicker;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button ModifierAjoutLivre_button;
+        private System.Windows.Forms.Label NomModifierLivre_label;
     }
 }

@@ -18,11 +18,46 @@ namespace WindowsFormsApp1
     {
         public static string TitreLivre, uteurLivre, CategorieLivre, EmplacementLivre, ISBNLivre, DateParutionLivre;
 
-        private void RechercherEditerLivre_button_Click(object sender, EventArgs e)
+        private void ResultatLivre_dataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            {
+                try
+                {
+                    ISBNLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                    TitreLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                    DateParutionLivre_dateTimePicker.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                }
+                catch (Exception erreur)
+                {
+                    MessageBox.Show($"Erreur ResultatLivre_dataGridView: {erreur.Message}");
+                }
+                AfficherDonnees();
+            }
+        }
+
+        private void ModifierAjoutLivre_button_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                string requette = "UPDATE livres SET Titre = @titre, Emplacement = @emplacement, Date_Parution = @date WHERE ISBN = @isbn";
+                MySqlCommand commande = new MySqlCommand(requette, Program.connection);
+                commande.Parameters.AddWithValue("@isbn", ISBNLivre_textBox.Text);
+                commande.Parameters.AddWithValue("@titre", TitreLivre_textBox.Text);
+                commande.Parameters.AddWithValue("@emplacement", EmplacementLivre_textBox.Text);
+                commande.Parameters.AddWithValue("@date", DateParutionLivre_dateTimePicker.Text);
+                commande.ExecuteNonQuery();
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show($"Erreur: {erreur.Message}");
+            }
+        }
+
+        private void AfficherDonnees()
         {
             try
             {
-
                 string requette = "SELECT * FROM livres WHERE Titre LIKE @titre";
                 MySqlCommand commande = new MySqlCommand(requette, Program.connection);
                 commande.Parameters.AddWithValue("@titre", RechercherLivre_textBox.Text);
@@ -33,11 +68,17 @@ namespace WindowsFormsApp1
             }
             catch (Exception erreur)
             {
-                MessageBox.Show(erreur.Message);
+                MessageBox.Show($"Erreur datagrid: {erreur}");
             }
         }
 
         public static int NbExemplairesLivre;
+
+        private void RechercherEditerLivre_button_Click(object sender, EventArgs e)
+        {
+            AfficherDonnees();
+        }
+
         public Form_Livres()
         {
             InitializeComponent();

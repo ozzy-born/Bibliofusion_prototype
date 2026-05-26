@@ -29,11 +29,19 @@
         private void InitializeComponent()
         {
             this.EditAdmin_tabPage = new System.Windows.Forms.TabPage();
+            this.RechercherEditerAdmin_button = new System.Windows.Forms.Button();
             this.ResultatAdmin_dataGridView = new System.Windows.Forms.DataGridView();
-            this.FiltresDeRechercheAdmin_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherAdmin_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.AjoutAdmin_tabPage = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.CodePostalAdmin_textBox = new System.Windows.Forms.TextBox();
             this.NaissanceAdmin_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.ValiderAjoutAdmin_button = new System.Windows.Forms.Button();
@@ -45,15 +53,6 @@
             this.FixeAdmin_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.Admin_tabControl = new System.Windows.Forms.TabControl();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.RechercherEditerAdmin_button = new System.Windows.Forms.Button();
             this.EditAdmin_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdmin_dataGridView)).BeginInit();
             this.AjoutAdmin_tabPage.SuspendLayout();
@@ -65,15 +64,25 @@
             this.EditAdmin_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EditAdmin_tabPage.Controls.Add(this.RechercherEditerAdmin_button);
             this.EditAdmin_tabPage.Controls.Add(this.ResultatAdmin_dataGridView);
-            this.EditAdmin_tabPage.Controls.Add(this.FiltresDeRechercheAdmin_checkedListBox);
             this.EditAdmin_tabPage.Controls.Add(this.RechercherAdmin_textBox);
             this.EditAdmin_tabPage.Controls.Add(this.BiblioFusion_label2);
-            this.EditAdmin_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditAdmin_tabPage.Location = new System.Drawing.Point(4, 29);
             this.EditAdmin_tabPage.Name = "EditAdmin_tabPage";
             this.EditAdmin_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.EditAdmin_tabPage.Size = new System.Drawing.Size(996, 699);
+            this.EditAdmin_tabPage.Size = new System.Drawing.Size(996, 692);
             this.EditAdmin_tabPage.TabIndex = 1;
             this.EditAdmin_tabPage.Text = "Editer les administrateurs";
+            // 
+            // RechercherEditerAdmin_button
+            // 
+            this.RechercherEditerAdmin_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherEditerAdmin_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherEditerAdmin_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherEditerAdmin_button.Name = "RechercherEditerAdmin_button";
+            this.RechercherEditerAdmin_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherEditerAdmin_button.TabIndex = 63;
+            this.RechercherEditerAdmin_button.Text = "Rechercher";
+            this.RechercherEditerAdmin_button.UseVisualStyleBackColor = true;
             // 
             // ResultatAdmin_dataGridView
             // 
@@ -81,20 +90,11 @@
             this.ResultatAdmin_dataGridView.AllowUserToDeleteRows = false;
             this.ResultatAdmin_dataGridView.AllowUserToOrderColumns = true;
             this.ResultatAdmin_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ResultatAdmin_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatAdmin_dataGridView.Location = new System.Drawing.Point(30, 180);
             this.ResultatAdmin_dataGridView.Name = "ResultatAdmin_dataGridView";
             this.ResultatAdmin_dataGridView.ReadOnly = true;
-            this.ResultatAdmin_dataGridView.Size = new System.Drawing.Size(620, 444);
+            this.ResultatAdmin_dataGridView.Size = new System.Drawing.Size(940, 444);
             this.ResultatAdmin_dataGridView.TabIndex = 60;
-            // 
-            // FiltresDeRechercheAdmin_checkedListBox
-            // 
-            this.FiltresDeRechercheAdmin_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.FiltresDeRechercheAdmin_checkedListBox.FormattingEnabled = true;
-            this.FiltresDeRechercheAdmin_checkedListBox.Location = new System.Drawing.Point(30, 180);
-            this.FiltresDeRechercheAdmin_checkedListBox.Name = "FiltresDeRechercheAdmin_checkedListBox";
-            this.FiltresDeRechercheAdmin_checkedListBox.Size = new System.Drawing.Size(300, 445);
-            this.FiltresDeRechercheAdmin_checkedListBox.TabIndex = 55;
             // 
             // RechercherAdmin_textBox
             // 
@@ -147,6 +147,86 @@
             this.AjoutAdmin_tabPage.Size = new System.Drawing.Size(996, 692);
             this.AjoutAdmin_tabPage.TabIndex = 0;
             this.AjoutAdmin_tabPage.Text = "Ajouter un administrateur";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label5.Location = new System.Drawing.Point(8, 465);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(129, 25);
+            this.label5.TabIndex = 56;
+            this.label5.Text = "Code Postal";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label6.Location = new System.Drawing.Point(8, 415);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 25);
+            this.label6.TabIndex = 55;
+            this.label6.Text = "Adresse";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label7.Location = new System.Drawing.Point(8, 365);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 25);
+            this.label7.TabIndex = 54;
+            this.label7.Text = "Fixe";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label8.Location = new System.Drawing.Point(8, 315);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(76, 25);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "Mobile";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label3.Location = new System.Drawing.Point(8, 265);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(72, 25);
+            this.label3.TabIndex = 52;
+            this.label3.Text = "E-mail";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label4.Location = new System.Drawing.Point(8, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 25);
+            this.label4.TabIndex = 51;
+            this.label4.Text = "Naissance";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label2.Location = new System.Drawing.Point(8, 165);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 25);
+            this.label2.TabIndex = 50;
+            this.label2.Text = "Prénom";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.label1.Location = new System.Drawing.Point(8, 115);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 25);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "Nom";
             // 
             // CodePostalAdmin_textBox
             // 
@@ -267,97 +347,6 @@
             this.Admin_tabControl.Size = new System.Drawing.Size(1004, 725);
             this.Admin_tabControl.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label3.Location = new System.Drawing.Point(8, 265);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 25);
-            this.label3.TabIndex = 52;
-            this.label3.Text = "E-mail";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label4.Location = new System.Drawing.Point(8, 215);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 25);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "Naissance";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label2.Location = new System.Drawing.Point(8, 165);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 25);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "Prénom";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label1.Location = new System.Drawing.Point(8, 115);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 25);
-            this.label1.TabIndex = 49;
-            this.label1.Text = "Nom";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label5.Location = new System.Drawing.Point(8, 465);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 25);
-            this.label5.TabIndex = 56;
-            this.label5.Text = "Code Postal";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label6.Location = new System.Drawing.Point(8, 415);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 25);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "Adresse";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label7.Location = new System.Drawing.Point(8, 365);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(53, 25);
-            this.label7.TabIndex = 54;
-            this.label7.Text = "Fixe";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label8.Location = new System.Drawing.Point(8, 315);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 25);
-            this.label8.TabIndex = 53;
-            this.label8.Text = "Mobile";
-            // 
-            // RechercherEditerAdmin_button
-            // 
-            this.RechercherEditerAdmin_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherEditerAdmin_button.Location = new System.Drawing.Point(830, 115);
-            this.RechercherEditerAdmin_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherEditerAdmin_button.Name = "RechercherEditerAdmin_button";
-            this.RechercherEditerAdmin_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherEditerAdmin_button.TabIndex = 63;
-            this.RechercherEditerAdmin_button.Text = "Rechercher";
-            this.RechercherEditerAdmin_button.UseVisualStyleBackColor = true;
-            // 
             // Form_Administrateurs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,7 +370,6 @@
         #endregion
 
         private System.Windows.Forms.TabPage EditAdmin_tabPage;
-        private System.Windows.Forms.CheckedListBox FiltresDeRechercheAdmin_checkedListBox;
         private System.Windows.Forms.TextBox RechercherAdmin_textBox;
         private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.TabPage AjoutAdmin_tabPage;
