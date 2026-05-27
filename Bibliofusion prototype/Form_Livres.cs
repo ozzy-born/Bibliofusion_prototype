@@ -67,7 +67,7 @@ namespace WindowsFormsApp1
                                     "Editeurs.Nom AS Editeur," +
                                     "Date AS Parution," +
                                     "Date_Entree_Bibliotheque," +
-                                    "Tranche_Ages " +
+                                    "Tranche_Ages AS Ages" +
                                     "FROM livres " +
                                     "INNER JOIN Auteurs " +
                                     "ON Livres.Auteurs_idAuteurs = Auteurs.idAuteurs " +
