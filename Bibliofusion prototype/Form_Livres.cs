@@ -60,14 +60,15 @@ namespace WindowsFormsApp1
             {
                 /*
                 string requette = "SELECT * FROM livres WHERE Titre LIKE @titre";*/
-                string requette =   "SELECT idLivres_Isbn AS ISBN,Titre," +
-                                    "Auteurs.Nom AS Nom_Auteur," +
-                                    "Auteurs.Prenom AS Prenom_Auteur," +
-                                    "Categories.Nom AS Categorie," +
-                                    "Editeurs.Nom AS Editeur," +
-                                    "Date AS Parution," +
-                                    "Date_Entree_Bibliotheque," +
-                                    "Tranche_Ages AS Ages" +
+                string requette =   "SELECT idLivres_Isbn AS ISBN, " +
+                                    "Titre, " +
+                                    "Auteurs.Nom AS Nom_Auteur, " +
+                                    "Auteurs.Prenom AS Prenom_Auteur, " +
+                                    "Categories.Nom AS Categorie, " +
+                                    "Editeurs.Nom AS Editeur, " +
+                                    "Date AS Parution, " +
+                                    "Date_Entree_Bibliotheque, " +
+                                    "Tranche_Ages AS Ages " +
                                     "FROM livres " +
                                     "INNER JOIN Auteurs " +
                                     "ON Livres.Auteurs_idAuteurs = Auteurs.idAuteurs " +
@@ -110,7 +111,7 @@ namespace WindowsFormsApp1
                 {
                     DateTime DateActuelle = DateTime.Now;
                     string DateFormate = DateActuelle.ToString("yyyy-MM-dd");
-                    string TrancheAges = $"{AgeMinLivre_numericUpDown.Text} - {AgeMaxLivre_numericUpDown.Text}";
+                    string TrancheAges = $"{AgeMinLivre_numericUpDown.Text}-{AgeMaxLivre_numericUpDown.Text}";
 
                     string requette =   "INSERT INTO livres ( idLivres_ISBN, Titre, Date, Date_Entree_Bibliotheque, Exemplaires_Disponibles, Emplacement, Tranche_Ages) " +
                                         "VALUES ( @idLivres_ISBN, @Titre, @Date, @Date_Entree_Bibliotheque, @Exemplaires_Disponibles, @Emplacement, @Tranche_Ages)";
