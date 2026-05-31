@@ -31,7 +31,9 @@
             this.ValiderAjoutLivre_button = new System.Windows.Forms.Button();
             this.Livre_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutLivre_tabPage = new System.Windows.Forms.TabPage();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.NomModifierLivre_label = new System.Windows.Forms.Label();
+            this.ModifierAjoutLivre_button = new System.Windows.Forms.Button();
+            this.PrenomAuteurLivre_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.DateParutionLivre_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,7 +53,6 @@
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.TitreLivre_textBox = new System.Windows.Forms.TextBox();
             this.ISBNLivre_textBox = new System.Windows.Forms.TextBox();
-            this.AuteurLivre_textBox = new System.Windows.Forms.TextBox();
             this.EmplacementLivre_textBox = new System.Windows.Forms.TextBox();
             this.EditeurLivre_textBox = new System.Windows.Forms.TextBox();
             this.EditLivre_tabPage = new System.Windows.Forms.TabPage();
@@ -60,8 +61,7 @@
             this.RechercherLivre_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.ModifierAjoutLivre_button = new System.Windows.Forms.Button();
-            this.NomModifierLivre_label = new System.Windows.Forms.Label();
+            this.NomAuteurLivre_comboBox = new System.Windows.Forms.ComboBox();
             this.Livre_tabControl.SuspendLayout();
             this.AjoutLivre_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxLivre_numericUpDown)).BeginInit();
@@ -97,9 +97,10 @@
             // AjoutLivre_tabPage
             // 
             this.AjoutLivre_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutLivre_tabPage.Controls.Add(this.NomAuteurLivre_comboBox);
             this.AjoutLivre_tabPage.Controls.Add(this.NomModifierLivre_label);
             this.AjoutLivre_tabPage.Controls.Add(this.ModifierAjoutLivre_button);
-            this.AjoutLivre_tabPage.Controls.Add(this.textBox1);
+            this.AjoutLivre_tabPage.Controls.Add(this.PrenomAuteurLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.label7);
             this.AjoutLivre_tabPage.Controls.Add(this.DateParutionLivre_dateTimePicker);
             this.AjoutLivre_tabPage.Controls.Add(this.label5);
@@ -120,7 +121,6 @@
             this.AjoutLivre_tabPage.Controls.Add(this.TitreLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.ValiderAjoutLivre_button);
             this.AjoutLivre_tabPage.Controls.Add(this.ISBNLivre_textBox);
-            this.AjoutLivre_tabPage.Controls.Add(this.AuteurLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.EmplacementLivre_textBox);
             this.AjoutLivre_tabPage.Controls.Add(this.EditeurLivre_textBox);
             this.AjoutLivre_tabPage.Location = new System.Drawing.Point(4, 29);
@@ -130,15 +130,37 @@
             this.AjoutLivre_tabPage.TabIndex = 0;
             this.AjoutLivre_tabPage.Text = "Ajouter un livre";
             // 
-            // textBox1
+            // NomModifierLivre_label
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.NomModifierLivre_label.AutoSize = true;
+            this.NomModifierLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomModifierLivre_label.Location = new System.Drawing.Point(650, 65);
+            this.NomModifierLivre_label.Name = "NomModifierLivre_label";
+            this.NomModifierLivre_label.Size = new System.Drawing.Size(60, 25);
+            this.NomModifierLivre_label.TabIndex = 91;
+            this.NomModifierLivre_label.Text = "ISBN";
+            // 
+            // ModifierAjoutLivre_button
+            // 
+            this.ModifierAjoutLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ModifierAjoutLivre_button.Location = new System.Drawing.Point(733, 462);
+            this.ModifierAjoutLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ModifierAjoutLivre_button.Name = "ModifierAjoutLivre_button";
+            this.ModifierAjoutLivre_button.Size = new System.Drawing.Size(101, 32);
+            this.ModifierAjoutLivre_button.TabIndex = 90;
+            this.ModifierAjoutLivre_button.Text = "Modifier";
+            this.ModifierAjoutLivre_button.UseVisualStyleBackColor = true;
+            this.ModifierAjoutLivre_button.Click += new System.EventHandler(this.ModifierAjoutLivre_button_Click);
+            // 
+            // PrenomAuteurLivre_textBox
+            // 
+            this.PrenomAuteurLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.textBox1.Location = new System.Drawing.Point(183, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(787, 30);
-            this.textBox1.TabIndex = 89;
+            this.PrenomAuteurLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.PrenomAuteurLivre_textBox.Location = new System.Drawing.Point(183, 214);
+            this.PrenomAuteurLivre_textBox.Name = "PrenomAuteurLivre_textBox";
+            this.PrenomAuteurLivre_textBox.Size = new System.Drawing.Size(787, 30);
+            this.PrenomAuteurLivre_textBox.TabIndex = 89;
             // 
             // label7
             // 
@@ -374,16 +396,6 @@
             this.ISBNLivre_textBox.Size = new System.Drawing.Size(787, 30);
             this.ISBNLivre_textBox.TabIndex = 34;
             // 
-            // AuteurLivre_textBox
-            // 
-            this.AuteurLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AuteurLivre_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AuteurLivre_textBox.Location = new System.Drawing.Point(183, 165);
-            this.AuteurLivre_textBox.Name = "AuteurLivre_textBox";
-            this.AuteurLivre_textBox.Size = new System.Drawing.Size(787, 30);
-            this.AuteurLivre_textBox.TabIndex = 33;
-            // 
             // EmplacementLivre_textBox
             // 
             this.EmplacementLivre_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -478,27 +490,14 @@
             this.button1.Text = "Valider";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // ModifierAjoutLivre_button
+            // NomAuteurLivre_comboBox
             // 
-            this.ModifierAjoutLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.ModifierAjoutLivre_button.Location = new System.Drawing.Point(733, 462);
-            this.ModifierAjoutLivre_button.Margin = new System.Windows.Forms.Padding(8);
-            this.ModifierAjoutLivre_button.Name = "ModifierAjoutLivre_button";
-            this.ModifierAjoutLivre_button.Size = new System.Drawing.Size(101, 32);
-            this.ModifierAjoutLivre_button.TabIndex = 90;
-            this.ModifierAjoutLivre_button.Text = "Modifier";
-            this.ModifierAjoutLivre_button.UseVisualStyleBackColor = true;
-            this.ModifierAjoutLivre_button.Click += new System.EventHandler(this.ModifierAjoutLivre_button_Click);
-            // 
-            // NomModifierLivre_label
-            // 
-            this.NomModifierLivre_label.AutoSize = true;
-            this.NomModifierLivre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomModifierLivre_label.Location = new System.Drawing.Point(650, 65);
-            this.NomModifierLivre_label.Name = "NomModifierLivre_label";
-            this.NomModifierLivre_label.Size = new System.Drawing.Size(60, 25);
-            this.NomModifierLivre_label.TabIndex = 91;
-            this.NomModifierLivre_label.Text = "ISBN";
+            this.NomAuteurLivre_comboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NomAuteurLivre_comboBox.FormattingEnabled = true;
+            this.NomAuteurLivre_comboBox.Location = new System.Drawing.Point(183, 165);
+            this.NomAuteurLivre_comboBox.Name = "NomAuteurLivre_comboBox";
+            this.NomAuteurLivre_comboBox.Size = new System.Drawing.Size(787, 33);
+            this.NomAuteurLivre_comboBox.TabIndex = 92;
             // 
             // Form_Livres
             // 
@@ -511,6 +510,7 @@
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "Form_Livres";
             this.Text = "BiblioFusion - livres";
+            this.Load += new System.EventHandler(this.Form_Livres_Load);
             this.Livre_tabControl.ResumeLayout(false);
             this.AjoutLivre_tabPage.ResumeLayout(false);
             this.AjoutLivre_tabPage.PerformLayout();
@@ -531,7 +531,6 @@
         private System.Windows.Forms.TabPage AjoutLivre_tabPage;
         private System.Windows.Forms.TextBox TitreLivre_textBox;
         private System.Windows.Forms.TextBox ISBNLivre_textBox;
-        private System.Windows.Forms.TextBox AuteurLivre_textBox;
         private System.Windows.Forms.TextBox EmplacementLivre_textBox;
         private System.Windows.Forms.TextBox EditeurLivre_textBox;
         private System.Windows.Forms.Button button1;
@@ -555,9 +554,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker DateParutionLivre_dateTimePicker;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PrenomAuteurLivre_textBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button ModifierAjoutLivre_button;
         private System.Windows.Forms.Label NomModifierLivre_label;
+        private System.Windows.Forms.ComboBox NomAuteurLivre_comboBox;
     }
 }
