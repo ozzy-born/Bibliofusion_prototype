@@ -84,16 +84,15 @@ namespace WindowsFormsApp1
             {
                 string requette =   "SELECT idLivres_Isbn AS ISBN, " +
                                     "Titre, " +
-                                    "Auteurs.Nom AS Nom_Auteur, " +
-                                    "Auteurs.Prenom AS Prenom_Auteur, " +
+                                    "CONCAT(Auteurs.Nom, ' ', Auteurs.Prenom) AS Auteur, " +
                                     "Categories.Nom AS Categorie, " +
+                                    "Categories.Emplacement AS Emplacement, " +
                                     "Editeurs.Nom AS Editeur, " +
                                     "Date AS Parution, " +
-                                    "Date_Entree_Bibliotheque, " +
+                                    "Date_Entree_Bibliotheque AS Entree, " +
                                     "Tranche_Ages AS Ages " +
                                     "FROM livres " +
-                                    "INNER JOIN Auteurs " +
-                                    "ON Livres.Auteurs_idAuteurs = Auteurs.idAuteurs " +
+                                    "INNER JOIN Auteurs ON Livres.Auteurs_idAuteurs = Auteurs.idAuteurs " +
                                     "INNER JOIN Categories ON Livres.Categories_idCategories = Categories.idCategorie " +
                                     "INNER JOIN Editeurs ON Livres.Editeurs_idEditeurs = Editeurs.idEditeurs " +
                                     "WHERE Titre LIKE @titre";
