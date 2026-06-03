@@ -43,7 +43,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Eleve_checkBox = new System.Windows.Forms.CheckBox();
-            this.CodePostalAdherent_textBox = new System.Windows.Forms.TextBox();
             this.NaissanceAdherent_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Responsable_tabControl = new System.Windows.Forms.TabControl();
             this.ResponsableAdherent_tabPage = new System.Windows.Forms.TabPage();
@@ -59,7 +58,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.AjoutResponsableNonAdherent_button = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.CodePostalResponsable_textBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.SupprResponsable2NonAdherent_label = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -94,7 +92,8 @@
             this.FixeAdherent_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.Adherent_tabControl = new System.Windows.Forms.TabControl();
-            this.FiltresRechercheAdherent_checkedListBox = new System.Windows.Forms.CheckedListBox();
+            this.CodePostalAdherent_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.CodePostalAdherent_numericUpDownn = new System.Windows.Forms.NumericUpDown();
             this.EditAdherent_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).BeginInit();
             this.AjoutAdherent_tabPage.SuspendLayout();
@@ -105,6 +104,8 @@
             this.Classe_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).BeginInit();
             this.Adherent_tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDownn)).BeginInit();
             this.SuspendLayout();
             // 
             // EditAdherent_tabPage
@@ -112,7 +113,6 @@
             this.EditAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.EditAdherent_tabPage.Controls.Add(this.RechercherEditerAdherent_button);
             this.EditAdherent_tabPage.Controls.Add(this.ResultatAdherent_dataGridView);
-            this.EditAdherent_tabPage.Controls.Add(this.FiltresRechercheAdherent_checkedListBox);
             this.EditAdherent_tabPage.Controls.Add(this.RechercherAdherant_textBox);
             this.EditAdherent_tabPage.Controls.Add(this.BiblioFusion_label2);
             this.EditAdherent_tabPage.Location = new System.Drawing.Point(4, 29);
@@ -140,10 +140,10 @@
             this.ResultatAdherent_dataGridView.AllowUserToOrderColumns = true;
             this.ResultatAdherent_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ResultatAdherent_dataGridView.GridColor = System.Drawing.Color.White;
-            this.ResultatAdherent_dataGridView.Location = new System.Drawing.Point(350, 180);
+            this.ResultatAdherent_dataGridView.Location = new System.Drawing.Point(23, 180);
             this.ResultatAdherent_dataGridView.Name = "ResultatAdherent_dataGridView";
             this.ResultatAdherent_dataGridView.ReadOnly = true;
-            this.ResultatAdherent_dataGridView.Size = new System.Drawing.Size(620, 444);
+            this.ResultatAdherent_dataGridView.Size = new System.Drawing.Size(947, 444);
             this.ResultatAdherent_dataGridView.TabIndex = 59;
             // 
             // RechercherAdherant_textBox
@@ -173,6 +173,7 @@
             // AjoutAdherent_tabPage
             // 
             this.AjoutAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutAdherent_tabPage.Controls.Add(this.CodePostalAdherent_numericUpDown);
             this.AjoutAdherent_tabPage.Controls.Add(this.label7);
             this.AjoutAdherent_tabPage.Controls.Add(this.label8);
             this.AjoutAdherent_tabPage.Controls.Add(this.label5);
@@ -182,7 +183,6 @@
             this.AjoutAdherent_tabPage.Controls.Add(this.label2);
             this.AjoutAdherent_tabPage.Controls.Add(this.label1);
             this.AjoutAdherent_tabPage.Controls.Add(this.Eleve_checkBox);
-            this.AjoutAdherent_tabPage.Controls.Add(this.CodePostalAdherent_textBox);
             this.AjoutAdherent_tabPage.Controls.Add(this.NaissanceAdherent_dateTimePicker);
             this.AjoutAdherent_tabPage.Controls.Add(this.Responsable_tabControl);
             this.AjoutAdherent_tabPage.Controls.Add(this.AdherentAjoutValider_button);
@@ -293,16 +293,6 @@
             this.Eleve_checkBox.Text = "Élève";
             this.Eleve_checkBox.UseVisualStyleBackColor = true;
             this.Eleve_checkBox.CheckedChanged += new System.EventHandler(this.Eleve_checkBox_CheckedChanged);
-            // 
-            // CodePostalAdherent_textBox
-            // 
-            this.CodePostalAdherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CodePostalAdherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CodePostalAdherent_textBox.Location = new System.Drawing.Point(642, 265);
-            this.CodePostalAdherent_textBox.Name = "CodePostalAdherent_textBox";
-            this.CodePostalAdherent_textBox.Size = new System.Drawing.Size(173, 30);
-            this.CodePostalAdherent_textBox.TabIndex = 43;
             // 
             // NaissanceAdherent_dateTimePicker
             // 
@@ -437,10 +427,10 @@
             // ResponsableNonAdherent_tabPage
             // 
             this.ResponsableNonAdherent_tabPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ResponsableNonAdherent_tabPage.Controls.Add(this.CodePostalAdherent_numericUpDownn);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.label9);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.AjoutResponsableNonAdherent_button);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.label10);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.CodePostalResponsable_textBox);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.label11);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.SupprResponsable2NonAdherent_label);
             this.ResponsableNonAdherent_tabPage.Controls.Add(this.label12);
@@ -496,17 +486,6 @@
             this.label10.Size = new System.Drawing.Size(53, 25);
             this.label10.TabIndex = 59;
             this.label10.Text = "Fixe";
-            // 
-            // CodePostalResponsable_textBox
-            // 
-            this.CodePostalResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.CodePostalResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CodePostalResponsable_textBox.Location = new System.Drawing.Point(628, 180);
-            this.CodePostalResponsable_textBox.Name = "CodePostalResponsable_textBox";
-            this.CodePostalResponsable_textBox.Size = new System.Drawing.Size(173, 30);
-            this.CodePostalResponsable_textBox.TabIndex = 44;
-            this.CodePostalResponsable_textBox.Text = "Code postale";
             // 
             // label11
             // 
@@ -875,14 +854,29 @@
             this.Adherent_tabControl.Size = new System.Drawing.Size(1004, 725);
             this.Adherent_tabControl.TabIndex = 0;
             // 
-            // FiltresRechercheAdherent_checkedListBox
+            // CodePostalAdherent_numericUpDown
             // 
-            this.FiltresRechercheAdherent_checkedListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            this.FiltresRechercheAdherent_checkedListBox.FormattingEnabled = true;
-            this.FiltresRechercheAdherent_checkedListBox.Location = new System.Drawing.Point(30, 180);
-            this.FiltresRechercheAdherent_checkedListBox.Name = "FiltresRechercheAdherent_checkedListBox";
-            this.FiltresRechercheAdherent_checkedListBox.Size = new System.Drawing.Size(300, 445);
-            this.FiltresRechercheAdherent_checkedListBox.TabIndex = 55;
+            this.CodePostalAdherent_numericUpDown.Location = new System.Drawing.Point(631, 267);
+            this.CodePostalAdherent_numericUpDown.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.CodePostalAdherent_numericUpDown.Name = "CodePostalAdherent_numericUpDown";
+            this.CodePostalAdherent_numericUpDown.Size = new System.Drawing.Size(154, 27);
+            this.CodePostalAdherent_numericUpDown.TabIndex = 53;
+            // 
+            // CodePostalAdherent_numericUpDownn
+            // 
+            this.CodePostalAdherent_numericUpDownn.Location = new System.Drawing.Point(626, 183);
+            this.CodePostalAdherent_numericUpDownn.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.CodePostalAdherent_numericUpDownn.Name = "CodePostalAdherent_numericUpDownn";
+            this.CodePostalAdherent_numericUpDownn.Size = new System.Drawing.Size(154, 27);
+            this.CodePostalAdherent_numericUpDownn.TabIndex = 54;
             // 
             // Form_Adherents
             // 
@@ -910,6 +904,8 @@
             this.Classe_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).EndInit();
             this.Adherent_tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDownn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -943,7 +939,6 @@
         private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
         private System.Windows.Forms.DateTimePicker NaissanceResponsable_dateTimePicker;
         private System.Windows.Forms.DataGridView ResultatAdherent_dataGridView;
-        private System.Windows.Forms.TextBox CodePostalAdherent_textBox;
         private System.Windows.Forms.Label Responsable2Adherent_label;
         private System.Windows.Forms.Label Responsable1Adherent_label;
         private System.Windows.Forms.Label Responsable2NonAdherent_label;
@@ -953,7 +948,6 @@
         private System.Windows.Forms.Label SupprResponsable2NonAdherent_label;
         private System.Windows.Forms.Label SupprResponsable1NonAdherent_label;
         private System.Windows.Forms.CheckBox Eleve_checkBox;
-        private System.Windows.Forms.TextBox CodePostalResponsable_textBox;
         private System.Windows.Forms.DataGridView RechercherResponsableAdherent_dataGridView;
         private System.Windows.Forms.Button AjoutResponsableNonAdherent_button;
         private System.Windows.Forms.Button AjoutResponsableAdherent_button;
@@ -982,6 +976,7 @@
         private System.Windows.Forms.Button RechercherEditerAdherent_button;
         private System.Windows.Forms.Button RechercherAjouterAdherentClasse_button;
         private System.Windows.Forms.Button RechercherAjoutAdherent_button;
-        private System.Windows.Forms.CheckedListBox FiltresRechercheAdherent_checkedListBox;
+        private System.Windows.Forms.NumericUpDown CodePostalAdherent_numericUpDown;
+        private System.Windows.Forms.NumericUpDown CodePostalAdherent_numericUpDownn;
     }
 }

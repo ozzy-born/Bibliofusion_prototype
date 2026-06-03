@@ -30,6 +30,8 @@
         {
             this.Jouet_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutJouet_tabPage = new System.Windows.Forms.TabPage();
+            this.ModifierAjoutJouet_button = new System.Windows.Forms.Button();
+            this.codeModifierJouet_label = new System.Windows.Forms.Label();
             this.DateVenteJouet_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,13 +50,15 @@
             this.NomJouet_textBox = new System.Windows.Forms.TextBox();
             this.ValiderAjoutJouet_button = new System.Windows.Forms.Button();
             this.IdJouet_textBox = new System.Windows.Forms.TextBox();
-            this.MarqueJouet_textBox = new System.Windows.Forms.TextBox();
             this.EmplacementJouet_textBox = new System.Windows.Forms.TextBox();
             this.EditJouet_tabPage = new System.Windows.Forms.TabPage();
+            this.SupprimerJouet_button = new System.Windows.Forms.Button();
+            this.SelectionnerLivre_button = new System.Windows.Forms.Button();
             this.RechercherEditerJouet_button = new System.Windows.Forms.Button();
             this.ResultatJouet_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherJouet_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
+            this.MarqueJouet_textBox = new System.Windows.Forms.TextBox();
             this.Jouet_tabControl.SuspendLayout();
             this.AjoutJouet_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxJouet_numericUpDown)).BeginInit();
@@ -78,6 +82,9 @@
             // AjoutJouet_tabPage
             // 
             this.AjoutJouet_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutJouet_tabPage.Controls.Add(this.MarqueJouet_textBox);
+            this.AjoutJouet_tabPage.Controls.Add(this.ModifierAjoutJouet_button);
+            this.AjoutJouet_tabPage.Controls.Add(this.codeModifierJouet_label);
             this.AjoutJouet_tabPage.Controls.Add(this.DateVenteJouet_dateTimePicker);
             this.AjoutJouet_tabPage.Controls.Add(this.label5);
             this.AjoutJouet_tabPage.Controls.Add(this.label3);
@@ -96,7 +103,6 @@
             this.AjoutJouet_tabPage.Controls.Add(this.NomJouet_textBox);
             this.AjoutJouet_tabPage.Controls.Add(this.ValiderAjoutJouet_button);
             this.AjoutJouet_tabPage.Controls.Add(this.IdJouet_textBox);
-            this.AjoutJouet_tabPage.Controls.Add(this.MarqueJouet_textBox);
             this.AjoutJouet_tabPage.Controls.Add(this.EmplacementJouet_textBox);
             this.AjoutJouet_tabPage.Location = new System.Drawing.Point(4, 29);
             this.AjoutJouet_tabPage.Name = "AjoutJouet_tabPage";
@@ -104,6 +110,27 @@
             this.AjoutJouet_tabPage.Size = new System.Drawing.Size(997, 692);
             this.AjoutJouet_tabPage.TabIndex = 0;
             this.AjoutJouet_tabPage.Text = "Ajouter un jouet";
+            // 
+            // ModifierAjoutJouet_button
+            // 
+            this.ModifierAjoutJouet_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ModifierAjoutJouet_button.Location = new System.Drawing.Point(733, 366);
+            this.ModifierAjoutJouet_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ModifierAjoutJouet_button.Name = "ModifierAjoutJouet_button";
+            this.ModifierAjoutJouet_button.Size = new System.Drawing.Size(101, 32);
+            this.ModifierAjoutJouet_button.TabIndex = 93;
+            this.ModifierAjoutJouet_button.Text = "Modifier";
+            this.ModifierAjoutJouet_button.UseVisualStyleBackColor = true;
+            this.ModifierAjoutJouet_button.Click += new System.EventHandler(this.ModifierAjoutJouet_button_Click);
+            // 
+            // codeModifierJouet_label
+            // 
+            this.codeModifierJouet_label.AutoSize = true;
+            this.codeModifierJouet_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.codeModifierJouet_label.Location = new System.Drawing.Point(633, 78);
+            this.codeModifierJouet_label.Name = "codeModifierJouet_label";
+            this.codeModifierJouet_label.Size = new System.Drawing.Size(0, 25);
+            this.codeModifierJouet_label.TabIndex = 92;
             // 
             // DateVenteJouet_dateTimePicker
             // 
@@ -326,20 +353,10 @@
             this.IdJouet_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.IdJouet_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.IdJouet_textBox.Location = new System.Drawing.Point(183, 315);
+            this.IdJouet_textBox.Location = new System.Drawing.Point(179, 315);
             this.IdJouet_textBox.Name = "IdJouet_textBox";
             this.IdJouet_textBox.Size = new System.Drawing.Size(791, 30);
             this.IdJouet_textBox.TabIndex = 34;
-            // 
-            // MarqueJouet_textBox
-            // 
-            this.MarqueJouet_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MarqueJouet_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.MarqueJouet_textBox.Location = new System.Drawing.Point(183, 215);
-            this.MarqueJouet_textBox.Name = "MarqueJouet_textBox";
-            this.MarqueJouet_textBox.Size = new System.Drawing.Size(787, 30);
-            this.MarqueJouet_textBox.TabIndex = 33;
             // 
             // EmplacementJouet_textBox
             // 
@@ -348,12 +365,15 @@
             this.EmplacementJouet_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
             this.EmplacementJouet_textBox.Location = new System.Drawing.Point(183, 265);
             this.EmplacementJouet_textBox.Name = "EmplacementJouet_textBox";
+            this.EmplacementJouet_textBox.ReadOnly = true;
             this.EmplacementJouet_textBox.Size = new System.Drawing.Size(787, 30);
             this.EmplacementJouet_textBox.TabIndex = 32;
             // 
             // EditJouet_tabPage
             // 
             this.EditJouet_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditJouet_tabPage.Controls.Add(this.SupprimerJouet_button);
+            this.EditJouet_tabPage.Controls.Add(this.SelectionnerLivre_button);
             this.EditJouet_tabPage.Controls.Add(this.RechercherEditerJouet_button);
             this.EditJouet_tabPage.Controls.Add(this.ResultatJouet_dataGridView);
             this.EditJouet_tabPage.Controls.Add(this.RechercherJouet_textBox);
@@ -364,6 +384,30 @@
             this.EditJouet_tabPage.Size = new System.Drawing.Size(997, 692);
             this.EditJouet_tabPage.TabIndex = 1;
             this.EditJouet_tabPage.Text = "Editer les jouets";
+            // 
+            // SupprimerJouet_button
+            // 
+            this.SupprimerJouet_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.SupprimerJouet_button.Location = new System.Drawing.Point(672, 635);
+            this.SupprimerJouet_button.Margin = new System.Windows.Forms.Padding(8);
+            this.SupprimerJouet_button.Name = "SupprimerJouet_button";
+            this.SupprimerJouet_button.Size = new System.Drawing.Size(141, 32);
+            this.SupprimerJouet_button.TabIndex = 64;
+            this.SupprimerJouet_button.Text = "Supprimer";
+            this.SupprimerJouet_button.UseVisualStyleBackColor = true;
+            this.SupprimerJouet_button.Click += new System.EventHandler(this.SupprimerJouet_button_Click);
+            // 
+            // SelectionnerLivre_button
+            // 
+            this.SelectionnerLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.SelectionnerLivre_button.Location = new System.Drawing.Point(829, 635);
+            this.SelectionnerLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.SelectionnerLivre_button.Name = "SelectionnerLivre_button";
+            this.SelectionnerLivre_button.Size = new System.Drawing.Size(141, 32);
+            this.SelectionnerLivre_button.TabIndex = 63;
+            this.SelectionnerLivre_button.Text = "Selectionner";
+            this.SelectionnerLivre_button.UseVisualStyleBackColor = true;
+            this.SelectionnerLivre_button.Click += new System.EventHandler(this.SelectionnerJouet_button_click);
             // 
             // RechercherEditerJouet_button
             // 
@@ -412,6 +456,16 @@
             this.BiblioFusion_label2.TabIndex = 51;
             this.BiblioFusion_label2.Text = "BiblioFusion";
             // 
+            // MarqueJouet_textBox
+            // 
+            this.MarqueJouet_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MarqueJouet_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.MarqueJouet_textBox.Location = new System.Drawing.Point(183, 215);
+            this.MarqueJouet_textBox.Name = "MarqueJouet_textBox";
+            this.MarqueJouet_textBox.Size = new System.Drawing.Size(787, 30);
+            this.MarqueJouet_textBox.TabIndex = 94;
+            // 
             // Form_Jouets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,6 +476,7 @@
             this.MinimumSize = new System.Drawing.Size(1023, 766);
             this.Name = "Form_Jouets";
             this.Text = "BiblioFusion - jouets";
+            this.Load += new System.EventHandler(this.Form_Jouets_Load);
             this.Jouet_tabControl.ResumeLayout(false);
             this.AjoutJouet_tabPage.ResumeLayout(false);
             this.AjoutJouet_tabPage.PerformLayout();
@@ -442,7 +497,6 @@
         private System.Windows.Forms.TextBox NomJouet_textBox;
         private System.Windows.Forms.Button ValiderAjoutJouet_button;
         private System.Windows.Forms.TextBox IdJouet_textBox;
-        private System.Windows.Forms.TextBox MarqueJouet_textBox;
         private System.Windows.Forms.TextBox EmplacementJouet_textBox;
         private System.Windows.Forms.TabPage EditJouet_tabPage;
         private System.Windows.Forms.TextBox RechercherJouet_textBox;
@@ -464,5 +518,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker DateVenteJouet_dateTimePicker;
+        private System.Windows.Forms.Label codeModifierJouet_label;
+        private System.Windows.Forms.Button SupprimerJouet_button;
+        private System.Windows.Forms.Button SelectionnerLivre_button;
+        private System.Windows.Forms.Button ModifierAjoutJouet_button;
+        private System.Windows.Forms.TextBox MarqueJouet_textBox;
     }
 }
