@@ -153,35 +153,25 @@ namespace WindowsFormsApp1
 
         private void AdherentValider_button_Click(object sender, EventArgs e)
         {
-            try
-            {
-                CodePostal = int.Parse(CodePostalAdherent_textBox.Text);
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Le code postal doit être un nombre entier. \nEntrez 0 Si le code postal est inconnu", "Erreur de format", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
             DialogResult verfication = MessageBox.Show("Voulez-vous ajouter cet adhérent ?", "Nouvel adhérent", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verfication == DialogResult.Yes)
             {
-                // Code pour valider l'adhérent
-                Nom = NomAdherent_textBox.Text;
-                Prenom = PrenomAdherent_textBox.Text;
-                DateNaissance = NaissanceAdherent_dateTimePicker.Value.ToShortDateString();
-                Email = MailAdherent_textBox.Text;
-                Mobile = MobileAdherent_textBox.Text;
-                Fixe = FixeAdherent_textBox.Text;
-                Adresse = AdresseAdherent_textBox.Text;
-                MessageBox.Show(
-                    "Nom : " + Nom +
-                    "\nPrénom : " + Prenom +
-                    "\nDate de naissance : " + DateNaissance +
-                    "\nEmail : " + Email +
-                    "\nMobile : " + Mobile +
-                    "\nFixe : " + Fixe +
-                    "\nAdresse : " + Adresse + " " + CodePostal,
-                    "Nouvel adhérent créé");
+                if (Eleve_checkBox.Checked == false) && (Mineur_checkBox.Checked == false)
+                {
+                    Classe = null;
+                    Nom = Nom_textBox.Text;
+                    Prenom = Prenom_textBox.Text;
+                    DateNaissance = DateNaissance_textBox.Text;
+                    Email = Email_textBox.Text;
+                    Mobile = Mobile_textBox.Text;
+                    Fixe = Fixe_textBox.Text;
+                    Adresse = Adresse_textBox.Text;
+                    CodePostal = int.Parse(CodePostal_textBox.Text);
+                }
+                else if (Eleve_checkBox.Checked == true && Mineur_checkBox.Checked == false)
+                {
+                    Classe = Classe_textBox.Text;
+                }
             }
         }
     }
