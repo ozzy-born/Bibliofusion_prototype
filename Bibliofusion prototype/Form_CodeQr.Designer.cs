@@ -34,6 +34,7 @@ namespace QRcode_generator
             this.QRpicture = new System.Windows.Forms.PictureBox();
             this.qr_textBox = new System.Windows.Forms.TextBox();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
+            this.checkBox = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.QRpicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,7 +43,7 @@ namespace QRcode_generator
             this.genererQR_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genererQR_button.Location = new System.Drawing.Point(12, 47);
             this.genererQR_button.Name = "genererQR_button";
-            this.genererQR_button.Size = new System.Drawing.Size(326, 33);
+            this.genererQR_button.Size = new System.Drawing.Size(192, 33);
             this.genererQR_button.TabIndex = 0;
             this.genererQR_button.Text = "Générer le code QR";
             this.genererQR_button.UseVisualStyleBackColor = true;
@@ -50,7 +51,7 @@ namespace QRcode_generator
             // 
             // QRpicture
             // 
-            this.QRpicture.Location = new System.Drawing.Point(89, 135);
+            this.QRpicture.Location = new System.Drawing.Point(119, 105);
             this.QRpicture.Name = "QRpicture";
             this.QRpicture.Size = new System.Drawing.Size(100, 50);
             this.QRpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -69,12 +70,24 @@ namespace QRcode_generator
             // 
             this.printDialog1.UseEXDialog = true;
             // 
+            // checkBox
+            // 
+            this.checkBox.AutoSize = true;
+            this.checkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.checkBox.Location = new System.Drawing.Point(221, 50);
+            this.checkBox.Name = "checkBox";
+            this.checkBox.Size = new System.Drawing.Size(107, 28);
+            this.checkBox.TabIndex = 3;
+            this.checkBox.Text = "Adherent";
+            this.checkBox.UseVisualStyleBackColor = true;
+            // 
             // Form_CodeQr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(363, 334);
+            this.Controls.Add(this.checkBox);
             this.Controls.Add(this.qr_textBox);
             this.Controls.Add(this.QRpicture);
             this.Controls.Add(this.genererQR_button);
@@ -92,6 +105,7 @@ namespace QRcode_generator
         private System.Windows.Forms.Button genererQR_button;
         private System.Windows.Forms.PictureBox QRpicture;
         private System.Windows.Forms.TextBox qr_textBox;
+        private System.Windows.Forms.CheckBox checkBox;
         //private System.Windows.Forms.PrintDialog printDialog1;
     }
 }

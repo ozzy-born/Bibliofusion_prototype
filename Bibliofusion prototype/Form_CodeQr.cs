@@ -95,8 +95,20 @@ namespace QRcode_generator
 
 
 /*---------------------------------------------------------------------------------VARIABLE A MODIFIER------------------------------------------------------------------------------------------------------------------------*/
-        string variable = CreateCard("123456789", "1", secretKey);    //"123456789" = identifiant ou ISBN ; "1" = n° de version ; secretKey = clé de chiffrement
-        
+
+        private string qrText()
+        {
+            string variable;
+            if (checkBox.Checked)
+            {
+                variable = CreateCard(qr_textBox.Text, "1", secretKey);
+            }
+            else
+            { 
+                variable = qr_textBox.Text;
+            }
+            return variable;                               //Retourne la variable qui contient les données à encoder dans le QR Code
+        } 
 
         
         //Gestionnaire d'événement pour le clic sur le bouton de génération du QR Code
@@ -105,7 +117,7 @@ namespace QRcode_generator
             QRCodeGenerator qrGenerator = new QRCodeGenerator();            // Crée une instance du générateur de QR Code
 
             /*---------------------penser à changer le nom de la VARIABLE qui va s'afficher--------------------------------------*/
-            QRCodeData qrCodeData = qrGenerator.CreateQrCode(variable, QRCodeGenerator.ECCLevel.L, true);      // Génère les données du QR Code à partir du texte saisi dans textBox1, avec un niveau de correction d'erreur L (Low) et en utilisant le mode de rendu SVG
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(qrText(), QRCodeGenerator.ECCLevel.L, true);      // Génère les données du QR Code à partir du texte saisi dans textBox1, avec un niveau de correction d'erreur L (Low) et en utilisant le mode de rendu SVG
             QRCode qrCode = new QRCode(qrCodeData);                         // Crée une instance du QRCode à partir des données générées
 
             Bitmap qrCodeImage = qrCode.GetGraphic(5);                      // Génère une image Bitmap du QR Code avec une taille de module de 5 pixels
@@ -144,7 +156,7 @@ namespace QRcode_generator
                 
                 float textY = y + size + 5;                                             //Rapprocher le texte du QR Code (5 au lieu de 10)
 
-                string[] id = variable.Split(';');
+                string[] id = qrText().Split(';');
 
                 e.Graphics.DrawString(id[0], new Font("Arial",9), Brushes.Black, textX, textY );       //Dessine le texte centré sous le QR Code
             }
