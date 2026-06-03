@@ -1,13 +1,17 @@
-﻿using System;
+﻿using Bibliofusion_prototype;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace WindowsFormsApp1
 {
     public partial class Form_Adherents : Form
@@ -156,23 +160,29 @@ namespace WindowsFormsApp1
             DialogResult verfication = MessageBox.Show("Voulez-vous ajouter cet adhérent ?", "Nouvel adhérent", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verfication == DialogResult.Yes)
             {
-                if (Eleve_checkBox.Checked == false) && (Mineur_checkBox.Checked == false)
+                if (Eleve_checkBox.Checked == false && Mineur_checkBox.Checked == false)
                 {
-                    Classe = null;
-                    Nom = Nom_textBox.Text;
-                    Prenom = Prenom_textBox.Text;
-                    DateNaissance = DateNaissance_textBox.Text;
-                    Email = Email_textBox.Text;
-                    Mobile = Mobile_textBox.Text;
-                    Fixe = Fixe_textBox.Text;
-                    Adresse = Adresse_textBox.Text;
-                    CodePostal = int.Parse(CodePostal_textBox.Text);
+                    AjoutAdherentSansResponsable();
                 }
                 else if (Eleve_checkBox.Checked == true && Mineur_checkBox.Checked == false)
                 {
-                    Classe = Classe_textBox.Text;
+
                 }
             }
+        }
+        private void AjoutAdherentSansResponsable()
+        {
+            string requette =   "INSERT INTO adherents (Nom, Prenom, Date_Naissance, Adresse, CodePostal, Email, Num_Mobile, NumFixe, ) " +
+                                "VALUES (@Nom, @Prenom, @DateNaissance, @Adresse, @CodePostal, @Email, @Mobile, @Fixe)";
+            MySqlCommand commande = new MySqlCommand(requette, Program.connection);
+            commande.Parameters.AddWithValue("@Nom", NomAdherent_textBox.Text);
+            commande.Parameters.AddWithValue("@Prenom", PrenomAdherent_textBox.Text);
+            commande.Parameters.AddWithValue("@DateNaissance", NaissanceAdherent_dateTimePicker.Value);
+            commande.Parameters.AddWithValue("@Adresse", AdresseAdherent_textBox.Text);
+            commande.Parameters.AddWithValue("@CodePostal", CodePostalAdherent_numericUpDown.Value.ToString());
+            commande.Parameters.AddWithValue("@Email", MailAdherent_textBox.Text);
+            commande.Parameters.AddWithValue("@Mobile", MobileAdherent_textBox.Text);
+            commande.Parameters.AddWithValue("@Fixe", FixeAdherent_textBox.Text);
         }
     }
 }
