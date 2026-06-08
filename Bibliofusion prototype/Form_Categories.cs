@@ -27,19 +27,6 @@ namespace Bibliofusion_prototype
 
         private void ValiderAjoutCategorie_button_Click(object sender, EventArgs e)
         {
-            if (CategorieJouet_radioButton.Checked == true) { 
-                TypeArticle = "jouet";
-            }
-            else if (CategorieLivre_radioButton.Checked == true)
-            {
-                TypeArticle = "livre";
-            }
-            else
-            {
-                MessageBox.Show("Veuillez sélectionner un type d'article.", "Erreur de sélection", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
             DialogResult verfication = MessageBox.Show("Voulez-vous ajouter la categorie de " + TypeArticle + " " + NomCategorie_textBox.Text +" ?" , "Nouvelle catégorie de " + TypeArticle, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (verfication == DialogResult.Yes)
             {

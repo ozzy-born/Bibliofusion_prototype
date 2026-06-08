@@ -29,11 +29,16 @@
         private void InitializeComponent()
         {
             this.EditAdherent_tabPage = new System.Windows.Forms.TabPage();
+            this.SupprimerLivre_button = new System.Windows.Forms.Button();
+            this.selectionnerAdherent_button = new System.Windows.Forms.Button();
             this.RechercherEditerAdherent_button = new System.Windows.Forms.Button();
             this.ResultatAdherent_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherAdherant_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.AjoutAdherent_tabPage = new System.Windows.Forms.TabPage();
+            this.idModifierAdherent_label = new System.Windows.Forms.Label();
+            this.ModifierAjoutAdherent_button = new System.Windows.Forms.Button();
+            this.CodePostalAdherent_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,35 +51,14 @@
             this.NaissanceAdherent_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Responsable_tabControl = new System.Windows.Forms.TabControl();
             this.ResponsableAdherent_tabPage = new System.Windows.Forms.TabPage();
+            this.Responsable2Adherent_textBox = new System.Windows.Forms.TextBox();
+            this.Responsable1Adherent_textBox = new System.Windows.Forms.TextBox();
             this.RechercherAjoutAdherent_button = new System.Windows.Forms.Button();
             this.AjoutResponsableAdherent_button = new System.Windows.Forms.Button();
             this.RechercherResponsableAdherent_dataGridView = new System.Windows.Forms.DataGridView();
-            this.SupprResponsable2Adherent_label = new System.Windows.Forms.Label();
-            this.SupprResponsable1Adherent_label = new System.Windows.Forms.Label();
             this.Responsable2Adherent_label = new System.Windows.Forms.Label();
             this.Responsable1Adherent_label = new System.Windows.Forms.Label();
             this.RechercherResponsableAdherent_textBox = new System.Windows.Forms.TextBox();
-            this.ResponsableNonAdherent_tabPage = new System.Windows.Forms.TabPage();
-            this.label9 = new System.Windows.Forms.Label();
-            this.AjoutResponsableNonAdherent_button = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.SupprResponsable2NonAdherent_label = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.SupprResponsable1NonAdherent_label = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Responsable2NonAdherent_label = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.Responsable1NonAdherent_label = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.NaissanceResponsable_dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.NomResponsable_textBox = new System.Windows.Forms.TextBox();
-            this.MobileResponsable_textBox = new System.Windows.Forms.TextBox();
-            this.AdresseResponsable_textBox = new System.Windows.Forms.TextBox();
-            this.PrenomResponsable_textBox = new System.Windows.Forms.TextBox();
-            this.MailResponsable_textBox = new System.Windows.Forms.TextBox();
-            this.FixeResponsable_textBox = new System.Windows.Forms.TextBox();
             this.Classe_tabPage = new System.Windows.Forms.TabPage();
             this.RechercherAjouterAdherentClasse_button = new System.Windows.Forms.Button();
             this.AjouterALaClasse_button = new System.Windows.Forms.Button();
@@ -92,25 +76,23 @@
             this.FixeAdherent_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.Adherent_tabControl = new System.Windows.Forms.TabControl();
-            this.CodePostalAdherent_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.CodePostalAdherent_numericUpDownn = new System.Windows.Forms.NumericUpDown();
             this.EditAdherent_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).BeginInit();
             this.AjoutAdherent_tabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDown)).BeginInit();
             this.Responsable_tabControl.SuspendLayout();
             this.ResponsableAdherent_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RechercherResponsableAdherent_dataGridView)).BeginInit();
-            this.ResponsableNonAdherent_tabPage.SuspendLayout();
             this.Classe_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).BeginInit();
             this.Adherent_tabControl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDownn)).BeginInit();
             this.SuspendLayout();
             // 
             // EditAdherent_tabPage
             // 
             this.EditAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditAdherent_tabPage.Controls.Add(this.SupprimerLivre_button);
+            this.EditAdherent_tabPage.Controls.Add(this.selectionnerAdherent_button);
             this.EditAdherent_tabPage.Controls.Add(this.RechercherEditerAdherent_button);
             this.EditAdherent_tabPage.Controls.Add(this.ResultatAdherent_dataGridView);
             this.EditAdherent_tabPage.Controls.Add(this.RechercherAdherant_textBox);
@@ -122,6 +104,30 @@
             this.EditAdherent_tabPage.TabIndex = 1;
             this.EditAdherent_tabPage.Text = "Editer les adhérents";
             // 
+            // SupprimerLivre_button
+            // 
+            this.SupprimerLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.SupprimerLivre_button.Location = new System.Drawing.Point(673, 635);
+            this.SupprimerLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.SupprimerLivre_button.Name = "SupprimerLivre_button";
+            this.SupprimerLivre_button.Size = new System.Drawing.Size(141, 32);
+            this.SupprimerLivre_button.TabIndex = 65;
+            this.SupprimerLivre_button.Text = "Supprimer";
+            this.SupprimerLivre_button.UseVisualStyleBackColor = true;
+            this.SupprimerLivre_button.Click += new System.EventHandler(this.SupprimerLivre_button_Click);
+            // 
+            // selectionnerAdherent_button
+            // 
+            this.selectionnerAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.selectionnerAdherent_button.Location = new System.Drawing.Point(830, 635);
+            this.selectionnerAdherent_button.Margin = new System.Windows.Forms.Padding(8);
+            this.selectionnerAdherent_button.Name = "selectionnerAdherent_button";
+            this.selectionnerAdherent_button.Size = new System.Drawing.Size(141, 32);
+            this.selectionnerAdherent_button.TabIndex = 64;
+            this.selectionnerAdherent_button.Text = "Selectionner";
+            this.selectionnerAdherent_button.UseVisualStyleBackColor = true;
+            this.selectionnerAdherent_button.Click += new System.EventHandler(this.selectionnerAdherent_button_Click);
+            // 
             // RechercherEditerAdherent_button
             // 
             this.RechercherEditerAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
@@ -132,6 +138,7 @@
             this.RechercherEditerAdherent_button.TabIndex = 63;
             this.RechercherEditerAdherent_button.Text = "Rechercher";
             this.RechercherEditerAdherent_button.UseVisualStyleBackColor = true;
+            this.RechercherEditerAdherent_button.Click += new System.EventHandler(this.RechercherEditerAdherent_button_Click);
             // 
             // ResultatAdherent_dataGridView
             // 
@@ -155,7 +162,6 @@
             this.RechercherAdherant_textBox.Name = "RechercherAdherant_textBox";
             this.RechercherAdherant_textBox.Size = new System.Drawing.Size(694, 30);
             this.RechercherAdherant_textBox.TabIndex = 52;
-            this.RechercherAdherant_textBox.Text = "Rechercher un adhérent";
             // 
             // BiblioFusion_label2
             // 
@@ -173,6 +179,8 @@
             // AjoutAdherent_tabPage
             // 
             this.AjoutAdherent_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.AjoutAdherent_tabPage.Controls.Add(this.idModifierAdherent_label);
+            this.AjoutAdherent_tabPage.Controls.Add(this.ModifierAjoutAdherent_button);
             this.AjoutAdherent_tabPage.Controls.Add(this.CodePostalAdherent_numericUpDown);
             this.AjoutAdherent_tabPage.Controls.Add(this.label7);
             this.AjoutAdherent_tabPage.Controls.Add(this.label8);
@@ -200,6 +208,39 @@
             this.AjoutAdherent_tabPage.Size = new System.Drawing.Size(996, 692);
             this.AjoutAdherent_tabPage.TabIndex = 0;
             this.AjoutAdherent_tabPage.Text = "Ajouter un adhérent";
+            // 
+            // idModifierAdherent_label
+            // 
+            this.idModifierAdherent_label.AutoSize = true;
+            this.idModifierAdherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.idModifierAdherent_label.Location = new System.Drawing.Point(650, 60);
+            this.idModifierAdherent_label.Name = "idModifierAdherent_label";
+            this.idModifierAdherent_label.Size = new System.Drawing.Size(0, 25);
+            this.idModifierAdherent_label.TabIndex = 95;
+            // 
+            // ModifierAjoutAdherent_button
+            // 
+            this.ModifierAjoutAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.ModifierAjoutAdherent_button.Location = new System.Drawing.Point(733, 655);
+            this.ModifierAjoutAdherent_button.Margin = new System.Windows.Forms.Padding(8);
+            this.ModifierAjoutAdherent_button.Name = "ModifierAjoutAdherent_button";
+            this.ModifierAjoutAdherent_button.Size = new System.Drawing.Size(101, 32);
+            this.ModifierAjoutAdherent_button.TabIndex = 94;
+            this.ModifierAjoutAdherent_button.Text = "Modifier";
+            this.ModifierAjoutAdherent_button.UseVisualStyleBackColor = true;
+            this.ModifierAjoutAdherent_button.Click += new System.EventHandler(this.ModifierAjoutAdherent_button_Click);
+            // 
+            // CodePostalAdherent_numericUpDown
+            // 
+            this.CodePostalAdherent_numericUpDown.Location = new System.Drawing.Point(631, 267);
+            this.CodePostalAdherent_numericUpDown.Maximum = new decimal(new int[] {
+            100000000,
+            0,
+            0,
+            0});
+            this.CodePostalAdherent_numericUpDown.Name = "CodePostalAdherent_numericUpDown";
+            this.CodePostalAdherent_numericUpDown.Size = new System.Drawing.Size(154, 27);
+            this.CodePostalAdherent_numericUpDown.TabIndex = 53;
             // 
             // label7
             // 
@@ -310,7 +351,6 @@
             // Responsable_tabControl
             // 
             this.Responsable_tabControl.Controls.Add(this.ResponsableAdherent_tabPage);
-            this.Responsable_tabControl.Controls.Add(this.ResponsableNonAdherent_tabPage);
             this.Responsable_tabControl.Controls.Add(this.Classe_tabPage);
             this.Responsable_tabControl.Location = new System.Drawing.Point(10, 332);
             this.Responsable_tabControl.Name = "Responsable_tabControl";
@@ -321,11 +361,11 @@
             // ResponsableAdherent_tabPage
             // 
             this.ResponsableAdherent_tabPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable2Adherent_textBox);
+            this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable1Adherent_textBox);
             this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherAjoutAdherent_button);
             this.ResponsableAdherent_tabPage.Controls.Add(this.AjoutResponsableAdherent_button);
             this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherResponsableAdherent_dataGridView);
-            this.ResponsableAdherent_tabPage.Controls.Add(this.SupprResponsable2Adherent_label);
-            this.ResponsableAdherent_tabPage.Controls.Add(this.SupprResponsable1Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable2Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.Responsable1Adherent_label);
             this.ResponsableAdherent_tabPage.Controls.Add(this.RechercherResponsableAdherent_textBox);
@@ -334,7 +374,27 @@
             this.ResponsableAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
             this.ResponsableAdherent_tabPage.Size = new System.Drawing.Size(971, 275);
             this.ResponsableAdherent_tabPage.TabIndex = 0;
-            this.ResponsableAdherent_tabPage.Text = "Responsable adhérent";
+            this.ResponsableAdherent_tabPage.Text = "Responsables du mineur";
+            // 
+            // Responsable2Adherent_textBox
+            // 
+            this.Responsable2Adherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Responsable2Adherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.Responsable2Adherent_textBox.Location = new System.Drawing.Point(667, 233);
+            this.Responsable2Adherent_textBox.Name = "Responsable2Adherent_textBox";
+            this.Responsable2Adherent_textBox.Size = new System.Drawing.Size(282, 30);
+            this.Responsable2Adherent_textBox.TabIndex = 65;
+            // 
+            // Responsable1Adherent_textBox
+            // 
+            this.Responsable1Adherent_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Responsable1Adherent_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.Responsable1Adherent_textBox.Location = new System.Drawing.Point(187, 233);
+            this.Responsable1Adherent_textBox.Name = "Responsable1Adherent_textBox";
+            this.Responsable1Adherent_textBox.Size = new System.Drawing.Size(282, 30);
+            this.Responsable1Adherent_textBox.TabIndex = 54;
             // 
             // RechercherAjoutAdherent_button
             // 
@@ -346,6 +406,7 @@
             this.RechercherAjoutAdherent_button.TabIndex = 64;
             this.RechercherAjoutAdherent_button.Text = "Rechercher";
             this.RechercherAjoutAdherent_button.UseVisualStyleBackColor = true;
+            this.RechercherAjoutAdherent_button.Click += new System.EventHandler(this.RechercherAjoutAdherent_button_Click);
             // 
             // AjoutResponsableAdherent_button
             // 
@@ -367,30 +428,6 @@
             this.RechercherResponsableAdherent_dataGridView.Size = new System.Drawing.Size(710, 145);
             this.RechercherResponsableAdherent_dataGridView.TabIndex = 43;
             // 
-            // SupprResponsable2Adherent_label
-            // 
-            this.SupprResponsable2Adherent_label.AutoSize = true;
-            this.SupprResponsable2Adherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
-            this.SupprResponsable2Adherent_label.Location = new System.Drawing.Point(933, 235);
-            this.SupprResponsable2Adherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SupprResponsable2Adherent_label.Name = "SupprResponsable2Adherent_label";
-            this.SupprResponsable2Adherent_label.Size = new System.Drawing.Size(23, 22);
-            this.SupprResponsable2Adherent_label.TabIndex = 42;
-            this.SupprResponsable2Adherent_label.Text = "X";
-            this.SupprResponsable2Adherent_label.Click += new System.EventHandler(this.SupprResponsable2Adherent_label_Click);
-            // 
-            // SupprResponsable1Adherent_label
-            // 
-            this.SupprResponsable1Adherent_label.AutoSize = true;
-            this.SupprResponsable1Adherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
-            this.SupprResponsable1Adherent_label.Location = new System.Drawing.Point(453, 235);
-            this.SupprResponsable1Adherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SupprResponsable1Adherent_label.Name = "SupprResponsable1Adherent_label";
-            this.SupprResponsable1Adherent_label.Size = new System.Drawing.Size(23, 22);
-            this.SupprResponsable1Adherent_label.TabIndex = 41;
-            this.SupprResponsable1Adherent_label.Text = "X";
-            this.SupprResponsable1Adherent_label.Click += new System.EventHandler(this.SupprResponsable1Adherent_label_Click);
-            // 
             // Responsable2Adherent_label
             // 
             this.Responsable2Adherent_label.AutoSize = true;
@@ -398,9 +435,9 @@
             this.Responsable2Adherent_label.Location = new System.Drawing.Point(492, 235);
             this.Responsable2Adherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Responsable2Adherent_label.Name = "Responsable2Adherent_label";
-            this.Responsable2Adherent_label.Size = new System.Drawing.Size(143, 22);
+            this.Responsable2Adherent_label.Size = new System.Drawing.Size(170, 22);
             this.Responsable2Adherent_label.TabIndex = 40;
-            this.Responsable2Adherent_label.Text = "Responsable 2";
+            this.Responsable2Adherent_label.Text = "N° responsable 2:";
             // 
             // Responsable1Adherent_label
             // 
@@ -409,9 +446,9 @@
             this.Responsable1Adherent_label.Location = new System.Drawing.Point(12, 235);
             this.Responsable1Adherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Responsable1Adherent_label.Name = "Responsable1Adherent_label";
-            this.Responsable1Adherent_label.Size = new System.Drawing.Size(143, 22);
+            this.Responsable1Adherent_label.Size = new System.Drawing.Size(170, 22);
             this.Responsable1Adherent_label.TabIndex = 39;
-            this.Responsable1Adherent_label.Text = "Responsable 1";
+            this.Responsable1Adherent_label.Text = "N° responsable 1:";
             // 
             // RechercherResponsableAdherent_textBox
             // 
@@ -422,248 +459,6 @@
             this.RechercherResponsableAdherent_textBox.Name = "RechercherResponsableAdherent_textBox";
             this.RechercherResponsableAdherent_textBox.Size = new System.Drawing.Size(560, 30);
             this.RechercherResponsableAdherent_textBox.TabIndex = 34;
-            this.RechercherResponsableAdherent_textBox.Text = "Rechercher un adhérent";
-            // 
-            // ResponsableNonAdherent_tabPage
-            // 
-            this.ResponsableNonAdherent_tabPage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.CodePostalAdherent_numericUpDownn);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label9);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.AjoutResponsableNonAdherent_button);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label10);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label11);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.SupprResponsable2NonAdherent_label);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label12);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label13);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.SupprResponsable1NonAdherent_label);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label14);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.Responsable2NonAdherent_label);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label15);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.Responsable1NonAdherent_label);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.label16);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.NaissanceResponsable_dateTimePicker);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.NomResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.MobileResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.AdresseResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.PrenomResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.MailResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Controls.Add(this.FixeResponsable_textBox);
-            this.ResponsableNonAdherent_tabPage.Location = new System.Drawing.Point(4, 29);
-            this.ResponsableNonAdherent_tabPage.Name = "ResponsableNonAdherent_tabPage";
-            this.ResponsableNonAdherent_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.ResponsableNonAdherent_tabPage.Size = new System.Drawing.Size(971, 275);
-            this.ResponsableNonAdherent_tabPage.TabIndex = 1;
-            this.ResponsableNonAdherent_tabPage.Text = "Responsable non adhérent";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label9.Location = new System.Drawing.Point(491, 183);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(129, 25);
-            this.label9.TabIndex = 60;
-            this.label9.Text = "Code Postal";
-            // 
-            // AjoutResponsableNonAdherent_button
-            // 
-            this.AjoutResponsableNonAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AjoutResponsableNonAdherent_button.Location = new System.Drawing.Point(836, 178);
-            this.AjoutResponsableNonAdherent_button.Margin = new System.Windows.Forms.Padding(8);
-            this.AjoutResponsableNonAdherent_button.Name = "AjoutResponsableNonAdherent_button";
-            this.AjoutResponsableNonAdherent_button.Size = new System.Drawing.Size(120, 32);
-            this.AjoutResponsableNonAdherent_button.TabIndex = 45;
-            this.AjoutResponsableNonAdherent_button.Text = "Ajouter";
-            this.AjoutResponsableNonAdherent_button.UseVisualStyleBackColor = true;
-            this.AjoutResponsableNonAdherent_button.Click += new System.EventHandler(this.AjoutResponsableNonAdherent_button_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label10.Location = new System.Drawing.Point(491, 133);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 25);
-            this.label10.TabIndex = 59;
-            this.label10.Text = "Fixe";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label11.Location = new System.Drawing.Point(491, 83);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 25);
-            this.label11.TabIndex = 58;
-            this.label11.Text = "E-mail";
-            // 
-            // SupprResponsable2NonAdherent_label
-            // 
-            this.SupprResponsable2NonAdherent_label.AutoSize = true;
-            this.SupprResponsable2NonAdherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
-            this.SupprResponsable2NonAdherent_label.Location = new System.Drawing.Point(933, 235);
-            this.SupprResponsable2NonAdherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SupprResponsable2NonAdherent_label.Name = "SupprResponsable2NonAdherent_label";
-            this.SupprResponsable2NonAdherent_label.Size = new System.Drawing.Size(23, 22);
-            this.SupprResponsable2NonAdherent_label.TabIndex = 51;
-            this.SupprResponsable2NonAdherent_label.Text = "X";
-            this.SupprResponsable2NonAdherent_label.Click += new System.EventHandler(this.SupprResponsable2NonAdherent_label_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label12.Location = new System.Drawing.Point(491, 33);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(86, 25);
-            this.label12.TabIndex = 57;
-            this.label12.Text = "Prenom";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label13.Location = new System.Drawing.Point(4, 183);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 25);
-            this.label13.TabIndex = 56;
-            this.label13.Text = "Adresse";
-            // 
-            // SupprResponsable1NonAdherent_label
-            // 
-            this.SupprResponsable1NonAdherent_label.AutoSize = true;
-            this.SupprResponsable1NonAdherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
-            this.SupprResponsable1NonAdherent_label.Location = new System.Drawing.Point(453, 235);
-            this.SupprResponsable1NonAdherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.SupprResponsable1NonAdherent_label.Name = "SupprResponsable1NonAdherent_label";
-            this.SupprResponsable1NonAdherent_label.Size = new System.Drawing.Size(23, 22);
-            this.SupprResponsable1NonAdherent_label.TabIndex = 50;
-            this.SupprResponsable1NonAdherent_label.Text = "X";
-            this.SupprResponsable1NonAdherent_label.Click += new System.EventHandler(this.SupprResponsable1NonAdherent_label_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label14.Location = new System.Drawing.Point(4, 133);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(76, 25);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "Mobile";
-            // 
-            // Responsable2NonAdherent_label
-            // 
-            this.Responsable2NonAdherent_label.AutoSize = true;
-            this.Responsable2NonAdherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
-            this.Responsable2NonAdherent_label.Location = new System.Drawing.Point(492, 235);
-            this.Responsable2NonAdherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Responsable2NonAdherent_label.Name = "Responsable2NonAdherent_label";
-            this.Responsable2NonAdherent_label.Size = new System.Drawing.Size(143, 22);
-            this.Responsable2NonAdherent_label.TabIndex = 49;
-            this.Responsable2NonAdherent_label.Text = "Responsable 2";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label15.Location = new System.Drawing.Point(4, 83);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(113, 25);
-            this.label15.TabIndex = 54;
-            this.label15.Text = "Naissance";
-            // 
-            // Responsable1NonAdherent_label
-            // 
-            this.Responsable1NonAdherent_label.AutoSize = true;
-            this.Responsable1NonAdherent_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.8F, System.Drawing.FontStyle.Bold);
-            this.Responsable1NonAdherent_label.Location = new System.Drawing.Point(12, 235);
-            this.Responsable1NonAdherent_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.Responsable1NonAdherent_label.Name = "Responsable1NonAdherent_label";
-            this.Responsable1NonAdherent_label.Size = new System.Drawing.Size(143, 22);
-            this.Responsable1NonAdherent_label.TabIndex = 48;
-            this.Responsable1NonAdherent_label.Text = "Responsable 1";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.label16.Location = new System.Drawing.Point(4, 33);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(56, 25);
-            this.label16.TabIndex = 53;
-            this.label16.Text = "Nom";
-            // 
-            // NaissanceResponsable_dateTimePicker
-            // 
-            this.NaissanceResponsable_dateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NaissanceResponsable_dateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.NaissanceResponsable_dateTimePicker.Location = new System.Drawing.Point(122, 80);
-            this.NaissanceResponsable_dateTimePicker.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.NaissanceResponsable_dateTimePicker.Name = "NaissanceResponsable_dateTimePicker";
-            this.NaissanceResponsable_dateTimePicker.Size = new System.Drawing.Size(354, 30);
-            this.NaissanceResponsable_dateTimePicker.TabIndex = 47;
-            this.NaissanceResponsable_dateTimePicker.Tag = "";
-            this.NaissanceResponsable_dateTimePicker.Value = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            // 
-            // NomResponsable_textBox
-            // 
-            this.NomResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.NomResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomResponsable_textBox.Location = new System.Drawing.Point(122, 30);
-            this.NomResponsable_textBox.Name = "NomResponsable_textBox";
-            this.NomResponsable_textBox.Size = new System.Drawing.Size(354, 30);
-            this.NomResponsable_textBox.TabIndex = 45;
-            // 
-            // MobileResponsable_textBox
-            // 
-            this.MobileResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MobileResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.MobileResponsable_textBox.Location = new System.Drawing.Point(122, 130);
-            this.MobileResponsable_textBox.Name = "MobileResponsable_textBox";
-            this.MobileResponsable_textBox.Size = new System.Drawing.Size(354, 30);
-            this.MobileResponsable_textBox.TabIndex = 43;
-            // 
-            // AdresseResponsable_textBox
-            // 
-            this.AdresseResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdresseResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.AdresseResponsable_textBox.Location = new System.Drawing.Point(122, 180);
-            this.AdresseResponsable_textBox.Name = "AdresseResponsable_textBox";
-            this.AdresseResponsable_textBox.Size = new System.Drawing.Size(354, 30);
-            this.AdresseResponsable_textBox.TabIndex = 42;
-            // 
-            // PrenomResponsable_textBox
-            // 
-            this.PrenomResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PrenomResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.PrenomResponsable_textBox.Location = new System.Drawing.Point(587, 30);
-            this.PrenomResponsable_textBox.Name = "PrenomResponsable_textBox";
-            this.PrenomResponsable_textBox.Size = new System.Drawing.Size(369, 30);
-            this.PrenomResponsable_textBox.TabIndex = 41;
-            // 
-            // MailResponsable_textBox
-            // 
-            this.MailResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MailResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.MailResponsable_textBox.Location = new System.Drawing.Point(587, 80);
-            this.MailResponsable_textBox.Name = "MailResponsable_textBox";
-            this.MailResponsable_textBox.Size = new System.Drawing.Size(369, 30);
-            this.MailResponsable_textBox.TabIndex = 40;
-            // 
-            // FixeResponsable_textBox
-            // 
-            this.FixeResponsable_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.FixeResponsable_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.FixeResponsable_textBox.Location = new System.Drawing.Point(587, 130);
-            this.FixeResponsable_textBox.Name = "FixeResponsable_textBox";
-            this.FixeResponsable_textBox.Size = new System.Drawing.Size(369, 30);
-            this.FixeResponsable_textBox.TabIndex = 39;
             // 
             // Classe_tabPage
             // 
@@ -679,7 +474,7 @@
             this.Classe_tabPage.Padding = new System.Windows.Forms.Padding(3);
             this.Classe_tabPage.Size = new System.Drawing.Size(971, 275);
             this.Classe_tabPage.TabIndex = 2;
-            this.Classe_tabPage.Text = "Classe";
+            this.Classe_tabPage.Text = "Classe de l\'élève";
             // 
             // RechercherAjouterAdherentClasse_button
             // 
@@ -753,7 +548,7 @@
             this.AdherentAjoutValider_button.Name = "AdherentAjoutValider_button";
             this.AdherentAjoutValider_button.Size = new System.Drawing.Size(101, 32);
             this.AdherentAjoutValider_button.TabIndex = 40;
-            this.AdherentAjoutValider_button.Text = "Valider";
+            this.AdherentAjoutValider_button.Text = "Ajouter";
             this.AdherentAjoutValider_button.UseVisualStyleBackColor = true;
             this.AdherentAjoutValider_button.Click += new System.EventHandler(this.AdherentValider_button_Click);
             // 
@@ -854,30 +649,6 @@
             this.Adherent_tabControl.Size = new System.Drawing.Size(1004, 725);
             this.Adherent_tabControl.TabIndex = 0;
             // 
-            // CodePostalAdherent_numericUpDown
-            // 
-            this.CodePostalAdherent_numericUpDown.Location = new System.Drawing.Point(631, 267);
-            this.CodePostalAdherent_numericUpDown.Maximum = new decimal(new int[] {
-            100000000,
-            0,
-            0,
-            0});
-            this.CodePostalAdherent_numericUpDown.Name = "CodePostalAdherent_numericUpDown";
-            this.CodePostalAdherent_numericUpDown.Size = new System.Drawing.Size(154, 27);
-            this.CodePostalAdherent_numericUpDown.TabIndex = 53;
-            // 
-            // CodePostalAdherent_numericUpDownn
-            // 
-            this.CodePostalAdherent_numericUpDownn.Location = new System.Drawing.Point(626, 183);
-            this.CodePostalAdherent_numericUpDownn.Maximum = new decimal(new int[] {
-            100000000,
-            0,
-            0,
-            0});
-            this.CodePostalAdherent_numericUpDownn.Name = "CodePostalAdherent_numericUpDownn";
-            this.CodePostalAdherent_numericUpDownn.Size = new System.Drawing.Size(154, 27);
-            this.CodePostalAdherent_numericUpDownn.TabIndex = 54;
-            // 
             // Form_Adherents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -894,18 +665,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.ResultatAdherent_dataGridView)).EndInit();
             this.AjoutAdherent_tabPage.ResumeLayout(false);
             this.AjoutAdherent_tabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDown)).EndInit();
             this.Responsable_tabControl.ResumeLayout(false);
             this.ResponsableAdherent_tabPage.ResumeLayout(false);
             this.ResponsableAdherent_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.RechercherResponsableAdherent_dataGridView)).EndInit();
-            this.ResponsableNonAdherent_tabPage.ResumeLayout(false);
-            this.ResponsableNonAdherent_tabPage.PerformLayout();
             this.Classe_tabPage.ResumeLayout(false);
             this.Classe_tabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatClasse_dataGridView)).EndInit();
             this.Adherent_tabControl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CodePostalAdherent_numericUpDownn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -914,16 +682,6 @@
 
         private System.Windows.Forms.TabPage EditAdherent_tabPage;
         private System.Windows.Forms.TabPage AjoutAdherent_tabPage;
-        private System.Windows.Forms.TabControl Responsable_tabControl;
-        private System.Windows.Forms.TabPage ResponsableAdherent_tabPage;
-        private System.Windows.Forms.TextBox RechercherResponsableAdherent_textBox;
-        private System.Windows.Forms.TabPage ResponsableNonAdherent_tabPage;
-        private System.Windows.Forms.TextBox NomResponsable_textBox;
-        private System.Windows.Forms.TextBox MobileResponsable_textBox;
-        private System.Windows.Forms.TextBox AdresseResponsable_textBox;
-        private System.Windows.Forms.TextBox PrenomResponsable_textBox;
-        private System.Windows.Forms.TextBox MailResponsable_textBox;
-        private System.Windows.Forms.TextBox FixeResponsable_textBox;
         private System.Windows.Forms.Button AdherentAjoutValider_button;
         private System.Windows.Forms.CheckBox Mineur_checkBox;
         private System.Windows.Forms.TextBox NomAdherent_textBox;
@@ -937,26 +695,8 @@
         private System.Windows.Forms.TextBox RechercherAdherant_textBox;
         private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.DateTimePicker NaissanceAdherent_dateTimePicker;
-        private System.Windows.Forms.DateTimePicker NaissanceResponsable_dateTimePicker;
         private System.Windows.Forms.DataGridView ResultatAdherent_dataGridView;
-        private System.Windows.Forms.Label Responsable2Adherent_label;
-        private System.Windows.Forms.Label Responsable1Adherent_label;
-        private System.Windows.Forms.Label Responsable2NonAdherent_label;
-        private System.Windows.Forms.Label Responsable1NonAdherent_label;
-        private System.Windows.Forms.Label SupprResponsable2Adherent_label;
-        private System.Windows.Forms.Label SupprResponsable1Adherent_label;
-        private System.Windows.Forms.Label SupprResponsable2NonAdherent_label;
-        private System.Windows.Forms.Label SupprResponsable1NonAdherent_label;
         private System.Windows.Forms.CheckBox Eleve_checkBox;
-        private System.Windows.Forms.DataGridView RechercherResponsableAdherent_dataGridView;
-        private System.Windows.Forms.Button AjoutResponsableNonAdherent_button;
-        private System.Windows.Forms.Button AjoutResponsableAdherent_button;
-        private System.Windows.Forms.TabPage Classe_tabPage;
-        private System.Windows.Forms.Label SupprClasse_label;
-        private System.Windows.Forms.Label Classe_label;
-        private System.Windows.Forms.DataGridView ResultatClasse_dataGridView;
-        private System.Windows.Forms.TextBox RechercherClasse_textBox;
-        private System.Windows.Forms.Button AjouterALaClasse_button;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
@@ -965,18 +705,28 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button RechercherEditerAdherent_button;
-        private System.Windows.Forms.Button RechercherAjouterAdherentClasse_button;
-        private System.Windows.Forms.Button RechercherAjoutAdherent_button;
         private System.Windows.Forms.NumericUpDown CodePostalAdherent_numericUpDown;
-        private System.Windows.Forms.NumericUpDown CodePostalAdherent_numericUpDownn;
+        private System.Windows.Forms.TabControl Responsable_tabControl;
+        private System.Windows.Forms.TabPage ResponsableAdherent_tabPage;
+        private System.Windows.Forms.Button RechercherAjoutAdherent_button;
+        private System.Windows.Forms.Button AjoutResponsableAdherent_button;
+        private System.Windows.Forms.DataGridView RechercherResponsableAdherent_dataGridView;
+        private System.Windows.Forms.Label Responsable2Adherent_label;
+        private System.Windows.Forms.Label Responsable1Adherent_label;
+        private System.Windows.Forms.TextBox RechercherResponsableAdherent_textBox;
+        private System.Windows.Forms.TabPage Classe_tabPage;
+        private System.Windows.Forms.Button RechercherAjouterAdherentClasse_button;
+        private System.Windows.Forms.Button AjouterALaClasse_button;
+        private System.Windows.Forms.Label SupprClasse_label;
+        private System.Windows.Forms.Label Classe_label;
+        private System.Windows.Forms.DataGridView ResultatClasse_dataGridView;
+        private System.Windows.Forms.TextBox RechercherClasse_textBox;
+        private System.Windows.Forms.TextBox Responsable1Adherent_textBox;
+        private System.Windows.Forms.TextBox Responsable2Adherent_textBox;
+        private System.Windows.Forms.Button SupprimerLivre_button;
+        private System.Windows.Forms.Button selectionnerAdherent_button;
+        private System.Windows.Forms.Button ModifierAjoutAdherent_button;
+        private System.Windows.Forms.Label idModifierAdherent_label;
     }
 }

@@ -48,9 +48,10 @@ namespace Bibliofusion_prototype
                                     "Date_Entree_Bibliotheque AS Enregistrement " +
                                     "FROM jouets " +
                                     "INNER JOIN Categories ON jouets.Categories_idCategories = categories.idCategorie " +
-                                    "WHERE Jouets.Nom Like @Nom";
+                                    "WHERE Jouets.Nom Like @Recherche " +
+                                    "OR idJouets_Code_Barre Like @Recherche";
                 MySqlCommand commande = new MySqlCommand(requette, Program.connection);
-                commande.Parameters.AddWithValue("@nom", RechercherJouet_textBox.Text);
+                commande.Parameters.AddWithValue("@Recherche", RechercherJouet_textBox.Text);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(commande);
                 DataTable table = new DataTable();
                 adapter.Fill(table);

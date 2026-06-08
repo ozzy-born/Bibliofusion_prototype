@@ -61,7 +61,7 @@ namespace WindowsFormsApp1
         {
             try
             {
-                string requette = "SELECT idLivres_Isbn AS ISBN, " +
+                string requette =   "SELECT idLivres_Isbn AS ISBN, " +
                                     "Titre, " +
                                     "Auteurs.Nom AS Nom, " +
                                     "Auteurs.Prenom AS Prenom, " +
@@ -76,9 +76,10 @@ namespace WindowsFormsApp1
                                     "INNER JOIN Auteurs ON Livres.Auteurs_idAuteurs = Auteurs.idAuteurs " +
                                     "INNER JOIN Categories ON Livres.Categories_idCategories = Categories.idCategorie " +
                                     "INNER JOIN Editeurs ON Livres.Editeurs_idEditeurs = Editeurs.idEditeurs " +
-                                    "WHERE Titre LIKE @titre";
+                                    "WHERE Titre LIKE @Recherche " +
+                                    "OR idLivres_Isbn LIKE @Recherche";
                 MySqlCommand commande = new MySqlCommand(requette, Program.connection);
-                commande.Parameters.AddWithValue("@titre", RechercherLivre_textBox.Text);
+                commande.Parameters.AddWithValue("@Recherche", RechercherLivre_textBox.Text);
                 MySqlDataAdapter adapter = new MySqlDataAdapter(commande);
                 DataTable table = new DataTable();
                 adapter.Fill(table);
@@ -103,7 +104,7 @@ namespace WindowsFormsApp1
                     string TrancheAges = $"{AgeMinLivre_numericUpDown.Text}-{AgeMaxLivre_numericUpDown.Text}";
                     VerificationDoublonAuteur();
                     VerificationDoublonEditeur();
-                    string requette = "UPDATE livres " +
+                    string requette =   "UPDATE livres " +
                                         "SET idLivres_Isbn = @newISBN, " +
                                         "Titre = @titre, " +
                                         "Date = @date, " +
@@ -161,30 +162,27 @@ namespace WindowsFormsApp1
         }
         private void selectionnerLivre_button_click(object sender, EventArgs e)
         {
-
+            try
             {
-                try
-                {
-                    ISBNModifierLivre_label.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[0].Value.ToString();
-                    ISBNLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[0].Value.ToString();
-                    TitreLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[1].Value.ToString();
-                    NomAuteurLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[2].Value.ToString();
-                    PrenomAuteurLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[3].Value.ToString();
-                    EditeurLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[4].Value.ToString();
-                    CategorieLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[5].Value.ToString();
-                    DateParutionLivre_dateTimePicker.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[6].Value.ToString();
-                    EmplacementLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[8].Value.ToString();
-                    NbExemplairesLivre_numericUpDown.Value = Convert.ToInt32(ResultatLivre_dataGridView.SelectedRows[0].Cells[9].Value);
-                    string[] ages = ResultatLivre_dataGridView.SelectedRows[0].Cells[7].Value.ToString().Split('-');
-                    AgeMinLivre_numericUpDown.Value = Convert.ToInt32(ages[0]);
-                    AgeMaxLivre_numericUpDown.Value = Convert.ToInt32(ages[1]);
-                }
-                catch (Exception erreur)
-                {
-                    MessageBox.Show($"Erreur ResultatLivre_dataGridView: {erreur.Message}");
-                }
-                AfficherDonnees();
+                ISBNModifierLivre_label.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                ISBNLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                TitreLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                NomAuteurLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                PrenomAuteurLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                EditeurLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[4].Value.ToString();
+                CategorieLivre_comboBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                DateParutionLivre_dateTimePicker.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[6].Value.ToString();
+                EmplacementLivre_textBox.Text = ResultatLivre_dataGridView.SelectedRows[0].Cells[8].Value.ToString();
+                NbExemplairesLivre_numericUpDown.Value = Convert.ToInt32(ResultatLivre_dataGridView.SelectedRows[0].Cells[9].Value);
+                string[] ages = ResultatLivre_dataGridView.SelectedRows[0].Cells[7].Value.ToString().Split('-');
+                AgeMinLivre_numericUpDown.Value = Convert.ToInt32(ages[0]);
+                AgeMaxLivre_numericUpDown.Value = Convert.ToInt32(ages[1]);
             }
+            catch (Exception erreur)
+            {
+                MessageBox.Show($"Erreur ResultatLivre_dataGridView: {erreur.Message}");
+            }
+            AfficherDonnees();
             Livre_tabControl.SelectTab(AjoutLivre_tabPage);
         }
         private void SupprimerLivre_button_Click(object sender, EventArgs e)

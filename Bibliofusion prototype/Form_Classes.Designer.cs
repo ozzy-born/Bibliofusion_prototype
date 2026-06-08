@@ -49,6 +49,8 @@
             this.ResultatClasse_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherClasse_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
+            this.SupprimerLivre_button = new System.Windows.Forms.Button();
+            this.selectionnerAdherent_button = new System.Windows.Forms.Button();
             this.Classes_tabControl.SuspendLayout();
             this.AjoutClasse_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -239,6 +241,8 @@
             // EditClasse_tabPage
             // 
             this.EditClasse_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditClasse_tabPage.Controls.Add(this.SupprimerLivre_button);
+            this.EditClasse_tabPage.Controls.Add(this.selectionnerAdherent_button);
             this.EditClasse_tabPage.Controls.Add(this.RechercherEditerClasse_button);
             this.EditClasse_tabPage.Controls.Add(this.ResultatClasse_dataGridView);
             this.EditClasse_tabPage.Controls.Add(this.RechercherClasse_textBox);
@@ -293,6 +297,28 @@
             this.BiblioFusion_label2.TabIndex = 51;
             this.BiblioFusion_label2.Text = "BiblioFusion";
             // 
+            // SupprimerLivre_button
+            // 
+            this.SupprimerLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.SupprimerLivre_button.Location = new System.Drawing.Point(672, 636);
+            this.SupprimerLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.SupprimerLivre_button.Name = "SupprimerLivre_button";
+            this.SupprimerLivre_button.Size = new System.Drawing.Size(141, 32);
+            this.SupprimerLivre_button.TabIndex = 67;
+            this.SupprimerLivre_button.Text = "Supprimer";
+            this.SupprimerLivre_button.UseVisualStyleBackColor = true;
+            // 
+            // selectionnerAdherent_button
+            // 
+            this.selectionnerAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.selectionnerAdherent_button.Location = new System.Drawing.Point(829, 636);
+            this.selectionnerAdherent_button.Margin = new System.Windows.Forms.Padding(8);
+            this.selectionnerAdherent_button.Name = "selectionnerAdherent_button";
+            this.selectionnerAdherent_button.Size = new System.Drawing.Size(141, 32);
+            this.selectionnerAdherent_button.TabIndex = 66;
+            this.selectionnerAdherent_button.Text = "Selectionner";
+            this.selectionnerAdherent_button.UseVisualStyleBackColor = true;
+            // 
             // Form_Classes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,5 +363,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button RechercherEditerClasse_button;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button SupprimerLivre_button;
+        private System.Windows.Forms.Button selectionnerAdherent_button;
     }
 }

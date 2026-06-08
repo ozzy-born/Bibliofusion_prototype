@@ -30,37 +30,36 @@
         {
             this.EditCategorie_tabPage = new System.Windows.Forms.TabPage();
             this.RechercherAjoutClasse_button = new System.Windows.Forms.Button();
-            this.ResultatCategorieJouet_dataGridView = new System.Windows.Forms.DataGridView();
-            this.ResultatCategorieLivre_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherCategorie_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.AjoutCategorie_tabPage = new System.Windows.Forms.TabPage();
             this.label1 = new System.Windows.Forms.Label();
-            this.CategorieJouet_radioButton = new System.Windows.Forms.RadioButton();
-            this.CategorieLivre_radioButton = new System.Windows.Forms.RadioButton();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.NomCategorie_textBox = new System.Windows.Forms.TextBox();
             this.ValiderAjoutCategorie_button = new System.Windows.Forms.Button();
             this.Categorie_tabControl = new System.Windows.Forms.TabControl();
+            this.ResultatCategorie_dataGridView = new System.Windows.Forms.DataGridView();
+            this.SupprimerLivre_button = new System.Windows.Forms.Button();
+            this.selectionnerAdherent_button = new System.Windows.Forms.Button();
             this.EditCategorie_tabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ResultatCategorieJouet_dataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ResultatCategorieLivre_dataGridView)).BeginInit();
             this.AjoutCategorie_tabPage.SuspendLayout();
             this.Categorie_tabControl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatCategorie_dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // EditCategorie_tabPage
             // 
             this.EditCategorie_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EditCategorie_tabPage.Controls.Add(this.SupprimerLivre_button);
+            this.EditCategorie_tabPage.Controls.Add(this.selectionnerAdherent_button);
             this.EditCategorie_tabPage.Controls.Add(this.RechercherAjoutClasse_button);
-            this.EditCategorie_tabPage.Controls.Add(this.ResultatCategorieJouet_dataGridView);
-            this.EditCategorie_tabPage.Controls.Add(this.ResultatCategorieLivre_dataGridView);
+            this.EditCategorie_tabPage.Controls.Add(this.ResultatCategorie_dataGridView);
             this.EditCategorie_tabPage.Controls.Add(this.RechercherCategorie_textBox);
             this.EditCategorie_tabPage.Controls.Add(this.BiblioFusion_label2);
-            this.EditCategorie_tabPage.Location = new System.Drawing.Point(4, 22);
+            this.EditCategorie_tabPage.Location = new System.Drawing.Point(4, 29);
             this.EditCategorie_tabPage.Name = "EditCategorie_tabPage";
             this.EditCategorie_tabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.EditCategorie_tabPage.Size = new System.Drawing.Size(997, 699);
+            this.EditCategorie_tabPage.Size = new System.Drawing.Size(997, 692);
             this.EditCategorie_tabPage.TabIndex = 1;
             this.EditCategorie_tabPage.Text = "Editer les catégories";
             // 
@@ -74,22 +73,6 @@
             this.RechercherAjoutClasse_button.TabIndex = 62;
             this.RechercherAjoutClasse_button.Text = "Rechercher";
             this.RechercherAjoutClasse_button.UseVisualStyleBackColor = true;
-            // 
-            // ResultatCategorieJouet_dataGridView
-            // 
-            this.ResultatCategorieJouet_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ResultatCategorieJouet_dataGridView.Location = new System.Drawing.Point(510, 180);
-            this.ResultatCategorieJouet_dataGridView.Name = "ResultatCategorieJouet_dataGridView";
-            this.ResultatCategorieJouet_dataGridView.Size = new System.Drawing.Size(460, 445);
-            this.ResultatCategorieJouet_dataGridView.TabIndex = 61;
-            // 
-            // ResultatCategorieLivre_dataGridView
-            // 
-            this.ResultatCategorieLivre_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ResultatCategorieLivre_dataGridView.Location = new System.Drawing.Point(30, 180);
-            this.ResultatCategorieLivre_dataGridView.Name = "ResultatCategorieLivre_dataGridView";
-            this.ResultatCategorieLivre_dataGridView.Size = new System.Drawing.Size(460, 445);
-            this.ResultatCategorieLivre_dataGridView.TabIndex = 60;
             // 
             // RechercherCategorie_textBox
             // 
@@ -119,8 +102,6 @@
             // 
             this.AjoutCategorie_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.AjoutCategorie_tabPage.Controls.Add(this.label1);
-            this.AjoutCategorie_tabPage.Controls.Add(this.CategorieJouet_radioButton);
-            this.AjoutCategorie_tabPage.Controls.Add(this.CategorieLivre_radioButton);
             this.AjoutCategorie_tabPage.Controls.Add(this.BiblioFusion_label1);
             this.AjoutCategorie_tabPage.Controls.Add(this.NomCategorie_textBox);
             this.AjoutCategorie_tabPage.Controls.Add(this.ValiderAjoutCategorie_button);
@@ -140,30 +121,6 @@
             this.label1.Size = new System.Drawing.Size(177, 25);
             this.label1.TabIndex = 55;
             this.label1.Text = "Nom de la classe";
-            // 
-            // CategorieJouet_radioButton
-            // 
-            this.CategorieJouet_radioButton.AutoSize = true;
-            this.CategorieJouet_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CategorieJouet_radioButton.Location = new System.Drawing.Point(222, 216);
-            this.CategorieJouet_radioButton.Name = "CategorieJouet_radioButton";
-            this.CategorieJouet_radioButton.Size = new System.Drawing.Size(83, 29);
-            this.CategorieJouet_radioButton.TabIndex = 54;
-            this.CategorieJouet_radioButton.TabStop = true;
-            this.CategorieJouet_radioButton.Text = "Jouet";
-            this.CategorieJouet_radioButton.UseVisualStyleBackColor = true;
-            // 
-            // CategorieLivre_radioButton
-            // 
-            this.CategorieLivre_radioButton.AutoSize = true;
-            this.CategorieLivre_radioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.CategorieLivre_radioButton.Location = new System.Drawing.Point(222, 166);
-            this.CategorieLivre_radioButton.Name = "CategorieLivre_radioButton";
-            this.CategorieLivre_radioButton.Size = new System.Drawing.Size(77, 29);
-            this.CategorieLivre_radioButton.TabIndex = 53;
-            this.CategorieLivre_radioButton.TabStop = true;
-            this.CategorieLivre_radioButton.Text = "Livre";
-            this.CategorieLivre_radioButton.UseVisualStyleBackColor = true;
             // 
             // BiblioFusion_label1
             // 
@@ -196,7 +153,7 @@
             this.ValiderAjoutCategorie_button.Name = "ValiderAjoutCategorie_button";
             this.ValiderAjoutCategorie_button.Size = new System.Drawing.Size(101, 32);
             this.ValiderAjoutCategorie_button.TabIndex = 29;
-            this.ValiderAjoutCategorie_button.Text = "Valider";
+            this.ValiderAjoutCategorie_button.Text = "Ajouter";
             this.ValiderAjoutCategorie_button.UseVisualStyleBackColor = true;
             this.ValiderAjoutCategorie_button.Click += new System.EventHandler(this.ValiderAjoutCategorie_button_Click);
             // 
@@ -211,6 +168,36 @@
             this.Categorie_tabControl.Size = new System.Drawing.Size(1005, 725);
             this.Categorie_tabControl.TabIndex = 31;
             // 
+            // ResultatCategorie_dataGridView
+            // 
+            this.ResultatCategorie_dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ResultatCategorie_dataGridView.Location = new System.Drawing.Point(30, 180);
+            this.ResultatCategorie_dataGridView.Name = "ResultatCategorie_dataGridView";
+            this.ResultatCategorie_dataGridView.Size = new System.Drawing.Size(940, 445);
+            this.ResultatCategorie_dataGridView.TabIndex = 61;
+            // 
+            // SupprimerLivre_button
+            // 
+            this.SupprimerLivre_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.SupprimerLivre_button.Location = new System.Drawing.Point(672, 636);
+            this.SupprimerLivre_button.Margin = new System.Windows.Forms.Padding(8);
+            this.SupprimerLivre_button.Name = "SupprimerLivre_button";
+            this.SupprimerLivre_button.Size = new System.Drawing.Size(141, 32);
+            this.SupprimerLivre_button.TabIndex = 67;
+            this.SupprimerLivre_button.Text = "Supprimer";
+            this.SupprimerLivre_button.UseVisualStyleBackColor = true;
+            // 
+            // selectionnerAdherent_button
+            // 
+            this.selectionnerAdherent_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.selectionnerAdherent_button.Location = new System.Drawing.Point(829, 636);
+            this.selectionnerAdherent_button.Margin = new System.Windows.Forms.Padding(8);
+            this.selectionnerAdherent_button.Name = "selectionnerAdherent_button";
+            this.selectionnerAdherent_button.Size = new System.Drawing.Size(141, 32);
+            this.selectionnerAdherent_button.TabIndex = 66;
+            this.selectionnerAdherent_button.Text = "Selectionner";
+            this.selectionnerAdherent_button.UseVisualStyleBackColor = true;
+            // 
             // Form_Categories
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,11 +211,10 @@
             this.Load += new System.EventHandler(this.Form_Categories_Load);
             this.EditCategorie_tabPage.ResumeLayout(false);
             this.EditCategorie_tabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ResultatCategorieJouet_dataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ResultatCategorieLivre_dataGridView)).EndInit();
             this.AjoutCategorie_tabPage.ResumeLayout(false);
             this.AjoutCategorie_tabPage.PerformLayout();
             this.Categorie_tabControl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ResultatCategorie_dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -243,11 +229,10 @@
         private System.Windows.Forms.Label BiblioFusion_label2;
         private System.Windows.Forms.TextBox NomCategorie_textBox;
         private System.Windows.Forms.Label BiblioFusion_label1;
-        private System.Windows.Forms.RadioButton CategorieJouet_radioButton;
-        private System.Windows.Forms.RadioButton CategorieLivre_radioButton;
-        private System.Windows.Forms.DataGridView ResultatCategorieJouet_dataGridView;
-        private System.Windows.Forms.DataGridView ResultatCategorieLivre_dataGridView;
         private System.Windows.Forms.Button RechercherAjoutClasse_button;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView ResultatCategorie_dataGridView;
+        private System.Windows.Forms.Button SupprimerLivre_button;
+        private System.Windows.Forms.Button selectionnerAdherent_button;
     }
 }

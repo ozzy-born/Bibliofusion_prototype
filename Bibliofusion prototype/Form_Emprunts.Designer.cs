@@ -30,29 +30,32 @@
         {
             this.Emprunts_tabControl = new System.Windows.Forms.TabControl();
             this.NouvelEmprunt_tabPage = new System.Windows.Forms.TabPage();
-            this.NomAdherentEmprunt_label = new System.Windows.Forms.Label();
+            this.RechercherNouvelEmprunt_button = new System.Windows.Forms.Button();
+            this.NumAdherentEmprunt_label = new System.Windows.Forms.Label();
             this.ResultatEmprunt_dataGridView = new System.Windows.Forms.DataGridView();
             this.FiltreDeRechercheEmprunt_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherEmprunt_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label1 = new System.Windows.Forms.Label();
             this.ValiderEmprunt_button = new System.Windows.Forms.Button();
             this.EnregistrerUnRetour_tabPage = new System.Windows.Forms.TabPage();
-            this.NomAdherentRetour_label = new System.Windows.Forms.Label();
+            this.RechercherEnregisterRetour_button = new System.Windows.Forms.Button();
+            this.NumAdherentRetour_label = new System.Windows.Forms.Label();
             this.ResultatRetour_dataGridView = new System.Windows.Forms.DataGridView();
             this.FiltreDeRechercheRetour_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherRetour_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
             this.ValiderRetour_button = new System.Windows.Forms.Button();
             this.ReserverUnArticle_tabPage = new System.Windows.Forms.TabPage();
-            this.NomAdherentReserver_label = new System.Windows.Forms.Label();
+            this.RechercherReserver_button = new System.Windows.Forms.Button();
+            this.NumAdherentReserver_label = new System.Windows.Forms.Label();
             this.ResultatResever_dataGridView = new System.Windows.Forms.DataGridView();
             this.FiltreDeRechercheReserver_checkedListBox = new System.Windows.Forms.CheckedListBox();
             this.RechercherReserver_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label3 = new System.Windows.Forms.Label();
             this.ValiderReserver_button = new System.Windows.Forms.Button();
-            this.RechercherNouvelEmprunt_button = new System.Windows.Forms.Button();
-            this.RechercherEnregisterRetour_button = new System.Windows.Forms.Button();
-            this.RechercherReserver_button = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.Emprunts_tabControl.SuspendLayout();
             this.NouvelEmprunt_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ResultatEmprunt_dataGridView)).BeginInit();
@@ -78,8 +81,9 @@
             // NouvelEmprunt_tabPage
             // 
             this.NouvelEmprunt_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.NouvelEmprunt_tabPage.Controls.Add(this.textBox3);
             this.NouvelEmprunt_tabPage.Controls.Add(this.RechercherNouvelEmprunt_button);
-            this.NouvelEmprunt_tabPage.Controls.Add(this.NomAdherentEmprunt_label);
+            this.NouvelEmprunt_tabPage.Controls.Add(this.NumAdherentEmprunt_label);
             this.NouvelEmprunt_tabPage.Controls.Add(this.ResultatEmprunt_dataGridView);
             this.NouvelEmprunt_tabPage.Controls.Add(this.FiltreDeRechercheEmprunt_checkedListBox);
             this.NouvelEmprunt_tabPage.Controls.Add(this.RechercherEmprunt_textBox);
@@ -92,15 +96,26 @@
             this.NouvelEmprunt_tabPage.TabIndex = 0;
             this.NouvelEmprunt_tabPage.Text = "Nouvel emprunt";
             // 
-            // NomAdherentEmprunt_label
+            // RechercherNouvelEmprunt_button
             // 
-            this.NomAdherentEmprunt_label.AutoSize = true;
-            this.NomAdherentEmprunt_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomAdherentEmprunt_label.Location = new System.Drawing.Point(650, 65);
-            this.NomAdherentEmprunt_label.Name = "NomAdherentEmprunt_label";
-            this.NomAdherentEmprunt_label.Size = new System.Drawing.Size(149, 25);
-            this.NomAdherentEmprunt_label.TabIndex = 68;
-            this.NomAdherentEmprunt_label.Text = "Nom Adherent";
+            this.RechercherNouvelEmprunt_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherNouvelEmprunt_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherNouvelEmprunt_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherNouvelEmprunt_button.Name = "RechercherNouvelEmprunt_button";
+            this.RechercherNouvelEmprunt_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherNouvelEmprunt_button.TabIndex = 69;
+            this.RechercherNouvelEmprunt_button.Text = "Rechercher";
+            this.RechercherNouvelEmprunt_button.UseVisualStyleBackColor = true;
+            // 
+            // NumAdherentEmprunt_label
+            // 
+            this.NumAdherentEmprunt_label.AutoSize = true;
+            this.NumAdherentEmprunt_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NumAdherentEmprunt_label.Location = new System.Drawing.Point(596, 35);
+            this.NumAdherentEmprunt_label.Name = "NumAdherentEmprunt_label";
+            this.NumAdherentEmprunt_label.Size = new System.Drawing.Size(128, 25);
+            this.NumAdherentEmprunt_label.TabIndex = 68;
+            this.NumAdherentEmprunt_label.Text = "N° Adherent";
             // 
             // ResultatEmprunt_dataGridView
             // 
@@ -149,19 +164,20 @@
             // ValiderEmprunt_button
             // 
             this.ValiderEmprunt_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.ValiderEmprunt_button.Location = new System.Drawing.Point(850, 640);
+            this.ValiderEmprunt_button.Location = new System.Drawing.Point(823, 640);
             this.ValiderEmprunt_button.Margin = new System.Windows.Forms.Padding(8);
             this.ValiderEmprunt_button.Name = "ValiderEmprunt_button";
-            this.ValiderEmprunt_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderEmprunt_button.Size = new System.Drawing.Size(128, 32);
             this.ValiderEmprunt_button.TabIndex = 62;
-            this.ValiderEmprunt_button.Text = "Valider";
+            this.ValiderEmprunt_button.Text = "Emprunter";
             this.ValiderEmprunt_button.UseVisualStyleBackColor = true;
             // 
             // EnregistrerUnRetour_tabPage
             // 
             this.EnregistrerUnRetour_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.textBox2);
             this.EnregistrerUnRetour_tabPage.Controls.Add(this.RechercherEnregisterRetour_button);
-            this.EnregistrerUnRetour_tabPage.Controls.Add(this.NomAdherentRetour_label);
+            this.EnregistrerUnRetour_tabPage.Controls.Add(this.NumAdherentRetour_label);
             this.EnregistrerUnRetour_tabPage.Controls.Add(this.ResultatRetour_dataGridView);
             this.EnregistrerUnRetour_tabPage.Controls.Add(this.FiltreDeRechercheRetour_checkedListBox);
             this.EnregistrerUnRetour_tabPage.Controls.Add(this.RechercherRetour_textBox);
@@ -174,15 +190,26 @@
             this.EnregistrerUnRetour_tabPage.TabIndex = 1;
             this.EnregistrerUnRetour_tabPage.Text = "Enregister un retour";
             // 
-            // NomAdherentRetour_label
+            // RechercherEnregisterRetour_button
             // 
-            this.NomAdherentRetour_label.AutoSize = true;
-            this.NomAdherentRetour_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomAdherentRetour_label.Location = new System.Drawing.Point(650, 65);
-            this.NomAdherentRetour_label.Name = "NomAdherentRetour_label";
-            this.NomAdherentRetour_label.Size = new System.Drawing.Size(149, 25);
-            this.NomAdherentRetour_label.TabIndex = 69;
-            this.NomAdherentRetour_label.Text = "Nom Adherent";
+            this.RechercherEnregisterRetour_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherEnregisterRetour_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherEnregisterRetour_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherEnregisterRetour_button.Name = "RechercherEnregisterRetour_button";
+            this.RechercherEnregisterRetour_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherEnregisterRetour_button.TabIndex = 70;
+            this.RechercherEnregisterRetour_button.Text = "Rechercher";
+            this.RechercherEnregisterRetour_button.UseVisualStyleBackColor = true;
+            // 
+            // NumAdherentRetour_label
+            // 
+            this.NumAdherentRetour_label.AutoSize = true;
+            this.NumAdherentRetour_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NumAdherentRetour_label.Location = new System.Drawing.Point(596, 35);
+            this.NumAdherentRetour_label.Name = "NumAdherentRetour_label";
+            this.NumAdherentRetour_label.Size = new System.Drawing.Size(128, 25);
+            this.NumAdherentRetour_label.TabIndex = 69;
+            this.NumAdherentRetour_label.Text = "N° Adherent";
             // 
             // ResultatRetour_dataGridView
             // 
@@ -231,19 +258,20 @@
             // ValiderRetour_button
             // 
             this.ValiderRetour_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.ValiderRetour_button.Location = new System.Drawing.Point(850, 640);
+            this.ValiderRetour_button.Location = new System.Drawing.Point(830, 640);
             this.ValiderRetour_button.Margin = new System.Windows.Forms.Padding(8);
             this.ValiderRetour_button.Name = "ValiderRetour_button";
-            this.ValiderRetour_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderRetour_button.Size = new System.Drawing.Size(121, 32);
             this.ValiderRetour_button.TabIndex = 62;
-            this.ValiderRetour_button.Text = "Valider";
+            this.ValiderRetour_button.Text = "Retourner";
             this.ValiderRetour_button.UseVisualStyleBackColor = true;
             // 
             // ReserverUnArticle_tabPage
             // 
             this.ReserverUnArticle_tabPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ReserverUnArticle_tabPage.Controls.Add(this.textBox1);
             this.ReserverUnArticle_tabPage.Controls.Add(this.RechercherReserver_button);
-            this.ReserverUnArticle_tabPage.Controls.Add(this.NomAdherentReserver_label);
+            this.ReserverUnArticle_tabPage.Controls.Add(this.NumAdherentReserver_label);
             this.ReserverUnArticle_tabPage.Controls.Add(this.ResultatResever_dataGridView);
             this.ReserverUnArticle_tabPage.Controls.Add(this.FiltreDeRechercheReserver_checkedListBox);
             this.ReserverUnArticle_tabPage.Controls.Add(this.RechercherReserver_textBox);
@@ -256,15 +284,26 @@
             this.ReserverUnArticle_tabPage.TabIndex = 2;
             this.ReserverUnArticle_tabPage.Text = "Reserver un article";
             // 
-            // NomAdherentReserver_label
+            // RechercherReserver_button
             // 
-            this.NomAdherentReserver_label.AutoSize = true;
-            this.NomAdherentReserver_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.NomAdherentReserver_label.Location = new System.Drawing.Point(650, 65);
-            this.NomAdherentReserver_label.Name = "NomAdherentReserver_label";
-            this.NomAdherentReserver_label.Size = new System.Drawing.Size(149, 25);
-            this.NomAdherentReserver_label.TabIndex = 69;
-            this.NomAdherentReserver_label.Text = "Nom Adherent";
+            this.RechercherReserver_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
+            this.RechercherReserver_button.Location = new System.Drawing.Point(830, 115);
+            this.RechercherReserver_button.Margin = new System.Windows.Forms.Padding(8);
+            this.RechercherReserver_button.Name = "RechercherReserver_button";
+            this.RechercherReserver_button.Size = new System.Drawing.Size(140, 32);
+            this.RechercherReserver_button.TabIndex = 70;
+            this.RechercherReserver_button.Text = "Rechercher";
+            this.RechercherReserver_button.UseVisualStyleBackColor = true;
+            // 
+            // NumAdherentReserver_label
+            // 
+            this.NumAdherentReserver_label.AutoSize = true;
+            this.NumAdherentReserver_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.NumAdherentReserver_label.Location = new System.Drawing.Point(596, 35);
+            this.NumAdherentReserver_label.Name = "NumAdherentReserver_label";
+            this.NumAdherentReserver_label.Size = new System.Drawing.Size(128, 25);
+            this.NumAdherentReserver_label.TabIndex = 69;
+            this.NumAdherentReserver_label.Text = "N° Adherent";
             // 
             // ResultatResever_dataGridView
             // 
@@ -313,46 +352,43 @@
             // ValiderReserver_button
             // 
             this.ValiderReserver_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.ValiderReserver_button.Location = new System.Drawing.Point(850, 640);
+            this.ValiderReserver_button.Location = new System.Drawing.Point(830, 640);
             this.ValiderReserver_button.Margin = new System.Windows.Forms.Padding(8);
             this.ValiderReserver_button.Name = "ValiderReserver_button";
-            this.ValiderReserver_button.Size = new System.Drawing.Size(101, 32);
+            this.ValiderReserver_button.Size = new System.Drawing.Size(121, 32);
             this.ValiderReserver_button.TabIndex = 62;
-            this.ValiderReserver_button.Text = "Valider";
+            this.ValiderReserver_button.Text = "Reserver";
             this.ValiderReserver_button.UseVisualStyleBackColor = true;
             // 
-            // RechercherNouvelEmprunt_button
+            // textBox1
             // 
-            this.RechercherNouvelEmprunt_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherNouvelEmprunt_button.Location = new System.Drawing.Point(830, 115);
-            this.RechercherNouvelEmprunt_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherNouvelEmprunt_button.Name = "RechercherNouvelEmprunt_button";
-            this.RechercherNouvelEmprunt_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherNouvelEmprunt_button.TabIndex = 69;
-            this.RechercherNouvelEmprunt_button.Text = "Rechercher";
-            this.RechercherNouvelEmprunt_button.UseVisualStyleBackColor = true;
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.textBox1.Location = new System.Drawing.Point(601, 63);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(350, 30);
+            this.textBox1.TabIndex = 71;
             // 
-            // RechercherEnregisterRetour_button
+            // textBox2
             // 
-            this.RechercherEnregisterRetour_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherEnregisterRetour_button.Location = new System.Drawing.Point(830, 115);
-            this.RechercherEnregisterRetour_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherEnregisterRetour_button.Name = "RechercherEnregisterRetour_button";
-            this.RechercherEnregisterRetour_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherEnregisterRetour_button.TabIndex = 70;
-            this.RechercherEnregisterRetour_button.Text = "Rechercher";
-            this.RechercherEnregisterRetour_button.UseVisualStyleBackColor = true;
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.textBox2.Location = new System.Drawing.Point(601, 63);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(350, 30);
+            this.textBox2.TabIndex = 72;
             // 
-            // RechercherReserver_button
+            // textBox3
             // 
-            this.RechercherReserver_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.8F);
-            this.RechercherReserver_button.Location = new System.Drawing.Point(830, 115);
-            this.RechercherReserver_button.Margin = new System.Windows.Forms.Padding(8);
-            this.RechercherReserver_button.Name = "RechercherReserver_button";
-            this.RechercherReserver_button.Size = new System.Drawing.Size(140, 32);
-            this.RechercherReserver_button.TabIndex = 70;
-            this.RechercherReserver_button.Text = "Rechercher";
-            this.RechercherReserver_button.UseVisualStyleBackColor = true;
+            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.textBox3.Location = new System.Drawing.Point(601, 63);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(350, 30);
+            this.textBox3.TabIndex = 72;
             // 
             // Form_Emprunts
             // 
@@ -399,11 +435,14 @@
         private System.Windows.Forms.DataGridView ResultatEmprunt_dataGridView;
         private System.Windows.Forms.DataGridView ResultatRetour_dataGridView;
         private System.Windows.Forms.DataGridView ResultatResever_dataGridView;
-        private System.Windows.Forms.Label NomAdherentEmprunt_label;
-        private System.Windows.Forms.Label NomAdherentRetour_label;
-        private System.Windows.Forms.Label NomAdherentReserver_label;
+        private System.Windows.Forms.Label NumAdherentEmprunt_label;
+        private System.Windows.Forms.Label NumAdherentRetour_label;
+        private System.Windows.Forms.Label NumAdherentReserver_label;
         private System.Windows.Forms.Button RechercherNouvelEmprunt_button;
         private System.Windows.Forms.Button RechercherEnregisterRetour_button;
         private System.Windows.Forms.Button RechercherReserver_button;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

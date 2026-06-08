@@ -30,6 +30,7 @@
         {
             this.Jouet_tabControl = new System.Windows.Forms.TabControl();
             this.AjoutJouet_tabPage = new System.Windows.Forms.TabPage();
+            this.MarqueJouet_textBox = new System.Windows.Forms.TextBox();
             this.ModifierAjoutJouet_button = new System.Windows.Forms.Button();
             this.codeModifierJouet_label = new System.Windows.Forms.Label();
             this.DateVenteJouet_dateTimePicker = new System.Windows.Forms.DateTimePicker();
@@ -58,7 +59,6 @@
             this.ResultatJouet_dataGridView = new System.Windows.Forms.DataGridView();
             this.RechercherJouet_textBox = new System.Windows.Forms.TextBox();
             this.BiblioFusion_label2 = new System.Windows.Forms.Label();
-            this.MarqueJouet_textBox = new System.Windows.Forms.TextBox();
             this.Jouet_tabControl.SuspendLayout();
             this.AjoutJouet_tabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AgeMaxJouet_numericUpDown)).BeginInit();
@@ -110,6 +110,16 @@
             this.AjoutJouet_tabPage.Size = new System.Drawing.Size(997, 692);
             this.AjoutJouet_tabPage.TabIndex = 0;
             this.AjoutJouet_tabPage.Text = "Ajouter un jouet";
+            // 
+            // MarqueJouet_textBox
+            // 
+            this.MarqueJouet_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.MarqueJouet_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
+            this.MarqueJouet_textBox.Location = new System.Drawing.Point(183, 215);
+            this.MarqueJouet_textBox.Name = "MarqueJouet_textBox";
+            this.MarqueJouet_textBox.Size = new System.Drawing.Size(787, 30);
+            this.MarqueJouet_textBox.TabIndex = 94;
             // 
             // ModifierAjoutJouet_button
             // 
@@ -344,7 +354,7 @@
             this.ValiderAjoutJouet_button.Name = "ValiderAjoutJouet_button";
             this.ValiderAjoutJouet_button.Size = new System.Drawing.Size(101, 32);
             this.ValiderAjoutJouet_button.TabIndex = 29;
-            this.ValiderAjoutJouet_button.Text = "Valider";
+            this.ValiderAjoutJouet_button.Text = "Ajouter";
             this.ValiderAjoutJouet_button.UseVisualStyleBackColor = true;
             this.ValiderAjoutJouet_button.Click += new System.EventHandler(this.ValiderAjoutJouet_button_Click);
             // 
@@ -455,16 +465,6 @@
             this.BiblioFusion_label2.Size = new System.Drawing.Size(191, 42);
             this.BiblioFusion_label2.TabIndex = 51;
             this.BiblioFusion_label2.Text = "BiblioFusion";
-            // 
-            // MarqueJouet_textBox
-            // 
-            this.MarqueJouet_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MarqueJouet_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.15F);
-            this.MarqueJouet_textBox.Location = new System.Drawing.Point(183, 215);
-            this.MarqueJouet_textBox.Name = "MarqueJouet_textBox";
-            this.MarqueJouet_textBox.Size = new System.Drawing.Size(787, 30);
-            this.MarqueJouet_textBox.TabIndex = 94;
             // 
             // Form_Jouets
             // 
